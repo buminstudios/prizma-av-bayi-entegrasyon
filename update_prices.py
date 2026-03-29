@@ -6,8 +6,8 @@ from thefuzz import process, fuzz
 import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PRICELISTS_DIR = os.path.join(BASE_DIR, 'ürünler fiyatlar')
-ORIGINAL_EXCEL = os.path.join(BASE_DIR, 'prizma-urunler.xlsx')
+PRICELISTS_DIR = os.path.join(BASE_DIR, 'yeni ürünler ')
+ORIGINAL_EXCEL = os.path.join(BASE_DIR, 'prizma-urunler-guncel.xlsx')
 OUTPUT_EXCEL = os.path.join(BASE_DIR, 'prizma-urunler-guncel.xlsx')
 UNMATCHED_CSV = os.path.join(BASE_DIR, 'eslesmeyenler.csv')
 ALIAS_CSV = os.path.join(BASE_DIR, 'alias_dict.csv')

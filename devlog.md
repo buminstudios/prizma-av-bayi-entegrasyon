@@ -42,3 +42,8 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - Faz 4'teki onay sistemi iptal edilip, toptancı fiyatının İdeasoft tarafındaki **tüm renk/kapsayıcı varyasyonlara** dağıtılması kuralı eklendi.
 - Toplam **193** adet varyasyon otomatik tespit edilerek baz fiyatlarıyla ezildi.
 - Sistemde tamamen yepyeni tespit edilen **893** ürünün İdeasoft kategorileri 'Benzerinden Kopyala (Inference)' yöntemiyle atanarak En Alta eklendi!
+
+### 29 March 2026 - 16:54 (FAZ 5: Çoklu Güncelleme / Multi-Update)
+- Faz 4'teki onay sistemi iptal edilip, toptancı fiyatının İdeasoft tarafındaki **tüm renk/kapsayıcı varyasyonlara** dağıtılması kuralı eklendi.
+- Toplam **60** adet varyasyon otomatik tespit edilerek baz fiyatlarıyla ezildi.
+- Sistemde tamamen yepyeni tespit edilen **34** ürünün İdeasoft kategorileri 'Benzerinden Kopyala (Inference)' yöntemiyle atanarak En Alta eklendi!
