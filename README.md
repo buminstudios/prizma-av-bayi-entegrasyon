@@ -9,7 +9,9 @@ Bu dizin, İdeasoft tabanlı e-ticaret sitemiz için "Prizma Av" ürün ve fiyat
 1. İdeasoft için tüm fiyatlar sisteme **KDV Hariç (/ 1.20)** olarak girilir.
 2. Excel dosyalarındaki `label` kolonunda geçen ürün isimleri ile, listelerdeki ürün isimleri arasında **Fuzzy Matching** (bulanak eşleştirme, minimum %85 benzerlik tavsiye edilir) yapılır.
 3. Tedarikçilerin "Fiyat" (Toptan) listelerinde **Perakende ibaresi yoksa**, otomatik olarak okunan tutara **%35 kâr marjı (x 1.35)** eklenir ve ardından KDV hesaplanıp listeye işlenir.
-4. **Fiyat Düşüş Koruması:** Eğer okunan yeni listedeki ürünün fiyatı, sistemdeki (veya `prizma-urunler.xlsx`'teki) mevcut fiyatından **daha düşükse**, bu liste potansiyel olarak 'eski liste' kabul edilir. Bu ürünün fiyatı **kesinlikle güncellenmez** ve bu tablo `devlog.md` üzerinden kullanıcıya "DİKKAT: Olası eski liste fiyat düşüşü!" olarak detaylı şekilde bildirilir.
+4. **Fiyat Düşüş Koruması:** Eğer okunan yeni listedeki ürünün fiyatı, sistemdeki mevcut fiyattan **daha düşükse**, liste 'eski liste' kabul edilir, güncellenmez ve loglanır.
+5. **Çoklu Varyasyon Dağıtımı (Multi-Update):** Tedarikçi listesinde okunan ürün ismi (`token_set_ratio >= 90` ve uzunluk >= 5 ise), İdeasoft veritabanındaki **tüm kısmi eşleşen varyasyonların** (farklı renk, kalibre vb.) fiyatını aynı anda eşitler. Manuel onay gerekmez.
+6. **Otomatik Kategori Klonlama (Inference):** Hiç eşleşmeyip İdeasoft'a "Yeni Ürün" olarak eklenen kayıtlar, veritabanındaki isimce en çok benzeyen eski ürünün İdeasoft Kategori ağacını (`mainCategory`, `category`, `subCategory`) kopyalayarak otomatik kategorilendirilir.
 
 ## Kurallar
 1. Fiyatlar her zaman listelerdeki **Perakende (Tavsiye Edilen Perakende Satış Fiyatı - KDV Dahil/Hariç durumuna göre)** sütunundan alınmalıdır.
