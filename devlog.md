@@ -32,3 +32,8 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ⛔ **DİKKAT! AŞAĞIDAKİ (Tahminen Eski) LİSTELERDEN GELEN DÜŞÜK FİYATLAR İŞLENMEMİŞTİR:** ⛔
 - **DÜŞÜK FİYAT ENGELLENDİ**: 'Y.A.F. 20 Cal. 25 Gr. Bior' (Mevcut: 475.0 TL, Yeni Gelen: 22.78 TL). Kaynak Liste: YAF FİYAT LİSTESİ 16.01.2026.pdf (PDF)
 - Sistemde bulunmayan **970** ürün satırın en altına eklendi.
+
+### 29 March 2026 - 16:32 (FAZ 4: Zeki Yarı Eşleşme ve Kategori Klonlama)
+- Faz 4 Alias Sözlüğü mekanizması kuruldu. **0** adet Alias başarıyla yüklendi.
+- Yarı eşleşen ve ezilmesi riskli olan **77** ürün `onay_bekleyen_eslesmeler.csv` dosyasına izole edildi.
+- Sistemde tamamen yepyeni tespit edilen **893** ürünün İdeasoft kategorileri 'Benzerinden Kopyala (Inference)' yöntemiyle atanarak En Alta eklendi!

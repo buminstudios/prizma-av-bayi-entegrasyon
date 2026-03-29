@@ -6,10 +6,12 @@ from thefuzz import process, fuzz
 import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PRICELISTS_DIR = os.path.join(BASE_DIR, 'ürünler fiyatlar')
+PRICELISTS_DIR = os.path.join(BASE_DIR, 'ürünler fiyatlar')
 ORIGINAL_EXCEL = os.path.join(BASE_DIR, 'prizma-urunler.xlsx')
 OUTPUT_EXCEL = os.path.join(BASE_DIR, 'prizma-urunler-guncel.xlsx')
 UNMATCHED_CSV = os.path.join(BASE_DIR, 'eslesmeyenler.csv')
+ALIAS_CSV = os.path.join(BASE_DIR, 'alias_dict.csv')
+REVIEW_CSV = os.path.join(BASE_DIR, 'onay_bekleyen_eslesmeler.csv')
 
 def get_currency(price_str):
     s = str(price_str).upper()
@@ -18,8 +20,8 @@ def get_currency(price_str):
     return 'TL'
 
 def clean_price(price_str):
-    if not isinstance(price_str, str):
-        return price_str
+    if pd.isna(price_str):
+        return None
     s = str(price_str).replace('₺', '').replace('TL', '').replace('$', '').replace('€', '').strip()
     if ',' in s and '.' in s:
         if s.rfind(',') > s.rfind('.'):
@@ -33,8 +35,21 @@ def clean_price(price_str):
     except:
         return None
 
-# Dictionary to hold the extracted items
-# We'll use a dict with Extracted Name -> {"name": "", "price": float, "currency": "TL", "source": ""}
+# Load Alias Dict
+alias_dict = {}
+if os.path.exists(ALIAS_CSV):
+    try:
+        df_alias = pd.read_csv(ALIAS_CSV)
+        for _, row in df_alias.iterrows():
+            if pd.notna(row.get('Okunan_Isim_Toptanci')) and pd.notna(row.get('Asil_Ideasoft_Ismi_SECILEN')):
+                t_name = str(row['Okunan_Isim_Toptanci']).strip()
+                i_name = str(row['Asil_Ideasoft_Ismi_SECILEN']).strip()
+                if i_name:
+                    alias_dict[t_name] = i_name
+        print(f"Alias sözlüğünden {len(alias_dict)} özel eşleşme yüklendi.")
+    except Exception as e:
+        print(f"Alias sözlüğü yükleme hatası: {e}")
+
 extracted_items_dict = {}
 
 ekol_products = {
@@ -56,7 +71,6 @@ ekol_products = {
     "Ekol VIPER 6": 3312.00
 }
 
-# Add Ekol products manually
 for ext_name, original_price in ekol_products.items():
     zamli_fiyat = original_price * 1.35
     kdv_haric_fiyat = zamli_fiyat / 1.20
@@ -64,7 +78,7 @@ for ext_name, original_price in ekol_products.items():
         "name": ext_name, "price": round(kdv_haric_fiyat, 2), "currency": "TL", "source": "Image-Ekol"
     }
 
-print("Adım 1: Tedarikçi PDF ve Excel'leri işleniyor (Multi-sheet & Toptan/Perakende Zekası devrede)...")
+print("Adım 1: Tedarikçi PDF ve Excel'leri okuma işlemi...")
 files = [f for f in os.listdir(PRICELISTS_DIR) if not f.startswith('.')]
 
 for filename in files:
@@ -79,7 +93,6 @@ for filename in files:
                 for page in pdf.pages:
                     tables = page.extract_tables()
                     for table in tables:
-                        # Find headers
                         is_header = False
                         tmp_name_idx = -1
                         tmp_price_idx = -1
@@ -87,7 +100,6 @@ for filename in files:
                         
                         for row_idx, row in enumerate(table):
                             if not row: continue
-                            
                             for c_idx, cell in enumerate(row):
                                 if not cell: continue
                                 c_str = str(cell).upper()
@@ -99,7 +111,6 @@ for filename in files:
                                     tmp_has_perakende = True
                                     is_header = True
                                 elif ('FİYAT' in c_str or 'TOPTAN' in c_str or 'TL' in c_str) and tmp_price_idx == -1:
-                                    # Fallback price column, wait maybe there's a real perakende later in row
                                     tmp_price_idx = c_idx
                                     is_header = True
                                 
@@ -107,24 +118,21 @@ for filename in files:
                                 name_col_idx = tmp_name_idx
                                 price_col_idx = tmp_price_idx
                                 has_perakende_header = tmp_has_perakende
-                                break # headers found
+                                break
                                 
                         if name_col_idx != -1 and price_col_idx != -1:
                             for row in table[row_idx+1:]:
                                 if len(row) > max(name_col_idx, price_col_idx):
                                     item_name = row[name_col_idx]
                                     item_price_str = row[price_col_idx]
-                                    
                                     if item_name and item_price_str and 'TOPTAN' not in str(item_name).upper():
                                         currency = get_currency(item_price_str)
                                         price_f = clean_price(item_price_str)
                                         if price_f and price_f > 0:
-                                            # Senaryo Kontrolü
                                             if has_perakende_header:
-                                                kdv_haric = price_f / 1.20 # Senaryo A
+                                                kdv_haric = price_f / 1.20
                                             else:
-                                                kdv_haric = (price_f * 1.35) / 1.20 # Senaryo B (Sadece Toptan/Fiyat)
-                                                
+                                                kdv_haric = (price_f * 1.35) / 1.20
                                             clean_name = str(item_name).replace('\n', ' ').strip()
                                             extracted_items_dict[clean_name] = {"name": clean_name, "price": round(kdv_haric, 2), "currency": currency, "source": f"{filename} (PDF)"}
         except Exception as e:
@@ -132,13 +140,11 @@ for filename in files:
 
     elif filename.endswith('.xlsx') or filename.endswith('.xls'):
         try:
-            dfs_sup = pd.read_excel(filepath, sheet_name=None) # TUM SAYFALARI OKU
+            dfs_sup = pd.read_excel(filepath, sheet_name=None)
             for sheet_name, df_sup in dfs_sup.items():
                 n_col = None
                 p_col = None
                 has_perakende_eval = False
-                
-                # Sütun tespiti
                 for c in df_sup.columns:
                     c_str = str(c).upper()
                     if 'ÜRÜN' in c_str or 'AÇIKLAMA' in c_str or 'MODEL' in c_str or 'AD' in c_str:
@@ -147,7 +153,6 @@ for filename in files:
                         p_col = c
                         has_perakende_eval = True
                     elif ('FİYAT' in c_str or 'TOPTAN' in c_str or 'FİYATI' in c_str) and p_col is None:
-                        # Fallback price column
                         p_col = c
                 
                 if n_col is not None and p_col is not None:
@@ -160,9 +165,8 @@ for filename in files:
                             if price_f and price_f > 0:
                                 if has_perakende_eval:
                                     kdv_haric = price_f / 1.20
-                                else: # Toptan zam
+                                else:
                                     kdv_haric = (price_f * 1.35) / 1.20
-                                    
                                 clean_name = str(item_name).replace('\n', ' ').strip()
                                 extracted_items_dict[clean_name] = {"name": clean_name, "price": round(kdv_haric, 2), "currency": currency, "source": f"{filename} - Tab:{sheet_name}"}
         except Exception as e:
@@ -171,83 +175,134 @@ for filename in files:
 extracted_items = list(extracted_items_dict.values())
 print(f"Toplam çıkarılan unique ürün adedi: {len(extracted_items)}")
 
-print("Adım 2: Orijinal İdeasoft Excel verisi okunuyor (Sıfırdan inşa süreci)...")
+print("Adım 2: Orijinal İdeasoft Excel verisi okunuyor...")
 df_main = pd.read_excel(ORIGINAL_EXCEL)
 existing_names = df_main['label'].dropna().astype(str).tolist()
 
 matched_count = 0
 unmatched_items = []
+review_items = []
 new_rows = []
 price_drop_warnings = []
 
-print("Adım 3: Fuzzy Matching ve Yeni Excel Oluşturuluyor...")
-
-updated_tracker = {}
+print("Adım 3: Faz 4 Zeki Eşleştirme (Alias & Inference) Çalışıyor...")
 
 for item in extracted_items:
     ext_name = item['name']
+    
+    # 1. Alias (Öğrenilmiş Eşleşme) Kontrolü
+    if ext_name in alias_dict:
+        db_match_name = alias_dict[ext_name]
+        try:
+            current_price_raw = df_main.loc[df_main['label'] == db_match_name, 'price1'].values[0]
+            current_price = float(str(current_price_raw).replace(',', '.'))
+        except:
+            current_price = 0.0
+
+        if current_price > 0 and item['price'] < current_price:
+            price_drop_warnings.append(f"- **DÜŞÜK FİYAT ENGELLENDİ**: '{ext_name}' (Alias: {db_match_name}) Mevcut: {current_price}, Yeni: {item['price']}.")
+        else:
+            df_main.loc[df_main['label'] == db_match_name, 'price1'] = item['price']
+            df_main.loc[df_main['label'] == db_match_name, 'currencyAbbr'] = item['currency']
+            matched_count += 1
+        continue
+
+    # 2. Bulanık Arama (Sort Testi)
     match_result = process.extractOne(ext_name, existing_names, scorer=fuzz.token_sort_ratio)
     
-    if match_result:
-        best_match_name, score = match_result[0], match_result[1]
-        if score >= 85:
+    if match_result and match_result[1] >= 85:
+        # Birebir Net Eşleşme
+        best_match_name = match_result[0]
+        try:
             current_price_raw = df_main.loc[df_main['label'] == best_match_name, 'price1'].values[0]
-            
-            try:
-                current_price = float(str(current_price_raw).replace(',', '.'))
-            except ValueError:
-                current_price = 0.0
+            current_price = float(str(current_price_raw).replace(',', '.'))
+        except:
+            current_price = 0.0
 
-            if current_price > 0 and item['price'] < current_price:
-                price_drop_warnings.append(f"- **DÜŞÜK FİYAT ENGELLENDİ**: '{ext_name}' (Mevcut: {current_price} {item['currency']}, Yeni Gelen: {item['price']} {item['currency']}). Kaynak Liste: {item['source']}")
-            else:
-                # Güncelle
-                df_main.loc[df_main['label'] == best_match_name, 'price1'] = item['price']
-                df_main.loc[df_main['label'] == best_match_name, 'currencyAbbr'] = item['currency']
-                matched_count += 1
-                updated_tracker[best_match_name] = True
+        if current_price > 0 and item['price'] < current_price:
+            price_drop_warnings.append(f"- **DÜŞÜK FİYAT ENGELLENDİ**: '{ext_name}' (Mevcut: {current_price}, Yeni: {item['price']}).")
         else:
+            df_main.loc[df_main['label'] == best_match_name, 'price1'] = item['price']
+            df_main.loc[df_main['label'] == best_match_name, 'currencyAbbr'] = item['currency']
+            matched_count += 1
+    
+    else:
+        # 3. Yarı-Eşleşme Testi (Set Ratio)
+        set_matches = process.extract(ext_name, existing_names, limit=3, scorer=fuzz.token_set_ratio)
+        valid_set_matches = [m for m in set_matches if m[1] >= 90]
+        
+        if valid_set_matches and len(ext_name) >= 5:
+            # Şüpheli (Kapsayıcı) Eşleşme -> Onaya Gönder!
+            öneriler = [m[0] for m in valid_set_matches]
+            review_item = {
+                "Okunan_Isim_Toptanci": ext_name,
+                "Yeni_Fiyat": item['price'],
+                "Onerilen_1": öneriler[0] if len(öneriler) > 0 else "",
+                "Onerilen_2": öneriler[1] if len(öneriler) > 1 else "",
+                "Onerilen_3": öneriler[2] if len(öneriler) > 2 else "",
+                "Asil_Ideasoft_Ismi_SECILEN": ""  # Kullanıcının dolduracağı boşluk
+            }
+            review_items.append(review_item)
+        else:
+            # 4. Hiçbir yere uymuyor. Yepyeni Parça -> Kategori Çalma (Category Inference)
+            inferred_main_cat = "KATEGORİSİZ - KONTROL ET"
+            inferred_cat = ""
+            inferred_sub_cat = ""
+            
+            # Find the closest category by partial name lookup
+            word = ext_name.split()[0] if " " in ext_name else ext_name
+            infer_matches = df_main[df_main['label'].str.contains(word, case=False, na=False, regex=False)]
+            
+            if not infer_matches.empty:
+                # En çok satan veya en ilk bulunan benzer ismin kategorisini çal!
+                row_copy = infer_matches.iloc[0]
+                inferred_main_cat = row_copy.get('mainCategory', inferred_main_cat)
+                inferred_cat = row_copy.get('category', "")
+                inferred_sub_cat = row_copy.get('subCategory', "")
+
             unmatched_items.append(item)
             new_rows.append({
-                'label': ext_name, 'price1': item['price'], 'currencyAbbr': item['currency'], 'status': 1
+                'label': ext_name, 
+                'price1': item['price'], 
+                'currencyAbbr': item['currency'], 
+                'status': 1,
+                'mainCategory': inferred_main_cat,
+                'category': inferred_cat,
+                'subCategory': inferred_sub_cat
             })
-    else:
-        unmatched_items.append(item)
-        new_rows.append({
-            'label': ext_name, 'price1': item['price'], 'currencyAbbr': item['currency'], 'status': 1
-        })
 
-
-print(f"Eşleşen ve Güncellenen (Var Olan İdeasoft Ürünleri): {matched_count}")
-print(f"Eşleşmeyen ve Yepyeni Olarak Eklenen: {len(new_rows)}")
+print(f"Eşleşen ve Güncellenen: {matched_count}")
+print(f"Onay Bekleyen Şüpheli Eşleşmeler (Alias'a Gidecek): {len(review_items)}")
+print(f"Yepyeni Olarak Eklenen: {len(new_rows)}")
 
 if new_rows:
     df_new = pd.DataFrame(new_rows)
     df_main = pd.concat([df_main, df_new], ignore_index=True)
 
-print("Adım 4: Revize Edilmiş Güncel Excel kaydediliyor...")
+print("Adım 4: Dosyalar kaydediliyor...")
 try:
     df_main.to_excel(OUTPUT_EXCEL, index=False)
 except Exception as e:
     print(f"Excel kaydetme hatası: {e}")
 
 if unmatched_items:
-    df_unmatched = pd.DataFrame(unmatched_items)
-    df_unmatched.to_csv(UNMATCHED_CSV, index=False, encoding='utf-8')
+    pd.DataFrame(unmatched_items).to_csv(UNMATCHED_CSV, index=False, encoding='utf-8')
+
+# Review CSV (İlk Defa / Üzerine Yazma)
+if review_items:
+    pd.DataFrame(review_items).to_csv(REVIEW_CSV, index=False, encoding='utf-8')
+elif os.path.exists(REVIEW_CSV):
+    # Eğer bu dönüşte hiç review çıkmadıysa, ama eski dosya varsa silmeye gerek yok, dilediğiniz gibi yapılabilir.
+    pass
 
 # Devlog
 try:
     with open('devlog.md', 'a', encoding='utf-8') as f:
-        f.write(f"\n### {datetime.datetime.now().strftime('%d %B %Y - %H:%M')} (FAZ 3: Düşük Fiyat - Eski Liste Koruması)\n")
-        f.write(f"- Çoklu sayfa destekli excel taraması yapıldı, başlığında perakende bulunmayanlara **%35 toptan liste zammı** eklendi.\n")
-        f.write(f"- Ekol Voltran ürünleri de dâhil olmak üzere toplam **{len(extracted_items)}** unique (tekil) fiyat işlendi.\n")
-        f.write(f"- İdeasoft listesi olan 'prizma-urunler.xlsx' baz alınarak **{matched_count}** ürün en doğru fiyattan güncellendi.\n")
-        if price_drop_warnings:
-            f.write(f"\n⛔ **DİKKAT! AŞAĞIDAKİ (Tahminen Eski) LİSTELERDEN GELEN DÜŞÜK FİYATLAR İŞLENMEMİŞTİR:** ⛔\n")
-            for w in price_drop_warnings:
-                f.write(w + "\n")
-        f.write(f"- Sistemde bulunmayan **{len(new_rows)}** ürün satırın en altına eklendi.\n")
+        f.write(f"\n### {datetime.datetime.now().strftime('%d %B %Y - %H:%M')} (FAZ 4: Zeki Yarı Eşleşme ve Kategori Klonlama)\n")
+        f.write(f"- Faz 4 Alias Sözlüğü mekanizması kuruldu. **{len(alias_dict)}** adet Alias başarıyla yüklendi.\n")
+        f.write(f"- Yarı eşleşen ve ezilmesi riskli olan **{len(review_items)}** ürün `onay_bekleyen_eslesmeler.csv` dosyasına izole edildi.\n")
+        f.write(f"- Sistemde tamamen yepyeni tespit edilen **{len(new_rows)}** ürünün İdeasoft kategorileri 'Benzerinden Kopyala (Inference)' yöntemiyle atanarak En Alta eklendi!\n")
 except Exception as e:
     pass
 
-print("FAZ 3 İŞLEM TAMAMLANDI")
+print("FAZ 4 İŞLEM TAMAMLANDI")
