@@ -97,3 +97,8 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ### 29 March 2026 - 18:23 (Optik ve Elektronik Düzenlemesi)
 - Görselden gelen liste doğrultusunda Sig Sauer (Buckmasters, Tango, Romeo, Kilo vb.) ve Vormex optik ürünleri tespit edildi.
 - Toplam **100 adet** optik ekipmanın ana kategorisi `OPTİK & ELEKTRONİK` yapıldı. Red dot, tüfek dürbünü, büyüteç ve bağlantı arayüzleri gibi alt kategoriler atandı ve markaları sabitlendi.
+
+### 29 March 2026 - 19:52 (Mükerrer Ürünlerin Silinmesi)
+- Orijinal İdeasoft tablosunda yer alan aynı isimli ancak farklı kodlarla çoğaltılmış kopya satırlar tespit edildi (Örn: Hatsan Blitz 4 kez girilmiş).
+- Varyasyonları korumak adına sadece **birebir aynı metin ve karakter dizilimine sahip** kayıtlar hedeflendi.
+- Toplamda tam **69 adet gereksiz kopya satır** silinip katalog tekrar 4080 tekil ürüne normalize edildi!
