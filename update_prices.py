@@ -181,11 +181,11 @@ existing_names = df_main['label'].dropna().astype(str).tolist()
 
 matched_count = 0
 unmatched_items = []
-review_items = []
+multi_matched_count = 0
 new_rows = []
 price_drop_warnings = []
 
-print("Adım 3: Faz 4 Zeki Eşleştirme (Alias & Inference) Çalışıyor...")
+print("Adım 3: Faz 5 Çoklu Eşleştirme (Multi-Update & Inference) Çalışıyor...")
 
 for item in extracted_items:
     ext_name = item['name']
@@ -228,21 +228,25 @@ for item in extracted_items:
     
     else:
         # 3. Yarı-Eşleşme Testi (Set Ratio)
-        set_matches = process.extract(ext_name, existing_names, limit=3, scorer=fuzz.token_set_ratio)
+        set_matches = process.extract(ext_name, existing_names, limit=20, scorer=fuzz.token_set_ratio)
         valid_set_matches = [m for m in set_matches if m[1] >= 90]
         
         if valid_set_matches and len(ext_name) >= 5:
-            # Şüpheli (Kapsayıcı) Eşleşme -> Onaya Gönder!
-            öneriler = [m[0] for m in valid_set_matches]
-            review_item = {
-                "Okunan_Isim_Toptanci": ext_name,
-                "Yeni_Fiyat": item['price'],
-                "Onerilen_1": öneriler[0] if len(öneriler) > 0 else "",
-                "Onerilen_2": öneriler[1] if len(öneriler) > 1 else "",
-                "Onerilen_3": öneriler[2] if len(öneriler) > 2 else "",
-                "Asil_Ideasoft_Ismi_SECILEN": ""  # Kullanıcının dolduracağı boşluk
-            }
-            review_items.append(review_item)
+            # Multi-Update -> BULUNAN TÜM NET VARYASYONLARA FİYATI DAĞIT!
+            for m in valid_set_matches:
+                db_name = m[0]
+                try:
+                    current_price_raw = df_main.loc[df_main['label'] == db_name, 'price1'].values[0]
+                    current_price = float(str(current_price_raw).replace(',', '.'))
+                except:
+                    current_price = 0.0
+
+                if current_price > 0 and item['price'] < current_price:
+                    price_drop_warnings.append(f"- **DÜŞÜK FİYAT ENGELLENDİ (MULTI-UPDATE)**: '{ext_name}' (İdeasoft: {db_name}) Mevcut: {current_price}, Yeni: {item['price']}.")
+                else:
+                    df_main.loc[df_main['label'] == db_name, 'price1'] = item['price']
+                    df_main.loc[df_main['label'] == db_name, 'currencyAbbr'] = item['currency']
+                    multi_matched_count += 1
         else:
             # 4. Hiçbir yere uymuyor. Yepyeni Parça -> Kategori Çalma (Category Inference)
             inferred_main_cat = "KATEGORİSİZ - KONTROL ET"
@@ -272,7 +276,7 @@ for item in extracted_items:
             })
 
 print(f"Eşleşen ve Güncellenen: {matched_count}")
-print(f"Onay Bekleyen Şüpheli Eşleşmeler (Alias'a Gidecek): {len(review_items)}")
+print(f"Varyasyonlara Dağıtılan (Multi-Update): {multi_matched_count}")
 print(f"Yepyeni Olarak Eklenen: {len(new_rows)}")
 
 if new_rows:
@@ -288,19 +292,12 @@ except Exception as e:
 if unmatched_items:
     pd.DataFrame(unmatched_items).to_csv(UNMATCHED_CSV, index=False, encoding='utf-8')
 
-# Review CSV (İlk Defa / Üzerine Yazma)
-if review_items:
-    pd.DataFrame(review_items).to_csv(REVIEW_CSV, index=False, encoding='utf-8')
-elif os.path.exists(REVIEW_CSV):
-    # Eğer bu dönüşte hiç review çıkmadıysa, ama eski dosya varsa silmeye gerek yok, dilediğiniz gibi yapılabilir.
-    pass
-
 # Devlog
 try:
     with open('devlog.md', 'a', encoding='utf-8') as f:
-        f.write(f"\n### {datetime.datetime.now().strftime('%d %B %Y - %H:%M')} (FAZ 4: Zeki Yarı Eşleşme ve Kategori Klonlama)\n")
-        f.write(f"- Faz 4 Alias Sözlüğü mekanizması kuruldu. **{len(alias_dict)}** adet Alias başarıyla yüklendi.\n")
-        f.write(f"- Yarı eşleşen ve ezilmesi riskli olan **{len(review_items)}** ürün `onay_bekleyen_eslesmeler.csv` dosyasına izole edildi.\n")
+        f.write(f"\n### {datetime.datetime.now().strftime('%d %B %Y - %H:%M')} (FAZ 5: Çoklu Güncelleme / Multi-Update)\n")
+        f.write(f"- Faz 4'teki onay sistemi iptal edilip, toptancı fiyatının İdeasoft tarafındaki **tüm renk/kapsayıcı varyasyonlara** dağıtılması kuralı eklendi.\n")
+        f.write(f"- Toplam **{multi_matched_count}** adet varyasyon otomatik tespit edilerek baz fiyatlarıyla ezildi.\n")
         f.write(f"- Sistemde tamamen yepyeni tespit edilen **{len(new_rows)}** ürünün İdeasoft kategorileri 'Benzerinden Kopyala (Inference)' yöntemiyle atanarak En Alta eklendi!\n")
 except Exception as e:
     pass
