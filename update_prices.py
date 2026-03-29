@@ -35,6 +35,21 @@ def clean_price(price_str):
     except:
         return None
 
+def get_box_multiplier(item_name):
+    name_upper = str(item_name).upper()
+    
+    # Kutu=50 -> Ses, Kuru Sıkı, Tabanca, Manevra
+    if any(k in name_upper for k in ["KURU SIKI", "KURUSIKI", "SES", "TABANCA", "MANEVRA", "9X19", "9 MM"]):
+        return 50
+    # Kutu=10 -> Kurşun, Şevrotin, Slug
+    elif any(k in name_upper for k in ["KURŞUN", "KURSUN", "ŞEVROTİN", "SEVROTIN", "SLUG"]):
+        return 10
+    # Kutu=25 -> Fişek, Saçma, veya içinde X GR yazanlar
+    elif any(k in name_upper for k in ["FİŞEK", "FISEK", "SAÇMA", "SACMA", "TRAP", "SKEET", "BİOR", "BIOR", "DISPERSANTE"]) or " GR" in name_upper:
+        return 25
+        
+    return 1
+
 # Load Alias Dict
 alias_dict = {}
 if os.path.exists(ALIAS_CSV):
@@ -129,10 +144,13 @@ for filename in files:
                                         currency = get_currency(item_price_str)
                                         price_f = clean_price(item_price_str)
                                         if price_f and price_f > 0:
+                                            multiplier = get_box_multiplier(item_name)
+                                            box_price = price_f * multiplier
+                                            
                                             if has_perakende_header:
-                                                kdv_haric = price_f / 1.20
+                                                kdv_haric = box_price / 1.20
                                             else:
-                                                kdv_haric = (price_f * 1.35) / 1.20
+                                                kdv_haric = (box_price * 1.35) / 1.20
                                             clean_name = str(item_name).replace('\n', ' ').strip()
                                             extracted_items_dict[clean_name] = {"name": clean_name, "price": round(kdv_haric, 2), "currency": currency, "source": f"{filename} (PDF)"}
         except Exception as e:
@@ -163,10 +181,13 @@ for filename in files:
                             currency = get_currency(item_price_str)
                             price_f = clean_price(item_price_str)
                             if price_f and price_f > 0:
+                                multiplier = get_box_multiplier(item_name)
+                                box_price = price_f * multiplier
+                                
                                 if has_perakende_eval:
-                                    kdv_haric = price_f / 1.20
+                                    kdv_haric = box_price / 1.20
                                 else:
-                                    kdv_haric = (price_f * 1.35) / 1.20
+                                    kdv_haric = (box_price * 1.35) / 1.20
                                 clean_name = str(item_name).replace('\n', ' ').strip()
                                 extracted_items_dict[clean_name] = {"name": clean_name, "price": round(kdv_haric, 2), "currency": currency, "source": f"{filename} - Tab:{sheet_name}"}
         except Exception as e:

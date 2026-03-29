@@ -13,6 +13,10 @@ Bu dizin, İdeasoft tabanlı e-ticaret sitemiz için "Prizma Av" ürün ve fiyat
 5. **Çoklu Varyasyon Dağıtımı (Multi-Update):** Tedarikçi listesinde okunan ürün ismi (`token_set_ratio >= 90` ve uzunluk >= 5 ise), İdeasoft veritabanındaki **tüm kısmi eşleşen varyasyonların** (farklı renk, kalibre vb.) fiyatını aynı anda eşitler. Manuel onay gerekmez.
 6. **Otomatik Kategori Klonlama (Inference):** Hiç eşleşmeyip İdeasoft'a "Yeni Ürün" olarak eklenen kayıtlar, veritabanındaki isimce en çok benzeyen eski ürünün İdeasoft Kategori ağacını (`mainCategory`, `category`, `subCategory`) kopyalayarak otomatik kategorilendirilir.
 
+7. **Fişek Markası Ayrıştırma:** Sistemdeki Fişek ürünleri "Zuber" gibi tek bir markaya birikmişse (veya Yavaşçalar/YAF/Y.A.F dağılmışsa), ürün isimlerindeki (B&P, Federal, Winchester, Remington, vb.) asıl marka tespit edilir ve İdeasoft tarafındaki marka alanına otomatik yazılır. Bunların  değeri mutlaka  yapılır.
+8. **Ekol Kurusıkı & Havalı Ayrımı:** Ekol markalı ürünlerde havalı tüfek/tabancalar  kategorisinde kalırken, gerçek Ses/Kurusıkı tabancaları (Fırat, Dicle, Aras vb.) mutlaka  ana kategorisine taşınır.
+9. **Hayalet (Ghost) Kod Temizliği:** PDF veya Excel taramalarından yanlışlıkla okunan "FC- X" veya "BA- X" gibi stok kodları satırları silinerek kalabalıktan arındırılır.
+
 ## Kurallar
 1. Fiyatlar her zaman listelerdeki **Perakende (Tavsiye Edilen Perakende Satış Fiyatı - KDV Dahil/Hariç durumuna göre)** sütunundan alınmalıdır.
 2. Tüm ilerlemeler, eksik eşleşmeler veya güncellenen ürünler `devlog.md` dosyasına gün ve saat olarak detaylıca not edilmelidir.

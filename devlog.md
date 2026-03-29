@@ -60,3 +60,36 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
   - **DÜŞÜK FİYAT ENGELLENDİ (MULTI)**: 'MECA RİFLED KURŞUN' (İdeasoft: MECA RIFLED SLUG TEK KURŞUN  36 CAL.) Mevcut: 687.5, Yeni: 28.35.
   - **DÜŞÜK FİYAT ENGELLENDİ (MULTI)**: 'MECA EXTRA KURŞUN' (İdeasoft: MECA EXTRA SLUG TEK KURŞUN  12 CAL.) Mevcut: 300.0, Yeni: 32.4.
   - **DÜŞÜK FİYAT ENGELLENDİ (MULTI)**: 'MECA DOUBLE KURŞUN' (İdeasoft: MECA DOUBLE IMPACT TEK KURŞUN  12 CAL.) Mevcut: 291.666, Yeni: 31.05.
+
+### 29 March 2026 - 17:18 (Kutu Adeti Mantığı Düzeltmesi)
+- Kullanıcı uyarısıyla Saçmalar (x25), Kurşunlar (x10) ve Ses Mermileri (x50) kutu bazlı çarpıldı.
+- Fiyatlar kutu üzerinden +%35 kâr ile yeniden hesaplanarak mevcut Excel üzerine yazıldı.
+
+### 29 March 2026 - 17:31 (FAZ 5: Çoklu Güncelleme / Multi-Update)
+- Faz 4'teki onay sistemi iptal edilip, toptancı fiyatının İdeasoft tarafındaki **tüm renk/kapsayıcı varyasyonlara** dağıtılması kuralı eklendi.
+- Toplam **65** adet varyasyon otomatik tespit edilerek baz fiyatlarıyla ezildi.
+- Sistemde tamamen yepyeni tespit edilen **285** ürünün İdeasoft kategorileri 'Benzerinden Kopyala (Inference)' yöntemiyle atanarak En Alta eklendi!
+
+### 29 March 2026 - 17:44 (Resim Okuma Extent)
+- 5. ve 20. JPEG arası tüm listeler okundu ve batch_A, batch_B, batch_C scriptleriyle Excel'e işlendi.
+- Yüzlerce yeni mühre, fener, zuber, mirage vs ürünü kâr/kutu hesabıyla eklendi.
+
+### 29 March 2026 - 18:15 (Kapsamlı Veri Temizliği ve Kategorizasyon)
+- Ekol markasının havalı ve kurusıkı modelleri birbirine karıştığı (Airsoft vs. Kurusıkı) tespit edildi.
+- Toplam **33 adet** gerçek Ekol Kurusıkı tabanca,  kategorisinden alınarak özel oluşturulan  ana kategorisine başarıyla taşındı. Ekol Havalı modelleri (PCP vs) sorunsuz korundu.
+- Sistemde çoğunlukla  markası altında kalmış olan diğer tüm dünya fişek ürünleri (B&P, Winchester, Federal, Remington, Meca vb.) için özel marka ayırt edici betik (script) çalıştırıldı.
+- Tam **282** adet fişek ürünü "Zuber" den ayrıştırılarak kendi gerçek markalarına dağıtıldı.
+- YAF, YAVAŞÇALAR, Y.A.F marka karmaşası düzeltilerek tüm ürünler yekpare YAF markası altında birleştirildi.
+- Mavoric tüfekleri (10 adet) eksiksiz şekilde  -> (Y.Oto / Pompalı vs) olarak yapılandırıldı.
+- Excel/PDF taramalarından gelen ve ürün statüsünde olmayan **143** adet stok kodlu (, ) çöp (hayalet) satır kalıcı olarak temizlendi.
+- Yapılan kapsamlı Kategori ve Marka eşleşme kuralları  ye deşifre edildi.
+
+### 29 March 2026 - 18:15 (Kapsamlı Veri Temizliği ve Kategorizasyon)
+- Ekol markasının havalı ve kurusıkı modelleri birbirine karıştığı (Airsoft vs. Kurusıkı) tespit edildi.
+- Toplam **33 adet** gerçek Ekol Kurusıkı tabanca, `Atıcılık & Airsoft` kategorisinden alınarak özel oluşturulan `KURUSIKI TABANCALAR` ana kategorisine başarıyla taşındı. Ekol Havalı modelleri (PCP vs) sorunsuz korundu.
+- Sistemde çoğunlukla `Zuber` markası altında kalmış olan diğer tüm dünya fişek ürünleri (B&P, Winchester, Federal, Remington, Meca vb.) için özel marka ayırt edici betik (script) çalıştırıldı.
+- Tam **282** adet fişek ürünü "Zuber" den ayrıştırılarak kendi gerçek markalarına dağıtıldı.
+- YAF, YAVAŞÇALAR, Y.A.F marka karmaşası düzeltilerek tüm ürünler yekpare YAF markası altında birleştirildi.
+- Mavoric tüfekleri (10 adet) eksiksiz şekilde `AV TÜFEKLERİ` -> (Y.Oto / Pompalı vs) olarak yapılandırıldı.
+- Excel/PDF taramalarından gelen ve ürün statüsünde olmayan **143** adet stok kodlu (`FC-`, `BA-`) çöp (hayalet) satır kalıcı olarak temizlendi.
+- Yapılan kapsamlı Kategori ve Marka eşleşme kuralları `README.md` ye deşifre edildi.
