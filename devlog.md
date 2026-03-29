@@ -47,3 +47,16 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - Faz 4'teki onay sistemi iptal edilip, toptancı fiyatının İdeasoft tarafındaki **tüm renk/kapsayıcı varyasyonlara** dağıtılması kuralı eklendi.
 - Toplam **60** adet varyasyon otomatik tespit edilerek baz fiyatlarıyla ezildi.
 - Sistemde tamamen yepyeni tespit edilen **34** ürünün İdeasoft kategorileri 'Benzerinden Kopyala (Inference)' yöntemiyle atanarak En Alta eklendi!
+
+### 29 March 2026 - 17:12 (Sohbet Üzerinden Görsel Okumaları - İlk 4'lü)
+- 4 Görsel saniyeler içinde okundu toplam **72** ürün çıkarıldı.
+- Tam eşleşip güncellenen: **3**, Multi-Varyasyon Değişen: **5**.
+- Altyapıda bulunamayan **63** ürün kategori Inference metoduyla veritabanına eklendi!
+- Güvenlik nedeniyle düşük teklif veren (**7**) satır ezilmekten KORUNDU.
+  - **DÜŞÜK FİYAT ENGELLENDİ (MULTI)**: 'ÖZK 12 CAL 33 GR DİSPERSANTE' (İdeasoft: REMINGTON (ITALY) 33 GR. DISPERSANTE AV FİŞEĞİ  12 CAL.) Mevcut: 758.333, Yeni: 28.12.
+  - **DÜŞÜK FİYAT ENGELLENDİ (MULTI)**: 'ÖZK 12 CAL 33 GR DİSPERSANTE' (İdeasoft: STERLING 33 GR. DISPERSANTE AV FİŞEĞİ  12 CAL.) Mevcut: 500.0, Yeni: 28.12.
+  - **DÜŞÜK FİYAT ENGELLENDİ (MULTI)**: 'ÖZKURSAN MANEVRA FİŞEĞİ' (İdeasoft: ÖZKURSAN CK9 9X19 MM MANEVRA FİŞEĞİ) Mevcut: 291.666, Yeni: 4.95.
+  - **DÜŞÜK FİYAT ENGELLENDİ (MULTI)**: 'MECA RİFLED KURŞUN' (İdeasoft: MECA RIFLED SLUG TEK KURŞUN  12 CAL.) Mevcut: 266.666, Yeni: 28.35.
+  - **DÜŞÜK FİYAT ENGELLENDİ (MULTI)**: 'MECA RİFLED KURŞUN' (İdeasoft: MECA RIFLED SLUG TEK KURŞUN  36 CAL.) Mevcut: 687.5, Yeni: 28.35.
+  - **DÜŞÜK FİYAT ENGELLENDİ (MULTI)**: 'MECA EXTRA KURŞUN' (İdeasoft: MECA EXTRA SLUG TEK KURŞUN  12 CAL.) Mevcut: 300.0, Yeni: 32.4.
+  - **DÜŞÜK FİYAT ENGELLENDİ (MULTI)**: 'MECA DOUBLE KURŞUN' (İdeasoft: MECA DOUBLE IMPACT TEK KURŞUN  12 CAL.) Mevcut: 291.666, Yeni: 31.05.
