@@ -93,3 +93,7 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - Mavoric tüfekleri (10 adet) eksiksiz şekilde `AV TÜFEKLERİ` -> (Y.Oto / Pompalı vs) olarak yapılandırıldı.
 - Excel/PDF taramalarından gelen ve ürün statüsünde olmayan **143** adet stok kodlu (`FC-`, `BA-`) çöp (hayalet) satır kalıcı olarak temizlendi.
 - Yapılan kapsamlı Kategori ve Marka eşleşme kuralları `README.md` ye deşifre edildi.
+
+### 29 March 2026 - 18:23 (Optik ve Elektronik Düzenlemesi)
+- Görselden gelen liste doğrultusunda Sig Sauer (Buckmasters, Tango, Romeo, Kilo vb.) ve Vormex optik ürünleri tespit edildi.
+- Toplam **100 adet** optik ekipmanın ana kategorisi `OPTİK & ELEKTRONİK` yapıldı. Red dot, tüfek dürbünü, büyüteç ve bağlantı arayüzleri gibi alt kategoriler atandı ve markaları sabitlendi.

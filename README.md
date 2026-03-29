@@ -17,6 +17,8 @@ Bu dizin, İdeasoft tabanlı e-ticaret sitemiz için "Prizma Av" ürün ve fiyat
 8. **Ekol Kurusıkı & Havalı Ayrımı:** Ekol markalı ürünlerde havalı tüfek/tabancalar  kategorisinde kalırken, gerçek Ses/Kurusıkı tabancaları (Fırat, Dicle, Aras vb.) mutlaka  ana kategorisine taşınır.
 9. **Hayalet (Ghost) Kod Temizliği:** PDF veya Excel taramalarından yanlışlıkla okunan "FC- X" veya "BA- X" gibi stok kodları satırları silinerek kalabalıktan arındırılır.
 
+10. **Optik Sınıflandırma:** Vormex ve Sig Sauer Elektro-Optik (Buckmasters, Romeo vb.) gibi ürünler otomatik olarak `OPTİK & ELEKTRONİK` kategorisine taşınır ve isimlerindeki kelimelere göre (Red Dot, Tüfek Dürbünü, Lazer vb.) alt kategorilere ayrılır.
+
 ## Kurallar
 1. Fiyatlar her zaman listelerdeki **Perakende (Tavsiye Edilen Perakende Satış Fiyatı - KDV Dahil/Hariç durumuna göre)** sütunundan alınmalıdır.
 2. Tüm ilerlemeler, eksik eşleşmeler veya güncellenen ürünler `devlog.md` dosyasına gün ve saat olarak detaylıca not edilmelidir.
