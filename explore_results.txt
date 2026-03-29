@@ -1,0 +1,536 @@
+Scanning files...
+
+--- PDF: 15.02.2025 fiyat listesi.pdf ---
+15/02/2025
+HATSAN PCP HAVALI TÜFEK
+ÜRÜN ADI ÇAP TOPTAN PAREKENDE
+YENİ MODELLER
+HATSAN FACTÖR SNIPER S 5,5 / 6,35 40,000.00 ₺ 52,000.00 ₺
+HATSAN FACTÖR SNIPER LONG 5,5 / 6,35 43,500.00 ₺ 56,500.00 ₺
+HATSAN FACTÖR SNIPER LONG FDE 5,5 / 6,35 45,000.00 ₺ 60,750.00 ₺
+HATSAN HERCULES 5,5 / 6,35 19,500.00 
+Table found! First 2 rows:
+['ÜRÜN ADI', 'ÇAP', 'TOPTAN', 'PAREKENDE']
+['YENİ MODELLER', None, '', '']
+
+==================================================
+
+--- PDF: 2025 fiyat listesi.pdf ---
+15/02/2025
+HATSAN PCP HAVALI TÜFEK
+ÜRÜN ADI ÇAP TOPTAN PAREKENDE
+YENİ MODELLER
+HATSAN FACTÖR SNIPER S 5,5 / 6,35 40,000.00 ₺ 52,000.00 ₺
+HATSAN FACTÖR SNIPER LONG 5,5 / 6,35 43,500.00 ₺ 56,500.00 ₺
+HATSAN FACTÖR SNIPER LONG FDE 5,5 / 6,35 45,000.00 ₺ 60,750.00 ₺
+HATSAN HERCULES 5,5 / 6,35 19,500.00 
+Table found! First 2 rows:
+['ÜRÜN ADI', 'ÇAP', 'TOPTAN', 'PAREKENDE']
+['YENİ MODELLER', None, '', '']
+
+==================================================
+
+--- EXCEL: 2026 NAKİT YETKİLİ BAYİ BEY TEKNOLOJİ 2026.xlsx ---
+Columns: []
+Empty DataFrame
+Columns: []
+Index: []
+
+==================================================
+
+--- PDF: AKSA FİYAT LİSTESİ 01.03.2025.pdf ---
+AKSA SİLAH FİYAT LİSTESİ
+01.03.2025
+CROSSFİRE WI / S4
+MODEL ADI AÇIKLAMA F.YATAĞI N.BOYU KALİBRE KAPASİTE RENK TOPTAN PERAKANDE
+1 S4 T POLİMER KUNDAKLI 76 mm 47 CM 12 CAL. 6+1 SİYAH ₺13.500,00 ₺18.500,00
+2 S4 T POLİMER KUNDAKLI 76 mm 47 CM 12 CAL. 6+1 RENKLİ ₺14.500,00 ₺19.500,00
+3 S4 T POLİMER KUND
+Table found! First 2 rows:
+['AKSA SİLAH FİYAT LİSTESİ\n01.03.2025', None, None, None, None, None, None, None, None, None]
+['CROSSFİRE WI / S4', None, None, None, None, None, None, None, None, None]
+
+==================================================
+
+--- PDF: ARMSAN FİYAT LİSTESİ 01.02.2026.pdf ---
+ARMSAN 2026 ŞUBAT FİYAT LİSTESİ
+A612 - A616 - A620 - A636 - CRE8 - 10.YIL - SPORTING
+ÜRÜN ADI N. BOYU DİPÇİK RENK TOPTAN PERAKENDE
+10.YIL DW Y.OTO. AV TÜFEĞİ 61-66-71 AHŞAP SİYAH 24.698,00 ₺ 30.150,00 ₺
+10.YIL DW SLUG Y.OTO. AV TÜFEĞİ 61 AHŞAP SİYAH 27.933,00 ₺ 34.100,00 ₺
+10.YIL DW Y.OTO. AV TÜFEĞİ
+Table found! First 2 rows:
+['ÜRÜN ADI', 'N. BOYU', 'DİPÇİK', 'RENK', 'TOPTAN', 'PERAKENDE']
+['10.YIL DW Y.OTO. AV TÜFEĞİ', '61-66-71', 'AHŞAP', 'SİYAH', '24.698,00 ₺', '30.150,00 ₺']
+
+==================================================
+
+--- EXCEL: ASG FİYAT LİSTESİ 26.12.2025.xlsx ---
+Columns: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3']
+          Unnamed: 0 Unnamed: 1 Unnamed: 2 Unnamed: 3
+0  ASG FİYAT LİSTESİ        NaN        NaN        NaN
+1                NaN        NaN        NaN        NaN
+
+==================================================
+
+--- PDF: Axor Fiyat Listesi 2026 .pdf ---
+AXOR ARMS
+FİYAT LİSTESİ
+20
+26
+
+==================================================
+
+--- PDF: BALLISTOL 2026 Fiyat Listesi.pdf ---
+Ballistol Silah Bakım Ürünleri
+Fiyat Listesi
+29.01.2026
+Değerli bayilerimiz, Ballistol ürün gruplarında özellikle E-Ticaret Mağazaları ve Web Site satışlarında perakende satış
+listemizin altında satış yapmamanızı rica ederiz, Perakende satış listemizden düşük fiyatlarda satış yapan bayilerimize ürün
+Table found! First 2 rows:
+['ÜRÜN KODU', None, 'ÜRÜN AÇIKLAMA', 'KUTU ADETİ', 'TOPTAN ADET\nFİYAT', 'PERAKANDE\nSATIŞ FİYATI']
+['21000', '', 'Ballistol Universal Yağ 50 ml (Cam Şişe)', '12 ADET', '155,00 ₺', '210,00 ₺']
+
+==================================================
+
+--- EXCEL: GMAX ÇELİK BİLYE & PLASTİK BB FİYAT LİSTESİ 13.06.2024.xlsx ---
+Columns: []
+Empty DataFrame
+Columns: []
+Index: []
+
+==================================================
+
+--- PDF: H&N FİYAT LİSTESİ 22.08.2025.pdf ---
+H&N FİYAT LİSTESİ
+H&N BARACUDA 4,50MM 10.65GR 400LÜ HAVALI H&N BARACUDA 8 4,51MM 8.44GR 500LÜ HAVALI
+SAÇMA SAÇMA
+Toptan Perakende Koli İçi Adet Toptan Perakende Koli İçi Adet
+8,55 € 12,83 € 50 8,92 € 13,38 € 50
+H&N EXCITE ECON II 4,50MM 500LÜ HAVALI H&N EXCITE HAMMER 4,50MM 500LÜ HAVALI
+SAÇMA SAÇMA
+
+Table found! First 2 rows:
+['H&N BARACUDA 4,50MM 10.65GR 400LÜ HAVALI\nSAÇMA', None, None, 'H&N BARACUDA 8 4,51MM 8.44GR 500LÜ HAVALI\nSAÇMA', None, None]
+['Toptan', 'Perakende', 'Koli İçi Adet', 'Toptan', 'Perakende', 'Koli İçi Adet']
+
+==================================================
+
+--- PDF: HAVALI SAÇMA  FİYAT LİSTESİ 2026.pdf ---
+HUNTHINK B.B VE PARAŞUT SAÇMA
+09,02,2026
+BARKOT MODEL VE AÇIKLAMA ÇAP TOPTAN
+45300 HUNTHİNG 4,5MM BB SAÇMA(300) KOLİDE 50 ADET VAR 4,5 mm 30 TL
+45500 HUNTHİNG 4,5MM BB SAÇMA(500) KOLİDE ADET VAR 4,5 mm 0
+451500 HUNTHİNG 4,5MM BB SAÇMA(1500) KOLİDE 18 ADET VAR 4,5 mm 100 TL
+452500 HUNTHİNG 4,5MM BB S
+Table found! First 2 rows:
+['45300', 'HUNTHİNG 4,5MM BB SAÇMA(300) KOLİDE 50 ADET VAR', '4,5 mm', '30 TL']
+['45500', 'HUNTHİNG 4,5MM BB SAÇMA(500) KOLİDE ADET VAR', '4,5 mm', '0']
+
+==================================================
+
+--- PDF: HUNTHINK  AVCI YELEĞİ  2026 FİYAT LİSTESİE.pdf ---
+HUNTHINK YELEK & PANTOLON FİYAT LİSTESİ
+23.03.2026
+BARKOT MODEL VE AÇIKLAMA BEDEN TOPTAN
+H01HAK HUNTHİNK HAKİ AVCI YELEGİ S-M-L-XL-2XL-3XL 1400 TL
+H02HAK HUNTHİNK HAKİ TURUNCULU AVCI YELEGİ S-M-L-XL-2XL-3XL 1400 TL
+H04CAM HUNTHİNK CAMEL AVCI YELEGİ S-M-L-XL-2XL-3XL 1400 TL
+H05CAM HUNTHİNK CAMEL TURU
+Table found! First 2 rows:
+['', None, None, '23.03.2026']
+['BARKOT', 'MODEL VE AÇIKLAMA', 'BEDEN', 'TOPTAN']
+
+==================================================
+
+--- PDF: HUNTHINK  AVCI YELEĞİ  FİYAT LİSTESİE.pdf ---
+HUNTHINK YELEK & PANTOLON FİYAT LİSTESİ
+09.02.2026
+BARKOT MODEL VE AÇIKLAMA BEDEN TOPTAN
+H01HAK HUNTHİNK HAKİ AVCI YELEGİ S-M-L-XL-2XL-3XL 1400 TL
+H02HAK HUNTHİNK HAKİ TURUNCULU AVCI YELEGİ S-M-L-XL-2XL-3XL 1400 TL
+H04CAM HUNTHİNK CAMEL AVCI YELEGİ S-M-L-XL-2XL-3XL 1400 TL
+H05CAM HUNTHİNK CAMEL TURU
+Table found! First 2 rows:
+['', None, None, '09.02.2026']
+['BARKOT', 'MODEL VE AÇIKLAMA', 'BEDEN', 'TOPTAN']
+
+==================================================
+
+--- PDF: HUNTHINK ÇAKI 2026 FİYAT LİSTESİ.pdf ---
+HUNTHİNK ÇAKI
+Fiyat Listesi
+17.03.2026
+ÜRÜN KODU ÜRÜN AÇIKLAMA KUTU ADETİ TOPTAN ADET FİYAT
+HNT01 HUNTHINK CAKI CL0605 12 465,00 ₺
+HNT02 HUNTHINK CAKI CL0602 12 490,00 ₺
+HNT03 HUNTHINK CAKI CL04004A 12 285,00 ₺
+HNT04 HUNTHINK CAKI CL04004B 12 255,00 ₺
+HNT05 HUNTHINK CAKI CL05032A 12 420,00 ₺
+HNT06 H
+Table found! First 2 rows:
+['ÜRÜN KODU', None, 'ÜRÜN AÇIKLAMA', 'KUTU ADETİ', 'TOPTAN ADET FİYAT']
+['HNT01', '', 'HUNTHINK CAKI CL0605', '12', '465,00 ₺']
+
+==================================================
+
+--- PDF: HUNTHINK ÇİZME FİYAT LİSTESİ 2026.pdf ---
+TOPTAN Fiyat Listesi
+27.01.2026
+BARKOT MODEL VE AÇIKLAMA CİNSİ TOPTAN
+0050- HUNTHINK POLİÜRETAN ÇİZME ÇİZME 970,00 TL
+FİYATLARIMIZA KDV DAHİLDİR…...
+ÇİZMELERİMİZDE 39-40-41-42-43-44-45-46 NUMARALAR İMAL EDİLMEKTEDİR
+Özler Avcılık Doğa Sporları Turizm San. ve Ticaret Ltd. Şti.
+İzdep İzmir Depoları A 
+Table found! First 2 rows:
+['BARKOT', 'MODEL VE AÇIKLAMA', 'CİNSİ', 'TOPTAN']
+
+==================================================
+
+--- PDF: HUNTHINK YAĞMURLUK FİYAT LİSTESİ-1.pdf ---
+HUNTHINK YAĞMURLUK FİYAT LİSTESİ
+1.02.2026
+BARKOT MODEL VE AÇIKLAMA TOPTAN
+HY001 HUNTHİNK BALIKÇI TAKIM YAGMURLUGU 530,00 TL
+HY002 HUNTHİNK BALIKÇI FERMUARLI TAKIM YAGMURLUGU 560,00 TL
+HY003 HUNTHİNK BALIKÇI BOY YAGMURLUK 530,00 TL
+Özler Avcılık Doğa Sporları Turizm San. ve Ticaret Ltd. Şti.
+İzdep İ
+Table found! First 2 rows:
+['HY001', 'HUNTHİNK BALIKÇI TAKIM YAGMURLUGU', '530,00 TL']
+['HY002', 'HUNTHİNK BALIKÇI FERMUARLI TAKIM YAGMURLUGU', '560,00 TL']
+
+==================================================
+
+--- PDF: KRAL ARMS 2026 OTOMATİK  FİYAT LİSTESİ.pdf ---
+KRAL SAVUNMA PAZARLAMA FİYAT LİSTESİ
+1.03.2026
+OTOMATİK AV TÜFEĞİ
+2026
+MODEL NAMLU 2026 TOPTAN
+ÇAP PARAKENDE KDV
+BOYU KDV DAHİL
+DAHİL
+A 12 MODELLERİ
+A 12 AĞAÇ YARI OTOMATİK AV TÜFEĞİ 12 66/71 cm. ₺ 1 3.000,00 ₺ 18.200,00
+A 12 PLASTİK YARI OTOMATİK AV TÜFEĞİ 12 66/71 cm. ₺ 1 2.000,00 ₺ 16.800,00
+A 12
+Table found! First 2 rows:
+['OTOMATİK AV TÜFEĞİ', None, None, None, None]
+['MODEL', 'ÇAP', 'NAMLU\nBOYU', '2026 TOPTAN\nKDV DAHİL', '2026\nPARAKENDE KDV\nDAHİL']
+
+==================================================
+
+--- PDF: KRAL ARMS 2026 P.C.P FİYAT LİSTESİ.pdf ---
+KRAL ARMS P.C.P.HAVALI TÜFEK
+1.03.2026
+2026
+MODEL 2026 TOPTAN
+ÇAP PERAKENDE
+KDV DAHİL
+KDV DAHİL
+KRAL ARMS MORTAL HAVALI HEDEF TÜFEĞİ 4.5/5.5/6.35 mm ₺ 1 9.000,00 ₺ 2 6.600,00
+KRAL ARMS MORTAL X HAVALI HEDEF TÜFEĞİ 4.5/5.5/6.35 mm ₺ 2 1.000,00 ₺ 2 9.400,00
+KRAL ARMS SHADOW (REGÜLATÖRLÜ) HAVALI HEDEF 
+Table found! First 2 rows:
+['KRAL ARMS P.C.P.HAVALI TÜFEK', None, None, None]
+['1.03.2026', None, None, None]
+
+==================================================
+
+--- PDF: KRAL ARMS 2026 S.POZE-ÇİFTE  FİYAT LİSTES.pdf ---
+KRAL SAVUNMA PAZARLAMA FİYAT LİSTESİ
+1.03.2026
+SÜPERPOZE / ÇİFTE AV TÜFEĞİ
+2026
+MODEL NAMLU 2026 TOPTAN
+ÇAP PARAKENDE
+BOYU KDV DAHİL
+KDV DAHİL
+CARACARA MODELLERİ
+CARACARA SÜPER POZE AV TÜFEĞ AĞAÇ BEYAZ / SİYAH ENJEKTÖRLÜ 12/20 66/71cm. ₺ 20.000,00 ₺ 28.000,00
+CARACARA SÜPER POZE AV TÜFEĞ PLASTİK BEY
+Table found! First 2 rows:
+['SÜPERPOZE / ÇİFTE AV TÜFEĞİ', None, None, None, None]
+['', None, None, None, None]
+
+==================================================
+
+--- PDF: KRAL ARMS 2026 ŞARJÖRLÜ  FİYAT LİSTESİ.pdf ---
+KRAL SAVUNMA PAZARLAMA FİYAT LİSTESİ
+1.03.2026
+ŞARJÖRLÜ VE POMPALI AV TÜFEĞİ
+2026
+MODEL NAMLU 2026 TOPTAN
+ÇAP PARAKENDE
+BOYU KDV DAHİL
+KDV DAHİL
+ŞARJÖRLÜ MODELLERİ
+XPS AĞAÇ ŞARJÖRLÜ YARI OTO. AV TÜFEĞİ YENİ MODEL 12 47/51 ₺ 20.000,00 ₺ 28.000,00
+XPS TAKTİKAL ŞARJÖRLÜ YARI OTO.AV TÜFEĞİ SİYAH 12 47/5
+Table found! First 2 rows:
+['ŞARJÖRLÜ VE POMPALI AV TÜFEĞİ', None, None, None, None]
+['MODEL', 'ÇAP', 'NAMLU\nBOYU', '2026 TOPTAN\nKDV DAHİL', '2026\nPARAKENDE\nKDV DAHİL']
+
+==================================================
+
+--- PDF: KRAL ARMS 2026 YAYLI  FİYAT LİSTESİ.pdf ---
+KRAL SAVUNMA PAZARLAMA FİYAT LİSTESİ
+YAYLI HAVALI
+1.03.2026
+2026
+ÜRÜN MODEL 2026 TOPTAN
+ÇAP GÜÇ PARAKENDE
+KODU KDV DAHİL
+KDV DAHİL
+N-01 PLS. KRAL ARMS N-01 PLASTİK HAVALI HEDEF TÜFEĞİ 4.5/5.5/6.35 mm 800 FPS ₺4.000,00 ₺5.600,00
+N-01 ARBOREALKRAL ARMS N-01 ARBOREAL HAVALI HEDEF TÜFEĞİ 4.5/5.5/6.35 mm
+Table found! First 2 rows:
+['KRAL SAVUNMA PAZARLAMA FİYAT LİSTESİ', None, None, None, None, None]
+['YAYLI HAVALI', None, None, None, None, None]
+
+==================================================
+
+--- PDF: KUZEY ARMS  2025 FİYAT LİSTESİ YENİ --1.pdf ---
+İZMİR BATI AVCILIK
+2/4/2025
+KURUSIKI SES TABANCASI FİYAT LİSTESİ
+KABZE BAYİ TOPTAN BAYİ
+MODEL
+CİNSİ FİYATI PAREKENDE
+A100 SİYAH SENTETİK ₺3,000.00 ₺4,200.00
+A100 PARLAK KROM SENTETİK ₺3,400.00 ₺4,760.00
+P122 SİYAH SENTETİK ₺3,000.00 ₺4,200.00
+P122 SİYAH BEYAZ PARÇALI SENTETİK ₺3,400.00 ₺4,760.00
+P12
+Table found! First 2 rows:
+['', 'İZMİR BATI AVCILIK', None, None, None, '']
+['', None, None, None, None, '']
+
+==================================================
+
+--- PDF: MAVORIC TOPTAN FİYAT LİSTESİ.pdf ---
+MAVORIC TOPTAN - PERAKENDE FİYAT LİSTESİ
+11.03.2026
+ÜRÜN
+MODEL VE AÇIKLAMA KASA RENGİ TOPTAN PERAKENDE
+KODU
+200551 MAVORIC 12 KALİBRE AHŞAP MARİN 7+1 POMPALI AV TÜFEĞİ MARİN ₺11.630,00 ₺16.500,00
+200651 MAVORIC 12 KALİBRE AHŞAP SİYAH 7+1 POMPALI AV TÜFEĞİ SİYAH ₺10.450,00 ₺15.000,00
+200751 MAVORIC 1
+Table found! First 2 rows:
+['ÜRÜN\nKODU', 'MODEL VE AÇIKLAMA', 'KASA RENGİ', 'TOPTAN', 'PERAKENDE']
+['200551', 'MAVORIC 12 KALİBRE AHŞAP MARİN 7+1 POMPALI AV TÜFEĞİ', 'MARİN', '₺11.630,00', '₺16.500,00']
+
+==================================================
+
+--- PDF: ODIN ARMS FİYAT LİSTESİ.pdf ---
+NO TEXT FOUND
+
+==================================================
+
+--- PDF: ÖZTAY FİYAT LİSTESİ 11.08.2025.pdf ---
+ÖZTAY FİYAT LİSTESİ
+Sharp Grooved 4,5mm Flat Grooved 4,5mm
+Toptan Perakende Koli İçi Adet Toptan Perakende Koli İçi Adet
+33.00 ₺ 49.50 ₺ 100 38.50 ₺ 57.75 ₺ 100
+Match 4,5mm Doom 4,5mm
+Toptan Perakende Koli İçi Adet Toptan Perakende Koli İçi Adet
+145.00 ₺ 217.50 ₺ 50 110.00 ₺ 165.00 ₺ 50
+Sharp 4,5mm 
+Table found! First 2 rows:
+['', None, None, '', None, None]
+['Sharp Grooved 4,5mm', None, None, 'Flat Grooved 4,5mm', None, None]
+
+==================================================
+
+--- PDF: REXIMEX  PCP  FİYAT LİSTESİ 19.02.2026.pdf ---
+REXIMEX PCP FİYAT LİSTESİ
+19.02.2026
+STOK YENİ PAREKENDE
+AÇIKLAMA ESKİ TOPTAN
+KODU TOPTAN FİYATI
+15.P.THR. REXIMEX THRONE GEN 2 PCP HAVALI TÜFEK 4.5/14 5.5/1 6.35/1 ₺25.900,00 ₺31.600,00 ₺39.500,00
+15.P.THR. REXIMEX THRONE GEN 2 FDE ( SARI ÇÖL ) PCP HAVALI TÜFEK 5.5/2 4.5/2 ₺26.900,00 ₺32.800,00 ₺41
+Table found! First 2 rows:
+['STOK\nKODU', 'AÇIKLAMA', 'ESKİ TOPTAN', 'YENİ\nTOPTAN', 'PAREKENDE\nFİYATI']
+['15.P.THR.', 'REXIMEX THRONE GEN 2 PCP HAVALI TÜFEK 4.5/14 5.5/1 6.35/1', '₺25.900,00', '₺31.600,00', '₺39.500,00']
+
+==================================================
+
+--- PDF: REXİMEX ATEŞLİ FİYAT LİSTESİ 19.02.2026.pdf ---
+REXİMEX ATEŞLİ FİYAT LİSTESİ
+19.02.2026
+TOPTAN PAREKENDE
+AÇIKLAMA
+FİYAT FİYATI
+REXİMEX RS212 SENTETİK SİYAH Y.OTO AV TÜFEGİ ₺13.050,00 ₺16.350,00
+REXİMEX RS212 AHŞAP SİYAH Y.OTO AV TÜFEGİ ₺14.250,00 ₺17.800,00
+REXİMEX RS212 CAMO MAX5 Y.OTO AV TÜFEGİ ₺15.050,00 ₺18.800,00
+REXİMEX RS212 TACTİCAL SİYAH
+Table found! First 2 rows:
+['REXİMEX RS212 AHŞAP SİYAH Y.OTO AV TÜFEGİ', '₺14.250,00', '₺17.800,00']
+['', None, None]
+
+==================================================
+
+--- PDF: REXİMEX YEDEK PARÇA LİSTESİ 19.02.2026.pdf ---
+REXİMEX YEDEK PARÇA FİYAT LİSTESİ
+19.02.2026
+TOPTAN PAREKENDE
+AÇIKLAMA
+FİYATI FİYATI
+REXIMEX THRONE PCP YEDEK TÜP (420cc) ₺6.250,00 ₺8.750,00
+REXIMEX APEX / DAYSTAR / TORMENTO PCP YEDEK TÜP ₺5.470,00 ₺7.660,00
+REXIMEX RP PCP YEDEK TÜP ₺3.440,00 ₺4.820,00
+REXIMEX TÜFEK ŞARJÖRLERİ ₺550,00 ₺770,00
+REXI
+Table found! First 2 rows:
+['AÇIKLAMA', 'TOPTAN\nFİYATI', 'PAREKENDE\nFİYATI']
+['', None, None]
+
+==================================================
+
+--- EXCEL: SABATTI FİYAT LİSTESİ.xlsx ---
+Columns: ['Unnamed: 0']
+  Unnamed: 0
+0        NaN
+1        NaN
+
+==================================================
+
+--- EXCEL: SIG SAUER AIRSOFT FİYAT LİSTESİ 09.12.2025.xlsx ---
+Columns: ['Unnamed: 0']
+  Unnamed: 0
+0        NaN
+1        NaN
+
+==================================================
+
+--- EXCEL: SIG SAUER HAVALI FİYAT LİSTESİ 25.09.2025.xlsx ---
+Columns: ['Unnamed: 0']
+  Unnamed: 0
+0        NaN
+1        NaN
+
+==================================================
+
+--- PDF: SIG SAUER OPTİK FİYAT LİSTESİ 15.04.2025.pdf ---
+SIG SAUER OPTİK FİYAT LİSTESİ
+TÜFEK DÜRBÜNÜ
+ÜRÜN ADI TOPTAN $ PERAKENDE $
+SOBM33001 BUCKMASTERS 3-9X40MM TÜFEK DÜRBÜNÜ 190,17 $ 247,22 $
+SOBM33002 BUCKMASTERS 3-9X50MM TÜFEK DÜRBÜNÜ 211,53 $ 274,99 $
+SOBM43001 BUCKMASTERS 3-12X44MM TÜFEK DÜRBÜNÜ 200,34 $ 260,44 $
+SOBM44001 BUCKMASTERS 4-16X44MM TÜFE
+Table found! First 2 rows:
+['ÜRÜN ADI', 'TOPTAN $', 'PERAKENDE $']
+['SOBM33001 BUCKMASTERS 3-9X40MM TÜFEK DÜRBÜNÜ', '190,17 $', '247,22 $']
+
+==================================================
+
+--- EXCEL: STIL CRIN FİYAT LİSTESİ 25.09.2025.xlsx ---
+Columns: ['Unnamed: 0']
+  Unnamed: 0
+0        NaN
+1        NaN
+
+==================================================
+
+--- PDF: TAKTIKAL  ÜRÜNLER  2026 fiyat listesi.pdf ---
+TAKTIKAL AKSESUAR
+Toptan Fiyat Listesi
+Güncelleme
+tarihi:
+26.01.2026
+Ürün Görseli Ürün Kodu Ürün Adı Toptan Fiyatı
+HUNTHİNK TAKTİKAL KATLANIR GEZ TAKIMI
+OZL33 120,00 ₺
+TAKTİKAL SARJORLU VE AIRSOFT TÜFEKLERE UYUMLU
+HUNTHİNK TAKTİKAL KOLAY SOKULUP TAKILAN KATLANIR GEZ TAKIMI
+OZL33A 175,00 ₺
+TAKTİKAL S
+Table found! First 2 rows:
+['Ürün Görseli', 'Ürün Kodu', 'Ürün Adı', 'Toptan Fiyatı']
+['', 'OZL33', 'HUNTHİNK TAKTİKAL KATLANIR GEZ TAKIMI', '120,00 ₺']
+
+==================================================
+
+--- PDF: TOPOINT FİYAT LİSTESİ 2026.pdf ---
+TOPOINT YAY FİYAT LİSTESİ - 2026
+1 17.03.2026
+BARKOT MODEL VE AÇIKLAMA CİNSİ RENK LB TOPTAN
+TOPOINT YAY
+T109 TOPOINT T1- CARBON MAKARALI YAY YAY CARBON 20-70 LB 16.800,00 ₺
+T110 TOPOINT T1 - SİYAH MAKARALI YAY YAY SİYAH 20-70 LB 16.800,00 ₺
+T101 TOPOINT T1- SİYAH -MAVİ MAKARALI YAY YAY SİYAH-MAVİ 20
+Table found! First 2 rows:
+['TP1000B', 'TOPOINT -TP1000B YAY AKSESURA COMBO SET', 'SET', 'SİYAH', '****', '1.450,00 ₺']
+['TP1550', 'TOPOINT- TP1550 OPTİK YAY NİŞANGAHI', 'NİŞANGAH', 'SİYAH', '****', '840,00 ₺']
+
+==================================================
+
+--- PDF: TYPHOON 2026 FİYAT LİSTESİ.pdf ---
+TYPHOON FİYAT LİSTESİ 2026 TOPTAN PERAKENDE
+TYPHOON F12 SİYAH ₺ 18.750,00 ₺ 24.750,00
+TYPHOON 12 CAL BULPUP SİYAH ₺ 13.250,00 ₺ 16.250,00
+TYPHOON 12 CAL T4 TELESKOPİK OTOMATİK SİYAH ₺ 15.750,00 ₺ 21.250,00
+TYPHOON 12 CAL T4 AHŞAP OTOMATİK SİYAH ₺ 17.000,00 ₺ 22.750,00
+TYPHOON 12 CAL XII PLASTİK ŞARJ
+Table found! First 2 rows:
+['', None, None]
+['TYPHOON FİYAT LİSTESİ 2026', 'TOPTAN', 'PERAKENDE']
+
+==================================================
+
+--- PDF: Upland Kampçılık 2026 Toptan Fiyat Listesi.pdf ---
+UPLAND KAMP ÜRÜNLERİ FİYAT LİSTESİ
+17.03.2026
+ÜRÜN
+MODEL VE AÇIKLAMA TOPTAN PARAKENDE
+KODU
+400020 Upland Crew 2 Çadır - 2 Kişilik ₺760,00 ₺1.050,00
+400021 Upland Crew 3XL Çadır - 4 Kişilik ₺1.040,00 ₺1.440,00
+400022 Upland Brabus 2 Çadır - 2 Kişilik ₺0,00 ₺0,00
+400024 Upland Brabus 4 Çadır - 4 Kişil
+Table found! First 2 rows:
+['ÜRÜN\nKODU', 'MODEL VE AÇIKLAMA', 'TOPTAN', 'PARAKENDE']
+['400020', 'Upland Crew 2 Çadır - 2 Kişilik', '₺760,00', '₺1.050,00']
+
+==================================================
+
+--- PDF: VORMEX  2026 FİYAT LİSTESİ.pdf ---
+24.03.2026
+VORMEX FİYAT LİSTESİ
+ÜRÜN
+ÜRÜN ADI TOPTAN PERAKENDE
+KODU
+VR001 Vormex Coss-1 5598 Red Dot 1*20 2Moa ₺4.125,00 ₺6.100,00
+VR003 Vormex Coss-3 Red Dot ₺4.900,00 ₺7.250,00
+VR004 Vormex Coss-4 Red Dot ₺4.460,00 ₺6.600,00
+VR005 Vormex Coss-5 Red Dot ₺3.050,00 ₺4.600,00
+VR011 Vormex Coss-11 Red 
+Table found! First 2 rows:
+['ÜRÜN\nKODU', 'ÜRÜN ADI', 'TOPTAN', 'PERAKENDE']
+['VR001', 'Vormex Coss-1 5598 Red Dot 1*20 2Moa', '₺4.125,00', '₺6.100,00']
+
+==================================================
+
+
+==================================================
+
+--- PDF: YAF FİYAT LİSTESİ 16.01.2026.pdf ---
+YAF AV FİŞEK FİYAT LİSTESİ
+ÜRÜN ADI CAL. GRAM KUTU İÇİ KOLİ ADET NUMARA ADET FİYAT KOLİ FİYAT
+Y.A.F. Trap-Skeet 12 24 25 250 7,5 - 9,5 ₺17,00 ₺4.250,00
+Y.A.F. F 1 TRAP 12 24 25 250 7,5 ₺19,00 ₺4.750,00
+Y.A.F. 28 Gr. BİOR-POWER 12 28 25 250 3 ile 10 arası ₺18,65 ₺4.662,50
+Y.A.F. 30 Gr. BİOR-POWER 12 
+Table found! First 2 rows:
+['ÜRÜN ADI', 'CAL.', 'GRAM', 'KUTU İÇİ', 'KOLİ ADET', 'NUMARA', 'ADET FİYAT', 'KOLİ FİYAT']
+['Y.A.F. Trap-Skeet', '12', '24', '25', '250', '7,5 - 9,5', '₺17,00', '₺4.250,00']
+
+==================================================
+
