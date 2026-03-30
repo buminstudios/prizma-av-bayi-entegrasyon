@@ -191,3 +191,8 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - Veri okuma ve güncelleme betikleri (`process_*.py`, `extract_*.py`, vb.) `scripts/extraction` klasörüne, temizleme betikleri (`fix_*.py`, `delete_*.py`) `scripts/cleaning` klasörüne ayrıştırıldı. Arşiv niteliğindeki scriptler de `scripts/archive` altına taşındı.
 - CSV log çıktıları, eski Excel yedeği ve ham PDF kaynak klasörleri `data/` altına (raw, backups, logs mantığıyla) toplandı.
 - En güncel veritabanımız olan `prizma-urunler-guncel.xlsx` ile `README.md` ve `devlog.md` çalışma dizini kökünde (root) bırakılarak scriptlerin çalışması sırasında mevcut yolları (CWD) bozulmayacak şekilde kurgulandı.
+
+### 30 March 2026 - 16:50 (Powerdex Fiyat Entegrasyonu)
+- 'powerdex fener.xlsx' okundu. Var olan modeller fiyat/stok EZİLMEDEN atlandı.
+- Olmayan yepyeni model sayısı: 58 sisteme eklendi.
+- Kural: Yeni Liste Fiyatı * 2 (KDV Hariç %20 olarak kaydedildi)
