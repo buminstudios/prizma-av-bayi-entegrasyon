@@ -266,3 +266,7 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ### 30 March 2026 - 18:14 (Mükerrer Silme + Para Birimi Düzeltme)
 - 17 mükerrer ürün silindi (en yüksek fiyatlı tutuldu).
 - GPO, Riton, Vortex: 220 üründe TL -> EUR düzeltildi.
+
+### 30 March 2026 - 18:19 (Hatsan Fiyat Düzeltme)
+- BTS 410 Bronz: 4.5 TL -> 20.790 TL (serideki diğerleriyle eşitlendi).
+- PS Slugger Marine: USD -> TL düzeltildi.
