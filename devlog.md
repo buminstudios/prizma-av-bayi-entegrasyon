@@ -380,3 +380,8 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - **Para birimi:** TL=3431, EUR=1369, USD=195
 - **Hata:** 0 (fiyat/kategori/marka/mükerrer)
 - **Dışa aktarım:** prizma-urunler-guncel-30mart.xlsx
+
+### 30 March 2026 - 19:33 (Winchester Fisek Fiyat Duzeltme)
+- 128 Winchester fisegin fiyati PDF'den 'Tavsiye Edilen Perakende (KDV Dahil)' adet fiyati olarak guncellendi.
+- Onceki fiyatlar hatali formulle hesaplanmisti.
+- Eslesmeyen: 0
