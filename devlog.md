@@ -276,3 +276,12 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 
 ### 30 March 2026 - 18:21 (Masai Mara Fiyat Düzeltme)
 - 41 Masai Mara ürünü PDF'den birebir eşleştirilerek düzeltildi.
+
+### 30 March 2026 - 18:27 (Bey Teknoloji 8 Sayfa Ekleme)
+- Element, Bushnell, Nutrek, DiscoveryOP, Harris, Skywoods, Primos, HorusCam
+- Toplam 723 yeni ürün eklendi. Fiyat: Bayi KDV Hariç * 2 (EUR)
+
+### 30 March 2026 - 18:29 (Bey Teknoloji - Perakende KDV Dahil)
+- 8 eksik sayfa eklendi: Element, Bushnell, Nutrek, DiscoveryOP, Harris, Skywoods, Primos, HorusCam
+- Toplam 790 yeni ürün. Fiyat: Perakende KDV Dahil (EUR)
+- Vortex, Riton, GPO fiyatları da perakende KDV dahil ile güncellendi.
