@@ -285,3 +285,7 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - 8 eksik sayfa eklendi: Element, Bushnell, Nutrek, DiscoveryOP, Harris, Skywoods, Primos, HorusCam
 - Toplam 790 yeni ürün. Fiyat: Perakende KDV Dahil (EUR)
 - Vortex, Riton, GPO fiyatları da perakende KDV dahil ile güncellendi.
+
+### 30 March 2026 - 18:31 (Winchester Fişek Düzeltme)
+- 127 Winchester fişek: kategori AV FİŞEKLERİ + fiyat düzeltildi.
+- Formül: Toptan KDV Hariç * 1.35 / 1.20
