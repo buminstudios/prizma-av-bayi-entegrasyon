@@ -314,3 +314,7 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - Maestro: 44 av tüfeği + 5 aksesuar 'AV TÜFEKLERİ -> YERLİ AV TÜFEKLERİ' kategorisine taşındı. Marka '2026' -> 'Maestro'.
 - ATG (5), KNT (4), Pro Light (9), Bellatrix (3), Gazi Reis (4): 25 av tüfeği kategorize edildi. Marka '2025' -> kendi marka adları.
 - Jet: 10 fişek 'AV FİŞEKLERİ' kategorisine taşındı. Marka '05012026_*' -> 'Jet'.
+
+### 30 March 2026 - 19:10 (PDF Dosya Adı Markalı Çöp Satırlar Silme)
+- 24 adet markası PDF dosya adı olan bozuk satır silindi (20261PERFIYLISTESI.PDF).
+- Kalan: 5158
