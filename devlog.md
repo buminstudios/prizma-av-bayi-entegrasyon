@@ -289,3 +289,6 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ### 30 March 2026 - 18:31 (Winchester Fişek Düzeltme)
 - 127 Winchester fişek: kategori AV FİŞEKLERİ + fiyat düzeltildi.
 - Formül: Toptan KDV Hariç * 1.35 / 1.20
+
+### 30 March 2026 - 18:34 (Retay Kurusıkı Düzeltme)
+- 14 Retay kurusıkı tabanca: kategori KURUSIKI TABANCALAR + fiyat düzeltildi.
