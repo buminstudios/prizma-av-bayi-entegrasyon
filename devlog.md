@@ -329,3 +329,8 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
   - Hunthink havalı: Atıcılık & Airsoft -> Havalı
 - 1 çöp satır silindi.
 - Kalan 'Yeni Gelen PDF': 0 | Toplam: 5157
+
+### 30 March 2026 - 19:18 (Umarex Çakı/Bıçak/Fener Silme)
+- Umarex markalı 111 adet çakı, bıçak, fener ve kamp ürünü silindi.
+- Airsoft, havalı tabanca/tüfek ve aksesuarları korundu.
+- Kalan: 5046
