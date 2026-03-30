@@ -240,3 +240,9 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - Serengeti, Capra, Cheddite, Dağlıoğlu, Hamle, Kariyer, Masai Mara, Odin, Retay
 - Toplam 112 ürün: Kategoriler düzeltildi + PDF listelerinden fiyatlar yeniden hesaplandı.
 - Formül: Toptan (KDV Hariç) * 1.35 / 1.20
+
+### 30 March 2026 - 18:00 (Sarsılmaz Fiyat Güncelleme)
+- Sarsılmaz 1.05.2026 tarihli güncel fiyat listesi uygulandı.
+- 22 ürün güncellendi, 10 yeni ürün eklendi.
+- Drone Killer DK12 serisi yeni giriş.
+- Formül: Toptan (KDV Hariç) * 1.35 / 1.20
