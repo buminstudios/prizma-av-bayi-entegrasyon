@@ -270,3 +270,9 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ### 30 March 2026 - 18:19 (Hatsan Fiyat Düzeltme)
 - BTS 410 Bronz: 4.5 TL -> 20.790 TL (serideki diğerleriyle eşitlendi).
 - PS Slugger Marine: USD -> TL düzeltildi.
+
+### 30 March 2026 - 18:21 (Masai Mara Fiyat Düzeltme)
+- 41 Masai Mara ürünü PDF'den birebir eşleştirilerek düzeltildi.
+
+### 30 March 2026 - 18:21 (Masai Mara Fiyat Düzeltme)
+- 41 Masai Mara ürünü PDF'den birebir eşleştirilerek düzeltildi.
