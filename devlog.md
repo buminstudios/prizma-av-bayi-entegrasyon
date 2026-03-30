@@ -309,3 +309,8 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - HUNTHINK: 105 ürün silindi (tüm fiyatlar hatalı).
 - DAĞLIOĞLU: 22 bozuk PDF kopyası silindi (FD63A, FD-63, FD-20, FD-47 kısa isimli duplikatlar + ₺ fiyat satırları). Mevcut 25 doğru Dağlıoğlu av tüfeği korundu.
 - Toplam silinen: 150 | Kalan: 5182
+
+### 30 March 2026 - 19:09 (Maestro + Av Tüfeği Kategori Düzeltme)
+- Maestro: 44 av tüfeği + 5 aksesuar 'AV TÜFEKLERİ -> YERLİ AV TÜFEKLERİ' kategorisine taşındı. Marka '2026' -> 'Maestro'.
+- ATG (5), KNT (4), Pro Light (9), Bellatrix (3), Gazi Reis (4): 25 av tüfeği kategorize edildi. Marka '2025' -> kendi marka adları.
+- Jet: 10 fişek 'AV FİŞEKLERİ' kategorisine taşındı. Marka '05012026_*' -> 'Jet'.
