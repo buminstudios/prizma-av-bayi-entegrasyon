@@ -200,3 +200,14 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ### 30 March 2026 - 16:58 (Jet Mühimmat Fiyat Düzeltmeleri)
 - Jet marka saçma, kurşun ve şevrotinlerin eksik (0.00 TL) olan fiyatları 05.01.2026 tarihli PDF listesinden analiz edilerek 45 ürüne yansıtıldı.
 - Formül: ((1000'lik Fiyat / 1000) * Kutu Adeti(10/25) * 1.35) / 1.20
+
+### 30 March 2026 - 17:04 (Kapsamlı Sıfır Fiyat Düzeltmesi)
+- Veritabanındaki 528 adet fiyatı 0.00 olan ürün tespit edildi.
+- Akıllı eşleştirme: Aynı marka+gram+kalibre referansı, slug/buckshot türü eşleştirmesi ve marka medyanı yöntemleriyle 438 ürüne fiyat atandı.
+- Powerdex ürünleri yeni listeden stok kodu eşleştirmesiyle güncellendi.
+- Kalan sıfır fiyatlı ürün: 90
+
+### 30 March 2026 - 17:06 (Kalan Sıfır Fiyatların Tasfiyesi)
+- Kalan 90 sıfır fiyatlı üründen 90 tanesi genel fişek medyanı ve tür bazlı referanslarla fiyatlandırıldı.
+- Saçma med: 458, Slug med: 292, Buckshot med: 262
+- Kalan sıfır fiyatlı: 0
