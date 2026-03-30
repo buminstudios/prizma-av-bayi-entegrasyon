@@ -318,3 +318,14 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ### 30 March 2026 - 19:10 (PDF Dosya Adı Markalı Çöp Satırlar Silme)
 - 24 adet markası PDF dosya adı olan bozuk satır silindi (20261PERFIYLISTESI.PDF).
 - Kalan: 5158
+
+### 30 March 2026 - 19:14 (Kapsamlı Kategorizasyon - Yeni Gelen PDF Temizliği)
+- 'Yeni Gelen PDF Ürünleri' kategorisindeki 188 ürün doğru kategorilerine taşındı:
+  - Ballistol: BAKIM & TEMİZLİK
+  - Bornaghi, Cheddite, B&P, Mesco: AV FİŞEKLERİ
+  - Kariyer, Air Control, Antalya, Hunt Group, Odin: AV TÜFEKLERİ
+  - TruGlo: OPTİK & ELEKTRONİK
+  - Hunthink taktik: AV TÜFEKLERİ -> Taktik Aksesuarlar
+  - Hunthink havalı: Atıcılık & Airsoft -> Havalı
+- 1 çöp satır silindi.
+- Kalan 'Yeni Gelen PDF': 0 | Toplam: 5157
