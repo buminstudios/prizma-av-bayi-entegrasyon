@@ -250,3 +250,15 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ### 30 March 2026 - 18:06 (Powerdex Fiyat Düzeltme - Saf x2)
 - Powerdex fiyatları düzeltildi: XLS fiyatı * 2, başka hesaplama yok.
 - 81 ürün güncellendi. Para birimi: USD
+
+### 30 March 2026 - 18:10 (Dağlıoğlu + YNG Fiyat Düzeltme)
+- Dağlıoğlu: 25 ürün PDF listesinden toptan * 1.35 / 1.20 ile düzeltildi.
+- YNG: 12 ürün PDF listesinden toptan * 1.35 / 1.20 ile düzeltildi.
+
+### 30 March 2026 - 18:10 (Dağlıoğlu+YNG Fiyat v2)
+- Dağlıoğlu: 25 ürün tekil eşleştirme ile düzeltildi.
+- YNG: 12 ürün tekil eşleştirme ile düzeltildi.
+
+### 30 March 2026 - 18:12 (Dağlıoğlu+YNG v3 - tekil eşleştirme)
+- Dağlıoğlu: 25 ürün birebir eşleştirildi.
+- YNG: 12 ürün birebir eşleştirildi.
