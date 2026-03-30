@@ -235,3 +235,8 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - B&P: 48 fişek, 1000'lik KDV dahil PDF baz alınarak kutu fiyatına düşürüldü.
 - Winchester: 52 fişek, adet toptan KDV hariç PDF baz alınarak düzeltildi.
 - YNG: 12 ürün AV TÜFEKLERİ kategorisine taşındı.
+
+### 30 March 2026 - 17:53 (9 Marka Toplu Düzeltme)
+- Serengeti, Capra, Cheddite, Dağlıoğlu, Hamle, Kariyer, Masai Mara, Odin, Retay
+- Toplam 112 ürün: Kategoriler düzeltildi + PDF listelerinden fiyatlar yeniden hesaplandı.
+- Formül: Toptan (KDV Hariç) * 1.35 / 1.20
