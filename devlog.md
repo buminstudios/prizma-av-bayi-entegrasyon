@@ -393,3 +393,6 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ### 30 March 2026 - 19:39 (Winchester Kutu Fiyat Düzeltme v2)
 - 128 Winchester fişek: adet fiyatı x kutu miktarı = kutu fiyatı.
 - Kural: tek kurşun/şevrotin = 10 adet/kutu, fişek/saçma = 25 adet/kutu.
+
+### 30 March 2026 - 19:46 (Winchester KDV Düzeltme)
+- 128 Winchester fişek: (perakende adet / 1.20) x kutu = KDV hariç kutu fiyatı.
