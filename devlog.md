@@ -220,3 +220,18 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ### 30 March 2026 - 17:44 (Bornaghi Fişek Fiyat Düzeltmesi)
 - BORNAGHI-FISEK FIYAT LISTESI 25-3.pdf baz alınarak 17 ürünün fiyatı düzeltildi.
 - Formül: Toptan Adet (KDV Hariç) * Kutu Adeti * 1.35 / 1.20
+
+### 30 March 2026 - 17:47 (B&P, Winchester, YNG Toplu Düzeltme)
+- B&P: 47 fişek fiyatı 1000'lik koli PDF listesinden düzeltildi (KDV dahil -> hariç + %35 kar).
+- Winchester: 52 fişek fiyatı adet bazlı toptan PDF listesinden düzeltildi. Kategorileri 'AV FİŞEKLERİ' yapıldı.
+- YNG: 12 ürünün kategorisi 'AV TÜFEKLERİ -> YERLİ AV TÜFEKLERİ' olarak düzeltildi.
+
+### 30 March 2026 - 17:49 (B&P + Winchester + YNG Toplu Düzeltme v2)
+- B&P: 48 fişek, 1000'lik KDV dahil PDF baz alınarak kutu fiyatına düşürüldü.
+- Winchester: 52 fişek, adet toptan KDV hariç PDF baz alınarak düzeltildi.
+- YNG: 12 ürün AV TÜFEKLERİ kategorisine taşındı.
+
+### 30 March 2026 - 17:50 (B&P + Winchester + YNG Toplu Düzeltme v2)
+- B&P: 48 fişek, 1000'lik KDV dahil PDF baz alınarak kutu fiyatına düşürüldü.
+- Winchester: 52 fişek, adet toptan KDV hariç PDF baz alınarak düzeltildi.
+- YNG: 12 ürün AV TÜFEKLERİ kategorisine taşındı.
