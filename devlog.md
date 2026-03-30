@@ -385,3 +385,11 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - 128 Winchester fisegin fiyati PDF'den 'Tavsiye Edilen Perakende (KDV Dahil)' adet fiyati olarak guncellendi.
 - Onceki fiyatlar hatali formulle hesaplanmisti.
 - Eslesmeyen: 0
+
+### 30 March 2026 - 19:38 (Winchester Fişek Kutu Fiyatı Düzeltme)
+- 128 Winchester fişeğin fiyatı: adet x kutu miktarı = kutu fiyatı olarak güncellendi.
+- Kutu miktarları: standart=25, slug/sabot=5, buckshot=10.
+
+### 30 March 2026 - 19:39 (Winchester Kutu Fiyat Düzeltme v2)
+- 128 Winchester fişek: adet fiyatı x kutu miktarı = kutu fiyatı.
+- Kural: tek kurşun/şevrotin = 10 adet/kutu, fişek/saçma = 25 adet/kutu.
