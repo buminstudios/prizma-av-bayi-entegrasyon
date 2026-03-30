@@ -246,3 +246,7 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - 22 ürün güncellendi, 10 yeni ürün eklendi.
 - Drone Killer DK12 serisi yeni giriş.
 - Formül: Toptan (KDV Hariç) * 1.35 / 1.20
+
+### 30 March 2026 - 18:06 (Powerdex Fiyat Düzeltme - Saf x2)
+- Powerdex fiyatları düzeltildi: XLS fiyatı * 2, başka hesaplama yok.
+- 81 ürün güncellendi. Para birimi: USD
