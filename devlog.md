@@ -379,20 +379,10 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
   - PCP TÜFEKLER: 1
 - **Para birimi:** TL=3431, EUR=1369, USD=195
 - **Hata:** 0 (fiyat/kategori/marka/mükerrer)
-- **Dışa aktarım:** prizma-urunler-guncel-30mart.xlsx
 
-### 30 March 2026 - 19:33 (Winchester Fisek Fiyat Duzeltme)
-- 128 Winchester fisegin fiyati PDF'den 'Tavsiye Edilen Perakende (KDV Dahil)' adet fiyati olarak guncellendi.
-- Onceki fiyatlar hatali formulle hesaplanmisti.
-- Eslesmeyen: 0
+### 30 March 2026 - 19:46 (Winchester Fişek Fiyat Düzeltme)
+- 128 Winchester fişeğin fiyatı PDF'den düzeltildi.
+- **Formül:** (Tavsiye Edilen Perakende Adet Fiyatı / 1.20) × kutu miktarı = KDV hariç kutu fiyatı.
+- **Kutu kuralları:** tek kurşun/şevrotin = 10 adet/kutu, fişek/saçma = 25 adet/kutu.
+- Önceki fiyatlar hatalı formülle (x112.5) hesaplanmıştı.
 
-### 30 March 2026 - 19:38 (Winchester Fişek Kutu Fiyatı Düzeltme)
-- 128 Winchester fişeğin fiyatı: adet x kutu miktarı = kutu fiyatı olarak güncellendi.
-- Kutu miktarları: standart=25, slug/sabot=5, buckshot=10.
-
-### 30 March 2026 - 19:39 (Winchester Kutu Fiyat Düzeltme v2)
-- 128 Winchester fişek: adet fiyatı x kutu miktarı = kutu fiyatı.
-- Kural: tek kurşun/şevrotin = 10 adet/kutu, fişek/saçma = 25 adet/kutu.
-
-### 30 March 2026 - 19:46 (Winchester KDV Düzeltme)
-- 128 Winchester fişek: (perakende adet / 1.20) x kutu = KDV hariç kutu fiyatı.
