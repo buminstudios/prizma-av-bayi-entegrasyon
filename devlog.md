@@ -216,3 +216,7 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - UMAREX FİYAT LİSTESİ 30.03.pdf işlendi. PSF (Perakende) EUR fiyatları baz alındı (KDV Hariç).
 - Güncellenen mevcut ürün: 66, Yeni eklenen: 354
 - Para birimi: EUR
+
+### 30 March 2026 - 17:44 (Bornaghi Fişek Fiyat Düzeltmesi)
+- BORNAGHI-FISEK FIYAT LISTESI 25-3.pdf baz alınarak 17 ürünün fiyatı düzeltildi.
+- Formül: Toptan Adet (KDV Hariç) * Kutu Adeti * 1.35 / 1.20
