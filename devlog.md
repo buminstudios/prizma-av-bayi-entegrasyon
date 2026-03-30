@@ -262,3 +262,7 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 ### 30 March 2026 - 18:12 (Dağlıoğlu+YNG v3 - tekil eşleştirme)
 - Dağlıoğlu: 25 ürün birebir eşleştirildi.
 - YNG: 12 ürün birebir eşleştirildi.
+
+### 30 March 2026 - 18:14 (Mükerrer Silme + Para Birimi Düzeltme)
+- 17 mükerrer ürün silindi (en yüksek fiyatlı tutuldu).
+- GPO, Riton, Vortex: 220 üründe TL -> EUR düzeltildi.
