@@ -196,3 +196,7 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - 'powerdex fener.xlsx' okundu. Var olan modeller fiyat/stok EZİLMEDEN atlandı.
 - Olmayan yepyeni model sayısı: 58 sisteme eklendi.
 - Kural: Yeni Liste Fiyatı * 2 (KDV Hariç %20 olarak kaydedildi)
+
+### 30 March 2026 - 16:58 (Jet Mühimmat Fiyat Düzeltmeleri)
+- Jet marka saçma, kurşun ve şevrotinlerin eksik (0.00 TL) olan fiyatları 05.01.2026 tarihli PDF listesinden analiz edilerek 45 ürüne yansıtıldı.
+- Formül: ((1000'lik Fiyat / 1000) * Kutu Adeti(10/25) * 1.35) / 1.20
