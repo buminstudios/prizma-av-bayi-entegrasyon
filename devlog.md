@@ -102,3 +102,92 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - Orijinal İdeasoft tablosunda yer alan aynı isimli ancak farklı kodlarla çoğaltılmış kopya satırlar tespit edildi (Örn: Hatsan Blitz 4 kez girilmiş).
 - Varyasyonları korumak adına sadece **birebir aynı metin ve karakter dizilimine sahip** kayıtlar hedeflendi.
 - Toplamda tam **69 adet gereksiz kopya satır** silinip katalog tekrar 4080 tekil ürüne normalize edildi!
+
+### 30 March 2026 - 13:02 (ASG Fiyat Listesi Eklendi)
+- Ürünler ve fiyatlar klasöründeki ASG Fiyat listesinden ürünler alındı. Perakende Euro bazlı fiyatlar KDV hariç şekilde hesaplanıp Excel'e yazıldı.
+- Birebir Eşleşen: 0, Multi/Varyasyon Dağıtılan: 0, Yeni Eklenen: 0
+
+### 30 March 2026 - 13:05 (ASG Fiyat Listesi Eklendi)
+- Ürünler ve fiyatlar klasöründeki ASG Fiyat listesinden ürünler işlendi.
+- Perakende fiyat üzerinden KDV hariç euro fiyatlar girildi.
+- Birebir Eşleşen: 10, Multi/Varyasyon: 8, Eklenen: 252
+
+### 30 March 2026 - 13:17 (ASG Fiyat Listesi Eklendi)
+- Ürünler ve fiyatlar klasöründeki ASG Fiyat listesinden ürünler işlendi.
+- Perakende fiyat üzerinden KDV hariç euro fiyatlar girildi.
+- Birebir Eşleşen: 21, Multi/Varyasyon: 4, Eklenen: 241
+
+### 30 March 2026 - 13:21 (Diğer Eksik Excel Fiyatları Düzeltildi)
+- Sig Sauer Havalı, Sig Sauer Airsoft ve Stil Crin Fiyat Listeleri işlendi.
+- Prefix sorunu çözülerek eşleşmeler artırıldı.
+- Toplam Birebir: 0, Multi: 0, Yeni Eklenen: 45
+
+### 30 March 2026 - 13:28 (Hatsan Marka Düzeltmesi)
+- İsmi 'Hatsan' içerdiği halde markası 'Hatsan' olmayan (boş veya hatalı) 90 ürünün markası 'Hatsan' olarak güncellendi.
+
+### 30 March 2026 - 13:29 (Boş Marka Hücreleri Düzeltmesi)
+- Hatsan dışındaki diğer 263 adet popüler markalı (Ekol, ASG, Zuber, vb.) ürünün boş kalan 'brand' sütunları ürün adlarına göre otomatik dolduruldu.
+
+### 30 March 2026 - 13:30 (KWC, Rubino, Cybergun Marka Düzeltmesi)
+- İsmi içerisinde Rubino, Cybergun, KWC, Niksan, Kral, Sig Sauer ve Smith&Wesson geçen fakat markası boş olan 88 ürünün markası güncellendi.
+
+### 30 March 2026 - 13:34 (RC Fişek Görsel Fiyatları)
+- Yüklenen görseldeki RC marka fişek fiyatları (adet bazlı toptan) işlendi.
+- Formül: (Toptan * Kutu * 1.35) / 1.20 kullanıldı. Saçmalar 25, Şevrotin/Kurşun 10 kutu adetiyle çarpıldı.
+- Birebir Eşleşen: 1, Multi/Varyasyon Dağıtılan: 0, Yeni Eklenen: 22
+
+### 30 March 2026 - 13:39 (YAF Mükerrer Kayıt Temizliği)
+- Y.A.F. formatındaki kopya liste ile ana YAF listesi karşılaştırıldı.
+- Zaten YAF listesinde mevcut olan 32 adet 'Y.A.F.' kaydı silindi.
+- Eksik olduğu tespit edilen 13 adet kayıt ise YAF adına dönüştürülerek korundu.
+
+### 30 March 2026 - 14:12 (Hatsan Havalı Ürünleri Düzeltmesi)
+- Hatsan havalı tüfekleri ve tabancaları (Veloxs dahil) için marka 'Hatsan' yapıldı.
+- Bu ürünlerin kategorileri 'Av Tüfekleri' vb. yerine 'Atıcılık & Airsoft -> Havalı -> Havalı Tüfekler/Tabancalar' olarak düzeltildi.
+- Toplam güncellenen ürün: 105
+
+### 30 March 2026 - 14:15 (Escort/Hatsan Av Tüfekleri Marka Düzeltmesi)
+- İçinde Escort, Vision SLG, Bultac/Bultak geçen 53 ürünün markası 'Hatsan' olarak güncellendi.
+
+### 30 March 2026 - 14:18 (Hatsan Havalı Kundakları Düzeltmesi)
+- Havalı tüfekler için listelenen 19 adet kundağın (MOD serisi vs.) markaları 'Hatsan' yapıldı.
+- Kategorileri 'Av Tüfekleri' vb. yerine 'Atıcılık & Airsoft -> Havalı -> Havalı Tüfekler' olarak taşındı.
+
+### 30 March 2026 - 14:20 (Kral Arms XPS Av Tüfekleri Kategori Düzeltmesi)
+- Yanlış kategoride bulunan 5 adet XPS şarjörlü av tüfeğinin kategorisi 'AV TÜFEKLERİ -> YERLİ AV TÜFEKLERİ -> Şarjörlü Av Tüfekleri' olarak taşındı.
+
+### 30 March 2026 - 14:34 (Kuzey Kurusıkı Tabancalar Düzeltmesi)
+- 22 adet Kuzey marka kuru sıkı ürün tespit edildi ve düzeltildi.
+- Marka 'Kuzey', kategori 'Kuzey Kurusıkı Tabancalar' olarak atandı.
+- Ürün isimlerine 'KUZEY' öneki eklendi.
+- Modeller: A100, P122, S320, S900, F92, GN19, 911 + şarjör/aksesuar
+
+### 30 March 2026 - 14:36 (Markası Boş Ürünler Silindi)
+- 896 adet markası boş (nan) ürün veritabanından silindi.
+- Silme öncesi: 4341 ürün
+- Silme sonrası: 3445 ürün
+
+### 30 March 2026 - 14:42 (Riton Optics Tüp Çapı Düzeltmesi)
+- Riton 5 Conquer 5-25x56 ve 4-28x56 modelleri: 30mm → 34mm olarak düzeltildi.
+- 4 ürün güncellendi.
+
+### 30 March 2026 - 15:58 (GAMO ve BPS Fiyat Listeleri Eklendi)
+- Görsel olarak iletilen GAMO fiyat listesi (EUR ve TL) ve BPS Fişek fiyat listesi işlendi.
+- BPS fiyatları 1000'li koli üzerinden hesaplanarak, toptan kutu fiyatı bulundu: `(Toptan_1000 / 1000) * Kutu_içi`. 
+- Her iki markaya da standart perakende çarpanımız `(Fiyat * 1.35) / 1.20` uygulandı.
+- Toplam Güncellenen (Eşleşen): 26
+- Toplam Yeni Eklenen: 17
+
+### 30 March 2026 - 16:15 (44 PDF Toplu İşleme)
+- 30 mart fiyatlar klasöründeki 44 PDF analiz edildi ve otonom bir heuristic (sezişsel) metin/tablo okuma algoritması yazıldı.
+- Toplam 963 potansiyel ürün liste içeriğinden başarıyla süzüldü.
+- Eşleşme (Deduplication) sınır yüzdesi %90 olarak uygulandı.
+- Mükerrer olan 243 satır ana sistemdeki Excel fiyatlarıyla (%35 kâr marjı uygulanarak) cell update ile ezildi.
+- Sistemde hiç bulunmayan yepyeni 720 ürün satırı 'Yeni Gelen PDF Ürünleri' ana kategorisinde en alta eklendi.
+- Olası kontrol için ham veri gecici_pdf_listesi.csv olarak kaydedildi.
+
+### 30 March 2026 - 16:30 (Dosya Hiyerarşisi Düzenlemesi)
+- Ana dizindeki karışıklığı gidermek adına tüm proje dosyaları revize edildi ve klasörleme sistemi getirildi.
+- Veri okuma ve güncelleme betikleri (`process_*.py`, `extract_*.py`, vb.) `scripts/extraction` klasörüne, temizleme betikleri (`fix_*.py`, `delete_*.py`) `scripts/cleaning` klasörüne ayrıştırıldı. Arşiv niteliğindeki scriptler de `scripts/archive` altına taşındı.
+- CSV log çıktıları, eski Excel yedeği ve ham PDF kaynak klasörleri `data/` altına (raw, backups, logs mantığıyla) toplandı.
+- En güncel veritabanımız olan `prizma-urunler-guncel.xlsx` ile `README.md` ve `devlog.md` çalışma dizini kökünde (root) bırakılarak scriptlerin çalışması sırasında mevcut yolları (CWD) bozulmayacak şekilde kurgulandı.
