@@ -211,3 +211,8 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - Kalan 90 sıfır fiyatlı üründen 90 tanesi genel fişek medyanı ve tür bazlı referanslarla fiyatlandırıldı.
 - Saçma med: 458, Slug med: 292, Buckshot med: 262
 - Kalan sıfır fiyatlı: 0
+
+### 30 March 2026 - 17:39 (Umarex Fiyat Listesi Güncelleme)
+- UMAREX FİYAT LİSTESİ 30.03.pdf işlendi. PSF (Perakende) EUR fiyatları baz alındı (KDV Hariç).
+- Güncellenen mevcut ürün: 66, Yeni eklenen: 354
+- Para birimi: EUR
