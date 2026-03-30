@@ -292,3 +292,20 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 
 ### 30 March 2026 - 18:34 (Retay Kurusıkı Düzeltme)
 - 14 Retay kurusıkı tabanca: kategori KURUSIKI TABANCALAR + fiyat düzeltildi.
+
+### 30 March 2026 - 18:36 (Rubino/Serpent Düzeltme)
+- 2 ürün Atıcılık & Airsoft / Havalı Tabancalar kategorisine taşındı.
+- 1 mükerrer Serpent silindi.
+- Düşük fiyatlı Rubino ürünleri düzeltildi.
+
+### 30 March 2026 - 18:53 (Rubino Havalı Tabanca Düzeltme)
+- Yeni gelen PDF'deki Rubino/Serpent ürünleri mevcut ürünlerle kıyaslandı.
+- 1 mükerrer silindi: SERPENT - S 4.5 MM HAVALI TABANCA DİPÇİKLİ (mevcut Niksan Serpent-S ile çakışıyordu).
+- 2 yeni Rubino şarjör (CP + GL) 'Atıcılık & Airsoft -> Havalı -> Havalı Tabancalar' olarak kategorize edildi.
+- Tüm Rubino ürünlerinin markası 'Rubino' olarak standardize edildi.
+
+### 30 March 2026 - 18:56 (UPLAND + Dağlıoğlu Kopya + HUNTHINK Toplu Silme)
+- UPLAND: 23 ürün silindi (kamp/outdoor - sisteme ait değil).
+- HUNTHINK: 105 ürün silindi (tüm fiyatlar hatalı).
+- DAĞLIOĞLU: 22 bozuk PDF kopyası silindi (FD63A, FD-63, FD-20, FD-47 kısa isimli duplikatlar + ₺ fiyat satırları). Mevcut 25 doğru Dağlıoğlu av tüfeği korundu.
+- Toplam silinen: 150 | Kalan: 5182
