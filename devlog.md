@@ -334,3 +334,12 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - Umarex markalı 111 adet çakı, bıçak, fener ve kamp ürünü silindi.
 - Airsoft, havalı tabanca/tüfek ve aksesuarları korundu.
 - Kalan: 5046
+
+### 30 March 2026 - 19:23 (Kapsamlı Veritabanı Sağlık Kontrolü)
+- Toplam 51 hatalı kayıt silindi:
+  - Hunthink hatalı fiyat (50K+ TL): BB saçma 500K olamaz
+  - PDF parse hatası (1.13 TL): Bornaghi, B&P, Cheddite, Ballistol, Mesco
+  - Browning milyon TL: EUR/TL dönüşüm hatası (2.9M-3.9M TL)
+  - Mesco/Hunthink çok düşük/yüksek fiyatlar
+  - Bornaghi çöp isimli satırlar
+- Son durum: 4995 ürün, 0 hata.
