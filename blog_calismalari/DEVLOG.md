@@ -66,6 +66,7 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 
 #### Ekstra Tamamlanan RAW Dosyalar
 - [x] Av Malzemeleri
+- [x] Av Mevsimi Rehberi
 
 ---
 
