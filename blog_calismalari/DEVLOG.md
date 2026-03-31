@@ -70,6 +70,9 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 - [x] Avcı Bıçakları & Çakı Rehberi
 - [x] Avcı Giyim & Ayakkabı
 - [x] Avcı Çantaları & Kamp Sırt Çantası
+- [x] Av Köpeği Ekipmanları Rehberi
+- [x] Avcılar İçin Termal Kamera & Gece Görüş Cihazı
+- [x] Avcılık İçin En Faydalı Kamp Malzemeleri
 
 ---
 
