@@ -73,6 +73,11 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 - [x] Av Köpeği Ekipmanları Rehberi
 - [x] Avcılar İçin Termal Kamera & Gece Görüş Cihazı
 - [x] Avcılık İçin En Faydalı Kamp Malzemeleri
+- [x] M.K.E Tabanca Mermileri
+- [x] ÖZKURSAN TABANCA MERMİLERİ
+- [x] SELLIER BELLOT TABANCA VE YİVLİ TÜFEK MERMİLERİ
+- [x] STERLİNG TABANCA MERMİLERİ
+- [x] TURAN TABANCA VE YİVLİ TÜFEK MERMİLERİ
 
 ---
 
