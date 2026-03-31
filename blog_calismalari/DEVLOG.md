@@ -43,11 +43,11 @@ Bu belge, Prizma Av Blog SEO Revizyon projesinde atılan adımları kronolojik o
 Bu konularda hiçbir rakibin içeriği yok, Google'da ciddi trafik çekme potansiyeli var:
 
 - [x] Av Tüfeği Nasıl Alınır? Başlangıç Rehberi
-- [ ] Airsoft vs Havalı Tabanca Farkları
-- [ ] Hatsan PCP Tüfek Modelleri Karşılaştırması
-- [ ] 12 Kalibre Av Fişeği Seçim Rehberi (Gram Bazında)
-- [ ] Atış Poligonu Eğitim Rehberi
-- [ ] Yivsiz Silah Ruhsat Evrakları 2026 (Mevcut avcılık yasaları dosyasından genişletilecek)
+- [x] Airsoft vs Havalı Tabanca Farkları
+- [x] Hatsan PCP Tüfek Modelleri Karşılaştırması
+- [x] 12 Kalibre Av Fişeği Seçim Rehberi (Gram Bazında)
+- [x] Atış Poligonu Eğitim Rehberi
+- [x] Yivsiz Silah Ruhsat Evrakları 2026 (Mevcut avcılık yasaları dosyasından genişletilecek)
 
 ### 🟡 RAW DOSYALARDAN SEO OPTİMİZE EDİLECEK BLOGLAR
 Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
