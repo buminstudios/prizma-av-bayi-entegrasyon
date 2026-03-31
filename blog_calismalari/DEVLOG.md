@@ -86,6 +86,10 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 - [x] DPM Systems icra Yayı
 - [x] HOLOSUN TABANCA VE TÜFEK RED DOTLARINDA EN UYGUN FİYAT
 - [x] GÖK BOMBASI & HAVAİ FİŞEK
+- [x] SWORD TAKTİKAL BOT
+- [x] TABANCA KILIFI (Kydex, Polimer, Deri İç/Dış Taşıma)
+- [x] SHOT TIMER CED 7000
+- [x] SİS BOMBASI & İÇ/DIŞ MEKAN VOLKAN
 
 ---
 
