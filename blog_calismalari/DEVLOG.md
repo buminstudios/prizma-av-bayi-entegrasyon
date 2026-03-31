@@ -64,6 +64,9 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 - [x] Outdoor + Çadır, Masa, Aydınlatma, Ocak, Ekipmanlar
 - [ ] ... ve 60+ diğer dosyalar (sıra kullanıcı tercihine göre belirlenecek)
 
+#### Ekstra Tamamlanan RAW Dosyalar
+- [x] Av Malzemeleri
+
 ---
 
 ## İş Akışı (Her Yeni Blog İçin)
