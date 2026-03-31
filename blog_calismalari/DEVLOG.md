@@ -58,7 +58,7 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 - [x] KRAL ARMS PCP TÜFEKLER
 - [x] UMAREX GLOCK HAVALI TABANCALAR (+ model dosyaları)
 - [x] KURU SIKI TABANCALAR TAM REHBERİ
-- [ ] TÜRKİYE PCP HAVALI TÜFEK TEKNOLOJİLERİ
+- [x] TÜRKİYE PCP HAVALI TÜFEK TEKNOLOJİLERİ
 - [ ] Tüfek Dürbünleri + T-EAGLE DÜRBÜN VE REDDOT
 - [ ] Tüfek Temizlik Setleri & Yağlama + Havalı Tüfeklerde Bakım
 - [ ] Outdoor + Çadır, Masa, Aydınlatma, Ocak, Ekipmanlar
