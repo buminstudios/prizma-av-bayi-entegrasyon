@@ -100,6 +100,13 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 - [x] Trijicon Reddot
 - [x] TÜFEK KILIFLARI
 - [x] impact sport Atış Kulaklığı
+- [x] Tabanca Ekipmanları
+- [x] Türkiye’de En Çok Aranan Ateşli Olmayan Savunma Ürünleri
+- [x] Uzun Menzilli Atış İçin En İyi Optik Seçimi
+- [x] timney trigger tetik
+- [x] Prizma Av Hakkımızda
+- [x] Türkiye’de Av Bayisi Nasıl Seçilir
+- [x] İlk Yardım, Koruyucu Ekipman, Acil Durum Setleri
 
 ---
 
