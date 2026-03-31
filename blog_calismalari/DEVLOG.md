@@ -54,7 +54,7 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 
 - [x] 9 mm Lazer Eğitim Kartuşu
 - [x] TÜRKİYE AVCILIK YASALARI
-- [ ] HAVALI TÜFEKLER TAM KARŞILAŞTIRMA
+- [x] HAVALI TÜFEKLER TAM KARŞILAŞTIRMA
 - [ ] KRAL ARMS PCP TÜFEKLER
 - [ ] UMAREX GLOCK HAVALI TABANCALAR (+ model dosyaları)
 - [ ] KURU SIKI TABANCALAR TAM REHBERİ
