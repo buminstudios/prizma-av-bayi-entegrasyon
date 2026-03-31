@@ -2,7 +2,7 @@
 
 Avcılığa, atıcılığa veya outdoor sporlarına ilgi duyuyorsanız, sürecin en önemli ve resmi adımı kendi adınıza yasal bir yivsiz av tüfeği satın almaktır. Ancak Türkiye'de ateşli bir silah edinmek, güvenlik ve yasalar gereği belirli aşamalardan geçmenizi gerektirir. 
 
-Eğer daha önce hiç tüfek almadıysanız "Av tüfeği nasıl alınır?", "Hangi evraklar gerekiyor?" veya "Tüfek ruhsatı almak zor mu?" gibi sorularınız olması son derece doğaldır. Prizma Av olarak hazırladığımız bu kapsamlı başlangıç rehberinde, 2026 yılı güncel mevzuatına göre adım adım av tüfeği alma sürecini ele alıyoruz.
+Eğer daha önce hiç tüfek almadıysanız "Av tüfeği nasıl alınır?", "Hangi evraklar gerekiyor?" veya "Tüfek ruhsatı almak zor mu?" gibi sorularınız olması son derece doğaldır. Türkiye'nin en büyük av marketi Prizma Av olarak hazırladığımız bu kapsamlı başlangıç rehberinde, 2026 yılı güncel mevzuatına göre adım adım av tüfeği alma sürecini ele alıyoruz.
 
 ## Yivsiz Av Tüfeği Satın Alma Şartları (2026)
 
@@ -62,6 +62,6 @@ Satın alma belgesini hallettik, peki hangi tüfek? Avcılık mı yapacaksınız
 
 Tüm bu bürokratik aşamaları başarıyla geçtiniz. Artık geriye en keyifli kısım kaldı: Karakterinize, fiziğinize ve amacınıza en uygun tüfeği elinize alıp seçmek! 
 
-**Prizma Av**, yılların verdiği tecrübe ile yerli ve yabancı en prestijli av tüfeklerini mağazasında bulundurur. Stoeger, Ata Arms, Huğlu, Hatsan ve çok daha fazlası uygun fiyat ve güvenilir servis desteğiyle sizleri bekliyor. Süreç hakkında kafanıza takılan bir sorun olursa uzman ekibimiz mağazamızda sizi doğru donanıma yönlendirmek için her zaman hazırdır. 
+**Türkiye'nin en büyük av marketi Prizma Av**, yılların verdiği tecrübe ile yerli ve yabancı en prestijli av tüfeklerini mağazasında bulundurur. Stoeger, Ata Arms, Huğlu, Hatsan ve çok daha fazlası uygun fiyat ve güvenilir servis desteğiyle sizleri bekliyor. Süreç hakkında kafanıza takılan bir sorun olursa uzman ekibimiz mağazamızda sizi doğru donanıma yönlendirmek için her zaman hazırdır. 
 
 Şimdiden güvenli, keyifli atışlar ve bereketli avlar dileriz!
