@@ -42,7 +42,7 @@ Bu belge, Prizma Av Blog SEO Revizyon projesinde atılan adımları kronolojik o
 ### 🔴 SIFIRDAN YAZILACAK YENİ BLOGLAR (Rakip fırsat konuları)
 Bu konularda hiçbir rakibin içeriği yok, Google'da ciddi trafik çekme potansiyeli var:
 
-- [ ] Av Tüfeği Nasıl Alınır? Başlangıç Rehberi
+- [x] Av Tüfeği Nasıl Alınır? Başlangıç Rehberi
 - [ ] Airsoft vs Havalı Tabanca Farkları
 - [ ] Hatsan PCP Tüfek Modelleri Karşılaştırması
 - [ ] 12 Kalibre Av Fişeği Seçim Rehberi (Gram Bazında)
