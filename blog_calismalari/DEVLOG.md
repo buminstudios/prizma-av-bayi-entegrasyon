@@ -95,6 +95,11 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 - [x] PCP HAVALI TÜFEK İÇİN SCUBA TÜPÜ VE POMPA
 - [x] Tüfek Lazer Sıfırlama Kartuşları
 - [x] Umarex T4E Serisi
+- [x] MKE Yivli Tüfek Fișekleri
+- [x] Trap Makinaları
+- [x] Trijicon Reddot
+- [x] TÜFEK KILIFLARI
+- [x] impact sport Atış Kulaklığı
 
 ---
 
