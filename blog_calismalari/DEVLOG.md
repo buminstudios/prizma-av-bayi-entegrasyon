@@ -78,6 +78,10 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 - [x] SELLIER BELLOT TABANCA VE YİVLİ TÜFEK MERMİLERİ
 - [x] STERLİNG TABANCA MERMİLERİ
 - [x] TURAN TABANCA VE YİVLİ TÜFEK MERMİLERİ
+- [x] Balık & Bot Malzemeleri Tam Rehberi (2025 versiyonu dahil)
+- [x] Bot Motorları Rehberi
+- [x] Bulundurma ve Taşıma Ruhsat Harçları 2025
+- [x] 9 mm Lazer Eğitim Kartuşu
 
 ---
 
