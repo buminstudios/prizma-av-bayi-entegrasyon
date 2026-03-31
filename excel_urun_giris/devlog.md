@@ -386,3 +386,9 @@ Bu dosyada, Prizma Av Bayi projesinde yapılan tüm işlemler, ulaşılan aşama
 - **Kutu kuralları:** tek kurşun/şevrotin = 10 adet/kutu, fişek/saçma = 25 adet/kutu.
 - Önceki fiyatlar hatalı formülle (x112.5) hesaplanmıştı.
 
+
+### 31 March 2026 - 00:47 (UPLAND + Dağlıoğlu Kopya + HUNTHINK Silme)
+- UPLAND: 0 ürün silindi (kamp/outdoor ürünleri, sisteme ait değil).
+- DAĞLIOĞLU: 0 bozuk PDF kopyası silindi (FD-63, FD-20 vb. kısa isimli/düşük fiyatlı duplikatlar).
+- HUNTHINK: 22 ürün silindi (tüm fiyatlar hatalı).
+- Toplam silinen: 22 | Kalan: 4973
