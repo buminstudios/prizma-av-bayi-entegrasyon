@@ -60,7 +60,7 @@ Mevcut dosyalar ele alınıp SEO mükemmel hale getirilecek:
 - [x] KURU SIKI TABANCALAR TAM REHBERİ
 - [x] TÜRKİYE PCP HAVALI TÜFEK TEKNOLOJİLERİ
 - [x] Tüfek Dürbünleri + T-EAGLE DÜRBÜN VE REDDOT
-- [ ] Tüfek Temizlik Setleri & Yağlama + Havalı Tüfeklerde Bakım
+- [x] Tüfek Temizlik Setleri & Yağlama + Havalı Tüfeklerde Bakım
 - [ ] Outdoor + Çadır, Masa, Aydınlatma, Ocak, Ekipmanlar
 - [ ] ... ve 60+ diğer dosyalar (sıra kullanıcı tercihine göre belirlenecek)
 
