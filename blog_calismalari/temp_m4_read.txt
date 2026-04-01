@@ -1,0 +1,465 @@
+
+--- FILE: Sig Sauer X Five Blowback Havalı Tabanca.docx ---
+
+SİG SAUER X-FIVE BLOWBACK HAVALI TABANCA — TÜM TEKNİK DETAYLAR VE SATIN ALMA REHBERİ
+GİRİŞ
+Sig Sauer X-Five, yarış/atış pratiği odaklı ergonomi ile tasarlanmış, pellet (diabolo) kullanımına optimize edilmiş blowback özellikli bir havalı tabancadır. Bu rehberde modelin tüm önemli teknik verileri, iç mekanik yapısı, performans beklentileri, bakım-güvenlik önerileri ve Türkiye’de Prizma Av — Prizma Savunma üzerinden temin etme avantajları açık ve net biçimde yer almaktadır.
+TEMEL ÖZELLİKLER
+Kalibre: .177 (4.5 mm) pellet (diabolo)
+Güç kaynağı: 12 g CO₂ kapsülü
+Aksiyon: Yarı-otomatik, gerçekçi blowback (hareket eden slide)
+Şarjör kapasitesi: 20 pellet (model varyasyonuna göre değişebilir)
+Namlu: Yivli (rifled) namlu — pellet için optimize edilmiş
+Muzzle velocity (yaklaşık): 380–395 fps aralığında (pellet ağırlığı ve ortam koşullarına göre değişir)
+Uzunluk: Yaklaşık 220–221 mm
+Ağırlık: Yaklaşık 1.20–1.25 kg (full-metal hissi veren yapı)
+Montaj: Alt ray / Picatinny uyumluluğu olan versiyonlar mevcut olabilir
+Malzeme: Metal üst slayd + metal veya metal-kompozit gövde kombinasyonu
+DETAJLI MEKANİK YAPI
+Üst kapak / slayd: Metal, blowback hareketine dayanıklı tasarım. Her atışta geri gelir; gerçekçi görsel ve dokunsal geri bildirim sağlar.
+Namlu içi: Yivli namlu pelletlerin stabilizasyonunu sağlar; doğru pellet seçimi ve namlu bakımı hedef isabetini doğrudan etkiler.
+CO₂ yuvası ve conta seti: CO₂ kapsülü O-ring/conta ile sızdırmaz biçimde yerleştirilir. Contalar zamanla aşınır; sızıntı performansı hızla düşürür.
+Şarjör: 20 pellet kapasiteli, follower ve yay mekanizması düzenli bakım gerektirir. Şarjörün temiz ve kuru tutulması besleme sorunlarını azaltır.
+Tetik grubu: Hassas tetik hissi hedef atışına uygun olup tetik geri bildirimi ve güvenlik elemanları standarttır.
+Conta ve O-ring: Blowback ve CO₂ sisteminde kritik parçalar; düzenli kontrol ve değiştirme ömrü uzatır.
+PERFORMANS VE ATIŞ DAVRANIŞI
+Doğruluk: Kaliteli 7–8 grain pelletler ile yivli namlu kombinasyonunda yüksek isabet elde edilir.
+Tutarlılık: CO₂ basıncı kapsül ömrü boyunca kademeli düşüş gösterebilir; atışlar kapsülün dolu olduğu ilk kısımlarda daha tutarlıdır.
+Menzil: Kısa ve orta mesafe hedef atışları için uygundur; pellet performansı, üretim toleransları ve atıcı becerisi etkilidir.
+Blowback etkisi: Atış hissini artırır fakat CO₂ tüketimini bir miktar yükseltir.
+KULLANIM ve BAKIM ÖNERİLERİ
+Namlu temizliği: Yivli namluyu düzenli temizleyin; pellet artıklarını ve oksitlenmeleri uzak tutun.
+Conta kontrolü: CO₂ O-ring ve blowback contalarını düzenli kontrol edin; sızdırma belirtisinde hemen değişim yapın.
+Yağlama: Hareketli parçalara az miktarda silikon-bazlı yağ uygulayın; aşırı yağlama performansı bozabilir.
+Şarjör bakımı: Şarjör iç yüzeylerini temiz ve kuru tutun; follower ve yayların deformasyonunu önleyin.
+CO₂ saklama: Kapsülleri serin, kuru ve güneşten uzak yerde muhafaza edin.
+Depolama: Silahı kilitli ve çocuk erişimine kapalı şekilde saklayın; uzun süreli saklamada CO₂ kapsülünü çıkarın.
+GÜVENLİK ve HUKUKİ HATIRLATMALAR
+Havalı tabancalar ciddi yaralanmalara yol açabilir; atış sırasında mutlaka koruyucu gözlük kullanın ve uygun arka plan/arkaplan hedefi (backstop) sağlayın.
+Türkiye’de taşıma ve kullanım ile ilgili düzenlemeler modele ve kullanım amacına göre değişebilir; satın almadan önce bayi ve ilgili resmî mercilerle mevzuatı teyit edin.
+Gerçek silah benzeri görünüme sahip modellerin görünür şekilde taşınması risk oluşturabilir; kamusal alanlarda dikkatli ve yasal çerçevede davranın.
+NEDEN PRIZMA AV — PRIZMA SAVUNMA?
+Stok ve çeşitlilik: X-Five ve benzeri pellet blowback modeller, yedek parça, şarjör, pellet ve CO₂ tedarikinde geniş stok.
+Orijinallik ve garanti: Orijinal ürün temini, garanti ve yetkili servis desteği sunulur.
+Teknik servis: Conta değişimi, namlu bakımı, tetik ve slayd ayarları gibi bakım hizmetleri sağlanır.
+Fiyat avantajı: Tedarik zinciri ilişkileri ve dönemsel kampanyalar sayesinde rekabetçi fiyatlandırma uygulanmaktadır.
+Deneme imkânı: İmkanlar ölçüsünde poligonda test/deneme olanağı sunulur; müşterinin ihtiyaçlarına uygun konfigürasyon belirlenir.
+SSS (KISA)
+S: X-Five pellet yerine BB ile kullanılır mı?
+C: Hayır — yivli namlu pellet için optimize edilmiştir; BB kullanımı isabet ve güvenlik açısından uygun değildir.
+S: Blowback CO₂ tüketimini artırır mı?
+C: Evet, blowback mekanizması ek hareket gerektirdiği için CO₂ tüketimini artırır.
+S: Hangi pellet daha uygundur?
+C: 7–8 grain kaliteli diabolo pelletler genelde en iyi dengeyi sağlar; marka ve tip denemesiyle en iyi sonucu bulun.
+SEO ÖNERİLERİ (KULLANIM İÇİN ANAHTAR KELİMELER)
+Sig Sauer X-Five havalı tabanca, X-Five blowback pellet, X-Five teknik özellikleri, X-Five 20-round, X-Five Türkiye, Prizma Av X-Five fiyatı.
+SONUÇ VE SATIN ALMA DAVETİ
+Sig Sauer X-Five, yarış/pratik ve hedef atışı odaklı kullanıcılar için yüksek isabet, sağlam yapı ve gerçekçi blowback hissi sunar. Hangi pellet ağırlığı, aksesuar ve şarjör konfigürasyonunun sizin amacınıza uygun olduğunu birlikte belirleyelim. Güncel stok, model varyantı ve kampanya fiyatı için Prizma Av — Prizma Savunma ile iletişime geçebilirsiniz.
+İLETİŞİM — PRIZMA AV (PRIZMA SAVUNMA)
+Adres: Menderes Mah. Trabzon Blv. No: 119, Dulkadiroğlu / Kahramanmaraş
+Telefon: 0344 231 0187 – 0344 231 55 01
+WhatsApp: 0532 722 1746
+
+--- FILE: Türkiye’de En Çok Satılan Sig Sauer Marka Havalı Tüfek ve PCP Modelleri.docx ---
+
+Türkiye’de En Çok Satılan Sig Sauer Marka Havalı Tüfek ve PCP Modelleri – 2025 Güncel Rehberi
+Dünyanın en prestijli silah üreticilerinden biri olan Sig Sauer, profesyonel kaliteyi, dayanıklılığı ve isabet oranını bir araya getirerek havalı tüfek alanında da fark yaratmaktadır.
+Google arama trendlerine göre, Sig Sauer markası “en çok aranan havalı tüfek ve PCP modelleri” arasında yer almakta; üstün Alman mühendisliğiyle ürettiği modeller, Türkiye’de hem sportif hem hobi kullanıcıları tarafından yoğun ilgi görmektedir.
+Biz Prizma Av olarak, tüm Sig Sauer marka havalı tüfek ve PCP modellerini sizlere en uygun fiyatlarla, kredi kartına taksitli ödeme imkânı ve tüm Türkiye’ye hızlı kargo avantajıyla sunuyoruz.
+Satışlarımız yalnızca 18 yaşını doldurmuş müşterilerimiz için geçerlidir.
+Sig Sauer Markasının Gücü ve Farkı
+Sig Sauer, askeri sınıf silah teknolojisini havalı tüfek modellerine taşıyan ender markalardan biridir.
+Kalite, güvenlik ve hassas üretim süreçleriyle tanınan marka, her atışta stabil güç, yüksek hassasiyet ve uzun ömürlü mekanizma sunar.
+Alman mühendisliği ve yüksek kalite standartları
+CO₂ ve PCP sistemli modellerde üstün performans
+Hassas tetik sistemi ve ergonomik tasarım
+Gerçek silah hissi veren yapısı ve malzeme kalitesi
+1. Sig Sauer MCX Virtus PCP Havalı Tüfek
+Sig Sauer’in en popüler PCP modeli olan MCX Virtus, orijinal taktik tüfek formunda üretilmiş ve üstün performans sunan bir modeldir.
+Kalibre: 4.5 mm / 5.5 mm
+Sistem: PCP
+Avantaj: Gerçek silah hissi, yüksek atış gücü, tam otomatik görünüm
+Kullanım: Sportif atışlar, koleksiyon ve profesyonel kullanıcılar
+Anahtar Kelimeler: Sig Sauer MCX Virtus PCP, Sig Sauer PCP tüfek, güçlü PCP modelleri, taktik havalı tüfek.
+2. Sig Sauer MPX CO₂ Havalı Tüfek
+Gerçek MPX modelinin birebir replikası olan Sig Sauer MPX CO₂, güçlü CO₂ sistemiyle stabil performans sunar.
+Kalibre: 4.5 mm BB
+Sistem: CO₂
+Avantaj: Gerçek hissiyat, tam metal gövde, yüksek isabet oranı
+Kullanım: Hedef atışları ve hobi amaçlı kullanımlar
+Anahtar Kelimeler: Sig Sauer MPX, CO₂ tüfek, Sig Sauer havalı tüfek, metal gövdeli havalı tüfek.
+3. Sig Sauer MCX Air Rifle Havalı Tüfek
+Klasik MCX platformunun havalı versiyonu olan bu model, güçlü CO₂ sistemiyle uzun menzilli atışlar için mükemmel bir tercihtir.
+Kalibre: 4.5 mm
+Sistem: CO₂
+Avantaj: Uzun şarjör kapasitesi, gerçekçi tasarım, dengeli atış sistemi
+Anahtar Kelimeler: Sig Sauer MCX, CO₂ havalı tüfek, Sig Sauer Air Rifle, güçlü havalı tüfek modelleri.
+4. Sig Sauer ASP20 Break Barrel Havalı Tüfek
+Sig Sauer’in yaylı sistemli modellerinden biri olan ASP20, yüksek Joule gücü ve profesyonel hassasiyetiyle öne çıkar.
+Kalibre: 4.5 mm / 5.5 mm
+Sistem: Yaylı piston
+Avantaj: Yüksek isabet, uzun ömür, hassas tetik mekanizması
+Anahtar Kelimeler: Sig Sauer ASP20, yaylı havalı tüfek, profesyonel havalı tüfek, Sig Sauer ASP serisi.
+5. Sig Sauer MCX Rattler PCP Havalı Tüfek
+Yeni nesil tasarımıyla MCX Rattler PCP, kompakt ve güçlü yapısıyla dikkat çekmektedir.
+Kalibre: 5.5 mm
+Sistem: PCP
+Avantaj: Hafif alüminyum gövde, yüksek basınç kapasitesi, sessiz çalışma
+Anahtar Kelimeler: Sig Sauer Rattler PCP, Sig Sauer PCP modelleri, güçlü PCP tüfek, Sig Sauer Türkiye bayii.
+Sig Sauer Havalı Tüfeklerin Genel Avantajları
+18 yaşını doldurmuş müşteriler için ruhsatsız satış (satın alma belgesiyle)
+Kredi kartına taksitli ödeme imkânı
+Tüm Türkiye’ye hızlı ve güvenli kargo gönderimi
+Orijinal ve garantili ürün garantisi
+Profesyonel, hobi ve sportif kullanıma uygun modeller
+Prizma Av – Türkiye’nin Sig Sauer Yetkili Bayii
+Prizma Av, Türkiye genelinde Sig Sauer marka havalı tüfek ve PCP modellerinin satışında güvenilir, orijinal ve garantili hizmet sunmaktadır.
+✅ Uygun fiyat garantisi
+✅ Kredi kartına taksitli alışveriş
+✅ Tüm Türkiye’ye kargo imkânı
+✅ 18 yaşını doldurmuş müşterilere satış
+✅ Stoktan teslim, satış sonrası servis ve destek
+SEO Odaklı Anahtar Kelimeler
+Sig Sauer havalı tüfek, Sig Sauer PCP tüfek, Sig Sauer MCX Virtus, Sig Sauer MPX, Sig Sauer ASP20, Sig Sauer Rattler, CO₂ tüfek, 18 yaş havalı tüfek satışı, kredi kartına taksitli Sig Sauer tüfek, Prizma Av Kahramanmaraş.
+Adres: Menderes Mah. Trabzon Blv. No: 119, Dulkadiroğlu / Kahramanmaraş
+Telefon: 0344 231 01 87 – 0344 231 55 01
+WhatsApp Destek: 0532 722 1746
+Web: www.prizmaav.com
+
+--- FILE: Sig Sauer P320 Çöl Blowback Havalı Tabanca (Pellet).docx ---
+
+SİG SAUER P320 ÇÖL (DESERT) BLOWBACK HAVALI TABANCA (PELLET) — TEKNİK İNCELEME VE SATIN ALMA REHBERİ
+GİRİŞ
+Sig Sauer P320 Çöl (Desert) Blowback — pellet uyumlu versiyon, P320 platformunun modülerliğini ve ergonomisini koruyarak gerçekçi atış hissi sunan, görsel olarak çöl/tan renkli kaplamaya sahip bir havalı tabancadır. Bu metin; modelin teknik detayları, iç mekanik yapısı, performans beklentileri, bakım/güvenlik önerileri ve Türkiye’de Prizma Av — Prizma Savunma’dan temin avantajlarını kapsamlı ve SEO uyumlu şekilde açıklar. (Not: Teknik veriler model varyasyonlarına göre değişebilir; kesin değerler için satın alacağınız modelin ürün sayfasını veya satıcı teknik dokümanını kontrol edin.)
+TEMEL TANIM VE KULLANIM ALANLARI
+P320 Çöl Blowback (Pellet): .177 (4.5 mm) diabolo/pellet uyumlu, blowback (hareketli slide) mekanizmalı, CO₂ veya gaz destekli olabilen (model varyasyonuna göre) yarı otomatik havalı tabanca. Kullanım alanları: hedef atışı, hassasiyet antrenmanı, taktik simülasyon ve koleksiyon.
+TEKNİK ÖZELLİKLER (MODEL VARYASYONLARINA GÖRE DEĞİŞEBİLİR)
+Kalibre: 4.5 mm (.177) diabolo / pellet (pellet-uyumlu namlu) — pellet tercih edilirse yivli / rifled namlu aranmalıdır.
+Enerji kaynağı: Genelde 12 g CO₂ kapsülü; bazı pellet-odaklı replikalarda farklı enerji çözümleri olabilir.
+Aksiyon: Yarı-otomatik, blowback (hareket eden slide) — blowback mekanizması atış hissini güçlendirir.
+Namlu tipi: Pellet versiyonlarında yivli (rifled) namlu; bu, pellet ile isabeti artırır.
+Muzzle velocity (tahmini aralık): Tipik pellet uyumlu blowback tabancalar için 250–330 m/s (bu aralık model ve mühimmat kalitesine göre değişir). (Not: bazı perakende listeleri fps yerine m/s veya fps aralığı verir; kesin değer için üretici/satıcı teknik sayfasına bakın.)
+Enerji (joule): Model ve güç kaynağına göre değişir; pellet versiyonlarda hedef atışı için uygun, genelde tüketici güvenlik sınırlarında kalan değerler beklenir.
+Şarjör kapasitesi: Genelde 12–16 pellet aralığında olabilir (model varyasyonuna göre farklılık gösterir).
+Uzunluk: Yaklaşık 170–210 mm civarı (versiyona bağlı).
+Ağırlık: Yaklaşık 700–1.100 g aralığı (full-metal veya metal ağırlıklı gövdeye göre değişir).
+Gövde & kaplama: Metal üst slayd + metal veya metal-polimer gövde kombinasyonu; çöl (tan/coyote) renk kaplama estetik ve kamuflaj amaçlıdır.
+Nişangâh: Sabit veya kontrast ön/arka nişangâh; bazı versiyonlarda optik uyumlu üst kızak bulunabilir.
+Emniyet: Manuel emniyet, tetik emniyeti ve/veya kabza emniyeti (model özelliklerine göre).
+Aksesuar uyumluluğu: Alt rail (varsa), nişangâh ve bazı kasayı destekleyen aksesuarlarla uyumlu olabilir.
+İÇ MEKANİK YAPI VE BİLEŞENLER
+Slide / Üst kapak: Metal slayd, blowback hareketi için tasarlanmıştır; geri tepme hissi hem görsel hem de dokunsal geri bildirim sağlar.
+Namlu & yivler: Pellet için yivli namlu (rifled) yüksek doğruluk sağlar; BB kullanımı için düz namlu veya özel adaptör gerekebilir.
+CO₂ yuvası & contalar: CO₂ kapsülü yerleştirme mekanizması ve O-ring/conta setleri sızıntıyı önler; bu parçalar zamanla aşınır ve değiştirilmeleri gerekir.
+Şarjör (magazine): Pellet besleme düzeni, follower ve yay ile çalışır; bazı tasarımlarda şarjör CO₂ kapsülünü de barındırabilir.
+Tetik grubu & sear: P320-benzeri tetik mimarisi, modüler tetik hissi ve güvenlik öğeleriyle entegre olabilir.
+PERFORMANS & ATIŞ DAVRANIŞI
+Doğruluk: Pellet + yivli namlu kombinasyonu, hedef atışında en yüksek doğruluğu verir. Grup çapı ve tutarlılık mermi kalitesi, namlu durumu ve atıcıya bağlıdır.
+Tutarlılık: CO₂ basıncı kapsülün ömrü boyunca düşme eğilimi gösterir; kapsülün tam olduğu ilk atışlar daha tutarlı olabilir. Blowback mekanizması CO₂ tüketimini artırabilir.
+Menzil & etki: Pellet tabancalar kısa ve orta menzilde hassas atış sağlar; enerjileri hedef/av amaçlı kullanımdan önce dikkatle değerlendirilmelidir.
+Çevresel etki: Sıcaklık CO₂ basıncını etkiler — soğuk hava performansı düşürebilir, sıcak hava artış gösterebilir.
+KULLANIM, BAKIM VE UZUN ÖMÜR İPUÇLARI
+Namlu temizliği: Pellet kullanıldığında yivlerin düzenli temizliği isabeti korur — yumuşak fırça ve uygun temizleyiciler kullanın.
+Conta & O-ring kontrolü: CO₂ sızıntıları performansı hızla etkiler; contaları periyodik olarak kontrol edip gerektiğinde değiştirin.
+Yağlama: Silikon-bazlı yağlar tercih edin; aşırı yağlama mekanik parçaların performansını bozabilir.
+CO₂ saklama: Kapsülleri serin ve kuru yerde saklayın; aşırı ısıdan uzak tutun.
+Depolama: Silahı kilitli ve çocuk erişimine kapalı tutun; uzun süre kullanılmayacaksa CO₂ çıkarın.
+Deneme: Satın almadan önce (imkân varsa) satıcıda veya poligonda test etme imkânı talep edin.
+GÜVENLİK VE HUKUKİ HATIRLATMA
+Havalı tabancalar tehlikelidir; her atışta koruyucu gözlük kullanın ve güvenli arka plan sağlayın.
+Türkiye’de mevzuat modele göre değişebilir; satın almadan önce bayi ve ilgili resmi kurumlarla yasal durumu teyit edin.
+Gerçek silah görünümü olan cihazların taşınması ve sergilenmesi risk doğurabilir — halka açık alanlarda dikkatli olun.
+NEDEN PRIZMA AV — PRIZMA SAVUNMA?
+Stok & Çeşitlilik: P320 platformu için farklı versiyonlar, yivli pellet namlular, yedek şarjör ve contalar stoklarımızda bulunur.
+Teknik Destek: Conta değişimi, namlu bakımı ve garanti/servis hizmeti sağlanır.
+Fiyat Avantajı: Doğrudan tedarik ilişkileri ve dönemsel kampanyalar sayesinde rekabetçi fiyat sunarız.
+Deneme İmkanı: Mümkünse ürünün performansını yerinde test etme imkânı sağlanır; size hangi versiyonun uygun olduğunu birlikte belirleyebiliriz.
+S.S.S. (KISA)
+S: P320 Çöl pellet versiyonunu pellet yerine BB ile kullanabilir miyim?
+C: Pellet-uyumlu (yivli) namlu BB ile isabet açısından uygun değildir; doğru kullanım için modelin desteklediği mühimmatı kullanın.
+S: Blowback pellet-tabancalar CO₂ tüketimini artırır mı?
+C: Evet; blowback mekanizması ek hareket gerektirdiğinden CO₂ tüketimini yükseltebilir.
+S: Bu model ruhsata tabi midir?
+C: Türkiye’de mevzuat modele göre değişir — kesin bilgi için bayi ve ilgili resmi kurumlarla teyit edin.
+SEO ANAHTAR KELİMELERİ
+Sig Sauer P320 Çöl, P320 Desert pellet, P320 blowback pellet, P320 teknik özellikleri, P320 pellet Türkiye, Prizma Av P320.
+META ÖRNEĞİ
+Meta Başlık: Sig Sauer P320 Çöl (Desert) Blowback Havalı Tabanca — Pellet Versiyon Teknik İncelemesi
+Meta Açıklama: Sig Sauer P320 Desert blowback pellet havalı tabancanın teknik özellikleri, performans, bakım ve neden Prizma Av — Prizma Savunma’dan temin etmeniz gerektiğine dair detaylı rehber.
+İLETİŞİM — PRIZMA AV (PRIZMA SAVUNMA)
+Adres: Menderes Mah. Trabzon Blv. No: 119, Dulkadiroğlu / Kahramanmaraş
+Telefon: 0344 231 0187 – 0344 231 55 01
+WhatsApp: 0532 722 1746
+SONUÇ
+Sig Sauer P320 Çöl Blowback (Pellet) — modüler P320 ergonomisini koruyan, pellet ile yüksek isabet sunabilen bir replika alternatifi olarak öne çıkar. Model varyasyonları teknik değerleri etkilediği için satın almadan önce tam model numarasıyla teknik veri sayfasını ve satıcı açıklamasını kontrol etmeniz önemlidir. İsterseniz bu yazıyı Prizma Av ürün sayfası biçiminde kısa teknik tablo + fiyat sütunu ile hazırlayayım; onay verin, hemen düzenleyeyim.
+
+--- FILE: Türkiye’de En Çok Satılan Sig Sauer Marka Havalı Tabancalar ve Modelleri.docx ---
+
+Türkiye’de En Çok Satılan Sig Sauer Marka Havalı Tabancalar ve Modelleri – 2025 Güncel Rehberi
+Dünya genelinde güvenlik güçleri ve profesyonel atıcılar tarafından tercih edilen Sig Sauer, havalı tabanca kategorisinde de kalitesi, dayanıklılığı ve gerçek tabanca hissiyle öne çıkıyor. Gerçek Sig Sauer modellerinin birebir ölçülerine, ağırlığına ve mekanik yapısına sahip bu tabancalar, hem atış sporu tutkunları hem de koleksiyon severler için ideal seçenekler sunuyor.
+Biz Prizma Av olarak, tüm Sig Sauer havalı tabanca modellerini sizlere en uygun fiyatlarla, kredi kartına taksitli ödeme imkânı ve tüm Türkiye’ye hızlı kargo avantajıyla sunuyoruz.
+Satışlarımız yalnızca 18 yaşını doldurmuş müşterilerimiz içindir.
+Sig Sauer Havalı Tabanca Markasının Farkı
+Sig Sauer, Alman-Amerikan ortaklığıyla üretilen, dünya çapında taktik ve sivil kullanımda bir prestij markasıdır.
+CO₂ kartuşlu sistem sayesinde güçlü ve kararlı atışlar
+Blowback mekanizmalı modeller ile gerçek tabanca hissi
+Tam metal gövde ve kaliteli işçilik
+Gerçek Sig Sauer silahlarının lisanslı birebir kopyaları
+1. Sig Sauer P226 CO₂ Havalı Tabanca
+Gerçek P226 modelinin birebir ölçülerinde üretilen bu model, polis ve özel kuvvetler tarafından kullanılan orijinal tasarımıyla ünlüdür.
+Kalibre: 4.5 mm çelik bilye
+Sistem: CO₂ – Blowback
+Malzeme: Tam metal gövde
+Avantaj: Dengeli, güçlü ve gerçekçi atış hissi
+Google Anahtar Kelimeleri: Sig Sauer P226, CO2 havalı tabanca, metal gövdeli havalı tabanca, Sig Sauer Türkiye bayii.
+2. Sig Sauer P320 M17 CO₂ Blowback
+ABD ordusunun resmi tabancası olan M17’nin lisanslı replikasıdır. Ergonomik tasarımı ve güçlü blowback mekanizmasıyla gerçek tabanca deneyimi sunar.
+Kalibre: 4.5 mm BB
+Sistem: CO₂ – Blowback
+Özellik: Metal sürgü, polimer gövde
+Avantaj: Gerçeğine birebir hissiyat ve estetik görünüm
+Google Anahtar Kelimeleri: Sig Sauer M17, P320 CO2 tabanca, Sig Sauer havalı tabanca, blowback tabanca modelleri.
+3. Sig Sauer P365 CO₂ Compact
+Kompakt yapısıyla taşınabilirlik ve denge arayan kullanıcıların favorisi. P365 modeli, küçük boyutuna rağmen güçlü performansıyla öne çıkar.
+Kalibre: 4.5 mm çelik bilye
+Sistem: CO₂
+Özellik: Kompakt tasarım, ergonomik kabza
+Avantaj: Hafif, dayanıklı ve ideal kontrol
+Google Anahtar Kelimeleri: Sig Sauer P365, kompakt havalı tabanca, küçük boy CO2 tabanca, Sig Sauer uygun fiyat.
+4. Sig Sauer X-Five ASP CO₂
+Sporcular ve profesyonel atıcılar için özel olarak geliştirilen bu model, yüksek isabet oranı ve ağır gövdesiyle dikkat çeker.
+Kalibre: 4.5 mm
+Sistem: CO₂ – Blowback
+Malzeme: Tam metal
+Avantaj: Hedef atışlarında üstün denge
+Google Anahtar Kelimeleri: Sig Sauer X-Five ASP, profesyonel havalı tabanca, Sig Sauer blowback, X-Five fiyat.
+5. Sig Sauer P250 CO₂
+Düşük gaz tüketimi ve dayanıklılığıyla öne çıkan P250, hem hobi hem sportif kullanım için ideal bir modeldir.
+Kalibre: 4.5 mm
+Sistem: CO₂ – Non-blowback
+Avantaj: Uzun kartuş ömrü, düşük bakım ihtiyacı
+Malzeme: Polimer gövde, metal sürgü
+Google Anahtar Kelimeleri: Sig Sauer P250, CO2 tabanca, Sig Sauer modelleri, dayanıklı havalı tabanca.
+Sig Sauer Havalı Tabanca Kullanım Avantajları
+18 yaş üzeri ruhsatsız kullanım (Satın alma belgesi şartıyla)
+Düşük maliyetli mühimmat (BB bilye ve CO₂ kartuş)
+Gerçek silah formunda eğitim ve pratik imkânı
+Yüksek hassasiyetli nişangah sistemleri
+Uzun ömürlü dayanıklı mekanizma
+Prizma Av – Türkiye’nin Sig Sauer Bayii
+Prizma Av, Sig Sauer marka tüm havalı tabancalarda resmî distribütör kalitesinde satış ve hizmet sunar.
+✅ Tüm Türkiye’ye kargo gönderimi
+✅ Kredi kartına taksitli ödeme imkânı
+✅ 18 yaşını doldurmuş müşterilere satış
+✅ Orijinal ve garantili ürünler
+✅ Uygun fiyat ve kampanya fırsatları
+SEO Odaklı Anahtar Kelimeler
+Sig Sauer havalı tabanca, Sig Sauer P226, Sig Sauer M17, Sig Sauer P365, Sig Sauer X-Five, CO2 havalı tabanca modelleri, metal gövdeli havalı tabanca, 18 yaş tabanca satışı, kredi kartına taksitli havalı tabanca, Prizma Av Kahramanmaraş.
+Adres: Menderes Mah. Trabzon Blv. No: 119, Dulkadiroğlu / Kahramanmaraş
+Telefon: 0344 231 01 87 – 0344 231 55 01
+WhatsApp Destek: 0532 722 1746
+Web: www.prizmaav.com
+
+--- FILE: Sig Sauer 1911 Emperor Scorpion Blowback Havalı Tabanca.docx ---
+
+SİG SAUER 1911 EMPEROR SCORPION BLOWBACK FULL-METAL HAVALI TABANCA — TÜM TEKNİK DETAYLAR, KULLANIM, BAKIM VE PRIZMA AV’DA NEDEN EN UYGUN FİYATLA BULUNUR
+GİRİŞ
+Sig Sauer 1911 Emperor Scorpion, klasik 1911 tasarımını modern havalı teknolojiyle birleştiren, CO₂ tahrikli, blowback (geri tepme) özellikli ve full-metal gövdeli bir replika/air-pistol modelidir. Hem koleksiyonculara hem de eğitim, simülasyon ve hobi amaçlı atış yapan kullanıcılara hitap eder. Bu yazıda ürünün tüm teknik ayrıntılarını, iç mekanik yapısını, performans beklentilerini, bakım-güvenlik kurallarını ve Prizma Av — Prizma Savunma’dan temin etmenin avantajlarını bulacaksınız.
+TEMEL TANIM VE KULLANIM ALANLARI
+Sig Sauer 1911 Emperor Scorpion: 4.5 mm (.177) BB veya bazı versiyonlarda pellet uyumlu olabilen, 12 g CO₂ kapsülüyle çalışan, yarı-otomatik ve blowback mekanizmalı bir havalı tabancadır. Kullanım alanları: taktik/temel eğitim, poligon çalışmaları, hobi/plinking, koleksiyon ve gösteri atışları.
+TEKNİK ÖZELLİKLER (MODELE GÖRE DEĞİŞEBİLİR)
+Kalibre: 4.5 mm (.177) BB; pellet uyumlu versiyonlar olabilir.
+Güç kaynağı: 1 × 12 g CO₂ kapsülü (şarjör içinde veya grip altı yuvasında yerleşim modele göre değişir).
+Aksiyon: Yarı-otomatik, gerçekçi blowback (hareket eden slide).
+Namlu tipi: BB versiyonlarında düz veya hafif rifling; pellet versiyonlar yivli namlu içerebilir.
+Çıkış hızı (muzzle velocity): Ortalama 300–340 fps aralığında beklenir; mühimmat, ortam sıcaklığı ve CO₂ basıncına göre değişir.
+Enerji (joule): Model ve ülke versiyonuna göre değişkenlik gösterir.
+Şarjör kapasitesi: Genellikle 16–17 BB aralığı (model varyasyonuna bağlı).
+Uzunluk: Yaklaşık 220–225 mm civarı (model varyasyonuna göre).
+Ağırlık: Yaklaşık 950–1.170 g aralığında, full-metal hissi veren ağırlık.
+Gövde malzemesi: Full-metal üst kapak ve metal gövde elemanları; bazı küçük iç parçalar polimer olabilir.
+Nişangâh: Sabit veya kontrast ön/arka nişangâh; bazı modellerde üst kızak/aksesuar yuvası bulunabilir.
+Emniyet: Kabza emniyeti (beavertail grip safety), manuel emniyet ve slide/trigger kilit fonksiyonları modele göre bulunur.
+İÇ MEKANİK YAPI VE PARÇA AÇIKLAMALARI
+Slide / Üst kapak: Metal olup blowback hareketine uygun şekilde tasarlanır; her atışta geri gelir ve gerçekçi geri tepme hissi verir.
+Namlu içi: Pellet versiyonlarda yivli namlu doğruluğu artırır; BB versiyonlarda pratik kullanım amaçlı düz ya da hafif rifling olabilir.
+CO₂ yuvası ve conta sistemi: CO₂ kapsülü özel conta ve kilitleme mekanizmasıyla yerleştirilir; contalar aşınmaya tabidir ve zamanla değiştirilmeli.
+Şarjör (magazine): BB beslemesi ve bazı varyantlarda CO₂ kapsülü entegrasyonu; şarjör yapısı model tipine göre farklılık gösterir.
+Tetik grubu: Gerçek 1911 hissi verecek şekilde tasarlanmış tetik, sear ve hammer/striker etkileşimi; iki aşamalı tetik hissi tipiktir.
+Conta ve keçe setleri: CO₂ sızıntılarına karşı kritik öneme sahiptir; performans düşüşlerinde ilk kontrol edilmesi gereken parçalar arasındadır.
+PERFORMANS VE ATISSAL DAVRANIŞ
+Doğruluk: Pellet + yivli namlu kombinasyonu en iyi isabet/gruplama performansını verir. BB ile yapılan atışlar daha ekonomik ve eğlence odaklı olup grup çapı pellet’e göre genelde daha geniş olur.
+CO₂ etkisi: CO₂ basıncı sıcaklığa bağlı olarak değişir; soğuk havada performans düşebilir, sıcak havada ise artış görülebilir.
+Blowback etkisi: Görsel ve dokunsal gerçekçilik sunar; aynı zamanda CO₂ tüketimini hafifçe artırır.
+KULLANIM, BAKIM VE ÖMÜR UZATMA ÖNERİLERİ
+CO₂ kapsülü değişimi: Üretici talimatlarına uygun olarak kapsülü takıp sıkın; contaların durumunu kontrol edin.
+Namlu temizliği: Düzenli temizlik, özellikle pellet kullanılan versiyonlarda yivlerin temiz tutulması doğruluğu korur.
+Yağlama: Silikon bazlı yağlar önerilir; aşırı yağlama parça tutukluğuna yol açabilir.
+Conta bakımı: CO₂ contaları ve blowback conta setleri düzenli olarak kontrol edilmeli, sızıntı halinde değiştirilmelidir.
+Depolama: CO₂ kapsüllerini serin ve kuru yerde saklayın; cihazı kilitli ve çocuk erişimine kapalı tutun.
+Deneme: Satın almadan önce imkân varsa ürünü test etmek veya satıcıdan test verisi istemek faydalıdır.
+GÜVENLİK VE HUKUKİ HATIRLATMALAR
+Havalı tabancalar ciddi yaralanmalara yol açabilir; atış sırasında her zaman koruyucu gözlük kullanın ve uygun arka plan sağlayın.
+Türkiye’de havalı tabancalar ve taşıma/ kullanım düzenlemeleri modele göre değişebilir; satın alma öncesi bayi ve ilgili resmi kurumlarla mevzuatı teyit edin.
+Kamuya açık alanlarda kullanım ve taşıma kurallarına uyun.
+NEDEN PRIZMA AV — PRIZMA SAVUNMA’DAN ALMALISINIZ?
+Orijinal ürün temini ve garanti: Mağazamız orijinal ürün sağlama ve garanti desteği sunar.
+Stok ve yedek parça: Emperor Scorpion ve benzeri premium modellerin yedek parça, CO₂, BB/pellet tedarikinde geniş stok avantajı.
+Teknik servis ve satış sonrası destek: Conta değişimi, bakım ve onarım gibi teknik hizmetlerde destek sağlanır.
+Rekabetçi fiyatlandırma: Tedarikçi ilişkileri ve dönemsel kampanyalar sayesinde müşterilere avantajlı fiyatlar sunuyoruz.
+Deneme imkanı: İmkan dâhilinde ürünü poligonda deneme ve performansını gözlemleme olanağı sunuyoruz.
+S.S.S. (KISA SORU-CEVAP)
+S: Emperor Scorpion hangi mühimmatla daha isabetlidir?
+C: Pellet (diabolo) kullanımı ve yivli namlu kombinasyonu en yüksek isabeti verir.
+S: Blowback CO₂ tüketimini artırır mı?
+C: Evet, blowback mekanizması CO₂ tüketimini bir miktar artırır.
+S: Bu ürün ruhsata tabi mi?
+C: Türkiye’de mevzuat modele göre değişir; kesin bilgi için bayi ve ilgili resmi kurumlarla teyit edin.
+SEO ANAHTAR KELİMELERİ
+Sig Sauer 1911 Emperor Scorpion, Emperor Scorpion blowback, 1911 CO₂ havalı tabanca, Emperor Scorpion teknik özellikleri, Emperor Scorpion Türkiye, Prizma Av Emperor Scorpion fiyatı.
+SONUÇ VE SATIN ALMA DAVETİ
+Sig Sauer 1911 Emperor Scorpion, 1911 platformunu seven ve gerçekçi blowback hissi arayan kullanıcılar için güçlü bir seçenektir. Hangi versiyonun (BB vs pellet, şarjör kapasitesi, aksesuar uyumluluğu) ihtiyaçlarınıza uygun olduğunu belirlemek için kullanım amacınızı netleştirin. Güncel stok, model varyantları, garanti koşulları ve fiyat bilgisi için Prizma Av — Prizma Savunma ile iletişime geçin; size en uygun modeli ve satın alma koşulunu sunalım.
+İLETİŞİM — PRIZMA AV (PRIZMA SAVUNMA)
+Adres: Menderes Mah. Trabzon Blv. No: 119, Dulkadiroğlu / Kahramanmaraş
+Telefon: 0344 231 0187 – 0344 231 55 01
+WhatsApp: 0532 722 1746
+
+--- FILE: Sig Sauer P229 Blowback Havalı Tabanca.docx ---
+
+SİG SAUER P229 BLOWBACK HAVALI TABANCA — TÜM TEKNİK ÖZELLİKLER, KULLANIM, BAKIM VE PRIZMA AV’DA TEMİN AVANTAJI
+GİRİŞ
+Sig Sauer P229, kompakt boyutlu, güvenilirliği ve ergonomisi ile bilinen bir hizmet/sivil tabanca platformudur. Havalı dünya versiyonları (CO₂ blowback) bu platformun gerçekçi ergonomisini, tetik hissini ve “slayd” geri tepmesini taklit eder. Aşağıda P229 blowback havalı tabancanın teknik ve pratik tüm ayrıntılarını; performans, bakım, güvenlik ve neden Prizma Av — Prizma Savunma’dan temin etmeniz gerektiğini SEO uyumlu şekilde bulacaksınız.
+MODEL TANIMI VE GENEL ÖZELLİKLER
+Sig Sauer P229 (Blowback) — CO₂ tahrikli, blowback (üst kapak hareketli) mekanizmalı, genelde full-metal veya metal üst kapak + sağlam gövde kombinasyonlu replika havalı tabanca. Kullanım amaçları: taktik/temel eğitim, poligon çalışmaları, hobi-plinking, gösteri ve koleksiyon.
+TEKNİK ÖZELLİKLER (MODEL VARYASYONLARINA GÖRE DEĞİŞEBİLİR)
+Kalibre: 4.5 mm (.177) çelik BB veya bazı versiyonlarda pellet (diabolo) uyumluluğu olabilir.
+Enerji kaynağı: 1 × 12 g CO₂ kapsülü (şarjör içinde veya grip altı yuvasında konumlanma modele göre değişir).
+Aksiyon: Yarı otomatik, blowback (slide hareketli).
+Namlu tipi: BB versiyonlarında düz veya hafif rifling; pellet versiyonlar yivli (rifled) namlu içerebilir.
+Çıkış hızı (muzzle velocity): Genelde 280–360 fps aralığında rapor edilen referans değerler görülür; gerçek değer model, mühimmat ve ortam koşullarına göre değişir.
+Enerji (joule): Model ve ülke versiyonuna bağlı olarak farklılık gösterir; tipik tüketici versiyonlarında güvenlik sınırları içinde kalan değerler beklenir.
+Şarjör kapasitesi: Genellikle 12–16 BB aralığında şarjör kapasiteleri yaygındır; bazı versiyonlarda 12+1, 15 veya 16 şeklinde belirtilebilir.
+Uzunluk: Yaklaşık 180–200 mm civarı (kompakt platform olması nedeniyle P226/P229 farkı boyutta hissedilir).
+Ağırlık: Yaklaşık 700–950 g arası (full-metal hissi veren varyasyonlarda daha ağır).
+Gövde malzemesi: Full-metal üst kapak ve metal dış yüzey veya metal üst + polimer gövde kombinasyonları olabilir.
+Tetik: Tek kademeli veya iki kademeli tetik mekanizması, model varyasyonuna göre tetik çekiş kuvveti değişir.
+Emniyet: Manuel emniyet, tetik emniyeti veya kabza emniyeti gibi 1911/P229 benzeri güvenlik unsurları modele göre sunulabilir.
+Nişangâh: Sabit ön/arka nişangâh veya kontrast nişangâh; bazı modellerde aksesuar/optik montajı için üst kızak bulunabilir.
+Paket içeriği: Tabanca, şarjör, kullanıcı kılavuzu, garanti belgesi; bazı paketlerde yedek conta veya küçük bakım kiti bulunabilir.
+DETAYLI İÇ MEKANİK AÇIKLAMA
+Slide / Üst kapak: Metal yapı, blowback hareketiyle atışta geri gelir; slayd sıkılığı ve geri tepme hissi gerçekçiliği belirleyen ana faktördür.
+Namlu & iç yivler: Pellet uyumlu versiyonlarda rifled namlu doğruluğu artırır. BB versiyonlarda ise düz namlu kullanımına uygun düzenlemeler görülebilir.
+CO₂ yuvası ve conta sistemi: CO₂ kapsülü için doğru oturuş, conta sıkılığı ve sızdırmazlık gereklidir. Conta ve conta yuvası sızdırmazlığın sağlanmasında kritik parçadır.
+Şarjör (magazine): BB/pellet rezervuarı ve bazı tasarımlarda CO₂ entegre yuvası barındırır; besleme mekanizması, follower ve yay düzeni düzgün çalışmalı.
+Tetik grubu & iç kilitler: Sear, hammer/striker etkileşimi ve tetik mili dayanıklılığı, atış hissi ve güvenlik için önemlidir.
+Conta & O-ring setleri: CO₂ uygulamalarında yedek conta erişimi ve değişimi, sızıntı sorunlarını çözmede ilk adımdır.
+PERFORMANS VE ATISSAL DAVRANIŞ
+Doğruluk: Pellet + yivli namlu kombinasyonu en iyi doğruluğu sağlar; BB ile yapılan atışlarda grup çapı genelde daha geniştir.
+Tutarlılık: CO₂ basıncına bağlı olarak atışlar başlangıçta daha güçlü, kapsülün basıncı düştükçe zayıflama eğiliminde olabilir. Blowback etkisi CO₂ tüketimini artırır.
+İklim etkisi: Soğuk hava CO₂ basıncını düşürerek performansı azaltabilir; sıcaklık yükseldiğinde basınç artar.
+Geri tepme hissi: Blowback mekanizması hem görsel hem dokunsal gerçekçilik sağlar; eğitim amaçlı replika kullanımında önemli bir unsurdur.
+KULLANIM, BAKIM VE ÖLÜM UZATMA ÖNERİLERİ
+CO₂ değiştirmeden önce üretici kılavuzunu takip edin; contaların temiz ve bütün olduğundan emin olun.
+Namlu temizliği ve düzenli bakım doğruluğu korur; pellet için yivli namlu özel temizleme gerektirir.
+Silikon bazlı yağlar ile düşük miktarda yağlama önerilir; yağın temas ettiği contalara zarar verebilecek solvent bazlı yağlardan kaçının.
+Blowback contaları ve CO₂ O-ring’leri periyodik kontrol edilmeli; sızdırma veya performans düşüşü varsa değiştirin.
+Şarjör yaylarını aşırı zorlamayın; uzun süre dolu bırakmak yay performansını düşürebilir.
+Tabancayı kilitli ve çocuk erişimine kapalı yerde saklayın.
+GÜVENLİK VE HUKUKİ HUSUSLAR
+Havalı tabancalar tehlikelidir; daima hedef arkasında güvenli malzeme (ör. atış arkası plaka) ve koruyucu gözlük kullanın.
+Türkiye’deki düzenlemeler modele göre farklılık gösterebilir; satın almadan önce bayi ve ilgili resmi kurumlarla mevzuatı teyit edin.
+Kamuya açık alanlarda taşıma ve kullanma kurallarına uyun; görünüş olarak gerçek silahı andıran aletlerin taşıma riski ve yasal sorunları olabilir.
+NEDEN PRIZMA AV — PRIZMA SAVUNMA?
+Orijinal ürün temini: Yetkili tedarik ilişkilerimiz sayesinde orijinal ve garanti kapsamlı ürünler sunuyoruz.
+Stok ve yedek parça: P229’in farklı varyantları, O-ring, conta, şarjör ve CO₂ tedarikinde geniş stok avantajı sağlıyoruz.
+Teknik servis ve satış sonrası destek: Conta değişimi, parça temini ve bakım hizmeti sunuyoruz.
+Fiyat avantajı: Tedarik zinciri ilişkilerimiz ve dönemsel kampanyalar sayesinde rekabetçi fiyat sağlıyoruz.
+Deneme imkânı: İmkan varsa ürünün poligonda denenmesi veya test raporu verilmesi ile alıcı memnuniyeti hedeflenir.
+S.S.S. (KISA)
+S: P229 hangi mühimmatla daha isabetlidir?
+C: Pellet (diabolo) + yivli namlu kombinasyonu genelde en yüksek isabeti verir.
+S: Blowback enerji tüketimini artırır mı?
+C: Evet; blowback mekanizması CO₂ tüketimini bir miktar artırır.
+S: Bu ürün ruhsata tabi midir?
+C: Türkiye’de mevzuat modele göre değişir; kesin bilgi için bayi ve ilgili resmi mercilerle teyit edin.
+SEO ANAHTAR KELİMELERİ
+Sig Sauer P229 havalı tabanca, P229 blowback, P229 CO₂, P229 full-metal, P229 teknik özellikleri, P229 Türkiye fiyatı, Prizma Av P229.
+META ÖRNEĞİ
+Meta Başlık: Sig Sauer P229 Blowback Havalı Tabanca — Teknik İnceleme ve Satın Alma Rehberi (Prizma Av)
+Meta Açıklama: Sig Sauer P229 blowback havalı tabancanın ayrıntılı teknik özellikleri, performans, bakım ipuçları ve Prizma Av — Prizma Savunma’dan temin avantajları.
+İLETİŞİM — PRIZMA AV (PRIZMA SAVUNMA)
+Adres: Menderes Mah. Trabzon Blv. No: 119, Dulkadiroğlu / Kahramanmaraş
+Telefon: 0344 231 0187 – 0344 231 55 01
+WhatsApp: 0532 722 1746
+KAPANIŞ
+Sig Sauer P229 blowback havalı tabanca; kompakt, gerçekçi hisli ve eğitim/ hobi amaçlı kullanımı destekleyen bir modeldir. Hangi versiyonun (BB vs pellet, şarjör kapasitesi, aksesuar uyumluluğu) ihtiyaçlarınıza uygun olduğunu belirlemek için kullanım amacınızı netleştirin. Güncel stok, model varyantları, garanti ve fiyat bilgisi için Prizma Av — Prizma Savunma ile iletişime geçin; size en uygun seçeneği sağlayalım.
+
+--- FILE: Sig Sauer 1911 We The People Blowback Havalı Tabanca.docx ---
+
+SİG SAUER 1911 “WE THE PEOPLE” BLOWBACK HAVALI TABANCA — TÜM TEKNİK DETAYLAR, KULLANIM, BAKIM VE PRIZMA AV’DA TEMİN AVANTAJI
+GİRİŞ
+Sig Sauer 1911 “We The People” Blowback, klasik 1911 platformunun estetiğini ve ergonomisini koruyarak CO₂ tahrikli, blowback (üst kapak hareketli) mekanik ile gerçekçi atış hissi sunan bir havalı tabancadır. Hem koleksiyonculara hem de eğitim, simülasyon ve hobi amaçlı atış yapan kullanıcılara hitap eder. Bu yazı ürünü en küçük teknik ayrıntısına kadar inceler; hangi mühimmatlarla çalıştığı, performans parametreleri, iç işleyişi, bakım ve güvenlik gereksinimleri ile Prizma Av — Prizma Savunma’dan satın almanın avantajlarını açıklar.
+MODEL TANIMI VE TEMEL ÖZELLİKLER
+Sig Sauer 1911 “We The People” Blowback: Genelde 4.5 mm (.177) BB uyumlu veya pellet uyumlu varyantları bulunan, 12 g CO₂ kapsülüyle çalışan, tam metal (full-metal) veya metal ağırlıklı gövde yapısına sahip bir yarı-otomatik havalı tabancadır. Blowback sistemi üst kapağın her atışta geri hareket etmesini sağlar; bu, görsel ve dokunsal olarak gerçek silaha yakın bir deneyim sunar.
+TEKNİK SPESİFİKASYONLAR (MODEL VARYASYONLARINA GÖRE DEĞİŞEBİLİR)
+Kalibre: 4.5 mm (.177) çelik BB; bazı versiyonlarda diabolo/pellet uyumluluğu olabilir.
+Güç Kaynağı: 1 × 12 g CO₂ kapsülü (şarjör içinde veya grip altı yuvasında konumlanma modele göre değişir).
+Aksiyon: Yarı-otomatik, blowback (hareket eden slide).
+Namlu: BB versiyonlarında düz namlu veya hafif rifling; pellet uyumlu versiyonlarda yivli (rifled) namlu olabilir.
+Çıkış Hızı (Muzzle Velocity): Tipik aralık 280–340 fps (≈85–104 m/s) civarı; mühimmat türü, ortam sıcaklığı ve CO₂ basıncına göre değişir.
+Enerji (Joule): Model varyasyonuna bağlı olarak genelde tüketici güvenlik sınırları içinde kalan değerler; genellikle 2–10 J aralığına denk gelen farklı üretici/versiyon verileri görülebilir.
+Şarjör Kapasitesi: Genellikle 15–17 BB aralığı; model açıklamasına göre değişiklik gösterebilir.
+Uzunluk: Yaklaşık 200–230 mm aralığı (model varyasyonuna bağlı).
+Ağırlık: Yaklaşık 800–1.200 g aralığında; full-metal hissi veren versiyonlarda daha yüksek.
+Gövde Malzemesi: Full-metal üst kapak ve metal gövde elemanları; bazı iç parçalar veya kaplama bileşenleri polimer olabilir.
+Nişangâh: Sabit veya kontrast ön/arka nişangâh; bazı varyantlarda aksesuar rail veya üst kızak bulunabilir.
+Emniyet: Kabza emniyeti (grip safety), manuel emniyet ve tetik kilidi fonksiyonları modele göre değişebilir.
+Paket İçeriği (örnek): Tabanca, şarjör, kullanıcı kılavuzu, garanti belgesi; bazen yedek conta ya da küçük bakım kiti dahildir.
+İÇ MEKANİK YAPI VE PARÇALARIN AYRINTILI AÇIKLAMASI
+Slide / Üst Kapak: Metalden imal edilmiştir; blowback sistemi ile her atışta geri gelir. Slaydın oynaklığı ve geri tepme hissi gerçekçiliği belirler.
+Namlu İçi: Pellet versiyonlarında yivler isabeti artırır; BB versiyonları daha çok plinking amaçlıdır.
+CO₂ Yuvası ve Conta Sistemi: CO₂ kapsülü uygun conta ve kilitleme sistemiyle yerleştirilir; bu contalar süreyle aşınır ve değiştirilmelidir. CO₂ sızıntısı performansı hızlıca düşürür.
+Şarjör (Magazine): BB rezervuarı ve bazen CO₂ kapsül entegrasyonu içerebilir; besleme mekanizması, follower ve yay düzeni sağlıklı çalışmalıdır.
+Tetik Grubu: Sear, hammer/striker düzeni ve tetik geri bildirimi 1911 ergonomisini andırır; tetik pull değeri ve hissi model varyasyonuna göre farklılık gösterir.
+Conta ve O-ring Setleri: CO₂ uygulamalarında kritik parçalar; sızıntı oluştuğunda ilk bakılacak yerlerdir.
+PERFORMANS, DOĞRULUK VE ATISSAL DAVRANIŞ
+Doğruluk: Pellet + yivli namlu kombinasyonu, en iyi grup çapını sağlar. BB ile yapılan atışlar eğlence amaçlı ve kısa mesafede etkilidir ancak pellet kadar isabetli değildir.
+Tutarlılık: CO₂ basıncı başlangıçta daha yüksek olabilir; kapsülün basıncı düştükçe atışlar hafifçe zayıflar. Blowback mekanizması CO₂ tüketimini arttırabilir.
+İklim Etkisi: CO₂ basıncı sıcaklığa bağlıdır; soğuk havada performans düşebilir, sıcak havada artış gözlemlenebilir.
+Geri Tepme (Blowback): Her atışta slaydın geri hareketi hem görsel hem fiziksel gerçekçilik sunar; eğitim amaçlı tekrar pratiğinde önemli bir avantajdır.
+KULLANIM VE DETAYLI BAKIM ÖNERİLERİ
+CO₂ Kapsülü Değişimi: Üretici talimatları doğrultusunda kapsül takılmalı; contaların yerleşimi ve sızdırmazlık kontrol edilmeli. CO₂ sızıntısı performansı olumsuz etkiler.
+Namlu Temizliği: Düzenli temizlik, pellet kullanılan versiyonlarda yivlerin temiz kalmasını sağlar; BB kullanımında manyetik parçacık birikimine dikkat edilmelidir.
+Yağlama: Silikon bazlı yağlar önerilir; fazla yağlama mekanik parçalarda tutukluk yapabilir. Yağlama noktaları üretici kılavuzunda belirtilir.
+Conta Bakımı ve Değişim: O-ring ve conta setleri zamanla sertleşir veya yıpranır; sızıntı veya performans düşüşü varsa değiştirin.
+Depolama: CO₂ kapsüllerini serin ve kuru yerde saklayın; cihazı kilitli ve çocuk erişimine kapalı tutun.
+İptal Edilebilen Emniyet İşlemleri: Uzun süre kullanılmayacaksa CO₂ kapsülünü çıkarın ve silahı boş şarjörle saklayın.
+Deneme ve Test: Satın alma öncesinde (mümkünse) poligonda deneme veya satıcıdan test verisi talep edin.
+GÜVENLİK VE HUKUKİ HATIRLATMALAR
+Havalı tabancalar tehlikelidir; atış sırasında uygun koruyucu gözlük kullanın ve güvenli arka plan sağlayın.
+Türkiye’de havalı tabancalarla ilgili düzenlemeler modele ve kullanım amacına göre değişebilir; satın almadan önce bayi ve ilgili resmi merciler ile mevzuatı teyit edin.
+Gerçek silah görünümünde olan modellerin açık alanda taşınması risk yaratabilir; taşıma ve saklama kurallarına uyun.
+NEDEN PRIZMA AV — PRIZMA SAVUNMA’DAN ALMALISINIZ?
+Orijinal Ürün ve Garanti: Prizma Av, tedarik ilişkileri ve yetkili kanallarıyla orijinal ürün temin eder; garanti ve servis desteği sağlar.
+Stok & Aksesuar: We The People ve benzeri 1911 modelleri, yedek conta, CO₂ kapsül, BB/pellet tedariki ve şarjör gibi aksesuar stoklarıyla desteklenir.
+Teknik Servis: Conta değişimi, bakım, parça değişimi ve onarım hizmetleri sunulur.
+Rekabetçi Fiyatlandırma: Tedarik zinciri avantajları ve dönemsel kampanyalar sayesinde uygun fiyat politikası uygulanır.
+Deneme İmkanı: İmkan dâhilinde poligonda test ve deneme olanağı ile alıcı memnuniyeti hedeflenir.
+S.S.S. (KISA SORU-CEVAP)
+S: “We The People” hangi mühimmatla daha isabetlidir?
+C: Pellet (diabolo) ve yivli namlu kombinasyonu genelde en yüksek isabeti verir; BB kullanımında isabet pellet’e göre düşüktür.
+S: Blowback CO₂ tüketimini etkiler mi?
+C: Evet; blowback mekanizması CO₂ tüketimini arttırır.
+S: Bu model ruhsata tabi mi?
+C: Türkiye’de düzenlemeler modele göre değişir; kesin bilgi için bayi ve ilgili resmi mercilerle teyit edilmelidir.
+SEO ANAHTAR KELİMELERİ
+Sig Sauer 1911 We The People, We The People havalı tabanca, 1911 blowback CO₂, We The People teknik özellikleri, Sig 1911 havalı tabanca Türkiye, Prizma Av We The People fiyatı.
+META ÖRNEĞİ
+Meta Başlık: Sig Sauer 1911 “We The People” Blowback Havalı Tabanca — Teknik İnceleme ve Satın Alma Rehberi (Prizma Av)
+Meta Açıklama: Sig Sauer 1911 “We The People” blowback havalı tabancanın detaylı teknik incelemesi, performans, bakım ve Prizma Av — Prizma Savunma’dan temin avantajları.
+SONUÇ VE SATIN ALMA DAVETİ
+Sig Sauer 1911 “We The People” Blowback, klasik 1911 ergonomisini seven ve gerçekçi blowback hissi arayan kullanıcılar için güçlü, estetik ve performanslı bir seçenektir. Hangi versiyonun (BB vs pellet, şarjör kapasitesi, aksesuar uyumu) sizin ihtiyaçlarınıza uygun olduğunu belirlemek için kullanım amacınızı netleştirin. Güncel stok, model varyantları, garanti koşulları ve fiyat bilgisi için Prizma Av — Prizma Savunma ile iletişime geçin; size en uygun modeli ve satın alma koşulunu sağlayalım.
+İLETİŞİM — PRIZMA AV (PRIZMA SAVUNMA)
+Adres: Menderes Mah. Trabzon Blv. No: 119, Dulkadiroğlu / Kahramanmaraş
+Telefon: 0344 231 0187 – 0344 231 55 01
+WhatsApp: 0532 722 1746
