@@ -62,11 +62,11 @@ Bütçenize ve oyun senaryonuza (CQB, Orman, Keskin Nişancı) uygun ASG modelin
 
 📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
 =====================================================
-**SEO Başlığı:** 
-**Anahtar Kelimeler:** 
-**SEO Açıklaması:** 
+**SEO Başlığı:** ASG Airsoft Tüfek ve Tabanca Modelleri | Prizma Av
+**Anahtar Kelimeler:** ASG airsoft, ASG CZ Scorpion, ASG airsoft tüfek, airsoft aeg, prizma av asg
+**SEO Açıklaması:** Profesyonel oyuncular için ASG Airsoft tüfek ve tabanca modelleri. CZ Scorpion EVO 3 ve BREN serisi teknik özellikleri Prizma Av'da.
 **Başlık:** ASG Airsoft Dev Rehberi: Tüfek & Tabanca İncelemeleri
-**Blog Özeti:** 
-**Hedef Kelime:** prizma av
+**Blog Özeti:** Profesyonel oyuncular için ASG Airsoft tüfek ve tabanca modelleri. CZ Scorpion EVO 3 ve BREN serisi teknik özellikleri Prizma Av'da.
+**Hedef Kelime:** asg airsoft
 **Uzantı / URL Slug:** asg_airsoft_mega_rehberi
 =====================================================
