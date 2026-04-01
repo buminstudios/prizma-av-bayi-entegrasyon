@@ -1,3 +1,5 @@
+⬇️ **BLOG İÇERİĞİ AŞAĞIDADIR (SEÇİP KOPYALAYINIZ):** ⬇️
+
 # Prizma Av: Türkiye'nin En Büyük Outdoor, Doğa Sporları ve Av Marketi
 
 Ormanın derinliklerinde, sarp dağ eteklerinde ya da ulusal poligonların hedef tahtalarında... Tüm doğa sporcularının ve profesyonel taktik atıcılarının aklında tek bir güvence noktası vardır: "Ekipmanım beni yarı yolda bırakır mı?" Bu endişeyi 20 yıldır başarıyla silip atan ve kahraman doğa tutkunlarına "tam donanımlı zırh" satan efsanevi tedarik markası olarak, biz **Prizma Av'ız.**
@@ -23,3 +25,18 @@ Alışveriş sadece paranın transferi değildir, bir "Emanet" sözü ve arkası
 Sabah dükkan açılışından sönmeyen heyecanla **(0344) 231 01 87 - (0344) 231 55 01 numaralı Trabzon Bulvarı (Kahramanmaraş Dulkadiroğlu Merkez)** ofis santralimizi tuşlayın. Veya mağaza içine canlı video/fotoğraf kanalıyla ulaşıp ekipmanları masada test ederek görmek için tüm Türkiye’nin yegane **WhatsApp Hattı: 0532 722 17 46** 'ya tıklayın!
 
 ### Prizma Av: Türkiye'nin En Büyük Zırhlı Kutusu. Vurduğunuzunuz Devamlı Karavana Olmasın!
+
+<br><br><br>
+
+---
+
+📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
+=====================================================
+**SEO Başlığı:** Prizma Av: Türkiye'nin En Büyük Outdoor, | Prizma Av
+**Anahtar Kelimeler:** prizma hakkimizda turkiyenin, prizma, hakkimizda, turkiyenin, buyuk, marketi, prizma av, prizma av bayi, av sporları
+**SEO Açıklaması:** Ormanın derinliklerinde, sarp dağ eteklerinde ya da ulusal poligonların hedef tahtalarında... Tüm doğa sporcularının ve profesyonel taktik atıcılarının aklında ...
+**Başlık:** Prizma Av: Türkiye'nin En Büyük Outdoor, Doğa Sporları ve Av Marketi
+**Blog Özeti:** Ormanın derinliklerinde, sarp dağ eteklerinde ya da ulusal poligonların hedef tahtalarında... Tüm doğa sporcularının ve profesyonel taktik atıcılarının aklında ...
+**Hedef Kelime:** prizma hakkimizda turkiyenin
+**Uzantı / URL Slug:** prizma-av-hakkimizda-turkiyenin-en-buyuk-av-marketi
+=====================================================

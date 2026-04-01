@@ -1,3 +1,5 @@
+⬇️ **BLOG İÇERİĞİ AŞAĞIDADIR (SEÇİP KOPYALAYINIZ):** ⬇️
+
 # Yivsiz Silah Ruhsatı Dilekçe ve Evrak İşlemleri Rehberi (2026 Güncel)
 
 Yivsiz Av Tüfeği Satın Alma Belgesi, Yivsiz Silah Ruhsatnamesi yenileme işlemleri her yıl değişen harçlar ve Emniyet / Jandarma genelgeleri nedeniyle kafa karıştırıcı hale gelebiliyor. **Türkiye'nin en büyük av marketi Prizma Av** olarak, 2026 yılı Yivsiz Silah Ruhsat başvurunuzda yanınızda bulundurmanız veya E-Devlet üzerinden almanız gereken belgelerin kesin bir referans listesini tasarladık. Hiç geri çevrilmeden ruhsat başvurunuzu ilk seferde nasıl tamamlayacağınızı adım adım özetledik.
@@ -26,4 +28,19 @@ E-Devlet Kapısı → İnternet Vergi Dairesi (Kimlik Doğrulama) kısmına giri
 ### 5- Başvuru Dilekçesi ve Yarım Kapak Dosya
 Gittiğiniz Silah Ruhsat Amirliğinde genellikle hazır basılı şablon halinde (veya kırtasiyeden alacağınız) dilekçeyi türekmez kalem ile doldurun, ikametgah adresinizi, kan grubunuzu yazarak hepsini Pembe/Mavi renkli yarım kapaklı dosyaya takarak sıra numarası aldığınız polis memuru / astsubaya teslim ediniz. Parmak iziniz yoksa ücretsiz sisteme çekilecektir.
 
-Tüm bu işlemleri aşamalı olarak E-devlet (EGM) takibinden izleyip "Satın Alma Belgesi Çıktı" (Süresi 6 aydır) bilgisini ulaştığınız gün, **Türkiye'nin en büyük av marketi Prizma Av** mağazamıza faturanız ile gelebilir ve yepyeni yivsiz pompalı, kinetik, yarı otomatik av tüfeğinize tamamen güvenli bir şekilde sahip olabilirsiniz. 
+Tüm bu işlemleri aşamalı olarak E-devlet (EGM) takibinden izleyip "Satın Alma Belgesi Çıktı" (Süresi 6 aydır) bilgisini ulaştığınız gün, **Türkiye'nin en büyük av marketi Prizma Av** mağazamıza faturanız ile gelebilir ve yepyeni yivsiz pompalı, kinetik, yarı otomatik av tüfeğinize tamamen güvenli bir şekilde sahip olabilirsiniz.
+
+<br><br><br>
+
+---
+
+📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
+=====================================================
+**SEO Başlığı:** Yivsiz Silah Ruhsatı Dilekçe ve Evrak İş | Prizma Av
+**Anahtar Kelimeler:** yivsiz silah ruhsat, yivsiz, silah, ruhsat, evraklari, 2026, prizma av, prizma av bayi, av sporları
+**SEO Açıklaması:** Yivsiz Av Tüfeği Satın Alma Belgesi, Yivsiz Silah Ruhsatnamesi yenileme işlemleri her yıl değişen harçlar ve Emniyet / Jandarma genelgeleri nedeniyle kafa karış...
+**Başlık:** Yivsiz Silah Ruhsatı Dilekçe ve Evrak İşlemleri Rehberi (2026 Güncel)
+**Blog Özeti:** Yivsiz Av Tüfeği Satın Alma Belgesi, Yivsiz Silah Ruhsatnamesi yenileme işlemleri her yıl değişen harçlar ve Emniyet / Jandarma genelgeleri nedeniyle kafa karış...
+**Hedef Kelime:** yivsiz silah ruhsat
+**Uzantı / URL Slug:** yivsiz-silah-ruhsat-evraklari-2026
+=====================================================

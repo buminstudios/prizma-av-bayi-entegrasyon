@@ -1,3 +1,5 @@
+⬇️ **BLOG İÇERİĞİ AŞAĞIDADIR (SEÇİP KOPYALAYINIZ):** ⬇️
+
 # Avcılıkta İlk Yardım, Koruyucu Ekipman ve Acil Durum Setleri (IFAK)
 
 Sakin bir av gününde ormandaki ağaçtan inen bir domuz sürüsü, bıçakla kamp odunu keserken kayan keskin bir çelik veya poligonda seken bir yorgun mermi çekirdeği... Hedefi vurmak ve kamp ateşi yakmak işin eğlencesidir, asıl "Hayatta Kalma (Survival)" ise beklenmedik krizlerde o ateşin yanında ailenizi ve sizi hayatta tutacak medikal donanımınızın varlığıdır.
@@ -30,3 +32,18 @@ Canınızı o ufak pamuklu ilkyardım torbalarına değil, muharebe alanı stand
 * Dağa tırmanmadan önce hayatta kalma teçhizatınız yetişsin diye özenle seçilerek gün bitmeden mühürlenen **Aynı Gün Kargo (Hızlı Kargo)** rüzgarı hemen ardınızda esiyor!
 
 Hangi balistik gözlüğün (Şeffaf veya Sarı Cam) orman avında yüksek kontrast oluşturacağını ya da elektronik kulaklığın kaç desibel kestiğini sorgulamak (IFAK detayları almak) isterseniz; mesai anlarında (0344 231 0187) İletişim Hattını Çaldırın veya **Aktif Prizma Av WhatsApp Çözüm Hattımız (0532 722 17 46)** personelini bir taktik soruyla zorlayın!
+
+<br><br><br>
+
+---
+
+📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
+=====================================================
+**SEO Başlığı:** Avcılıkta İlk Yardım, Koruyucu Ekipman v | Prizma Av
+**Anahtar Kelimeler:** avcilikta kampta ilk, avcilikta, kampta, ilk, yardim, acil, durum, setleri, prizma av, prizma av bayi, av sporları
+**SEO Açıklaması:** Sakin bir av gününde ormandaki ağaçtan inen bir domuz sürüsü, bıçakla kamp odunu keserken kayan keskin bir çelik veya poligonda seken bir yorgun mermi çekirdeği...
+**Başlık:** Avcılıkta İlk Yardım, Koruyucu Ekipman ve Acil Durum Setleri (IFAK)
+**Blog Özeti:** Sakin bir av gününde ormandaki ağaçtan inen bir domuz sürüsü, bıçakla kamp odunu keserken kayan keskin bir çelik veya poligonda seken bir yorgun mermi çekirdeği...
+**Hedef Kelime:** avcilikta kampta ilk
+**Uzantı / URL Slug:** avcilikta-ve-kampta-ilk-yardim-acil-durum-setleri
+=====================================================

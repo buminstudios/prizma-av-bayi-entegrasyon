@@ -1,3 +1,5 @@
+⬇️ **BLOG İÇERİĞİ AŞAĞIDADIR (SEÇİP KOPYALAYINIZ):** ⬇️
+
 # 12 Kalibre Av Fişeği Seçimi: Doğru Gramaj Nasıl Seçilir?
 
 Tüfeğinizi aldınız, ruhsatınıza işlettiniz ve sıra geldi cephanenizi seçmeye. Ancak "Av Fişeği" dediğinizde raflarda 24 gramdan 50 grama, No:1'den No:9 saçmaya kadar yüzlerce seçenek var. Doğru fişek = başarılı vuruş demektir. Yanlış gramajlı fişek, hedefe saçma değmesine rağmen hedefin düşmemesine, veya geri tepmeden dolayı tüfeğin size acı vermesine yol açar.
@@ -30,3 +32,18 @@ Bu gramajlar oldukça "Tepme (Recoil)" yaratır. Yaz günlerinde bu fişeklerin 
 Barut sıcakta çok daha şiddetli yanıp basınca dönüşür. Bu nedenle "Yazın düşük gramaj (28-30g), Kışın yüksek gramaj (32-36g)" kuralını hiçbir avcı/atıcı unutmamalıdır.
 
 Farklı namlu tipleri ve hedeflere en doğru kalibredeki mühimmatı test etmek ve danışmanlık almak isterseniz, sizi **Türkiye'nin en büyük av marketi Prizma Av** mağazamıza daima bekleriz!
+
+<br><br><br>
+
+---
+
+📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
+=====================================================
+**SEO Başlığı:** 12 Kalibre Av Fişeği Seçimi: Doğru Grama | Prizma Av
+**Anahtar Kelimeler:** kalibre fisegi secim, kalibre, fisegi, secim, rehberi, prizma av, prizma av bayi, av sporları
+**SEO Açıklaması:** Tüfeğinizi aldınız, ruhsatınıza işlettiniz ve sıra geldi cephanenizi seçmeye. Ancak "Av Fişeği" dediğinizde raflarda 24 gramdan 50 grama, No:1'den No:9 saçmaya ...
+**Başlık:** 12 Kalibre Av Fişeği Seçimi: Doğru Gramaj Nasıl Seçilir?
+**Blog Özeti:** Tüfeğinizi aldınız, ruhsatınıza işlettiniz ve sıra geldi cephanenizi seçmeye. Ancak "Av Fişeği" dediğinizde raflarda 24 gramdan 50 grama, No:1'den No:9 saçmaya ...
+**Hedef Kelime:** kalibre fisegi secim
+**Uzantı / URL Slug:** 12-kalibre-av-fisegi-secim-rehberi
+=====================================================
