@@ -1,8 +1,15 @@
----
-title: "Dünyaca Ünlü Lisanslı Airsoft Markaları (Beretta, Colt, Walther, HK, S&W, Cybergun) Tam Rehber"
-meta_title: "Beretta, Colt, Walther, HK Lisanslı Airsoft Modelleri | Prizma Av"
-meta_description: "Cybergun ve Umarex üretimi Beretta, Colt, Walther, Heckler & Koch, Smith & Wesson orijinal lisanslı airsoft tabanca ve tüfekleri Türkiye'nin en büyük bayisi Prizma Av'da."
----
+📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
+=====================================================
+**Başlık:** Dünyaca Ünlü Lisanslı Airsoft Markaları (Beretta, Colt, Walther, HK, S&W) Tam Rehber
+**Blog Özeti:** Gerçek silah üreticilerinin (Beretta, Colt, Walther, S&W) Cybergun ve Umarex lisanslı airsoft 1:1 kopyalarını yakından tanıyın.
+**Hedef Kelime:** lisanslı airsoft
+**Uzantı / URL Slug:** lisansli-airsoft-markalari-beretta-colt-walther-hk
+**SEO Başlığı:** Beretta, Colt, Walther, HK Lisanslı Airsoft Modelleri | Prizma Av
+**SEO Açıklaması:** Cybergun ve Umarex üretimi Beretta, Colt, Walther, Heckler & Koch, Smith & Wesson orijinal lisanslı airsoft tabanca ve tüfekleri Türkiye'nin en büyük bayisi Prizma Av'da.
+**Anahtar Kelimeler:** lisanslı airsoft, beretta airsoft, colt m4a1 airsoft, walther ppq airsoft, cybergun airsoft, fn scar airsoft
+=====================================================
+
+⬇️ **BLOG İÇERİĞİ (Aşağıdaki metni kopyalayıp "Blog İçeriği" kutusuna yapıştırın)** ⬇️
 
 # Dünyaca Ünlü Lisanslı Airsoft Markaları (Beretta, Colt, Walther, HK, S&W) Tam Rehber
 

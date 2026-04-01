@@ -1,8 +1,15 @@
----
-title: "Airsoft Başlangıç ve Profesyonel Ekipman Mega Rehberi (2025)"
-meta_title: "Airsoft Nedir? Başlangıç ve Pro Ekipman Rehberi 2025 | Prizma Av"
-meta_description: "Airsoft nedir, nasıl oynanır? Yeni başlayanlar ve profesyoneller için AEG, GBB tüfek, tabanca, BB ve koruyucu ekipman tavsiyeleri Türkiye'nin en büyük Airsoft bayisi Prizma Av'da."
----
+📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
+=====================================================
+**Başlık:** Airsoft Mega Rehberi: Silah Başlangıç ve Profesyonel Ekipman Seçimi 2025
+**Blog Özeti:** Airsoft nedir, nasıl başlanır ve pro seviye ekipmanlar nasıl seçilir? BB, gaz ve batarya tercihinden koruyucu donanımlara kadar dev airsoft başucu rehberi.
+**Hedef Kelime:** airsoft rehber
+**Uzantı / URL Slug:** airsoft-rehberi-baslangic-ve-profesyonel-ekipmanlar
+**SEO Başlığı:** Airsoft Başlangıç ve Pro Ekipman Rehberi | Prizma Av
+**SEO Açıklaması:** Yeni başlayanlar ve profesyoneller için Airsoft silah, batarya, BB ve gaz seçim rehberi. En iyi airsoft markaları ve bakım tüyoları Prizma Av'da.
+**Anahtar Kelimeler:** airsoft rehber, airsoft başlangıç, airsoft silahları, havalı tabanca hava tüfeği farkı, airsoft bb seçimi, green gas vs co2, prizma av airsoft
+=====================================================
+
+⬇️ **BLOG İÇERİĞİ (Aşağıdaki metni kopyalayıp "Blog İçeriği" kutusuna yapıştırın)** ⬇️
 
 # Airsoft Başlangıç ve Profesyonel Ekipman Mega Rehberi (2025)
 

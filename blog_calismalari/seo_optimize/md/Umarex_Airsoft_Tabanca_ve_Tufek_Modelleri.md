@@ -1,8 +1,15 @@
----
-title: "Umarex Airsoft Tabanca ve Tüfek Modelleri Tam Rehberi (2025)"
-meta_title: "Umarex Airsoft Tabanca ve Tüfek Modelleri | Yetkili Satıcı Prizma Av"
-meta_description: "Glock, Walther, Heckler & Koch lisanslı Umarex airsoft tabanca ve tüfek modelleri. En uygun fiyat, AEG, GBB tüfekler ve blowback tabancalar Prizma Av güvencesiyle detaylı incelemede."
----
+📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
+=====================================================
+**Başlık:** Umarex Airsoft Ekosistemi: Glock ve HK Lisanslı Tabanca ve Tüfekler
+**Blog Özeti:** Dünyanın en çok tercih edilen airsoft üreticilerinden Umarex'in Glock, HK ve Walther lisanslı modellerinin teknik incelemesi ve avantajları.
+**Hedef Kelime:** umarex airsoft
+**Uzantı / URL Slug:** umarex-airsoft-glock-hk-modelleri-ve-incelemesi
+**SEO Başlığı:** Umarex Airsoft Glock, HK ve Tüfek Modelleri | Prizma Av
+**SEO Açıklaması:** Umarex airsoft ekosistemi tam rehberi. Orijinal lisanslı Elite Force modelleri (Glock 19, HK MP5, HK416 vb.) teknik incelemeleri yetkili bayi Prizma Av'da.
+**Anahtar Kelimeler:** Umarex airsoft, Umarex Glock 19X, Elite Force Airsoft, HK416 airsoft, Umarex Türkiye, Umarex bayi, airsoft tabanca
+=====================================================
+
+⬇️ **BLOG İÇERİĞİ (Aşağıdaki metni kopyalayıp "Blog İçeriği" kutusuna yapıştırın)** ⬇️
 
 # Umarex Airsoft Tabanca ve Tüfek Modelleri Tam Rehberi (2025)
 
