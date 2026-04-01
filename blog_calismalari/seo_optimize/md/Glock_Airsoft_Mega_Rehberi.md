@@ -1,9 +1,16 @@
----
-title: "Glock Airsoft Tabanca Rehberi: 2026'nın En İyi Modelleri"
-description: "Glock 17, 18C, 19 ve 19X airsoft tabanca modellerinin FPS, blowback, hop-up ve gaz sistemleri karşılaştırması. En iyi Glock airsoft tabancalar Prizma Av'da!"
-keywords: ["glock airsoft 2026", "airsoft glock 17", "airsoft glock 18c", "glock 19 airsoft", "green gas glock", "umarex glock airsoft"]
-author: "Prizma Av"
----
+📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
+=====================================================
+**SEO Başlığı:** 
+**Anahtar Kelimeler:** 
+**SEO Açıklaması:** 
+**Başlık:** Glock Airsoft Tabanca Rehberi: 2026'nın En İyi Modelleri
+**Blog Özeti:** 
+**Hedef Kelime:** prizma av
+**Uzantı / URL Slug:** glock_airsoft_mega_rehberi
+=====================================================
+
+⬇️ **BLOG İÇERİĞİ (Aşağıdaki metni kopyalayıp "Blog İçeriği" kutusuna yapıştırın)** ⬇️
+
 
 # 2026 Glock Airsoft Mega Rehberi (G17, 18C, 19, 19X Karşılaştırma)
 

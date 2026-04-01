@@ -1,9 +1,16 @@
----
-title: "ASG Airsoft Dev Rehberi: Tüfek & Tabanca İncelemeleri"
-description: "ASG airsoft serilerinde en popüler modeller: CZ Scorpion EVO3, CZ 805 BREN, Steyr AUG ve Armalite M15 serilerinin özellikleri, FPS değerleri ve detaylı incelemesi. ASG'nin yetkili satıcısı Prizma Av ayrıcalığı ile keşfedin!"
-keywords: ["ASG airsoft", "ASG airsoft tüfek", "ASG CZ Scorpion EVO3", "ASG tüfek modelleri", "ASG CZ 805 BREN", "ASG Armalite M15", "Prizma Av ASG"]
-author: "Prizma Av"
----
+📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
+=====================================================
+**SEO Başlığı:** 
+**Anahtar Kelimeler:** 
+**SEO Açıklaması:** 
+**Başlık:** ASG Airsoft Dev Rehberi: Tüfek & Tabanca İncelemeleri
+**Blog Özeti:** 
+**Hedef Kelime:** prizma av
+**Uzantı / URL Slug:** asg_airsoft_mega_rehberi
+=====================================================
+
+⬇️ **BLOG İÇERİĞİ (Aşağıdaki metni kopyalayıp "Blog İçeriği" kutusuna yapıştırın)** ⬇️
+
 
 # 2026 ASG Airsoft Tüfek & Tabanca Modelleri (Mega Rehber)
 
