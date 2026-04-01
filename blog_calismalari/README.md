@@ -17,7 +17,9 @@ prizma av blogları/
 ## Proje Kuralları
 
 1. **İzolasyon:** Orijinal dosyalar `raw/` klasöründe değiştirilmeden korunur. Ana `prizma av bayi` reposuna zarar verilmez.
-2. **Çift Format Çıktı:** Her optimize edilmiş blog hem `.md` (Markdown) hem `.pdf` (PDF) formatında üretilir.
+2. **HTML Çıktı ve Admin Panel Uyumu:** 
+   - Tüm SEO optimize yazılar, panelde metin stillerinin (Kalın, Başlık vb.) bozulmaması için **HTML formatında** üretilmelidir (`seo_optimize/html/` klasörüne). 
+   - Hızlı veri girişi için **SEO Başlığı, Anahtar Kelimeler gibi Meta Veriler, HTML dosyasının en alt kısmında (footer/pano)** yer almalıdır.
 3. **SEO Mimarisi:**
    - Her belgenin başında **Meta Title** ve **Meta Description** bulunmalıdır.
    - **H1** tekil başlık. **H2** ve **H3** ile alt başlık hiyerarşisi kurulur.
