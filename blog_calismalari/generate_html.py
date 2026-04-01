@@ -36,7 +36,7 @@ html_template = """<!DOCTYPE html>
 <body>
     <div style="background-color: #fff3cd; color: #856404; padding: 15px; border-radius: 5px; margin-bottom: 20px; border: 1px solid #ffeeba;">
         <strong>💡 ÇALIŞMA ARKADAŞLARI İÇİN TALİMAT:</strong><br>
-        Aşağıdaki Pano'daki metinleri Prizma Av paneline yerlerine yapıştırınız. Ardından "BLOG İÇERİĞİ" kısmını <em>buradan (HTML olarak) kopyalayıp</em> panele yapıştırırsanız <b>Tüm kalın yazılar, başlıklar ve listeler sorunsuz (şekilli) olarak geçecektir.</b> PDF'den KOPYALAMAYINIZ.
+        Sayfanın EN ALTINDA yer alan Pano'daki metinleri Prizma Av paneline yerlerine yapıştırınız. Ardından "BLOG İÇERİĞİ" kısmını <em>buradan (HTML olarak) kopyalayıp</em> panele yapıştırırsanız <b>Tüm kalın yazılar, başlıklar ve listeler sorunsuz (şekilli) olarak geçecektir.</b> PDF'den KOPYALAMAYINIZ.
     </div>
     {content}
 </body>

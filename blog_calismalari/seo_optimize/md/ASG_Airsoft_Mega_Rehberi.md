@@ -1,16 +1,4 @@
-📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
-=====================================================
-**SEO Başlığı:** 
-**Anahtar Kelimeler:** 
-**SEO Açıklaması:** 
-**Başlık:** ASG Airsoft Dev Rehberi: Tüfek & Tabanca İncelemeleri
-**Blog Özeti:** 
-**Hedef Kelime:** prizma av
-**Uzantı / URL Slug:** asg_airsoft_mega_rehberi
-=====================================================
-
-⬇️ **BLOG İÇERİĞİ (Aşağıdaki metni kopyalayıp "Blog İçeriği" kutusuna yapıştırın)** ⬇️
-
+⬇️ **BLOG İÇERİĞİ AŞAĞIDADIR (SEÇİP KOPYALAYINIZ):** ⬇️
 
 # 2026 ASG Airsoft Tüfek & Tabanca Modelleri (Mega Rehber)
 
@@ -67,3 +55,18 @@ Bir airsoft replikası aldığınızda, uzun vadeli güvenilirlik istersiniz. AS
 * 📦 **Her Şey Tek Tık Uzakta:** İhtiyacınız olan piller (Li-Po, Ni-MH), şarj cihazları, yüksek kaliteli BB'ler ve koruyucu maskeler aynı siparişte kapınıza gelir.
 
 Bütçenize ve oyun senaryonuza (CQB, Orman, Keskin Nişancı) uygun ASG modelini bulmak ve sipariş vermek için profesyonel ekibimizle dilediğiniz zaman iletişime geçebilirsiniz.
+
+<br><br><br>
+
+---
+
+📌 **ADMİN PANELİ İÇİN KOPYALA-YAPIŞTIR ALANI**
+=====================================================
+**SEO Başlığı:** 
+**Anahtar Kelimeler:** 
+**SEO Açıklaması:** 
+**Başlık:** ASG Airsoft Dev Rehberi: Tüfek & Tabanca İncelemeleri
+**Blog Özeti:** 
+**Hedef Kelime:** prizma av
+**Uzantı / URL Slug:** asg_airsoft_mega_rehberi
+=====================================================
