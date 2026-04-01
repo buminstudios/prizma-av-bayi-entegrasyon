@@ -1,0 +1,297 @@
+{% if mobileMenu.categories | length > 0 or site.menu_items.row1 | length > 0 or site.menu_items.row2 | length > 0 %}
+    {% import 'html/snippets/icon-set.twig' as iconset %}
+	<nav id="mobile-navigation">
+        <div class="mobile-navigation">
+            {% if theme.settings.mobile_navigation_title_status %}
+                <div class="mobile-navigation-title">
+                    {{ theme.settings.mobile_navigation_title }}
+                    <div class="openbox-close">
+                        {{ iconset.iconClose() }}
+                    </div>
+                </div>
+            {% endif %}
+            <div class="category-level-1">
+                <ul>
+                    {% for firstLevelCategory in mobileMenu.categories %}
+                        <li class="{% if firstLevelCategory.subCategories | length > 0 %} has-sub-category{% endif %}">
+                            <a href="{% if firstLevelCategory.subCategories | length > 0 %}javascript:void(0);{% else %}{{ firstLevelCategory.url }}{% endif %}" title="{{ firstLevelCategory.name }}">
+                                <span>{{ firstLevelCategory.name }}</span>
+                                {% if firstLevelCategory.subCategories | length > 0 %}
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.09119 1.5L7.42599 4.83511C7.44766 4.85675 7.46485 4.88246 7.47658 4.91075C7.48832 4.93904 7.49435 4.96937 7.49435 5C7.49435 5.03063 7.48832 5.06096 7.47658 5.08925C7.46485 5.11754 7.44766 5.14325 7.42599 5.16489L4.09119 8.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                {% endif %}
+                            </a>
+                            {% if firstLevelCategory.subCategories | length > 0 %}
+                                <div class="category-level-2">
+                                    <div class="mobile-navigation-back">
+                                        <a href="javascript:void(0);">
+                                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.90881 8.5L3.57401 5.16489C3.55234 5.14325 3.53515 5.11754 3.52342 5.08925C3.51168 5.06096 3.50565 5.03063 3.50565 5C3.50565 4.96937 3.51168 4.93904 3.52342 4.91075C3.53515 4.88246 3.55234 4.85675 3.57401 4.83511L6.90881 1.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>{{ theme.settings.mobile_categories_goback }}</span>
+                                        </a>
+                                    </div>
+                                    <div class="mobile-navigation-parent">
+                                        <a href="{{ firstLevelCategory.url }}">{{ firstLevelCategory.name }}</a>
+                                    </div>
+                                    <ul>
+                                        {% for secondLevelCategory in firstLevelCategory.subCategories %}
+                                            <li class="{% if secondLevelCategory.subCategories | length > 0 %} has-sub-category{% endif %}">
+                                                <a href="{% if secondLevelCategory.subCategories | length > 0 %}javascript:void(0);{% else %}{{ secondLevelCategory.url }}{% endif %}" title="{{ secondLevelCategory.name }}">
+                                                    <span>{{ secondLevelCategory.name }}</span>
+                                                    {% if secondLevelCategory.subCategories | length > 0 %}
+                                                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.09119 1.5L7.42599 4.83511C7.44766 4.85675 7.46485 4.88246 7.47658 4.91075C7.48832 4.93904 7.49435 4.96937 7.49435 5C7.49435 5.03063 7.48832 5.06096 7.47658 5.08925C7.46485 5.11754 7.44766 5.14325 7.42599 5.16489L4.09119 8.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>  
+                                                    {% endif %}
+                                                </a>
+                                                {% if secondLevelCategory.subCategories | length > 0 %}
+                                                    <div class="category-level-3">
+                                                        <div class="mobile-navigation-back">
+                                                            <a href="javascript:void(0);">
+                                                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.90881 8.5L3.57401 5.16489C3.55234 5.14325 3.53515 5.11754 3.52342 5.08925C3.51168 5.06096 3.50565 5.03063 3.50565 5C3.50565 4.96937 3.51168 4.93904 3.52342 4.91075C3.53515 4.88246 3.55234 4.85675 3.57401 4.83511L6.90881 1.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                                <span>{{ theme.settings.mobile_categories_goback }}</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mobile-navigation-parent">
+                                                            <a href="{{ secondLevelCategory.url }}">{{ secondLevelCategory.name }}</a>
+                                                        </div>
+                                                        <ul>
+                                                            {% for thirdLevelCategory in secondLevelCategory.subCategories %}
+                                                                <li>
+                                                                    <a href="{{ thirdLevelCategory.url }}" title="{{ thirdLevelCategory.name }}">
+                                                                        <span>{{ thirdLevelCategory.name }}</span>
+                                                                    </a>
+                                                                </li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </div>
+                                                {% endif %}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% if site.menu_items.row1 | length > 0 or site.menu_items.row2 | length > 0 %}
+                <div class="mobile-navigation-menu-items">
+                    <ul>
+                        {% for firstLevelMenuItem in site.menu_items.row1 %}
+                            <li class="{% if firstLevelMenuItem.subMenus | length > 0 %}has-sub-category{% endif %}">
+                                <a href="{% if firstLevelMenuItem.subMenus | length > 0 %}javascript:void(0);{% else %}{{ firstLevelMenuItem.link }}{% endif %}" target="{{ firstLevelMenuItem.target }}" rel="noopener">
+                                    <span>{{ firstLevelMenuItem.label }}</span>
+                                    {% if firstLevelMenuItem.subMenus | length > 0 %}
+                                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.09119 1.5L7.42599 4.83511C7.44766 4.85675 7.46485 4.88246 7.47658 4.91075C7.48832 4.93904 7.49435 4.96937 7.49435 5C7.49435 5.03063 7.48832 5.06096 7.47658 5.08925C7.46485 5.11754 7.44766 5.14325 7.42599 5.16489L4.09119 8.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                    {% endif %}
+                                </a>
+                                {% if firstLevelMenuItem.subMenus | length > 0 %}
+                                    <div class="category-level-2">
+                                        <div class="mobile-navigation-back">
+                                            <a href="javascript:void(0);">
+                                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6.90881 8.5L3.57401 5.16489C3.55234 5.14325 3.53515 5.11754 3.52342 5.08925C3.51168 5.06096 3.50565 5.03063 3.50565 5C3.50565 4.96937 3.51168 4.93904 3.52342 4.91075C3.53515 4.88246 3.55234 4.85675 3.57401 4.83511L6.90881 1.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>{{ theme.settings.mobile_categories_goback }}</span>
+                                            </a>
+                                        </div>
+                                        <div class="mobile-navigation-parent">
+                                            <a href="{{ firstLevelMenuItem.link }}">{{ firstLevelMenuItem.label }}</a>
+                                        </div>
+                                        <ul>
+                                            {% for secondLevelMenuItem in firstLevelMenuItem.subMenus %}
+                                                <li class="{% if secondLevelMenuItem.subMenus | length > 0 %}has-sub-category{% endif %}">
+                                                    <a href="{% if secondLevelMenuItem.subMenus | length > 0 %}javascript:void(0);{% else %}{{ secondLevelMenuItem.link }}{% endif %}" target="{{ secondLevelMenuItem.target }}" rel="noopener">
+                                                        <span>{{ secondLevelMenuItem.label }}</span>
+                                                        {% if secondLevelMenuItem.subMenus | length > 0 %}
+                                                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.09119 1.5L7.42599 4.83511C7.44766 4.85675 7.46485 4.88246 7.47658 4.91075C7.48832 4.93904 7.49435 4.96937 7.49435 5C7.49435 5.03063 7.48832 5.06096 7.47658 5.08925C7.46485 5.11754 7.44766 5.14325 7.42599 5.16489L4.09119 8.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg> 
+                                                        {% endif %}
+                                                    </a>
+                                                    {% if secondLevelMenuItem.subMenus | length > 0 %}
+                                                        <div class="category-level-3">
+                                                            <div class="mobile-navigation-back">
+                                                                <a href="javascript:void(0);">
+                                                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M6.90881 8.5L3.57401 5.16489C3.55234 5.14325 3.53515 5.11754 3.52342 5.08925C3.51168 5.06096 3.50565 5.03063 3.50565 5C3.50565 4.96937 3.51168 4.93904 3.52342 4.91075C3.53515 4.88246 3.55234 4.85675 3.57401 4.83511L6.90881 1.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                    <span>{{ theme.settings.mobile_categories_goback }}</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="mobile-navigation-parent">
+                                                                <a href="{{ secondLevelMenuItem.link }}">{{ secondLevelMenuItem.label }}</a>
+                                                            </div>
+                                                            <ul>
+                                                                {% for thirdLevelMenuItem in secondLevelMenuItem.subMenus %}
+                                                                    <li>
+                                                                        <a href="{{ thirdLevelMenuItem.link }}" target="{{ thirdLevelMenuItem.target }}" rel="noopener">{{ thirdLevelMenuItem.label }}</a>
+                                                                    </li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        </div>
+                                                    {% endif %}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                        {% for firstLevelMenuItem in site.menu_items.row2 %}
+                            <li class="{% if firstLevelMenuItem.subMenus | length > 0 %}has-sub-category{% endif %}">
+                                <a href="{% if firstLevelMenuItem.subMenus | length > 0 %}javascript:void(0);{% else %}{{ firstLevelMenuItem.link }}{% endif %}" target="{{ firstLevelMenuItem.target }}" rel="noopener">
+                                    <span>{{ firstLevelMenuItem.label }}</span>
+                                    {% if firstLevelMenuItem.subMenus | length > 0 %}
+                                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.09119 1.5L7.42599 4.83511C7.44766 4.85675 7.46485 4.88246 7.47658 4.91075C7.48832 4.93904 7.49435 4.96937 7.49435 5C7.49435 5.03063 7.48832 5.06096 7.47658 5.08925C7.46485 5.11754 7.44766 5.14325 7.42599 5.16489L4.09119 8.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                    {% endif %}
+                                </a>
+                                {% if firstLevelMenuItem.subMenus | length > 0 %}
+                                    <div class="category-level-2">
+                                        <div class="mobile-navigation-back">
+                                            <a href="javascript:void(0);">
+                                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6.90881 8.5L3.57401 5.16489C3.55234 5.14325 3.53515 5.11754 3.52342 5.08925C3.51168 5.06096 3.50565 5.03063 3.50565 5C3.50565 4.96937 3.51168 4.93904 3.52342 4.91075C3.53515 4.88246 3.55234 4.85675 3.57401 4.83511L6.90881 1.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>{{ theme.settings.mobile_categories_goback }}</span>
+                                            </a>
+                                        </div>
+                                        <div class="mobile-navigation-parent">
+                                            <a href="{{ firstLevelMenuItem.link }}">{{ firstLevelMenuItem.label }}</a>
+                                        </div>
+                                        <ul>
+                                            {% for secondLevelMenuItem in firstLevelMenuItem.subMenus %}
+                                                <li class="{% if secondLevelMenuItem.subMenus | length > 0 %}has-sub-category{% endif %}">
+                                                    <a href="{% if secondLevelMenuItem.subMenus | length > 0 %}javascript:void(0);{% else %}{{ secondLevelMenuItem.link }}{% endif %}" target="{{ secondLevelMenuItem.target }}" rel="noopener">
+                                                        <span>{{ secondLevelMenuItem.label }}</span>
+                                                        {% if secondLevelMenuItem.subMenus | length > 0 %}
+                                                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.09119 1.5L7.42599 4.83511C7.44766 4.85675 7.46485 4.88246 7.47658 4.91075C7.48832 4.93904 7.49435 4.96937 7.49435 5C7.49435 5.03063 7.48832 5.06096 7.47658 5.08925C7.46485 5.11754 7.44766 5.14325 7.42599 5.16489L4.09119 8.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg> 
+                                                        {% endif %}
+                                                    </a>
+                                                    {% if secondLevelMenuItem.subMenus | length > 0 %}
+                                                        <div class="category-level-3">
+                                                            <div class="mobile-navigation-back">
+                                                                <a href="javascript:void(0);">
+                                                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M6.90881 8.5L3.57401 5.16489C3.55234 5.14325 3.53515 5.11754 3.52342 5.08925C3.51168 5.06096 3.50565 5.03063 3.50565 5C3.50565 4.96937 3.51168 4.93904 3.52342 4.91075C3.53515 4.88246 3.55234 4.85675 3.57401 4.83511L6.90881 1.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                    <span>{{ theme.settings.mobile_categories_goback }}</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="mobile-navigation-parent">
+                                                                <a href="{{ secondLevelMenuItem.link }}">{{ secondLevelMenuItem.label }}</a>
+                                                            </div>
+                                                            <ul>
+                                                                {% for thirdLevelMenuItem in secondLevelMenuItem.subMenus %}
+                                                                    <li>
+                                                                        <a href="{{ thirdLevelMenuItem.link }}" target="{{ thirdLevelMenuItem.target }}" rel="noopener">{{ thirdLevelMenuItem.label }}</a>
+                                                                    </li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        </div>
+                                                    {% endif %}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            {% if theme.settings.mobile_navigation_user_menu_status %}
+                <div class="mobile-navigation-user-menu">
+                    <div class="mobile-navigation-user-menu-title">
+                        {% if not visitor.isMember %}
+                            {{ theme.settings.mobile_navigation_user_title }}
+                        {% else %}
+                            {{ theme.settings.mobile_navigation_user_dear }} {{ visitor.member.firstname ~ ' ' ~ visitor.member.surname }}
+                        {% endif %}
+                    </div>
+                    <div class="mobile-navigation-user-menu-content">
+                        {% if not visitor.isMember %}
+                            <a href="{{ path('member_login') }}" aria-label="Member Login">{{ theme.settings.mobile_navigation_user_login }}</a>
+                            <a href="{{ path('member_signup') }}" aria-label="Member Signup">{{ theme.settings.mobile_navigation_user_signup }}</a>
+                        {% else %}
+                            <a href="{{ path('member_index') }}" aria-label="Member Profile">{{ theme.settings.mobile_navigation_user_myaccount }}</a>
+                            <a href="{{ path('member_logout') }}" aria-label="Member Signup">{{ theme.settings.mobile_navigation_user_logout }}</a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if theme.settings.mobile_navigation_social_status %}
+                <div class="mobile-navigation-social">
+                    <div class="mobile-navigation-social-title">
+                        {{ theme.settings.mobile_navigation_social_title }}
+                    </div>
+                    <div class="mobile-navigation-social-content">
+                        {% if theme.settings.facebook %}
+                            <div>
+                                <a class="mobile-social-facebook" href="{{ theme.settings.facebook }}" target="_blank">
+                                    {{ iconset.iconFacebook() }}
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.twitter %}
+                            <div>
+                                <a class="mobile-social-twitter" href="{{ theme.settings.twitter }}" target="_blank">
+                                    {{ iconset.iconTwitter() }}
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.instagram %}
+                            <div>
+                                <a class="mobile-social-instagram" href="{{ theme.settings.instagram }}" target="_blank">
+                                    {{ iconset.iconInstagram() }}
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.youtube %}
+                            <div>
+                                <a class="mobile-social-youtube" href="{{ theme.settings.youtube }}" target="_blank">
+                                    {{ iconset.iconYoutube() }}
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.pinterest %}
+                            <div>
+                                <a class="mobile-social-pinterest" href="{{ theme.settings.pinterest }}" target="_blank">
+                                    {{ iconset.iconPinterest() }}
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.linkedin %}
+                            <div>
+                                <a class="mobile-social-linkedin" href="{{ theme.settings.linkedin }}" target="_blank">
+                                    {{ iconset.iconLinkedin() }}
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.whatsapp %}
+                            <div>
+                                <a class="mobile-social-whatsapp" href="https://wa.me/9{{ theme.settings.whatsapp | replace({' ': ''}) }}" target="_blank">
+                                    {{ iconset.iconWhatsappSocial() }}
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+	</nav>
+	<script>
+		var mobileMenu = {{ mobileMenu | json_encode }};
+	</script>
+{% endif %}

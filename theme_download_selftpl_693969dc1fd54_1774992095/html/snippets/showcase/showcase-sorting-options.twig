@@ -1,0 +1,19 @@
+{% if theme.settings.display_showcase_sorting_options %}
+    <div class="filter-order-button">
+        {% set showcaseRepeatColumns = theme.settings.showcase_repeat_columns %}
+        {% if showcaseRepeatColumns == 5 %}
+            <span class="active" data-selector="quintuple-sorting" data-column="5">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M18 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </span>
+        {% endif %}
+        <span {% if showcaseRepeatColumns == 4 %}class="active" {% endif %}data-selector="quadruple-sorting" data-column="4">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </span>
+        <span {% if showcaseRepeatColumns == 3 %}class="active" {% endif %}data-selector="triple-sorting" data-column="3">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </span>
+        <span {% if showcaseRepeatColumns == 2 %}class="active" {% endif %}{% if showcaseRepeatColumns == 5 %}class="d-none" {% endif %}data-selector="dual-sorting" data-column="2">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </span>
+    </div>
+{% endif %}

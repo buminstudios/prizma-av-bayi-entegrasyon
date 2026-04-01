@@ -1,0 +1,3525 @@
+{
+	"theme_version": 2,
+	"group": {
+		"type": "tab",
+		"values": [
+			{
+				"name": "Genel Ayarlar",
+				"settings": {
+					"logo": {
+						"type": "image",
+						"default_value": "images/logo.png",
+						"filename": "logo",
+						"label": "Logo",
+						"info": ""
+					},
+					"login_logo": {
+						"type": "image",
+						"default_value": "images/login_logo.png",
+						"filename": "login_logo",
+						"label": "Üye Girişi vb Sayfaların Logosu",
+						"info": "Üye ol, giriş yap, bayi giriş, zorunlu üyelik, şifremi unuttum, arıza / iade başvurusu, iletişim formu sayflarında gösterilecek logoyu buradan değiştirebilirsiniz"
+					},
+					"nopic_image": {
+						"type": "image",
+						"default_value": "images/nopic_image.png",
+						"filename": "nopic_image",
+						"label": "Varsayılan Katalog Görseli",
+						"info": "Resmi yüklenmemiş ürünler, kategoriler ve markalar için kullanabileceğiniz varsayılan görsel."
+					},
+					"optioned_product_view_type": {
+						"type": "select",
+						"default_value": "dropdown",
+						"options": [
+							{
+								"label": "Aşağı açılır liste",
+								"value": "dropdown"
+							},
+							{
+								"label": "Seçenek listesi (tekil)",
+								"value": "radiobox"
+							},
+							{
+								"label": "Seçenek listesi (çoğul)",
+								"value": "radiobox_multiple"
+							}
+						],
+						"label": "Varyantlı Ürün Gösterim Tipi",
+						"info": ""
+					},
+					"optioned_product_price_view_type": {
+						"type": "select",
+						"default_value": "name",
+						"options": [
+							{
+								"label": "Sadece seçenek adı",
+								"value": "name"
+							},
+							{
+								"label": "KDV dahil",
+								"value": "name_with_tax_string"
+							},
+							{
+								"label": "Fiyat + KDV",
+								"value": "name_without_tax_string"
+							}
+						],
+						"label": "Varyantlı Ürün Fiyat Gösterim Tipi",
+						"info": "Fiyat gösterim ayarı sadece Seçenek Listesi Çoğul opsiyonu ile beraber kullanılabilir."
+					},
+					"brand_view_type": {
+						"type": "select",
+						"default_value": "name",
+						"options": [
+							{
+								"label": "İsim",
+								"value": "name"
+							},
+							{
+								"label": "Marka Logosu",
+								"value": "logo"
+							}
+						],
+						"label": "Marka Gösterim Tipi",
+						"info": "Seçilen kategorilere bağlı olan markalar, buradaki seçiminize göre gösterilecektir."
+					},
+					"showcase_repeat_columns": {
+						"type": "select",
+						"default_value": 3,
+						"options": [
+							{
+								"label": "2",
+								"value": 2
+							},
+							{
+								"label": "3",
+								"value": 3
+							},
+							{
+								"label": "4",
+								"value": 4
+							},
+							{
+								"label": "5",
+								"value": 5
+							}
+						],
+						"label": "Kategoride Bir Satırdaki Ürün Adedi",
+                        "info": "Hem kategori hem de diğer marka, sponsor, popüler, yeni, indirimli ürünler sayfalarındaki bir satırdaki vitrin sayısını belirler."
+					},
+                    "display_showcase_sorting_options": {
+                        "type": "checkbox",
+                        "default_value": 1,
+                        "label": "Kategoride Bir Satırdaki Ürün Gösterim Butonları",
+                        "info": "Hem kategori hem de diğer marka, sponsor, popüler, yeni, indirimli ürünler sayfalarındaki bir satırdaki vitrin görünüm sayısını belirler. (Örn: 2 li 3 lü 4 lü şeklinde)"
+                    },
+					"blog_repeat_columns": {
+						"type": "select",
+						"default_value": 4,
+						"options": [
+							{
+								"label": "1",
+								"value": 1
+							},
+							{
+								"label": "2",
+								"value": 2
+							},
+							{
+								"label": "3",
+								"value": 3
+							},
+							{
+								"label": "4",
+								"value": 4
+							}
+						],
+						"label": "Blog Sayfasında Bir Satırdaki Blog Adedi"
+					},
+					"qtytype": {
+						"type": "select",
+						"default_value": "plusminus",
+						"options": [
+							{
+								"label": "Aşağı açılır liste",
+								"value": "select"
+							},
+							{
+								"label": "Metin Kutusu",
+								"value": "textbox"
+							},
+							{
+								"label": "- Adet +",
+								"value": "plusminus"
+							},
+							{
+								"label": "Adet Seçimini Kapat",
+								"value": "none"
+							}
+						],
+						"label": "Ürün Adet Seçim Tipi"
+					},
+					"display_category_detail": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Kategorilerin Detayda Gösterimi"
+					},
+					"display_brand_detail": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Markaların Detayda Gösterimi"
+					},
+                    "display_collection_detail": {
+                        "type": "checkbox",
+                        "default_value": 1,
+                        "label": "Koleksiyonların Detayda Gösterimi"
+                    },
+					"display_bread_crumb": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Breadcrumb Kullanımı",
+						"info": "Kategori ve Marka sayfalarında breadcrumb kullanımını aktif eder. Breadcrumb, web sitelerindeki kullanıcıların konumlarını takip etmelerini sağlayan bir navigasyon öğesidir ve gezdikleri sayfaların hiyerarşik yolunu gösterir."
+					},
+					"display_category_logo": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Kategori Logolarının Gösterimi",
+						"info": "Açık olduğunda kategori listelenen yerlerde, kategori logosu gösterilir."
+					},
+					"display_category_subcategories": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Kategoriye Bağlı Alt Kategorilerin Gösterimi",
+						"info": "Aktif edildiğinde kategoriye bağlı alt kategoriler, o kategorinin ürünleri listelenirken üst kısımda gösterilir."
+					},
+					"display_category_brands": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Kategorideki Markaların Gösterimi",
+						"info": "Bir kategoride ürünleri yer alan markalar, o kategorinin ürünleri listelenirken üst kısımda gösterilir."
+					},
+					"display_category_brands_logo_mobile": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Kategori, Marka Logolarının Mobilde Tek Satır Gösterimi",
+						"info": "Bir kategoride yer alan marka ve kategori logolarının mobil görünümünde tek satır swipe olması."
+					},
+					"display_sorting_options": {
+                        "type": "checkbox_group",
+                        "default_value": 1,
+                        "items": [
+                            {
+                                "label": "Fiyat Sıralama",
+                                "value": "display_price_sorting"
+                            },
+                            {
+                                "label": "Çok Değerlendirilenler",
+                                "value": "display_comment_count_sorting"
+                            },
+                            {
+                                "label": "Yüksek Puanlılar",
+                                "value": "display_rank_sorting"
+                            },
+                            {
+                                "label": "Yeni Eklenenler",
+                                "value": "display_product_new_sorting"
+                            },
+                            {
+                                "label": "İndirim Oranı",
+                                "value": "display_product_discount_sorting"
+                            },
+                            {
+                                "label": "Alfabetik Sıralama",
+                                "value": "display_alphabetic_sorting"
+                            }
+                        ],
+                        "label": "Sıralama Seçeneklerinin Kullanımı",
+                        "info": "Kategori ve marka ürünleri ile arama sonuçları sayfalarında ürünlerinizin belirttiğiniz şartlara göre sıralanması opsiyonunu açar. "
+                    },
+					"display_order_tax_information": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Sipariş aşamalarında KDV Gösterimi",
+						"info": ""
+					},
+					"display_category_or_brand_filter": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Sayfalar için Kategori ve Marka Bazlı Filtreleme",
+						"info": "Örneğin, indirimli ürünler sayfasında kategori ve marka filtrelemesi yapmanıza imkan verir."
+					},
+					"display_sku": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Stok Kodlarının Gösterimi",
+						"info": "Sistemde, vitrinlerde ve ürün detay sayfalarında stok kodlarının gösterilmesini\/gizlenmesini sağlar."
+					},
+					"display_barcode": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Barkod Kodlarının Gösterimi",
+						"info": "Sistemde, vitrinlerde ve ürün detay sayfalarında barkod kodlarının gösterilmesini\/gizlenmesini sağlar."
+					},
+					"display_without_tax_price": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "KDV Hariç Fiyat Gösterimi",
+						"info": ""
+					},
+					"display_warranty": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Garanti Süresinin Gösterimi",
+						"info": ""
+					},
+					"display_retailer_comparison_price": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Bayilere Ürünlerin Ana Fiyatının da Gösterilmesi",
+						"info": ""
+					},
+					"display_product_lowest_price": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "En Düşük Taksit Miktarı Gösterimi",
+						"info": "Ürün detaylı sayfasında sistemde aktif pos bilgisine göre kredi kartı oranları ve taksit sayısına göre en düşük taksit miktarının gösterilmesini sağlar.Eğer 0 TL ise göstermez. Örn: \"23 TL'den başlayan takistlerle!!\""
+					},
+                    "display_cargo_buttons": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Ürün Kargo Stok Butonlarının Gösterimi",
+						"info": "Sistemde, vitrinlerde ve ürün detay sayfalarında kargo stok butonlarının gösterilmesini\/gizlenmesini sağlar."
+                    },
+					"display_user_buttons": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Ürün Kullanıcı Butonlarının Gösterimi",
+						"info": "Sistemde ürün detay sayfalarında kullanıcı favorilere ekle, yorum yap, tavsiye et, fiyatı düşünce haber, paylaş butonları ve karşılaştır butonunun tümünün gösterilmesini\/gizlenmesini sağlar."
+                    },
+					"display_favori_buttons": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Ürün Favorilere Ekle Buton Gösterimi",
+						"info": "Sistemde, vitrinlerde ve ürün detay sayfalarında favorilere ekle butonunun gösterilmesini\/gizlenmesini sağlar."
+                    },
+					"display_comment_buttons": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Ürün Yorum Yap Buton Gösterimi",
+						"info": "Sistemde ürün detay sayfalarında yorum yap butonunun gösterilmesini\/gizlenmesini sağlar."
+                    },
+					"display_recommend_buttons": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Ürün Tavsiye Et Buton Gösterimi",
+						"info": "Sistemde ürün detay sayfalarında tavsiye et butonunun gösterilmesini\/gizlenmesini sağlar."
+                    },
+					"display_social_share_button": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Ürün Paylaşım Butonlarının Gösterimi",
+						"info": "Sistemde ürün detay sayfalarında sosyal paylaş butonlarının gösterilmesini\/gizlenmesini sağlar."
+					},
+					"display_compare_button": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Ürün Karşılaştırma Butonunun Kullanımı",
+						"info": "Sistemde, vitrinlerde ve ürün detay sayfalarındaki ürünlerin birbiri arasında kıyaslamanızı, karşılaştırmanızı sağlayan butonun gösterilmesini\/gizlenmesini sağlar."
+					},
+					"display_product_attributes": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Ürün Detayda Ürün Özelliklerinin Gösterimi",
+						"info": ""
+					},
+					"use_facebook_login": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Facebook Login Sistemi",
+						"info": "Facebook üyeliği üzerinden sisteme üye olma özelliğidir."
+					},
+					"use_google_login": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Google Hesabı ile Login Sistemi",
+						"info": "Google hesabı üzerinden sisteme üye olma özelliğidir."
+					},
+                    "use_apple_login": {
+                        "type": "checkbox",
+                        "default_value": 1,
+                        "label": "Apple Hesabı ile Login Sistemi",
+                        "info": "Apple hesabı üzerinden sisteme üye olma özelliğidir."
+                    },
+					"use_search_auto_complete": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Otomatik Tamamlama Sistemi",
+						"info": "Aktif edildiğinde, sağ ve üst blok arama kısımlarında Otomatik Tamamlama Özelliği açılır."
+					},
+					"use_rich_snippets": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Rich Snippets Kullanımı",
+						"info": "Google aramalarında ürününüze ait özel bilgilerin görünmesini sağlar."
+					},
+                    "detail_search_form": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Detaylı Arama Formunun Gösterimi",
+						"info": "Arama sonuçları sayfasında gelen “Detaylı Arama” formunu bu ayardan gizleyebilir ya da gösterebilirsiniz."
+					},
+					"cart_fancybox": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Sepet Özetinin Lightboxta Gösterimi",
+						"info": "Sepete Ekleye tıklandıktan sonra sepete eklenen ürünlerin popupta açılmasını sağlar."
+					},
+					"product_detail_mobile_first_tab": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Mobilde Ürün Bilgisinin Varsayılan Gösterimi",
+						"info": "Mobil ürün detay sayfasında ürün bilgisi sekmesinin açık ya da kapalı gelmesini sağlar."
+                    },
+					"mobile_navigation_title_status": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Mobil Menü Üst Başlık Gösterimi",
+						"info": "Mobil menü üst başlık yazısının açık ya da kapalı gelmesini sağlar."
+                    },
+					"mobile_navigation_user_menu_status": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Mobil Menü Kullanıcı Butonların Gösterimi",
+						"info": "Mobil menü giriş yap, kayıt ol, hesabım ve çıkış yap butonlarının açık ya da kapalı gelmesini sağlar."
+                    },
+					"mobile_navigation_social_status": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Mobil Menü Sosyal Butonların Gösterimi",
+						"info": "Mobil menü sosyal butonların açık ya da kapalı gelmesini sağlar."
+                    },
+                    "cart_delete_check": {
+                        "type": "checkbox",
+                        "default_value": 1,
+                        "label": "Sepetten Ürün Silme Uyarısı",
+                        "info": "Kullanıcılarınıza, alışveriş sepetinden ürün silerken uyarı çıkmasını sağlar."
+                    },
+					"scroll_top": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Yukarı Çık Butonunun Varsayılan Gösterimi",
+						"info": "Yukarı çık butonunun açık ya da kapalı gelmesini sağlar."
+                    },
+					"idea_popup_bar_control": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Standart popup&bar kullanımının mobilde gösterimi",
+						"info": "Popup&Bar yönetiminden eklenen bar satırlarının mobilde varsayılan gösterimi kapalı olarak gelmektedir. Mobilde de göstermek için bu ayarı aktif edebilirsiniz."
+                    },
+					"product_detail_page_tabs": {
+						"type": "checkbox_group",
+						"default_value": 1,
+						"items": [
+							{
+								"label": "Ürün Yorumları",
+								"value": "display_product_comments"
+							},
+							{
+								"label": "Soru & Cevap",
+								"value": "display_product_questions"
+							},
+							{
+								"label": "Taksit Seçenekleri",
+								"value": "display_payment_options"
+							},
+							{
+								"label": "Önerileriniz",
+								"value": "display_product_feeds"
+							},
+							{
+								"label": "Özel Bilgi Alanları",
+								"value": "display_special_information_area"
+							},
+							{
+								"label": "Alışveriş Deneyimi",
+								"value": "display_shopping_experiences"
+							}
+						],
+						"label": "Ürün İnceleme Sayfası Sekmeleri",
+						"info": "Ürün inceleme sayfasında görüntülenen sekmeleri açıp kapatabilirsiniz"
+					}
+				}
+			},
+			{
+				"name": "Footer",
+				"settings": {
+					"footer_logo": {
+						"type": "image",
+						"default_value": "",
+						"filename": "footer_logo",
+						"label": "Footer Logo"
+					},
+					"footer_seo_text": {
+						"type": "textarea",
+						"default_value": "",
+						"label": "Telefon Numarası"
+					},
+					"footer_contact_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "İletişim Başlığı"
+					},
+					"etbis_code": {
+						"type": "codeeditor",
+						"default_value": "",
+						"label": "Etbis Kodu"
+					},
+					"footer_links": {
+						"type": "codeeditor",
+						"default_value": "",
+						"label": "Footer Menüleri"
+					},
+					"footer_menu_type": {
+						"type": "select",
+						"default_value": "true",
+						"options": [
+							{
+								"label": "Akordiyon",
+								"value": "accordion"
+							},
+							{
+								"label": "Liste",
+								"value": "list"
+							}
+						],
+						"label": "Footer menülerinin mobil görünümü"
+					},
+					"footer_social_title": {
+						"type": "text",
+						"default_value": "Sosyal Medya",
+						"label": "Sosyal Medya Başlığı"
+					},
+					"footer_cart_image": {
+						"type": "image",
+						"default_value": "",
+						"filename": "footer_cart_image",
+						"label": "Footer Payment Image"
+					},
+					"copyright": {
+						"type": "text",
+						"default_value": "",
+						"label": "Copyright Yazısı"
+					},
+					"footer_ssl": {
+						"type": "text",
+						"default_value": "",
+						"label": "Güvenlik Metni"
+					}
+				}
+			},
+			{
+				"name": "Sosyal Ağ & İletişim",
+				"settings": {
+					"facebook": {
+						"type": "text",
+						"default_value": "",
+						"label": "Facebook Adresi",
+						"info": "Bu alan boş bırakıldığında ikonu görünmeyecektir"
+					},
+					"twitter": {
+						"type": "text",
+						"default_value": "",
+						"label": "X Adresi",
+						"info": "Bu alan boş bırakıldığında ikonu görünmeyecektir"
+					},
+					"instagram": {
+						"type": "text",
+						"default_value": "",
+						"label": "Instagram Adresi",
+						"info": "Bu alan boş bırakıldığında ikonu görünmeyecektir"
+					},
+					"youtube": {
+						"type": "text",
+						"default_value": "",
+						"label": "Youtube Adresi",
+						"info": "Bu alan boş bırakıldığında ikonu görünmeyecektir"
+					},
+					"pinterest": {
+						"type": "text",
+						"default_value": "",
+						"label": "Pinterest Adresi",
+						"info": "Bu alan boş bırakıldığında ikonu görünmeyecektir"
+					},
+					"linkedin": {
+						"type": "text",
+						"default_value": "",
+						"label": "Linkedin Adresi",
+						"info" : "Bu alan boş bırakıldığında ikonu görünmeyecektir"
+					},
+					"whatsapp": {
+						"type": "text",
+						"default_value": "",
+						"label": "Whatsapp Numarası",
+						"info" : "Rakamları ayırmak için sadece boşluk bırakılabilir (örn: 0555 555 55 55). Bu alan boş bırakıldığında ikonu görünmeyecektir"
+					},
+					"phone": {
+						"type": "text",
+						"default_value": "",
+						"label": "Telefon Numarası"
+					},
+					"mail": {
+						"type": "text",
+						"default_value": "",
+						"label": "Mail adresi"
+					},
+					"address": {
+						"type": "text",
+						"default_value": "",
+						"label": "Adres bilgisi"
+					}
+				}
+			},
+			{
+				"name": "Tema Dil Değişkenleri",
+				"settings": {
+					"navigation_showall": {
+						"type": "text",
+						"default_value": "Tümünü Göster",
+						"label": "Navigasyon Tümünü Göster"
+					},
+					"mobile_categories_goback": {
+						"type": "text",
+						"default_value": "Geri Dön",
+						"label": "Mobile Navigasyon Geri Dön"
+					},
+					"user_login_page_title": {
+						"type": "text",
+						"default_value": "Giriş Yap",
+						"label": "Login Sayfası Giriş Yap Metni"
+					},
+					"user_login_page_buton_title": {
+						"type": "text",
+						"default_value": "Giriş Yap",
+						"label": "Login Sayfası Birincil Buton Metni"
+					},
+					"user_signup_page_title": {
+						"type": "text",
+						"default_value": "Henüz Üye Değil Misiniz?",
+						"label": "Login Sayfası Üye Ol Metni"
+					},
+					"user_signup_page_button_title": {
+						"type": "text",
+						"default_value": "Hemen Üye Ol",
+						"label": "Login Sayfası Hemen Üye Ol Metni"
+					},
+					"user_signup_page_facebook_title": {
+						"type": "text",
+						"default_value": "Facebook ile Bağlan",
+						"label": "Login Sayfası Facebook İle Bağlan Metni"
+					},
+					"user_signup_page_google_title": {
+						"type": "text",
+						"default_value": "Google ile Bağlan",
+						"label": "Login Sayfası Google İle Bağlan Metni"
+					},
+                    "user_signup_page_apple_title": {
+                        "type": "text",
+                        "default_value": "Apple ile Bağlan",
+                        "label": "Login Sayfası Apple İle Bağlan Metni"
+                    },
+					"user_signup_page_not_login_title": {
+						"type": "text",
+						"default_value": "Üye Olmadan Devam Et",
+						"label": "Login Sayfası Üye Olmadan Devam Et Metni"
+					},
+					"label_new": {
+						"type": "text",
+						"default_value": "Yeni",
+						"label": "Yeni Etiketi"
+					},
+					"label_gift": {
+						"type": "text",
+						"default_value": "Hediyeli",
+						"label": "Hediyeli Etiketi"
+					},
+					"label_soldout": {
+						"type": "text",
+						"default_value": "Tükendi",
+						"label": "Tükendi Etiketi"
+					},
+					"label_discount": {
+						"type": "text",
+						"default_value": "İndirim",
+						"label": "İndirim Etiketi"
+					},
+					"addtocart_button": {
+						"type": "text",
+						"default_value": "Sepete Ekle",
+						"label": "Sepete Ekle Butonu"
+					},
+					"quickorder_button": {
+						"type": "text",
+						"default_value": "Hemen Al",
+						"label": "Hemen Al Butonu"
+					},
+					"nostock_button": {
+						"type": "text",
+						"default_value": "Stokta Yok",
+						"label": "Stokta Yok Butonu"
+					},
+					"remindme_button": {
+						"type": "text",
+						"default_value": "Gelince Haber Ver",
+						"label": "Gelince Haber Ver Butonu"
+					},
+					"detail_category_text": {
+						"type": "text",
+						"default_value": "kategori etiketine sahip diğer ürünler",
+						"label": "Ürün Detay Kategori Metni"
+					},
+					"detail_brand_text": {
+						"type": "text",
+						"default_value": "marka etiketine sahip diğer ürünler",
+						"label": "Ürün Detay Marka Metni"
+					},
+					"detail_label_text": {
+						"type": "text",
+						"default_value": "etiketine sahip diğer ürünler",
+						"label": "Ürün Detay Etiket Metni"
+					},
+					"fancybox_share": {
+						"type": "text",
+						"default_value": "Ürünü Paylaş",
+						"label": "Ürün Detay Açılır Görsel Paylaş Butonu"
+					},
+					"promotion_title": {
+						"type": "text",
+						"default_value": "Promosyonlar",
+						"label": "Promosyonlar"
+					},
+					"chosen_promotion": {
+						"type": "text",
+						"default_value": "Promosyon Seçildi",
+						"label": "Promosyon Seçildi"
+					},
+					"choose_promotion": {
+						"type": "text",
+						"default_value": "Promosyon Seç",
+						"label": "Promosyon Seç"
+					},
+					"tab_product_info": {
+						"type": "text",
+						"default_value": "Ürün Bilgisi",
+						"label": "Ürün Bilgisi"
+					},
+					"tab_product_comments": {
+						"type": "text",
+						"default_value": "Yorumlar",
+						"label": "Yorumlar"
+					},
+					"tab_product_questions": {
+						"type": "text",
+						"default_value": "Soru & Cevap",
+						"label": "Soru & Cevap"
+					},
+					"tab_product_payment_options": {
+						"type": "text",
+						"default_value": "Taksit Seçenekleri",
+						"label": "Taksit Seçenekleri"
+					},
+					"tab_product_feeds": {
+						"type": "text",
+						"default_value": "Önerileriniz",
+						"label": "Önerileriniz"
+					},
+					"tab_shopping_experiences": {
+						"type": "text",
+						"default_value": "Alışveriş Deneyimi",
+						"label": "Alışveriş Deneyimi"
+					},
+					"added_to_cart": {
+						"type": "text",
+						"default_value": "SEPETİNİZE EKLENMİŞTİR",
+						"label": "Sepetinize Eklenmiştir"
+					},
+					"user_add_my_favorites": {
+                        "type": "text",
+                        "default_value": "Favorilerime Ekle",
+                        "label": "Favorilerime Ekle"
+                    },
+                    "user_favorite_product": {
+                        "type": "text",
+                        "default_value": "Favori Ürün",
+                        "label": "Favori Ürün"
+                    },
+                    "user_recommend_product": {
+                        "type": "text",
+                        "default_value": "Tavsiye Et",
+                        "label": "Tavsiye Et"
+                    },
+                    "user_add_comment": {
+                        "type": "text",
+                        "default_value": "Yorum Yaz",
+                        "label": "Yorum Yaz"
+                    },
+                    "user_price_warning": {
+                        "type": "text",
+                        "default_value": "Fiyatı Düşünce Haber Ver",
+                        "label": "Fiyatı Düşünce Haber Ver"
+                    },
+					"user_share": {
+						"type": "text",
+						"default_value": "Paylaş",
+						"label": "Paylaş"
+					},
+					"language_options": {
+						"type": "text",
+						"default_value": "Dil Seçenekleri",
+						"label": "Dil Seçenekleri"
+					},
+					"currency_options": {
+						"type": "text",
+						"default_value": "Para Birimi",
+						"label": "Para Birimi"
+                    },
+					"combine_products_title": {
+						"type": "text",
+						"default_value": "Bulunduğu Kombinler",
+						"label": "Kombin Ürünler Başlığı"
+					},
+					"combine_products_sub_title": {
+						"type": "text",
+						"default_value": "Bulunduğu Kombinler Alt Başlığı",
+						"label": "Kombin Ürünler Alt Başlığı"
+					},
+					"combine_addtocart": {
+						"type": "text",
+						"default_value": "SEPETE EKLE",
+						"label": "Sepete Ekle (Kombin)"
+					},
+					"combine_incart": {
+						"type": "text",
+						"default_value": "ÜRÜN SEPETİNİZDE",
+						"label": "Ürün Sepetinizde (Kombin)"
+					},
+					"combine_remind_me": {
+						"type": "text",
+						"default_value": "GELİNCE HABER VER",
+						"label": "Gelince Haber Ver (Kombin)"
+					},
+					"combine_addalltocart": {
+						"type": "text",
+						"default_value": "TÜMÜNÜ SEPETE EKLE",
+						"label": "Tümünü Sepete Ekle (Kombin)"
+					},
+                    "similar_products_title": {
+						"type": "text",
+						"default_value": "Benzer Ürünler",
+						"label": "Benzer Ürünler Başlığı"
+					},
+                    "similar_products_sub_title": {
+						"type": "text",
+						"default_value": "Benzer Ürünler Alt Başlığı",
+						"label": "Benzer Ürünler Alt Başlığı"
+					},
+					"offered_products_title": {
+						"type": "text",
+						"default_value": "Tavsiye Ürünler",
+						"label": "Tavsiye Ürünler Başlığı"
+					},
+					"offered_products_sub_title": {
+						"type": "text",
+						"default_value": "Tavsiye Ürünler Alt Başlığı",
+						"label": "Tavsiye Ürünler Alt Başlığı"
+					},
+					"horizontal_filter_menu_title": {
+						"type": "text",
+						"default_value": "Filtrele",
+						"label": "Yatay Filtre Başlığı"
+					},
+					"horizontal_filter_menu_clear": {
+						"type": "text",
+						"default_value": "Tümünü Kaldır",
+						"label": "Yatay Filtre Tümünü Kaldır"
+					},
+					"horizontal_filter_menu_choose": {
+						"type": "text",
+						"default_value": "Seçiminiz",
+						"label": "Yatay Filtre Seçiminiz"
+					},
+					"product_category_list_header": {
+						"type": "text",
+						"default_value": "İlgili Alt Kategoriler",
+						"label": "Alt Kategoriler Metni"
+					},
+					"product_brand_list_header": {
+						"type": "text",
+						"default_value": "Markalar",
+						"label": "Markalar Metni"
+					},
+                    "mobile_navigation_title": {
+                        "type": "text",
+                        "default_value": "Menü",
+                        "label": "Mobil Menü Başlık"
+                    },
+                    "mobile_navigation_user_title": {
+                        "type": "text",
+                        "default_value": "Üyelik",
+                        "label": "Mobil Menü Üyelik Metni"
+                    },
+                    "mobile_navigation_user_dear": {
+                        "type": "text",
+                        "default_value": "Sn.",
+                        "label": "Mobil Menü Sayın Metni"
+                    },
+                    "mobile_navigation_user_login": {
+                        "type": "text",
+                        "default_value": "Giriş Yap",
+                        "label": "Mobil Menü Giriş Yap Buton Metni"
+                    },
+                    "mobile_navigation_user_signup": {
+                        "type": "text",
+                        "default_value": "Kayıt Ol",
+                        "label": "Mobil Menü Kayıt Ol Buton Metni"
+                    },
+                    "mobile_navigation_user_myaccount": {
+                        "type": "text",
+                        "default_value": "Hesabım",
+                        "label": "Mobil Menü Hesabım Buton Metni"
+                    },
+                    "mobile_navigation_user_logout": {
+                        "type": "text",
+                        "default_value": "Çıkış Yap",
+                        "label": "Mobil Menü Çıkış Yap Buton Metni"
+                    },
+                    "mobile_navigation_social_title": {
+                        "type": "text",
+                        "default_value": "Bizi Takip Edin",
+                        "label": "Mobil Menü Bizi Takip Edin Başlık"
+                    },
+					"search_placeholder": {
+						"type": "text",
+						"default_value": "Ürünün adını ya da stok kodunu yazınız",
+						"label": "Arama Metni"
+					},
+					"user_login": {
+						"type": "text",
+						"default_value": "Giriş Yap",
+						"label": "Giriş Yap"
+					},
+					"user_signup": {
+						"type": "text",
+						"default_value": "Hesabım",
+						"label": "Hesabım"
+					},
+					"user_menu_title": {
+						"type": "text",
+						"default_value": "Hoş Geldiniz",
+						"label": "Açılır Üye Alanı Başlığı"
+					},
+					"user_menu_subtitle": {
+						"type": "text",
+						"default_value": "Hızlı ve güvenli alışverişe giriş yapın!",
+						"label": "Açılır Üye Alanı Alt Başlığı"
+					},
+					"user_login_email": {
+						"type": "text",
+						"default_value": "E-posta Adresiniz",
+						"label": "E-mail Metni"
+					},
+					"user_login_pass": {
+						"type": "text",
+						"default_value": "Parolanız",
+						"label": "Şifre Metni"
+					},
+					"user_login_button": {
+						"type": "text",
+						"default_value": "Giriş Yap",
+						"label": "Giriş Yap Butonu"
+					},
+					"user_menu_bottom_title": {
+						"type": "text",
+						"default_value": "Henüz Üye Değil Misiniz?",
+						"label": "Açılır Üye Alanı Aksiyon Başlığı"
+					},
+					"user_menu_bottom_subtitle": {
+						"type": "text",
+						"default_value": "Kolayca üye olabilirsiniz!",
+						"label": "Açılır Üye Alanı Aksiyon Alt Başlığı"
+					},
+					"user_signup_button": {
+						"type": "text",
+						"default_value": "Hemen Üye Ol",
+						"label": "Üye Ol Butonu"
+					},
+					"user_signup_facebook_button": {
+						"type": "text",
+						"default_value": "Facebook ile Bağlan",
+						"label": "Facebook ile Bağlan Butonu"
+					},
+					"user_signup_google_button": {
+						"type": "text",
+						"default_value": "Google ile Bağlan",
+						"label": "Google ile Bağlan Butonu"
+					},
+					"user_signup_apple_button": {
+						"type": "text",
+						"default_value": "Apple ile Bağlan",
+						"label": "Apple ile Bağlan Butonu"
+					},
+					"user_dear": {
+						"type": "text",
+						"default_value": "Sn.",
+						"label": "Sayın Metni"
+					},
+					"user_member_index": {
+						"type": "text",
+						"default_value": "Hesap Bilgileri",
+						"label": "Hesap Bilgileri Sayfası"
+					},
+					"user_member_order_list": {
+						"type": "text",
+						"default_value": "Siparişlerim",
+						"label": "Siparişlerim Sayfası"
+					},
+					"user_member_address_list": {
+						"type": "text",
+						"default_value": "Adres Defteri",
+						"label": "Adres Defteri Sayfası"
+					},
+					"user_member_bank_transfer": {
+						"type": "text",
+						"default_value": "Havale Bildirimi",
+						"label": "Havale Bildirimi Sayfası"
+					},
+					"user_member_profile": {
+						"type": "text",
+						"default_value": "Üye Bilgisi Güncelleme",
+						"label": "Üye Bilgisi Güncelleme Sayfası"
+					},
+					"user_member_point_list": {
+						"type": "text",
+						"default_value": "Hediye Çekleri & Puan",
+						"label": "Hediye Çekleri & Puan Sayfası"
+					},
+					"user_member_favourite_list": {
+						"type": "text",
+						"default_value": "Favori Ürünleri Listele",
+						"label": "Favori Ürünleri Sayfası"
+					},
+					"user_logout": {
+						"type": "text",
+						"default_value": "Çıkış Yap",
+						"label": "Çıkış Yap"
+					},
+					"login_form_please": {
+						"type": "text",
+						"default_value": "Lütfen",
+						"label": "Üye Giriş Uyarısı Lütfen +"
+					},
+					"login_form_enter": {
+						"type": "text",
+						"default_value": "giriniz",
+						"label": "Üye Giriş Uyarısı + giriniz"
+					},
+					"login_form_format": {
+						"type": "text",
+						"default_value": "uygun formatta olmalıdır",
+						"label": "Üye Giriş Uyarısı + uygun formatta olmalıdır"
+					},
+					"login_form_maxlenght_255": {
+						"type": "text",
+						"default_value": "en fazla 255 karakter olmalıdır",
+						"label": "Üye Giriş Uyarısı + en fazla 255 karakter olmalıdır"
+					},
+					"login_form_minlenght_2": {
+						"type": "text",
+						"default_value": "en az 2 karakter olmalıdır",
+						"label": "Üye Giriş Uyarısı + en az 2 karakter olmalıdır"
+					},
+					"cart_title": {
+						"type": "text",
+						"default_value": "Sepetim",
+						"label": "Sepet Butonu"
+					},
+					"cart_popup_title": {
+						"type": "text",
+						"default_value": "Alışveriş Sepeti",
+						"label": "Açılır Sepet Başlığı"
+					},
+					"cart_popup_all_delete": {
+						"type": "text",
+						"default_value": "Sepeti Boşalt",
+						"label": "Sepeti Boşalt"
+					},
+					"cart_popup_subtitle_1": {
+						"type": "text",
+						"default_value": "Sepetinizde",
+						"label": "Sepetinizde +"
+					},
+					"cart_popup_subtitle_2": {
+						"type": "text",
+						"default_value": "ürün",
+						"label": "+ ürün"
+					},
+					"cart_popup_subtitle_3": {
+						"type": "text",
+						"default_value": "bulunmaktadır",
+						"label": "+ bulunmaktadır"
+					},
+					"cart_popup_total_title": {
+						"type": "text",
+						"default_value": "Sepet Toplamı",
+						"label": "Sepet Toplamı"
+					},
+					"cart_popup_buy_button": {
+						"type": "text",
+						"default_value": "Ödeme Yap",
+						"label": "Sepete Git Butonu"
+					},
+					"cart_popup_continue_button": {
+						"type": "text",
+						"default_value": "Alışverişe Devam Et",
+						"label": "Alışverişe Devam Et Butonu"
+					},
+					"cart_popup_empty_title": {
+						"type": "text",
+						"default_value": "Sepetinizde ürün bulunmamaktadır.",
+						"label": "Sepetinizde ürün bulunmamaktadır"
+					},
+					"cart_popup_start_shopping_button": {
+						"type": "text",
+						"default_value": "Alışverişe Başla",
+						"label": "Alışverişe Başla Butonu"
+					},
+					"cart_delete_title": {
+						"type": "text",
+						"default_value": "Ürün Sepetten Silinecektir!",
+						"label": "Sepet Ürün Silme Onay Başlığı"
+					},
+					"cart_delete_negative": {
+						"type": "text",
+						"default_value": "İptal",
+						"label": "Sepet Ürün Silme İptal Butonu"
+					},
+					"cart_delete_positive": {
+						"type": "text",
+						"default_value": "Ürünü Sil",
+						"label": "Sepet Ürün Silme Onay Butonu"
+					},
+					"cart_limit_error_message": {
+						"type": "text",
+						"default_value": "Bu üründeki max stok adedine ulaşılmıştır, daha fazla eklenemez.",
+						"label": "Sepet Ürün Limit Uyarı Mesajı"
+					},
+					"showcase_addtocart_button": {
+						"type": "text",
+						"default_value": "Sepete Ekle",
+						"label": "Vitrin Sepete Ekle Butonu"
+					},
+					"showcase_in_your_cart_button": {
+						"type": "text",
+						"default_value": "Ürün Sepetinizde",
+						"label": "Vitrin Ürün Sepetinizde Butonu"
+					},
+					"showcase_nostock_button": {
+						"type": "text",
+						"default_value": "Stokta Yok",
+						"label": "Vitrin Stokta Yok Butonu"
+					},
+					"phone_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Footer Telefon Numarası Başlığı"
+					},
+					"address_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Footer Adres Başlığı"
+					},
+					"mail_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Footer Mail Başlığı"
+					},
+					"map_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Footer Harita Başlığı"
+					},
+					"product_video_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Ürün Detay Video Butonu"
+					},
+					"product_add_comment_title": {
+						"type": "text",
+						"default_value": "Yorum",
+						"label": "Yıldızlı Yorum Adet Metni"
+					},
+					"product_gain_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kazancınız Metni"
+					},
+					"product_detail_cargo": {
+						"type": "text",
+						"default_value": "",
+						"label": "Ürün Detay Kargo Metni"
+					}
+				}
+			},
+            {
+                "name": "WhatsApp",
+                "group": {
+                    "type": "tab",
+                    "values": [
+                        {
+                            "name": "Genel Ayarlar",
+                            "settings": {
+                                "whatsapp_status": {
+                                    "type": "checkbox",
+                                    "default_value": 1,
+                                    "label": "Genel Durumu"
+                                },
+                                "whatsapp_link": {
+                                    "type": "text",
+                                    "default_value": "",
+                                    "label": "Whatsapp Numarası",
+                                    "info": "Rakamları ayırmak için sadece boşluk bırakılabilir (örn: 0555 555 55 55)."
+                                },
+                                "whatsapp_view_type": {
+                                    "type": "select",
+                                    "default_value": "whatsapp_icon_style_1",
+                                    "options": [
+                                        {
+                                            "label": "Stil 1 (Sadece İkon)",
+                                            "value": "whatsapp_icon_style_1"
+                                        },
+                                        {
+                                            "label": "Stil 2 (İkon + Metin)",
+                                            "value": "whatsapp_icon_style_2"
+                                        }
+                                    ],
+                                    "label": "Görünüm Stili",
+                                    "info": "WhatsApp alanının görünüm stilini buradan seçebilirsiniz."
+                                }
+                            }
+                        },
+                        {
+                            "name" : "Stil 1 Ayarları",
+                            "settings" : {
+                                "whatsapp_style_1_position_type": {
+                                    "type": "select",
+                                    "default_value": "whatsapp_style_1_position_type_1",
+                                    "options": [
+                                        {
+                                            "label": "Sağ Alt",
+                                            "value": "whatsapp_style_1_position_type_1"
+                                        },
+                                        {
+                                            "label": "Sol Alt",
+                                            "value": "whatsapp_style_1_position_type_2"
+                                        }
+                                    ],
+                                    "label": "Konumu",
+                                    "info": "WhatsApp butonu sayfada fixed (sabit) kalacak şekilde konumunu buradan seçebilirsiniz."
+                                },
+                                "whatsapp_style_1_title": {
+                                    "type": "text",
+                                    "default_value": "",
+                                    "label": "Açılır Alan Başlık"
+                                },
+                                "whatsapp_style_1_title_color": {
+                                    "type": "colorpicker",
+                                    "default_value": "#ffffff",
+                                    "label": "Açılır Alan Başlık Rengi"
+                                },
+                                "whatsapp_style_1_sub_title": {
+                                    "type": "text",
+                                    "default_value": "",
+                                    "label": "Açılır Alan Açıklama"
+                                },
+                                "whatsapp_style_1_sub_title_color": {
+                                    "type": "colorpicker",
+                                    "default_value": "#ffffff",
+                                    "label": "Açılır Alan Açıklama Rengi"
+                                },
+                                "whatsapp_style_1_button_title": {
+                                    "type": "text",
+                                    "default_value": "",
+                                    "label": "Açılır Alan Buton Metni"
+                                },
+                                "whatsapp_style_1_button_title_color": {
+                                    "type": "colorpicker",
+                                    "default_value": "#ffffff",
+                                    "label": "Açılır Alan Buton Metin Rengi"
+                                },
+                                "whatsapp_style_1_button_title_hover_color": {
+                                    "type": "colorpicker",
+                                    "default_value": "#ffffff",
+                                    "label": "Açılır Alan Buton Metni Hover Rengi"
+                                },
+                                "whatsapp_style_1_button_background_color": {
+                                    "type": "colorpicker",
+                                    "default_value": "#25D366",
+                                    "label": "Açılır Alan Buton Arka Plan Rengi"
+                                },
+                                "whatsapp_style_1_button_background_hover_color": {
+                                    "type": "colorpicker",
+                                    "default_value": "#25D366",
+                                    "label": "Açılır Alan Buton Arka Plan Hover Rengi"
+                                }
+                            }
+                        },
+                        {
+                            "name" : "Stil 2 Ayarları",
+                            "settings" : {
+                                "whatsapp_style_2_position_type": {
+                                    "type": "select",
+                                    "default_value": "whatsapp_style_2_position_type_1",
+                                    "options": [
+                                        {
+                                            "label": "Sağ Alt",
+                                            "value": "whatsapp_style_2_position_type_1"
+                                        },
+                                        {
+                                            "label": "Sağ Dikey",
+                                            "value": "whatsapp_style_2_position_type_2"
+                                        },
+                                        {
+                                            "label": "Sol Alt",
+                                            "value": "whatsapp_style_2_position_type_3"
+                                        },
+                                        {
+                                            "label": "Sol Dikey",
+                                            "value": "whatsapp_style_2_position_type_4"
+                                        }
+                                    ],
+                                    "label": "Konumu",
+                                    "info": "WhatsApp butonu sayfada fixed (sabit) kalacak şekilde konumunu buradan seçebilirsiniz."
+                                },
+                                "whatsapp_style_2_button_title": {
+                                    "type": "text",
+                                    "default_value": "",
+                                    "label": "Buton Metni"
+                                },
+                                "whatsapp_style_2_button_title_color": {
+                                    "type": "colorpicker",
+                                    "default_value": "#ffffff",
+                                    "label": "Buton Metin Rengi"
+                                },
+                                "whatsapp_style_2_button_title_hover_color": {
+                                    "type": "colorpicker",
+                                    "default_value": "#ffffff",
+                                    "label": "Buton Metin Hover Rengi"
+                                },
+                                "whatsapp_style_2_icon_status": {
+                                    "type": "checkbox",
+                                    "default_value": 1,
+                                    "label": "Svg İkon Durumu"
+                                },
+                                "whatsapp_style_2_icon": {
+                                    "type": "textarea",
+                                    "default_value": "",
+                                    "label": "Svg İkon"
+                                },
+                                "whatsapp_style_2_button_background_color": {
+                                    "type": "colorpicker",
+                                    "default_value": "#25D366",
+                                    "label": "Buton Arka Plan Rengi"
+                                },
+                                "whatsapp_style_2_button_background_hover_color": {
+                                    "type": "colorpicker",
+                                    "default_value": "#25D366",
+                                    "label": "Buton Arka Plan Hover Rengi"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+			{
+				"name" : "Header Menüler",
+				"group" : {
+					"type" : "tab",
+					"values" : [
+						{
+							"name" : "Ayarlar",
+							"settings" : {
+								"header_menu_status": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Genel Durumu"
+								}
+							}
+						},
+						{
+							"name" : "Menü 1",
+							"settings" : {
+								"header_menu_status_1": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"header_menu_link_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Linki"
+								},
+								"header_menu_target_1": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"header_menu_title_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"header_menu_svg_icon_1": {
+									"type": "textarea",
+									"default_value": "",
+									"label": "Svg İkon"
+								}
+							}
+						},
+						{
+							"name" : "Menü 2",
+							"settings" : {
+								"header_menu_status_2": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"header_menu_link_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Linki"
+								},
+								"header_menu_target_2": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"header_menu_title_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"header_menu_svg_icon_2": {
+									"type": "textarea",
+									"default_value": "",
+									"label": "Svg İkon"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"name" : "Kayan Yazı",
+				"group" : {
+					"type" : "tab",
+					"values" : [
+						{
+							"name" : "Ayarlar",
+							"settings" : {
+								"header_marquee_content_status": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Genel Durumu"
+								}
+							}
+						},
+						{
+							"name" : "#1",
+							"settings" : {
+								"marquee_status_1": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"marquee_text_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "İçerik"
+								}
+							}
+						},
+						{
+							"name" : "#2",
+							"settings" : {
+								"marquee_status_2": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"marquee_text_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "İçerik"
+								}
+							}
+						},
+						{
+							"name" : "#3",
+							"settings" : {
+								"marquee_status_3": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"marquee_text_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "İçerik"
+								}
+							}
+						},
+						{
+							"name" : "#4",
+							"settings" : {
+								"marquee_status_4": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"marquee_text_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "İçerik"
+								}
+							}
+						},
+						{
+							"name" : "#5",
+							"settings" : {
+								"marquee_status_5": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"marquee_text_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "İçerik"
+								}
+							}
+						},
+						{
+							"name" : "#6",
+							"settings" : {
+								"marquee_status_6": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"marquee_text_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "İçerik"
+								}
+							}
+						},
+						{
+							"name" : "#7",
+							"settings" : {
+								"marquee_status_7": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"marquee_text_7": {
+									"type": "text",
+									"default_value": "",
+									"label": "İçerik"
+								}
+							}
+						},
+						{
+							"name" : "#8",
+							"settings" : {
+								"marquee_status_8": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"marquee_text_8": {
+									"type": "text",
+									"default_value": "",
+									"label": "İçerik"
+								}
+							}
+						},
+						{
+							"name" : "#9",
+							"settings" : {
+								"marquee_status_9": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"marquee_text_9": {
+									"type": "text",
+									"default_value": "",
+									"label": "İçerik"
+								}
+							}
+						},
+						{
+							"name" : "#10",
+							"settings" : {
+								"marquee_status_10": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durumu"
+								},
+								"marquee_text_10": {
+									"type": "text",
+									"default_value": "",
+									"label": "İçerik"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"name" : "Tema Slider",
+				"group" : {
+					"type" : "tab",
+					"values" : [
+						{
+							"name" : "Ayarlar",
+							"settings" : {
+								"entry_slider_status": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Genel Durum"
+								}
+							}
+						},
+						{
+							"name" : "Sliderlar",
+							"group" : {
+								"type" : "tab",
+								"values" : [
+									{
+										"name" : "Slide 1",
+										"settings" : {
+											"entry_slider_status_1": {
+												"type": "checkbox",
+												"default_value": 1,
+												"label": "Durum"
+											},
+											"entry_slider_link_1": {
+												"type": "text",
+												"default_value": "",
+												"label": "Link"
+											},
+											"entry_slider_target_1": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Yeni Sekmede Açılsın mı?"
+											},
+											"entry_slider_title_1": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Üst Başlık"
+											},
+											"entry_slider_sub_title_1": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Alt Başlık"
+											},
+											"entry_slider_button_title_1": {
+												"type": "text",
+												"default_value": "",
+												"label": "Buton Metni"
+											},
+											"entry_slider_image_1": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_image_1",
+												"label": "Resim"
+											},
+											"entry_slider_mobile_image_1": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_mobile_image_1",
+												"label": "Mobil Resim"
+											}
+										}
+									},
+									{
+										"name" : "Slide 2",
+										"settings" : {
+											"entry_slider_status_2": {
+												"type": "checkbox",
+												"default_value": 1,
+												"label": "Durum"
+											},
+											"entry_slider_link_2": {
+												"type": "text",
+												"default_value": "",
+												"label": "Link"
+											},
+											"entry_slider_target_2": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Yeni Sekmede Açılsın mı?"
+											},
+											"entry_slider_title_2": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Üst Başlık"
+											},
+											"entry_slider_sub_title_2": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Alt Başlık"
+											},
+											"entry_slider_button_title_2": {
+												"type": "text",
+												"default_value": "",
+												"label": "Buton Metni"
+											},
+											"entry_slider_image_2": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_image_2",
+												"label": "Resim"
+											},
+											"entry_slider_mobile_image_2": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_mobile_image_2",
+												"label": "Mobil Resim"
+											}
+										}
+									},
+									{
+										"name" : "Slide 3",
+										"settings" : {
+											"entry_slider_status_3": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Durum"
+											},
+											"entry_slider_link_3": {
+												"type": "text",
+												"default_value": "",
+												"label": "Link"
+											},
+											"entry_slider_target_3": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Yeni Sekmede Açılsın mı?"
+											},
+											"entry_slider_title_3": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Üst Başlık"
+											},
+											"entry_slider_sub_title_3": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Alt Başlık"
+											},
+											"entry_slider_button_title_3": {
+												"type": "text",
+												"default_value": "",
+												"label": "Buton Metni"
+											},
+											"entry_slider_image_3": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_image_3",
+												"label": "Resim"
+											},
+											"entry_slider_mobile_image_3": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_mobile_image_3",
+												"label": "Mobil Resim"
+											}
+										}
+									},
+									{
+										"name" : "Slide 4",
+										"settings" : {
+											"entry_slider_status_4": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Durum"
+											},
+											"entry_slider_link_4": {
+												"type": "text",
+												"default_value": "",
+												"label": "Link"
+											},
+											"entry_slider_target_4": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Yeni Sekmede Açılsın mı?"
+											},
+											"entry_slider_title_4": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Üst Başlık"
+											},
+											"entry_slider_sub_title_4": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Alt Başlık"
+											},
+											"entry_slider_button_title_4": {
+												"type": "text",
+												"default_value": "",
+												"label": "Buton Metni"
+											},
+											"entry_slider_image_4": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_image_4",
+												"label": "Resim"
+											},
+											"entry_slider_mobile_image_4": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_mobile_image_4",
+												"label": "Mobil Resim"
+											}
+										}
+									},
+									{
+										"name" : "Slide 5",
+										"settings" : {
+											"entry_slider_status_5": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Durum"
+											},
+											"entry_slider_link_5": {
+												"type": "text",
+												"default_value": "",
+												"label": "Link"
+											},
+											"entry_slider_target_5": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Yeni Sekmede Açılsın mı?"
+											},
+											"entry_slider_title_5": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Üst Başlık"
+											},
+											"entry_slider_sub_title_5": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Alt Başlık"
+											},
+											"entry_slider_button_title_5": {
+												"type": "text",
+												"default_value": "",
+												"label": "Buton Metni"
+											},
+											"entry_slider_image_5": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_image_5",
+												"label": "Resim"
+											},
+											"entry_slider_mobile_image_5": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_mobile_image_5",
+												"label": "Mobil Resim"
+											}
+										}
+									},
+									{
+										"name" : "Slide 6",
+										"settings" : {
+											"entry_slider_status_6": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Durum"
+											},
+											"entry_slider_link_6": {
+												"type": "text",
+												"default_value": "",
+												"label": "Link"
+											},
+											"entry_slider_target_6": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Yeni Sekmede Açılsın mı?"
+											},
+											"entry_slider_title_6": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Üst Başlık"
+											},
+											"entry_slider_sub_title_6": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Alt Başlık"
+											},
+											"entry_slider_button_title_6": {
+												"type": "text",
+												"default_value": "",
+												"label": "Buton Metni"
+											},
+											"entry_slider_image_6": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_image_6",
+												"label": "Resim"
+											},
+											"entry_slider_mobile_image_6": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_mobile_image_6",
+												"label": "Mobil Resim"
+											}
+										}
+									},
+									{
+										"name" : "Slide 7",
+										"settings" : {
+											"entry_slider_status_7": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Durum"
+											},
+											"entry_slider_link_7": {
+												"type": "text",
+												"default_value": "",
+												"label": "Link"
+											},
+											"entry_slider_target_7": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Yeni Sekmede Açılsın mı?"
+											},
+											"entry_slider_title_7": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Üst Başlık"
+											},
+											"entry_slider_sub_title_7": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Alt Başlık"
+											},
+											"entry_slider_button_title_7": {
+												"type": "text",
+												"default_value": "",
+												"label": "Buton Metni"
+											},
+											"entry_slider_image_7": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_image_7",
+												"label": "Resim"
+											},
+											"entry_slider_mobile_image_7": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_mobile_image_7",
+												"label": "Mobil Resim"
+											}
+										}
+									},
+									{
+										"name" : "Slide 8",
+										"settings" : {
+											"entry_slider_status_8": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Durum"
+											},
+											"entry_slider_link_8": {
+												"type": "text",
+												"default_value": "",
+												"label": "Link"
+											},
+											"entry_slider_target_8": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Yeni Sekmede Açılsın mı?"
+											},
+											"entry_slider_title_8": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Üst Başlık"
+											},
+											"entry_slider_sub_title_8": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Alt Başlık"
+											},
+											"entry_slider_button_title_8": {
+												"type": "text",
+												"default_value": "",
+												"label": "Buton Metni"
+											},
+											"entry_slider_image_8": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_image_8",
+												"label": "Resim"
+											},
+											"entry_slider_mobile_image_8": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_mobile_image_8",
+												"label": "Mobil Resim"
+											}
+										}
+									},
+									{
+										"name" : "Slide 9",
+										"settings" : {
+											"entry_slider_status_9": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Durum"
+											},
+											"entry_slider_link_9": {
+												"type": "text",
+												"default_value": "",
+												"label": "Link"
+											},
+											"entry_slider_target_9": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Yeni Sekmede Açılsın mı?"
+											},
+											"entry_slider_title_9": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Üst Başlık"
+											},
+											"entry_slider_sub_title_9": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Alt Başlık"
+											},
+											"entry_slider_button_title_9": {
+												"type": "text",
+												"default_value": "",
+												"label": "Buton Metni"
+											},
+											"entry_slider_image_9": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_image_9",
+												"label": "Resim"
+											},
+											"entry_slider_mobile_image_9": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_mobile_image_9",
+												"label": "Mobil Resim"
+											}
+										}
+									},
+									{
+										"name" : "Slide 10",
+										"settings" : {
+											"entry_slider_status_10": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Durum"
+											},
+											"entry_slider_link_10": {
+												"type": "text",
+												"default_value": "",
+												"label": "Link"
+											},
+											"entry_slider_target_10": {
+												"type": "checkbox",
+												"default_value": 0,
+												"label": "Yeni Sekmede Açılsın mı?"
+											},
+											"entry_slider_title_10": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Üst Başlık"
+											},
+											"entry_slider_sub_title_10": {
+												"type": "textarea",
+												"default_value": "",
+												"label": "Alt Başlık"
+											},
+											"entry_slider_button_title_10": {
+												"type": "text",
+												"default_value": "",
+												"label": "Buton Metni"
+											},
+											"entry_slider_image_10": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_image_10",
+												"label": "Resim"
+											},
+											"entry_slider_mobile_image_10": {
+												"type": "image",
+												"default_value": "",
+												"filename": "entry_slider_mobile_image_10",
+												"label": "Mobil Resim"
+											}
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"name" : "Vitrin Başlıkları",
+				"settings" : {
+					"discounted_products_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "İndirimli Ürünler Başlığı"
+					},
+					"popular_products_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Popüler Ürünler Başlığı"
+					},
+					"home_products_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Anasayfa Ürünleri Başlığı"
+					},
+					"featured_products_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Sponsor Ürünleri Başlığı"
+					}
+				}
+			},
+			{
+				"name" : "Kategori Vitrini",
+				"settings" : {
+					"list_tab_header": {
+						"type": "text",
+						"default_value": "",
+						"label": "Üst Başlık"
+					},
+					"category_list_tab_status_1": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Kategori 1 Durumu"
+					},
+					"category_list_tab_title_1": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 1 Başlığı"
+					},
+					"category_list_tab_id_1": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 1 İd"
+					},
+					"category_list_tab_status_2": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Kategori 2 Durumu"
+					},
+					"category_list_tab_title_2": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 2 Başlığı"
+					},
+					"category_list_tab_id_2": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 2 İd"
+					},
+					"category_list_tab_status_3": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Kategori 3 Durumu"
+					},
+					"category_list_tab_title_3": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 3 Başlığı"
+					},
+					"category_list_tab_id_3": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 3 İd"
+					},
+					"category_list_tab_status_4": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Kategori 4 Durumu"
+					},
+					"category_list_tab_title_4": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 4 Başlığı"
+					},
+					"category_list_tab_id_4": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 4 İd"
+					},
+					"category_list_tab_status_5": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Kategori 5 Durumu"
+					},
+					"category_list_tab_title_5": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 5 Başlığı"
+					},
+					"category_list_tab_id_5": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 5 İd"
+					},
+					"category_list_tab_status_6": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Kategori 6 Durumu"
+					},
+					"category_list_tab_title_6": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 6 Başlığı"
+					},
+					"category_list_tab_id_6": {
+						"type": "text",
+						"default_value": "",
+						"label": "Kategori 6 İd"
+					}
+				}
+			},
+			{
+				"name" : "İndirimli Ürünler Banner",
+				"settings" : {
+					"theme_banner_status_1": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Banner Durumu"
+					},
+					"theme_banner_title_1": {
+						"type": "text",
+						"default_value": "",
+						"label": "Banner Başlık"
+					},
+					"theme_banner_sub_title_1": {
+						"type": "text",
+						"default_value": "",
+						"label": "Banner Alt Başlık"
+					},
+					"theme_banner_link_1": {
+						"type": "text",
+						"default_value": "",
+						"label": "Banner Linki"
+					},
+					"theme_banner_button_title_1": {
+						"type": "text",
+						"default_value": "",
+						"label": "Banner Buton Metni"
+					},
+					"theme_banner_target_1": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Yeni Sekmede Açılsın mı?"
+					},
+					"theme_banner_image_1": {
+						"type": "image",
+						"default_value": "",
+						"filename": "theme_banner_image_1",
+						"label": "Banner Resmi"
+					}
+				}
+			},
+			{
+				"name" : "Özel Ürün Grubu",
+				"group" : {
+					"type" : "tab",
+					"values" : [
+						{
+							"name" : "Genel Ayarlar",
+							"settings" : {
+								"product_popover_status": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Durumu"
+								},
+								"popover_banner_image": {
+									"type": "image",
+									"default_value": "",
+									"filename": "popover_banner_image",
+									"label": "Ürün Arka Plan Resmi"
+								}
+							}
+						},
+						{
+							"name" : "Ürün Ayarları",
+							"group" : {
+								"type" : "tab",
+								"values" : [
+									{
+										"name" : "Ürün 1",
+										"settings" : {
+											"product_banner_points_1_status": {
+												"type": "checkbox",
+												"default_value": 1,
+												"label": "Durumu"
+											},
+											"product_banner_points_1_top": {
+												"type": "text",
+												"default_value": "",
+												"label": "Point Top Dikey Yüzde Değeri",
+												"info": "Point'in arkaplan resim dikeyinde, yüksekliğe oranla yüzdesel olarak nerede konumlanacağını belirler. 1 ile 100 (%) arasında bir değer olmalıdır."
+											},
+											"product_banner_points_1_left": {
+												"type": "text",
+												"default_value": "",
+												"label": "Point Left Yatay Yüzde Değeri",
+												"info": "Point'in arkaplan resim yatayında, genişliğe oranla yüzdesel olarak nerede konumlanacağını belirler. 1 ile 100 (%) arasında bir değer olmalıdır."
+											}
+										}
+									},
+									{
+										"name" : "Ürün 2",
+										"settings" : {
+											"product_banner_points_2_status": {
+												"type": "checkbox",
+												"default_value": 1,
+												"label": "Durumu"
+											},
+											"product_banner_points_2_top": {
+												"type": "text",
+												"default_value": "",
+												"label": "Point Top Dikey Yüzde Değeri",
+												"info": "Point'in arkaplan resim dikeyinde, yüksekliğe oranla yüzdesel olarak nerede konumlanacağını belirler. 1 ile 100 (%) arasında bir değer olmalıdır."
+											},
+											"product_banner_points_2_left": {
+												"type": "text",
+												"default_value": "",
+												"label": "Point Right Yatay Yüzde Değeri",
+												"info": "Point'in arkaplan resim yatayında, genişliğe oranla yüzdesel olarak nerede konumlanacağını belirler. 1 ile 100 (%) arasında bir değer olmalıdır."
+											}
+										}
+									},
+									{
+										"name" : "Ürün 3",
+										"settings" : {
+											"product_banner_points_3_status": {
+												"type": "checkbox",
+												"default_value": 1,
+												"label": "Durumu"
+											},
+											"product_banner_points_3_top": {
+												"type": "text",
+												"default_value": "",
+												"label": "Point Top Dikey Yüzde Değeri",
+												"info": "Point'in arkaplan resim dikeyinde, yüksekliğe oranla yüzdesel olarak nerede konumlanacağını belirler. 1 ile 100 (%) arasında bir değer olmalıdır."
+											},
+											"product_banner_points_3_left": {
+												"type": "text",
+												"default_value": "",
+												"label": "Point Left Yatay Yüzde Değeri",
+												"info": "Point'in arkaplan resim yatayında, genişliğe oranla yüzdesel olarak nerede konumlanacağını belirler. 1 ile 100 (%) arasında bir değer olmalıdır."
+											}
+										}
+									},
+									{
+										"name" : "Ürün 4",
+										"settings" : {
+											"product_banner_points_4_status": {
+												"type": "checkbox",
+												"default_value": 1,
+												"label": "Durumu"
+											},
+											"product_banner_points_4_top": {
+												"type": "text",
+												"default_value": "",
+												"label": "Point Top Dikey Yüzde Değeri",
+												"info": "Point'in arkaplan resim dikeyinde, yüksekliğe oranla yüzdesel olarak nerede konumlanacağını belirler. 1 ile 100 (%) arasında bir değer olmalıdır."
+											},
+											"product_banner_points_4_left": {
+												"type": "text",
+												"default_value": "",
+												"label": "Point Left Yatay Yüzde Değeri",
+												"info": "Point'in arkaplan resim yatayında, genişliğe oranla yüzdesel olarak nerede konumlanacağını belirler. 1 ile 100 (%) arasında bir değer olmalıdır."
+											}
+										}
+									},
+									{
+										"name" : "Ürün 5",
+										"settings" : {
+											"product_banner_points_5_status": {
+												"type": "checkbox",
+												"default_value": 1,
+												"label": "Durumu"
+											},
+											"product_banner_points_5_top": {
+												"type": "text",
+												"default_value": "",
+												"label": "Point Top Dikey Yüzde Değeri",
+												"info": "Point'in arkaplan resim dikeyinde, yüksekliğe oranla yüzdesel olarak nerede konumlanacağını belirler. 1 ile 100 (%) arasında bir değer olmalıdır."
+											},
+											"product_banner_points_5_left": {
+												"type": "text",
+												"default_value": "",
+												"label": "Point Left Yatay Yüzde Değeri",
+												"info": "Point'in arkaplan resim yatayında, genişliğe oranla yüzdesel olarak nerede konumlanacağını belirler. 1 ile 100 (%) arasında bir değer olmalıdır."
+											}
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"name" : "Kategori Banner Alanı",
+				"group" : {
+					"type" : "tab",
+					"values" : [
+						{
+							"name" : "Ayarlar",
+							"settings" : {
+								"category_banner_status": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Genel Durum"
+								}
+							}
+						},
+						{
+							"name" : "#1",
+							"settings" : {
+								"category_banner_status_1": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"category_banner_link_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"category_banner_target_1": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"category_banner_title_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},								
+								"category_banner_image_1": {
+									"type": "image",
+									"default_value": "",
+									"filename": "category_banner_image_1",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#2",
+							"settings" : {
+								"category_banner_status_2": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"category_banner_link_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"category_banner_target_2": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"category_banner_title_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},								
+								"category_banner_image_2": {
+									"type": "image",
+									"default_value": "",
+									"filename": "category_banner_image_2",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#3",
+							"settings" : {
+								"category_banner_status_3": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"category_banner_link_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"category_banner_target_3": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"category_banner_title_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},								
+								"category_banner_image_3": {
+									"type": "image",
+									"default_value": "",
+									"filename": "category_banner_image_3",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#4",
+							"settings" : {
+								"category_banner_status_4": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"category_banner_link_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"category_banner_target_4": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"category_banner_title_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},								
+								"category_banner_image_4": {
+									"type": "image",
+									"default_value": "",
+									"filename": "category_banner_image_4",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#5",
+							"settings" : {
+								"category_banner_status_5": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"category_banner_link_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"category_banner_target_5": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"category_banner_title_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},								
+								"category_banner_image_5": {
+									"type": "image",
+									"default_value": "",
+									"filename": "category_banner_image_5",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#6",
+							"settings" : {
+								"category_banner_status_6": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"category_banner_link_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"category_banner_target_6": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"category_banner_title_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},								
+								"category_banner_image_6": {
+									"type": "image",
+									"default_value": "",
+									"filename": "category_banner_image_6",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#7",
+							"settings" : {
+								"category_banner_status_7": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"category_banner_link_7": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"category_banner_target_7": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"category_banner_title_7": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},								
+								"category_banner_image_7": {
+									"type": "image",
+									"default_value": "",
+									"filename": "category_banner_image_7",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#8",
+							"settings" : {
+								"category_banner_status_8": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"category_banner_link_8": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"category_banner_target_8": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"category_banner_title_8": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},								
+								"category_banner_image_8": {
+									"type": "image",
+									"default_value": "",
+									"filename": "category_banner_image_8",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#9",
+							"settings" : {
+								"category_banner_status_9": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"category_banner_link_9": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"category_banner_target_9": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"category_banner_title_9": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},								
+								"category_banner_image_9": {
+									"type": "image",
+									"default_value": "",
+									"filename": "category_banner_image_9",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#10",
+							"settings" : {
+								"category_banner_status_10": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"category_banner_link_10": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"category_banner_target_10": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"category_banner_title_10": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},								
+								"category_banner_image_10": {
+									"type": "image",
+									"default_value": "",
+									"filename": "category_banner_image_10",
+									"label": "Banner Görseli"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"name" : "Altılı Banner Alanı",
+				"group" : {
+					"type" : "tab",
+					"values" : [
+						{
+							"name" : "Ayarlar",
+							"settings" : {
+								"product_banner_status": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Genel Durum"
+								}
+							}
+						},
+						{
+							"name" : "#1",
+							"settings" : {
+								"product_banner_status_1": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"product_banner_link_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"product_banner_target_1": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"product_banner_title_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"product_banner_sub_title_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"product_banner_button_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"product_banner_image_1": {
+									"type": "image",
+									"default_value": "",
+									"filename": "product_banner_image_1",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#2",
+							"settings" : {
+								"product_banner_status_2": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"product_banner_link_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"product_banner_target_2": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"product_banner_title_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"product_banner_sub_title_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"product_banner_button_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"product_banner_image_2": {
+									"type": "image",
+									"default_value": "",
+									"filename": "product_banner_image_2",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#3",
+							"settings" : {
+								"product_banner_status_3": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"product_banner_link_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"product_banner_target_3": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"product_banner_title_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"product_banner_sub_title_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"product_banner_button_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"product_banner_image_3": {
+									"type": "image",
+									"default_value": "",
+									"filename": "product_banner_image_3",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#4",
+							"settings" : {
+								"product_banner_status_4": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"product_banner_link_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"product_banner_target_4": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"product_banner_title_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"product_banner_sub_title_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"product_banner_button_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"product_banner_image_4": {
+									"type": "image",
+									"default_value": "",
+									"filename": "product_banner_image_4",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#5",
+							"settings" : {
+								"product_banner_status_5": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"product_banner_link_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"product_banner_target_5": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"product_banner_title_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"product_banner_sub_title_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"product_banner_button_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"product_banner_image_5": {
+									"type": "image",
+									"default_value": "",
+									"filename": "product_banner_image_5",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#6",
+							"settings" : {
+								"product_banner_status_6": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"product_banner_link_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"product_banner_target_6": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"product_banner_title_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"product_banner_sub_title_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"product_banner_button_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"product_banner_image_6": {
+									"type": "image",
+									"default_value": "",
+									"filename": "product_banner_image_6",
+									"label": "Banner Görseli"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"name" : "Kampanya Banner Alanı",
+				"group" : {
+					"type" : "tab",
+					"values" : [
+						{
+							"name" : "Ayarlar",
+							"settings" : {
+								"campaign_banner_status": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Genel Durum"
+								}
+							}
+						},
+						{
+							"name" : "#1",
+							"settings" : {
+								"campaign_banner_status_1": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"campaign_banner_link_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"campaign_banner_target_1": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"campaign_banner_title_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"campaign_banner_sub_title_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"campaign_banner_button_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"campaign_banner_image_1": {
+									"type": "image",
+									"default_value": "",
+									"filename": "campaign_banner_image_1",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#2",
+							"settings" : {
+								"campaign_banner_status_2": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"campaign_banner_link_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"campaign_banner_target_2": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"campaign_banner_title_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"campaign_banner_sub_title_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"campaign_banner_button_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"campaign_banner_image_2": {
+									"type": "image",
+									"default_value": "",
+									"filename": "campaign_banner_image_2",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#3",
+							"settings" : {
+								"campaign_banner_status_3": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"campaign_banner_link_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"campaign_banner_target_3": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"campaign_banner_title_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"campaign_banner_sub_title_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"campaign_banner_button_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"campaign_banner_image_3": {
+									"type": "image",
+									"default_value": "",
+									"filename": "campaign_banner_image_3",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#4",
+							"settings" : {
+								"campaign_banner_status_4": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"campaign_banner_link_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"campaign_banner_target_4": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"campaign_banner_title_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"campaign_banner_sub_title_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"campaign_banner_button_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"campaign_banner_image_4": {
+									"type": "image",
+									"default_value": "",
+									"filename": "campaign_banner_image_4",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#5",
+							"settings" : {
+								"campaign_banner_status_5": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"campaign_banner_link_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"campaign_banner_target_5": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"campaign_banner_title_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"campaign_banner_sub_title_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"campaign_banner_button_5": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"campaign_banner_image_5": {
+									"type": "image",
+									"default_value": "",
+									"filename": "campaign_banner_image_5",
+									"label": "Banner Görseli"
+								}
+							}
+						},
+						{
+							"name" : "#6",
+							"settings" : {
+								"campaign_banner_status_6": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"campaign_banner_link_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"campaign_banner_target_6": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"campaign_banner_title_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"campaign_banner_sub_title_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"campaign_banner_button_6": {
+									"type": "text",
+									"default_value": "",
+									"label": "Buton Başlığı"
+								},
+								"campaign_banner_image_6": {
+									"type": "image",
+									"default_value": "",
+									"filename": "campaign_banner_image_6",
+									"label": "Banner Görseli"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"name" : "Tekli Banner",
+				"settings" : {
+					"theme_banner_status_2": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Tema Banner Durumu"
+					},
+					"theme_banner_link_2": {
+						"type": "text",
+						"default_value": "",
+						"label": "Tema Banner Linki"
+					},
+					"theme_banner_tag_title_2": {
+						"type": "text",
+						"default_value": "",
+						"label": "Tema Banner Resim Alt Etiketi"
+					},
+					"theme_banner_target_2": {
+						"type": "checkbox",
+						"default_value": 0,
+						"label": "Yeni Sekmede Açılsın mı?"
+					},
+					"theme_banner_image_2": {
+						"type": "image",
+						"default_value": "",
+						"filename": "theme_banner_image_2",
+						"label": "Tema Banner Resmi"
+					}
+				}
+			},
+			{
+				"name" : "E-Bülten",
+				"settings" : {
+					"newsletter_content_status": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "E-Bülten Alanı Durumu"
+					},
+					"newsletter_image": {
+						"type": "image",
+						"default_value": "",
+						"filename": "newsletter_image",
+						"label": "Banner Görseli"
+					},
+					"newsletter_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "E-Bülten Başlığı"
+					},
+					"newsletter_placeholder": {
+						"type": "text",
+						"default_value": "E-mail adresinizi yazınız.",
+						"label": "E-Bülten Metni"
+					},
+					"newsletter_button": {
+						"type": "text",
+						"default_value": "KAYDOL",
+						"label": "E-Bülten Butonu"
+					},
+					"entry_mail_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Mail Alanı Üst Başlık"
+					},
+					"mail_text": {
+						"type": "text",
+						"default_value": "",
+						"label": "Mail Alanı Alt Başlık"
+					},
+					"entry_phone_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Telefon Alanı Üst Başlık"
+					},
+					"phone_text": {
+						"type": "text",
+						"default_value": "",
+						"label": "Telefon Alanı Alt Başlık"
+					}
+				}
+			},
+			{
+				"name" : "Blog",
+				"settings" : {
+					"blog_status": {
+						"type": "checkbox",
+						"default_value": 1,
+						"label": "Durumu"
+					},
+					"blog_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Başlığı"
+					},
+					"blog_read_more": {
+						"type": "text",
+						"default_value": "Devamını Oku",
+						"label": "Devamını Oku Butonu"
+					}
+				}
+			},
+			{
+				"name" : "Bilgilendirme Alanları",
+				"group" : {
+					"type" : "tab",
+					"values" : [
+						{
+							"name" : "Ayarlar",
+							"settings" : {
+								"shopping_banner_status": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Genel Durum"
+								}
+							}
+						},
+						{
+							"name" : "Birinci Alan",
+							"settings" : {
+								"shopping_banner_status_1": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"shopping_banner_link_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"shopping_banner_target_1": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"shopping_banner_title_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"shopping_banner_sub_title_1": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"shopping_banner_svg_1": {
+									"type": "textarea",
+									"default_value": "",
+									"label": "Svg İkon"
+								}
+							}
+						},
+						{
+							"name" : "İkinci Alan",
+							"settings" : {
+								"shopping_banner_status_2": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"shopping_banner_link_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"shopping_banner_target_2": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"shopping_banner_title_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"shopping_banner_sub_title_2": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"shopping_banner_svg_2": {
+									"type": "textarea",
+									"default_value": "",
+									"label": "Svg İkon"
+								}
+							}
+						},
+						{
+							"name" : "Üçüncü Alan",
+							"settings" : {
+								"shopping_banner_status_3": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"shopping_banner_link_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"shopping_banner_target_3": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"shopping_banner_title_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"shopping_banner_sub_title_3": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"shopping_banner_svg_3": {
+									"type": "textarea",
+									"default_value": "",
+									"label": "Svg İkon"
+								}
+							}
+						},
+						{
+							"name" : "Dördüncü Alan",
+							"settings" : {
+								"shopping_banner_status_4": {
+									"type": "checkbox",
+									"default_value": 1,
+									"label": "Durum"
+								},
+								"shopping_banner_link_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Link"
+								},
+								"shopping_banner_target_4": {
+									"type": "checkbox",
+									"default_value": 0,
+									"label": "Yeni Sekmede Açılsın mı?"
+								},
+								"shopping_banner_title_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Başlık"
+								},
+								"shopping_banner_sub_title_4": {
+									"type": "text",
+									"default_value": "",
+									"label": "Alt Başlık"
+								},
+								"shopping_banner_svg_4": {
+									"type": "textarea",
+									"default_value": "",
+									"label": "Svg İkon"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"name" : "Ücretsiz Kargo",
+				"settings" : {
+					"free_cargo_label": {
+						"type": "text",
+						"default_value": "",
+						"label": "Ücretsiz Kargo Fiyat Sınırını Belirle"
+					},
+					"free_cargo_label_title": {
+						"type": "text",
+						"default_value": "",
+						"label": "Ücretsiz Kargo Metni"
+					}
+				}
+			}
+		]
+	}
+}

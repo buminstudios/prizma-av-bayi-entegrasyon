@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		{% block page_styles %}{% endblock %}
+	</head>
+	<body class="current-page-{{ site.route.group }}-{{ site.route.name }}">
+		{% include 'html/snippets/header.twig' %}
+		<main id="main">
+			<div class="container">
+				{% block breadcrumb %}{% endblock %}
+                {% block headContent %}{% endblock %}
+                <section class="section-container">
+                    <aside class="left-block">
+                        {{ macro_global('leftBlocks') }}
+                    </aside>
+                    <section class="content-block">
+                        {% if site.route.group == "product-list" and site.route.name == "filter" and showcase.items | length > 0 %}
+                            <section class="section-sorting-view">
+                                {% block sortingOptions %}{% endblock %}
+                                {% include 'html/snippets/showcase/showcase-sorting-options.twig' %}
+                            </section>
+                        {% endif %}
+						{% block content %}{% endblock %}
+                    </section>
+                </section>
+			</div>
+		</main>
+        {% include 'html/snippets/footer.twig' %}
+		{% include 'html/snippets/scripts.twig' %}
+		{% block page_scripts %}{% endblock %}
+	</body>
+</html>

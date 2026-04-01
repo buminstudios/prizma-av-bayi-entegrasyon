@@ -1,0 +1,135 @@
+{% set orders = {"1": theme.settings.slider_order_1,"2": theme.settings.slider_order_2,"3": theme.settings.slider_order_3,"4": theme.settings.slider_order_4,"5": theme.settings.slider_order_5,"6": theme.settings.slider_order_6,"7": theme.settings.slider_order_7,"8": theme.settings.slider_order_8,"9": theme.settings.slider_order_9,"10": theme.settings.slider_order_10} %}
+<div class="theme-slider">
+    {% for slide, order in orders | sort %}
+        {% if order != '' %}
+            {% set slideMode = 'image' %}
+            {% if theme.settings['slider_title_' ~ slide] or theme.settings['slider_content_' ~ slide] or theme.settings['slider_button_' ~ slide] or theme.settings['slider_picture_' ~ slide] %}
+                {% set slideMode = 'content' %}
+            {% endif %}
+            {% if theme.settings['slider_status_' ~ slide] %}
+                <div class="theme-slider-{{slide}} theme-slider-item{{ slideMode == 'content' ? ' content' : ' image' }}"{% if theme.settings['slider_color_' ~ slide] %} style="background-color:{{ theme.settings['slider_color_' ~ slide] }};{% if slideMode == 'content' %}background-image:url('{{ themeAsset(theme.settings['slider_url_' ~ slide]) }}'){% endif %}"{% endif %}>
+                    {% if theme.settings['slider_link_' ~ slide] %}
+                        <a href="{{ theme.settings['slider_link_' ~ slide] }}"{{ theme.settings['slider_target_' ~ slide] ? ' target="_blank"' }}>
+                    {% endif %}
+                        {% if slideMode == 'content' %}
+                            <div class="theme-slider-content" style="padding-top:{{ theme.settings['slider_padding_top_' ~ slide] }}px;padding-bottom:{{ theme.settings['slider_padding_bottom_' ~ slide] }}px;">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        {% if theme.settings['slider_title_' ~ slide] or theme.settings['slider_content_' ~ slide] or theme.settings['slider_button_' ~ slide] %}
+                                            {% if theme.settings['slider_type_' ~ slide] == 1 %}
+                                                <div class="col-lg-6 order-1 content-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                            {% elseif theme.settings['slider_type_' ~ slide] == 2 %}
+                                                {% if theme.settings['slider_picture_' ~ slide] %}
+                                                    <div class="col-lg-6 order-2 content-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                                {% else %}
+                                                    <div class="col-lg-6 offset-lg-6 order-2 content-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                                {% endif %}
+                                            {% elseif theme.settings['slider_type_' ~ slide] == 3 %}
+                                                <div class="col-lg-6 offset-lg-3 order-1 content-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                            {% elseif theme.settings['slider_type_' ~ slide] == 4 %}
+                                                <div class="col-lg-12 order-1 content-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                            {% elseif theme.settings['slider_type_' ~ slide] == 5 %}
+                                                <div class="col-lg-6 offset-lg-3 order-2 content-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                            {% elseif theme.settings['slider_type_' ~ slide] == 6 %}
+                                                <div class="col-lg-12 order-2 content-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                            {% endif %}
+                                                {% if theme.settings['slider_type_' ~ slide] == 1 %}
+                                                    <div class="theme-slider-texts-wrapper text-center {{ theme.settings['slider_align_' ~ slide] }}" style="padding-left: {{ theme.settings['slider_padding_horizontal_' ~ slide] }}px;">
+                                                {% elseif theme.settings['slider_type_' ~ slide] == 2 %}
+                                                    <div class="theme-slider-texts-wrapper text-center {{ theme.settings['slider_align_' ~ slide] }}" style="padding-right: {{ theme.settings['slider_padding_horizontal_' ~ slide] }}px;">
+                                                {% else %}
+                                                    <div class="theme-slider-texts-wrapper text-center {{ theme.settings['slider_align_' ~ slide] }}" style="padding-left: {{ theme.settings['slider_padding_horizontal_' ~ slide] }}px;padding-right: {{ theme.settings['slider_padding_horizontal_' ~ slide] }}px;">
+                                                {% endif %}
+                                                    {% if theme.settings['slider_title_' ~ slide] %}
+                                                        <div class="theme-slider-title {{ theme.settings.slider_title_size }}" style="color:{{ theme.settings['slider_title_color_' ~ slide] }};">{{ theme.settings['slider_title_' ~ slide] }}</div>
+                                                    {% endif %}
+                                                    {% if theme.settings['slider_content_' ~ slide] %}
+                                                        <div class="theme-slider-sub-title {{ theme.settings.slider_content_size }}" style="color:{{ theme.settings['slider_content_color_' ~ slide] }};">{{ theme.settings['slider_content_' ~ slide] }}</div>
+                                                    {% endif %}
+                                                    {% if theme.settings['slider_button_' ~ slide] %}
+                                                        <div class="theme-slider-button">
+                                                            <button class="btn {{ theme.settings.slider_button_size }} {{ theme.settings.slider_button_type }}" style="background-color:{{ theme.settings['slider_button_bg_color_' ~ slide] }};color:{{ theme.settings['slider_button_text_color_' ~ slide] }}">
+                                                                {{ theme.settings['slider_button_' ~ slide] }}
+                                                            </button>
+                                                        </div>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                        {% if theme.settings['slider_picture_' ~ slide] %}
+                                            {% if theme.settings['slider_type_' ~ slide] == 1 %}
+                                                {% if theme.settings['slider_title_' ~ slide] or theme.settings['slider_content_' ~ slide] or theme.settings['slider_button_' ~ slide] %}
+                                                    <div class="col-lg-6 order-2 picture-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                                {% else %}
+                                                    <div class="col-lg-6 offset-lg-6 order-2 picture-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                                {% endif %}
+                                            {% elseif theme.settings['slider_type_' ~ slide] == 2 %}
+                                                <div class="col-lg-6 order-1 picture-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                            {% elseif theme.settings['slider_type_' ~ slide] == 3 %}
+                                                <div class="col-lg-6 offset-lg-3 order-2 picture-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                            {% elseif theme.settings['slider_type_' ~ slide] == 4 %}
+                                                <div class="col-lg-12 order-2 picture-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                            {% elseif theme.settings['slider_type_' ~ slide] == 5 %}
+                                                <div class="col-lg-6 offset-lg-3 order-1 picture-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                            {% elseif theme.settings['slider_type_' ~ slide] == 6 %}
+                                                <div class="col-lg-12 order-1 picture-type-{{ theme.settings['slider_type_' ~ slide] }}">
+                                            {% endif %}
+                                                <div class="theme-slider-picture text-center">
+                                                    <img loading="lazy" decoding="async" src="{{ themeAsset(theme.settings['slider_picture_' ~ slide]) }}" />
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings['slider_url_' ~ slide] and slideMode == 'image' %}
+                            <div class="theme-slider-image">
+                                {% set loadingDefault = '' %}
+                                {% if loop.first %}
+                                    {% set loadingDefault %}
+                                        loading="eager" decoding="auto"
+                                    {% endset %}
+                                {% else %}
+                                    {% set loadingDefault %}
+                                        loading="lazy" decoding="async"
+                                    {% endset %}
+                                {% endif %}
+                                <img {{ loadingDefault }} src="{{ themeAsset(theme.settings['slider_url_' ~ slide]) }}" alt="">
+                            </div>
+                        {% endif %}
+                    {% if theme.settings['slider_link_' ~ slide] %}
+                        </a>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endif %}
+	{% endfor %}
+</div>
+<script type="text/javascript">
+	$(function() {
+		if($('.theme-slider .theme-slider-item').length > 0) {
+			$('.theme-slider').slick({
+				fade: {{ theme.settings.slide_mode == 'slide' ? 'false' : 'true' }},
+				autoplay: {{ theme.settings.slide_autoplay == 1 ? 'true' : 'false' }},
+				autoplaySpeed: {{ theme.settings.slide_delay }},
+				speed: {{ theme.settings.slide_speed }},
+				arrows: {{ theme.settings.slider_arrows == 1 ? 'true' : 'false' }},
+				infinite: true,
+				prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><i style="color:{{ theme.settings.slider_arrows_color }};" class="fas fa-angle-left"></i></button>',
+				nextArrow: '<button type="button" class="slick-next" aria-label="Next"><i style="color:{{ theme.settings.slider_arrows_color }};" class="fas fa-angle-right"></i></button>',
+                dots: {{ theme.settings.slider_dots == 1 ? 'true' : 'false' }},
+				adaptiveHeight: true
+			});
+		}
+	});
+</script>
+<style type="text/css">
+	.theme-slider .slick-dots > li > button {
+		{{ theme.settings.slider_dots_text == 0 ? 'text-indent:-9999px;' }}
+		background-color: {{ theme.settings.slider_dots_passive_color }};
+    }
+	.theme-slider .slick-dots > li.slick-active > button {
+        background-color: {{ theme.settings.slider_dots_active_color }};
+	}
+</style>

@@ -1,0 +1,283 @@
+{% import 'html/snippets/icon-set.twig' as iconset %}
+<footer id="footer">
+    {% if theme.settings.shopping_banner_status %}
+        <div class="footer-row-1">
+            <div class="container">
+                <div class="shopping-banners">
+                    <div class="row">
+                        {% for i in 1..4 %}
+                            {% set shoppingBannerStatus = theme.settings["shopping_banner_status_" ~ i] %}
+                            {% set shoppingBannerTarget = theme.settings["shopping_banner_target_" ~ i] %}
+                            {% set shoppingBannerLink = theme.settings["shopping_banner_link_" ~ i] %}
+                            {% set shoppingBannerTitle = theme.settings["shopping_banner_title_" ~ i] %}
+                            {% set shoppingBannerSubTitle = theme.settings["shopping_banner_sub_title_" ~ i] %}
+                            {% set shoppingBannerSvg = theme.settings["shopping_banner_svg_" ~ i] %}
+                            {% if shoppingBannerStatus %}
+                                <div class="col-6 col-lg-3">
+                                    {% if shoppingBannerLink %}
+                                    <a href="{{ shoppingBannerLink }}" class="shopping-banner"{% if shoppingBannerTarget %} target="_blank"{% endif %}>
+                                    {% else %}
+                                    <div class="shopping-banner">
+                                    {% endif %}
+                                        <div class="shopping-banner-icon">{{ shoppingBannerSvg }}</div>
+                                        <div class="shopping-banner-title">{{ shoppingBannerTitle }}</div>
+                                        <div class="shopping-banner-sub-title">{{ shoppingBannerSubTitle }}</div>
+                                    {% if shoppingBannerLink %}
+                                    </a>
+                                    {% else %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div class="footer-row-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xl-4 order-2 order-xl-1">
+                    <div class="footer-content-left">
+                        {% if theme.settings.footer_logo %}
+                            <div class="footer-logo">
+                                <a href="{{ path('entry') }}" aria-label="Logo">
+                                    <img loading="lazy" decoding="async" src="{{ themeAsset(theme.settings.footer_logo) }}" alt="">
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.footer_seo_text %}
+                            <div class="footer-seo-text">
+                                {{ theme.settings.footer_seo_text }}
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.footer_contact_title %}
+                            <div class="footer-contact-title">
+                                {{ theme.settings.footer_contact_title }}
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.phone %}
+                            <div class="footer-phone">
+                                <a href="tel:{{ theme.settings.phone | replace({' ': '','(': '',')': ''}) }}">
+                                    <div class="icon">
+                                        {{ iconset.iconPhoneFooter() }}
+                                    </div>
+                                    <div class="title">
+                                        <span>{{ theme.settings.phone_title }}</span>
+                                        <span>{{ theme.settings.phone }}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.mail %}
+                            <div class="footer-mail">
+                                <a href="mailto:{{ theme.settings.mail }}">
+                                    <div class="icon">
+                                        {{ iconset.iconMailFooter() }}
+                                    </div>
+                                    <div class="title">
+                                        <span>{{ theme.settings.mail_title }}</span>
+                                        <span>{{ theme.settings.mail }}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.address %}
+                            <div class="footer-address">
+                                <a href="https://www.google.com/maps?q={{ theme.settings.address }}" target="_blank">
+                                    <div class="icon">
+                                        {{ iconset.iconAddress() }}
+                                    </div>
+                                    <div class="title">
+                                        <span>{{ theme.settings.address_title }}</span>
+                                        <span>{{ theme.settings.address }}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.address %}
+                            <div class="footer-map">
+                                <a href="https://www.google.com/maps?q={{ theme.settings.address }}" target="_blank">
+                                    {{ iconset.iconMap() }}
+                                    <span>{{ theme.settings.map_title }}</span>
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if theme.settings.etbis_code %}
+                            <div class="etbis-code">
+                                {{ theme.settings.etbis_code }}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if theme.settings.footer_links | spaceless | length > 0 %}
+                    <div class="col-xl-6 order-1 order-xl-2">
+                        <div class="footer-menu-container" data-menu-type="{{ theme.settings.footer_menu_type }}">
+                            {{ theme.settings.footer_links }}
+                        </div>
+                    </div>
+                {% endif %}
+                <div class="col-md-6 col-xl-2 order-3">
+                    <div class="footer-social">
+                        {% if theme.settings.footer_social_title %}
+                            <div class="footer-social-title">
+                                <h2 class="section-title">{{ theme.settings.footer_social_title }}</h2>
+                            </div>
+                        {% endif %}
+                        <div class="footer-social-content">                            
+                            {% if theme.settings.pinterest %}
+                                <div>
+                                    <a class="footer-social-pinterest" href="{{ theme.settings.pinterest }}" target="_blank">
+                                        {{ iconset.iconPinterest() }}
+                                    </a>
+                                </div>
+                            {% endif %}
+                            {% if theme.settings.twitter %}
+                                <div>
+                                    <a class="footer-social-twitter" href="{{ theme.settings.twitter }}" target="_blank">
+                                        {{ iconset.iconTwitter() }}
+                                    </a>
+                                </div>
+                            {% endif %}
+                            {% if theme.settings.youtube %}
+                                <div>
+                                    <a class="footer-social-youtube" href="{{ theme.settings.youtube }}" target="_blank">
+                                        {{ iconset.iconYoutube() }}
+                                    </a>
+                                </div>
+                            {% endif %}
+                            {% if theme.settings.instagram %}
+                                <div>
+                                    <a class="footer-social-instagram" href="{{ theme.settings.instagram }}" target="_blank">
+                                        {{ iconset.iconInstagram() }}
+                                    </a>
+                                </div>
+                            {% endif %}
+                            {% if theme.settings.facebook %}
+                                <div>
+                                    <a class="footer-social-facebook" href="{{ theme.settings.facebook }}" target="_blank">
+                                        {{ iconset.iconFacebook() }}
+                                    </a>
+                                </div>
+                            {% endif %}
+                            {% if theme.settings.linkedin %}
+                                <div>
+                                    <a class="footer-social-linkedin" href="{{ theme.settings.linkedin }}" target="_blank">
+                                        {{ iconset.iconLinkedin() }}
+                                    </a>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if theme.settings.footer_cart_image %}
+        <div class="footer-row-3">
+            <div class="container">
+                <div class="footer-cart">
+                    <img loading="lazy" decoding="async" src="{{ themeAsset(theme.settings.footer_cart_image) }}" alt="">
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div class="footer-row-4">
+        <div class="container">
+            <div class="copyright-content">
+                {% if theme.settings.copyright %}
+                    <div class="copyright">{{ theme.settings.copyright }}</div>
+                {% endif %}
+                {% if theme.settings.footer_ssl %}
+                    <div class="footer-ssl">
+                        {{ theme.settings.footer_ssl }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</footer>
+{% if theme.settings.scroll_top %}
+    <div id="scroll-top">
+        <div>
+            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.04712 1.68469L7.04712 14.892C7.04712 15.5041 6.57843 16 6 16C5.42157 16 4.95288 15.5041 4.95288 14.892L4.95288 1.68469C4.95288 1.07263 5.42157 0.576691 6 0.576691C6.57843 0.576691 7.04712 1.07263 7.04712 1.68469Z" fill="white"/>
+                <path d="M12 6.7579C12 7.05529 11.8873 7.35223 11.6649 7.57073C11.241 7.98689 10.5784 7.9603 10.1851 7.51178L6.01048 2.74873L1.82452 7.65582C1.43709 8.1101 0.774888 8.146 0.345569 7.73604C-0.0837495 7.32608 -0.117676 6.62539 0.269758 6.17111L5.22263 0.36521C5.41949 0.134303 5.69886 0.00178623 5.99289 -0.000429153C6.28692 -0.00264549 6.56797 0.125882 6.76776 0.354129L11.7206 6.00491C11.9074 6.21809 12 6.48844 12 6.7579Z" fill="white"/>
+            </svg>
+            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.04712 1.68469L7.04712 14.892C7.04712 15.5041 6.57843 16 6 16C5.42157 16 4.95288 15.5041 4.95288 14.892L4.95288 1.68469C4.95288 1.07263 5.42157 0.576691 6 0.576691C6.57843 0.576691 7.04712 1.07263 7.04712 1.68469Z" fill="white"/>
+                <path d="M12 6.7579C12 7.05529 11.8873 7.35223 11.6649 7.57073C11.241 7.98689 10.5784 7.9603 10.1851 7.51178L6.01048 2.74873L1.82452 7.65582C1.43709 8.1101 0.774888 8.146 0.345569 7.73604C-0.0837495 7.32608 -0.117676 6.62539 0.269758 6.17111L5.22263 0.36521C5.41949 0.134303 5.69886 0.00178623 5.99289 -0.000429153C6.28692 -0.00264549 6.56797 0.125882 6.76776 0.354129L11.7206 6.00491C11.9074 6.21809 12 6.48844 12 6.7579Z" fill="white"/>
+            </svg>
+        </div>
+    </div>
+{% endif %}
+{% if theme.settings.whatsapp_status %}
+    {% set class = '' %}
+    {% set whatsappStyle1PositionStyle = theme.settings.whatsapp_style_1_position_type %}
+    {% if whatsappStyle1PositionStyle == 'whatsapp_style_1_position_type_1' %}
+        {% set class = 'right-bottom' %}
+    {% elseif whatsappStyle1PositionStyle == 'whatsapp_style_1_position_type_2' %}
+        {% set class = 'left-bottom' %}
+    {% endif %}
+    {% if theme.settings.scroll_top and whatsappStyle1PositionStyle == 'whatsapp_style_1_position_type_1' %}
+        {% set scrollTopCheck = ' check-bottom' %}
+    {% endif %}
+    {% if theme.settings.whatsapp_view_type == 'whatsapp_icon_style_1' %}
+        <div class="custom-whatsapp-button custom-whatsapp-button-style-1 {{ class }}{{ scrollTopCheck }}">
+            <a href="javascript:void(0);" class="openbox" data-target="custom-whatsapp-button-content" data-mode="custom">
+                <div>
+                    <svg class="open-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M25.8149 6.06007C24.5312 4.76756 23.0032 3.74303 21.3198 3.04603C19.6363 2.34902 17.8309 1.99349 16.0088 2.00009C13.5728 2.00247 11.1801 2.64444 9.07041 3.8617C6.96075 5.07896 5.20815 6.82879 3.98809 8.93594C2.76803 11.0431 2.12338 13.4337 2.11865 15.8681C2.11394 18.3027 2.74935 20.6956 3.96123 22.8075L2 30L9.3546 28.075C11.3854 29.2041 13.6674 29.8059 15.9912 29.825C19.6855 29.8252 23.2303 28.3669 25.8538 25.7678C28.4774 23.1689 29.9676 19.6393 30 15.9476C29.9877 14.1053 29.6116 12.2837 28.8935 10.587C28.1754 8.89027 27.1291 7.35192 25.8149 6.06007ZM16.0088 27.4275C13.9384 27.4289 11.906 26.8728 10.1251 25.8175L9.70481 25.555L5.34459 26.71L6.50031 22.4575L6.22014 22.02C4.73039 19.6168 4.1744 16.7508 4.6575 13.9652C5.14059 11.1796 6.62921 8.66784 8.84135 6.90572C11.0535 5.14359 13.8355 4.25349 16.6603 4.40404C19.4852 4.55457 22.1568 5.73531 24.1689 7.72257C26.3682 9.87189 27.6273 12.8037 27.671 15.8776C27.6434 18.9504 26.4024 21.8879 24.2182 24.0511C22.0343 26.2141 19.0837 27.4277 16.0088 27.4275ZM22.3302 18.7825C21.98 18.6075 20.2814 17.7675 19.9662 17.6625C19.651 17.5575 19.4059 17.4875 19.1782 17.8375C18.8357 18.3067 18.4673 18.7565 18.075 19.185C17.8824 19.43 17.6723 19.4475 17.3221 19.185C15.3253 18.3965 13.6618 16.944 12.6116 15.0726C12.2439 14.4601 12.9619 14.4951 13.6273 13.1826C13.6765 13.0879 13.702 12.9829 13.702 12.8763C13.702 12.7697 13.6765 12.6647 13.6273 12.5701C13.6273 12.3951 12.8393 10.6801 12.5591 9.99756C12.2789 9.31506 11.9987 9.42006 11.7711 9.40256H11.0882C10.9112 9.40527 10.7369 9.44572 10.5769 9.52116C10.4168 9.5966 10.2747 9.70533 10.1601 9.84006C9.76719 10.2219 9.46073 10.6834 9.26137 11.1936C9.06201 11.7037 8.97438 12.2507 9.00438 12.7976C9.11417 14.1067 9.60751 15.3545 10.4228 16.3851C11.915 18.6177 13.9601 20.4263 16.359 21.635C17.6171 22.369 19.0793 22.6759 20.5266 22.51C21.0085 22.4145 21.465 22.2187 21.8662 21.9352C22.2675 21.6518 22.6046 21.2871 22.8555 20.865C23.0881 20.3498 23.1613 19.7771 23.0657 19.22C22.9081 19.045 22.6804 18.9575 22.3302 18.7825Z" fill="white"/> </svg>
+                    <svg class="close-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8 24L24 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M24 24L8 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                </div>
+            </a>
+            <div class="custom-whatsapp-button-content {{ class }} openbox-content">
+                {% if theme.settings.whatsapp_style_1_title %}
+                    <div class="custom-whatsapp-button-title">
+                        <span>{{ theme.settings.whatsapp_style_1_title }}</span>
+                    </div>
+                {% endif %}
+                {% if theme.settings.whatsapp_style_1_sub_title %}
+                    <div class="custom-whatsapp-button-sub-title">
+                        <span>{{ theme.settings.whatsapp_style_1_sub_title }}</span>
+                    </div>
+                {% endif %}
+                {% if theme.settings.whatsapp_style_1_button_title %}
+                    <div class="custom-whatsapp-button-link">
+                        <a href="https://wa.me/9{{ theme.settings.whatsapp_link | replace({' ': '','(': '',')': ''}) }}" target="_blank">
+                            <div>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.3612 4.54506C18.3984 3.57567 17.2524 2.80727 15.9899 2.28452C14.7272 1.76177 13.3732 1.49512 12.0066 1.50007C10.1796 1.50185 8.38506 1.98333 6.80281 2.89627C5.22056 3.80922 3.90611 5.1216 2.99107 6.70196C2.07602 8.28233 1.59254 10.0753 1.58899 11.9011C1.58546 13.727 2.06201 15.5217 2.97092 17.1056L1.5 22.5L7.01595 21.0563C8.53907 21.9031 10.2505 22.3544 11.9934 22.3688C14.7641 22.3689 17.4227 21.2752 19.3903 19.3259C21.3581 17.3767 22.4757 14.7295 22.5 11.9607C22.4908 10.579 22.2087 9.21275 21.6701 7.94023C21.1315 6.6677 20.3468 5.51394 19.3612 4.54506ZM12.0066 20.5706C10.4538 20.5717 8.92947 20.1546 7.59381 19.3631L7.27861 19.1663L4.00844 20.0325L4.87523 16.8431L4.6651 16.515C3.5478 14.7126 3.1308 12.5631 3.49312 10.4739C3.85544 8.38471 4.97191 6.50088 6.63101 5.17929C8.29013 3.85769 10.3766 3.19012 12.4953 3.30303C14.6139 3.41593 16.6176 4.30148 18.1266 5.79193C19.7762 7.40392 20.7205 9.60277 20.7533 11.9082C20.7325 14.2128 19.8018 16.4159 18.1637 18.0383C16.5257 19.6605 14.3128 20.5708 12.0066 20.5706ZM16.7477 14.0869C16.485 13.9557 15.2111 13.3257 14.9747 13.2469C14.7383 13.1682 14.5544 13.1157 14.3837 13.3782C14.1268 13.73 13.8505 14.0674 13.5563 14.3888C13.4118 14.5725 13.2542 14.5857 12.9916 14.3888C11.494 13.7974 10.2463 12.708 9.45872 11.3044C9.18293 10.845 9.72139 10.8713 10.2205 9.88692C10.2574 9.81592 10.2765 9.73717 10.2765 9.65724C10.2765 9.57731 10.2574 9.49856 10.2205 9.42755C10.2205 9.29629 9.62946 8.01004 9.41932 7.49817C9.20919 6.9863 8.99906 7.06505 8.82833 7.05192H8.31613C8.18342 7.05396 8.05268 7.08429 7.93265 7.14087C7.81261 7.19745 7.70605 7.279 7.62008 7.38005C7.32539 7.66641 7.09555 8.01256 6.94603 8.39518C6.7965 8.7778 6.73079 9.18801 6.75328 9.59818C6.83563 10.5801 7.20563 11.5159 7.81707 12.2888C8.93629 13.9633 10.4701 15.3197 12.2692 16.2263C13.2129 16.7767 14.3095 17.0069 15.3949 16.8825C15.7564 16.8109 16.0987 16.664 16.3996 16.4514C16.7006 16.2389 16.9535 15.9654 17.1417 15.6488C17.3161 15.2624 17.371 14.8328 17.2993 14.415C17.1811 14.2838 17.0103 14.2182 16.7477 14.0869Z" fill="white"/>
+                                </svg>
+                                <span>{{ theme.settings.whatsapp_style_1_button_title }}</span>
+                            </div>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.94 13.28L10.2867 8.93333C10.8 8.42 10.8 7.58 10.2867 7.06667L5.94 2.72" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    {% elseif theme.settings.whatsapp_view_type == 'whatsapp_icon_style_2' %}
+        {% set class = '' %}
+        {% set whatsappStyle2PositionStyle = theme.settings.whatsapp_style_2_position_type %}
+        {% if whatsappStyle2PositionStyle == 'whatsapp_style_2_position_type_1' %}
+            {% set class = 'right-bottom' %}
+        {% elseif whatsappStyle2PositionStyle == 'whatsapp_style_2_position_type_2' %}
+            {% set class = 'right-vertical' %}
+        {% elseif whatsappStyle2PositionStyle == 'whatsapp_style_2_position_type_3' %}
+            {% set class = 'left-bottom' %}
+        {% elseif whatsappStyle2PositionStyle == 'whatsapp_style_2_position_type_4' %}
+            {% set class = 'left-vertical' %}
+        {% endif %}
+        <div class="custom-whatsapp-button custom-whatsapp-button-style-2 {{ class }}">
+            <a href="https://wa.me/9{{ theme.settings.whatsapp_link | replace({' ': '','(': '',')': ''}) }}" target="_blank">
+                {% if theme.settings.whatsapp_style_2_icon_status %}
+                    {{ theme.settings.whatsapp_style_2_icon }}
+                {% endif %}
+                <span>{{ theme.settings.whatsapp_style_2_button_title }}</span>
+            </a>
+        </div>
+    {% endif %}
+{% endif %}

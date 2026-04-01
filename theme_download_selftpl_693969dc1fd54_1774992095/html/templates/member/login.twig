@@ -1,0 +1,124 @@
+{% extends 'html/layouts/member.twig' %}
+{% block content %}
+    <div class="user-login-page-wrapper">
+        <div class="user-login-page-container">
+            <div class="user-login-page-logo">
+                <a href="{{ path('entry') }}" aria-label="Logo">
+                    {% if theme.settings.login_logo %}
+                        <img src="{{ themeAsset(theme.settings.login_logo) }}" alt="">
+                    {% else %}
+                        <img src="{{ themeAsset(theme.settings.logo) }}" alt="">
+                    {% endif %}
+                </a>
+            </div>
+            <div class="user-login-page-content">
+                <div class="user-login-page-title">
+                    <span>{{ theme.settings.user_login_page_title }}</span>
+                </div>
+                <form action="" name="login-form" method="POST" data-selector="login-form">
+                    <div class="user-login-page-row form-group user-name">
+                        <input class="form-control" type="text" name="email" id="user-login-email" placeholder="{{ getLang('_Email_') }}" value="{{ cookie_member_email }}" autocomplete="email">
+                    </div>
+                    <div class="user-login-page-row form-group password">
+                        <div class="password-toggle">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.0533 13.4971C18.6397 12.843 19.17 12.1154 19.6294 11.3344C20.1209 10.4988 20.1209 9.50118 19.6294 8.66563C18.5784 6.87895 17.1645 5.39149 15.5406 4.36399C13.8496 3.29415 11.9338 2.72868 10.0002 2.72868C9.30738 2.72868 8.6123 2.80063 7.93426 2.94259C7.59641 3.01333 7.37984 3.34454 7.45059 3.68239C7.52133 4.02028 7.85254 4.23689 8.19039 4.16606C8.78438 4.04173 9.39328 3.97868 10.0002 3.97868C13.3953 3.97868 16.5922 5.96774 18.5519 9.29942C18.8177 9.75122 18.8177 10.2488 18.5519 10.7006C18.1345 11.4102 17.6536 12.0704 17.1225 12.6627C16.8921 12.9198 16.9137 13.3149 17.1707 13.5453C17.4278 13.7757 17.8229 13.7541 18.0533 13.4971ZM0.371055 8.66563C-0.12043 9.50118 -0.12043 10.4988 0.371055 11.3344C1.42203 13.1211 2.8359 14.6086 4.45988 15.636C6.15078 16.7058 8.0666 17.2713 10.0002 17.2713C11.7466 17.2713 13.4809 16.8088 15.0464 15.93L17.1051 17.9888C17.3492 18.2329 17.7449 18.2329 17.989 17.9888C18.2331 17.7447 18.2331 17.349 17.989 17.1049L13.3808 12.4968C13.8982 11.7981 14.2046 10.9342 14.2046 10C14.2046 7.68169 12.3185 5.7956 10.0002 5.7956C9.06602 5.7956 8.20211 6.102 7.50344 6.61939L2.89527 2.01122C2.77324 1.88915 2.61328 1.82813 2.45336 1.82813C2.29344 1.82813 2.13348 1.88915 2.01145 2.01122C1.76734 2.25528 1.76734 2.65103 2.01145 2.89509L3.87648 4.76013C2.49664 5.75903 1.29437 7.09595 0.371055 8.66563ZM7.51766 8.40134L11.5989 12.4825C11.1377 12.7806 10.589 12.9544 10.0002 12.9544C8.37109 12.9544 7.04578 11.6291 7.04578 10C7.04578 9.41122 7.21961 8.86255 7.51766 8.40134ZM12.4827 11.5987L8.40152 7.51747C8.86273 7.21942 9.41141 7.0456 10.0002 7.0456C11.6293 7.0456 12.9546 8.37095 12.9546 10C12.9546 10.5888 12.7808 11.1375 12.4827 11.5987ZM1.44848 9.29938C2.32121 7.81567 3.46395 6.56513 4.77281 5.65646L6.61961 7.50325C6.10223 8.20196 5.79582 9.06583 5.79582 10C5.79582 12.3183 7.68191 14.2044 10.0002 14.2044C10.9344 14.2044 11.7983 13.898 12.497 13.3806L14.1246 15.0083C12.8241 15.6809 11.4402 16.0213 10.0002 16.0213C6.60516 16.0213 3.40824 14.0323 1.44852 10.7006C1.1827 10.2488 1.1827 9.75118 1.44848 9.29938Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <input class="form-control" type="password" name="pass" id="user-login-pass" placeholder="{{ getLang('_Password_') }}" autocomplete="current-password">
+                        <script>
+                            document.querySelector('.password-toggle').addEventListener('click', function() {
+                                var passwordInput = document.getElementById('user-login-pass');
+                                var toggleIcon = this;
+                                if (passwordInput.type === 'password') {
+                                    passwordInput.type = 'text';
+                                    toggleIcon.innerHTML = `
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.45987 15.636C6.15081 16.7058 8.06663 17.2713 10.0002 17.2713C11.9338 17.2713 13.8496 16.7058 15.5406 15.636C17.1646 14.6085 18.5784 13.121 19.6294 11.3343C20.1209 10.4988 20.1209 9.50114 19.6294 8.66559C18.5784 6.87891 17.1646 5.39141 15.5406 4.36395C13.8496 3.29415 11.9338 2.72864 10.0002 2.72864C8.06663 2.72864 6.15081 3.29415 4.45987 4.36395C2.83589 5.39145 1.42202 6.87895 0.371084 8.66559C-0.120439 9.50114 -0.120439 10.4988 0.371084 11.3343C1.42202 13.121 2.83589 14.6085 4.45987 15.636ZM1.44851 9.29938C3.40823 5.9677 6.60515 3.97864 10.0002 3.97864C13.3953 3.97864 16.5922 5.9677 18.5519 9.29938C18.8177 9.75118 18.8177 10.2488 18.5519 10.7006C16.5922 14.0323 13.3953 16.0213 10.0002 16.0213C6.60515 16.0213 3.40823 14.0322 1.44851 10.7006C1.18272 10.2488 1.18272 9.75118 1.44851 9.29938ZM10.0002 14.2044C12.3185 14.2044 14.2046 12.3183 14.2046 9.99997C14.2046 7.68165 12.3185 5.79555 10.0002 5.79555C7.6819 5.79555 5.79581 7.68165 5.79581 9.99997C5.79581 12.3183 7.6819 14.2044 10.0002 14.2044ZM10.0002 7.04555C11.6293 7.04555 12.9546 8.3709 12.9546 9.99997C12.9546 11.629 11.6293 12.9544 10.0002 12.9544C8.37116 12.9544 7.04581 11.629 7.04581 9.99997C7.04581 8.3709 8.37116 7.04555 10.0002 7.04555Z" fill="black"/>
+                                        </svg>
+                                    `;
+                                } else {
+                                    passwordInput.type = 'password';
+                                    toggleIcon.innerHTML = `
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.0533 13.4971C18.6397 12.843 19.17 12.1154 19.6294 11.3344C20.1209 10.4988 20.1209 9.50118 19.6294 8.66563C18.5784 6.87895 17.1645 5.39149 15.5406 4.36399C13.8496 3.29415 11.9338 2.72868 10.0002 2.72868C9.30738 2.72868 8.6123 2.80063 7.93426 2.94259C7.59641 3.01333 7.37984 3.34454 7.45059 3.68239C7.52133 4.02028 7.85254 4.23689 8.19039 4.16606C8.78438 4.04173 9.39328 3.97868 10.0002 3.97868C13.3953 3.97868 16.5922 5.96774 18.5519 9.29942C18.8177 9.75122 18.8177 10.2488 18.5519 10.7006C18.1345 11.4102 17.6536 12.0704 17.1225 12.6627C16.8921 12.9198 16.9137 13.3149 17.1707 13.5453C17.4278 13.7757 17.8229 13.7541 18.0533 13.4971ZM0.371055 8.66563C-0.12043 9.50118 -0.12043 10.4988 0.371055 11.3344C1.42203 13.1211 2.8359 14.6086 4.45988 15.636C6.15078 16.7058 8.0666 17.2713 10.0002 17.2713C11.7466 17.2713 13.4809 16.8088 15.0464 15.93L17.1051 17.9888C17.3492 18.2329 17.7449 18.2329 17.989 17.9888C18.2331 17.7447 18.2331 17.349 17.989 17.1049L13.3808 12.4968C13.8982 11.7981 14.2046 10.9342 14.2046 10C14.2046 7.68169 12.3185 5.7956 10.0002 5.7956C9.06602 5.7956 8.20211 6.102 7.50344 6.61939L2.89527 2.01122C2.77324 1.88915 2.61328 1.82813 2.45336 1.82813C2.29344 1.82813 2.13348 1.88915 2.01145 2.01122C1.76734 2.25528 1.76734 2.65103 2.01145 2.89509L3.87648 4.76013C2.49664 5.75903 1.29437 7.09595 0.371055 8.66563ZM7.51766 8.40134L11.5989 12.4825C11.1377 12.7806 10.589 12.9544 10.0002 12.9544C8.37109 12.9544 7.04578 11.6291 7.04578 10C7.04578 9.41122 7.21961 8.86255 7.51766 8.40134ZM12.4827 11.5987L8.40152 7.51747C8.86273 7.21942 9.41141 7.0456 10.0002 7.0456C11.6293 7.0456 12.9546 8.37095 12.9546 10C12.9546 10.5888 12.7808 11.1375 12.4827 11.5987ZM1.44848 9.29938C2.32121 7.81567 3.46395 6.56513 4.77281 5.65646L6.61961 7.50325C6.10223 8.20196 5.79582 9.06583 5.79582 10C5.79582 12.3183 7.68191 14.2044 10.0002 14.2044C10.9344 14.2044 11.7983 13.898 12.497 13.3806L14.1246 15.0083C12.8241 15.6809 11.4402 16.0213 10.0002 16.0213C6.60516 16.0213 3.40824 14.0323 1.44852 10.7006C1.1827 10.2488 1.1827 9.75118 1.44848 9.29938Z" fill="black"/>
+                                        </svg>
+                                    `;
+                                }
+                            });
+                        </script>
+                    </div>
+                    <div class="user-login-page-row form-group mb-0 d-flex align-items-center justify-content-between">
+                        <div class="checkbox-custom">
+                            <input type="checkbox" name="remember" id="remember-me" value="1" {{ (cookie_member_email ? 'checked': '') }}>
+                            <label for="remember-me">{{ getLang("_RememberMe_") }}</label>
+                        </div>
+                        <div class="user-login-forgot-pass">
+                            <a href="{{ path('member_forgotpass') }}">{{ getLang("_ForgotPass_") }}</a>
+                        </div>
+                    </div>
+                    <div class="user-login-page-row form-group mb-0">
+                        <button type="submit" class="btn btn-primary btn-block" data-selector="login-form-button">{{ theme.settings.user_login_page_buton_title }}</button>
+                    </div>
+                </form>
+            </div>
+            {% if preferences.order_without_registration == '0' and next == 'order2' %}
+                <div class="user-login-page-order-registration">{{ getLang('_PleaseLoginToOrder_') }}</div>
+            {% endif %}
+            {% if preferences.order_without_registration and next == 'order2' %}
+                <div class="user-login-page-row form-group mb-0">
+                    <input type="hidden" name="logonOrder" value="1">
+                    <a href="{{ path('order_step2') }}" class="btn btn-green btn-block">{{ theme.settings.user_signup_page_not_login_title }}</a>
+                </div>
+            {% endif %}
+            {% if membership %}
+                <div class="user-login-page-row form-group mb-0">
+                    <a href="{{ path('bank_transfer_form') }}" class="btn btn-green btn-block">{{ theme.settings.user_signup_page_not_login_title }}</a>
+                </div>
+            {% endif %}
+            {% if preferences.member_signup %}
+                <div class="user-login-page-title user-login-page-sub-title">
+                    <span>{{ theme.settings.user_signup_page_title }}</span>
+                </div>
+                <div class="user-login-page-row form-group">
+                    <a href="{{ path('member_signup') }}" class="btn btn-secondary btn-block">{{ theme.settings.user_signup_page_button_title }}</a>
+                </div>
+            {% endif %}
+            {% if theme.settings.use_facebook_login or theme.settings.use_google_login or theme.settings.use_apple_login %}
+                <div class="user-login-page-row form-group user-login-page-button-social">
+                    {% if theme.settings.use_google_login %}
+                        <div>
+                            <button type="button" data-selector="google-login" class="btn btn-google btn-block">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19.6444 12.1778C19.6444 11.6444 19.5556 11.0222 19.4667 10.5778H12V13.6889H16.2667C16.0889 14.6666 15.5556 15.4666 14.6667 16.0889V18.1333H17.3333C18.8444 16.7111 19.6444 14.5778 19.6444 12.1778Z" fill="#4285F4"/><path d="M11.9998 20C14.1331 20 15.9998 19.2889 17.3331 18.0444L14.6664 16.0889C13.9553 16.5333 13.0664 16.8889 11.9998 16.8889C9.95534 16.8889 8.17756 15.4666 7.55534 13.6H4.88867V15.5555C6.13312 18.2222 8.88867 20 11.9998 20Z" fill="#34A853"/><path d="M7.55556 13.5111C7.37778 13.0667 7.28889 12.5333 7.28889 12C7.28889 11.4667 7.37778 10.9333 7.55556 10.4889V8.44446H4.88889C4.35556 9.51112 4 10.7556 4 12C4 13.2445 4.26667 14.4889 4.88889 15.5556L7.55556 13.5111Z" fill="#FBBC05"/><path d="M11.9998 7.2C13.1553 7.2 14.222 7.64444 15.022 8.35556L17.3331 6.04444C15.9998 4.8 14.1331 4 11.9998 4C8.88867 4 6.13312 5.77778 4.88867 8.44444L7.55534 10.4889C8.17756 8.62222 9.95534 7.2 11.9998 7.2Z" fill="#EA4335"/>
+                                </svg>
+                                <span>{{ theme.settings.user_signup_page_google_title }}</span>
+                            </button>
+                        </div>
+                    {% endif %}
+                    {% if theme.settings.use_facebook_login %}
+                        <div>
+                            <button type="button" data-selector="facebook-login" class="btn btn-facebook btn-block">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 12.0506C20 7.60327 16.4194 4 12 4C7.58065 4 4 7.60327 4 12.0506C4 16.0758 6.90323 19.4194 10.7419 20.0037V14.3878H8.70968V12.0506H10.7419V10.2976C10.7419 8.28497 11.9355 7.14881 13.7419 7.14881C14.6452 7.14881 15.5484 7.31112 15.5484 7.31112V9.29129H14.5484C13.5484 9.29129 13.2258 9.90807 13.2258 10.5573V12.0506H15.4516L15.0968 14.3878H13.2258V20.0037C17.0645 19.4194 20 16.0758 20 12.0506Z" fill="#485A96"/>
+                                </svg>
+                                <span>{{ theme.settings.user_signup_page_facebook_title }}</span>
+                            </button>
+                        </div>
+                    {% endif %}
+                    {% if theme.settings.use_apple_login %}
+                        <div>
+                            <button type="button" data-selector="apple-login" class="btn btn-apple btn-block">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.3637 12.5384C17.3413 9.98536 19.398 8.7433 19.492 8.68548C18.3272 6.94042 16.5219 6.70199 15.8875 6.68298C14.3712 6.51901 12.9004 7.61531 12.128 7.61531C11.3402 7.61531 10.1507 6.69882 8.86881 6.72576C7.21918 6.7519 5.67592 7.73334 4.82952 9.25739C3.08275 12.3649 4.3855 16.9315 6.05904 19.4434C6.89619 20.6735 7.87441 22.0471 9.1548 21.9988C10.4074 21.9457 10.8754 21.1781 12.387 21.1781C13.8848 21.1781 14.3242 21.9988 15.63 21.9679C16.9744 21.9457 17.8208 20.7322 18.6286 19.4909C19.5961 18.0809 19.9846 16.6923 20 16.621C19.9684 16.6099 17.3891 15.5984 17.3637 12.5384Z" fill="black"/>
+                                    <path d="M14.8969 5.23901C15.5707 4.37321 16.0316 3.19532 15.9037 2C14.9285 2.04436 13.709 2.69311 13.0068 3.5399C12.3855 4.28608 11.8305 5.50912 11.9738 6.65929C13.0692 6.74326 14.1939 6.09134 14.8969 5.23901Z" fill="black"/>
+                                </svg>
+                                <span>{{ theme.settings.user_signup_page_apple_title }}</span>
+                            </button>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

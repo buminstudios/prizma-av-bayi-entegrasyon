@@ -1,0 +1,59 @@
+{% if filter_menu_groups %}
+	<div class="horizontal-filter-menu openbox-content">
+        <div class="horizontal-filter-menu-title">{{ theme.settings.horizontal_filter_menu_title }}</div>
+		<div class="horizontal-filter-menu-content">
+            <div class="filter-menu-groups-wrapper">
+                {% for filter_menu_group in filter_menu_groups %}
+                    <div class="filter-menu-groups filter-menu-box-{{ filter_menu_group.type }}">
+                        <div class="filter-menu-group-selectbox">
+                            {% set random = random() %}
+                            <a href="javascript:void(0);" class="dropbox" data-target="filter-menu-group-selectbox-content-{{ random }}">
+                                <span>{{ filter_menu_group.title }}</span>
+                                <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
+                                    <path d="M8 3.59113L4.66489 6.92593C4.64325 6.9476 4.61754 6.96479 4.58925 6.97652C4.56096 6.98826 4.53063 6.99429 4.5 6.99429C4.46937 6.99429 4.43904 6.98826 4.41075 6.97652C4.38246 6.96479 4.35675 6.9476 4.33511 6.92593L1 3.59113" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <div class="filter-menu-group-selectbox-content filter-menu-group-selectbox-content-{{ random }} dropbox-content">
+                                <div>
+                                    {% for item in filter_menu_group.items %}
+                                        <a href="{{ item.url }}"{% if item.checked %} class="checked"{% endif %}>{{ item.name }} <span>({{ item.productCount }})</span></a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            {% if selected_filter_groups | length > 0 %}
+                <div class="filter-menu-selected-items">
+                    {% for selected_filter_group in selected_filter_groups %}
+                        <div class="filter-menu-selected-group">
+                            {% for selected_filter in selected_filter_group.items %}
+                                <div class="filter-menu-selected-item">
+                                    <a href="{{ selected_filter.url }}" title="{{ selected_filter.name }}">
+                                        <i>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M10.6673 5.3335L5.33398 10.6668" stroke="#2B2D42" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M5.33398 5.3335L10.6673 10.6668" stroke="#2B2D42" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                                            </svg>
+                                        </i>
+                                        <span>{{ selected_filter.name }}</span>
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+                    <div class="clear-filters">
+                        <span>{{ theme.settings.horizontal_filter_menu_choose }}</span>
+                        {% if selected_filter_groups | length > 1 %}
+                            <a href="javascript:void(0);"  data-selector="clear-filters">
+                                <span>{{ theme.settings.horizontal_filter_menu_clear }}</span>
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+		</div>
+        <div class="openbox-close"></div>
+	</div>
+{% endif %}

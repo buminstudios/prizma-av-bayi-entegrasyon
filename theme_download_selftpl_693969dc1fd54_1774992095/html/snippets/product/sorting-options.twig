@@ -1,0 +1,39 @@
+{% set hasSortingOptions = (showcase.items | length > 0) %}
+{% if hasSortingOptions %}
+    <div id="filter-wrapper" class="{{ 1 in theme.settings.display_sorting_options ? 'has-sorting-option ' : '' }}">
+        <div class="filter-wrapper-header">
+            {% if preferences.use_filter_block_menu %}
+                <div class="filter-options-title openbox" data-target="filter-menu" data-overlay="true" data-close="true" data-mode="custom">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.66669 6.4165H18.3334" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.41669 11H15.5834" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.0833 15.5835H11.9166" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    {{ getLang("_ProductListFilterTitle_") }}
+                    <span></span>
+                </div>
+            {% endif %}
+            {% if 1 in theme.settings.display_sorting_options %}
+                <div class="sorting-options-title openbox" data-target="sorting-options-content" data-mode="custom">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.3916 16.3165L11.6416 13.5665C11.275 13.1998 10.725 13.1998 10.3583 13.5665L7.60831 16.3165C7.24165 16.6832 7.24165 17.2332 7.60831 17.5998C7.97498 17.9665 8.52498 17.9665 8.89165 17.5998L11 15.4915L13.1083 17.5998C13.2916 17.7832 13.475 17.8748 13.75 17.8748C14.025 17.8748 14.2083 17.7832 14.3916 17.5998C14.7583 17.2332 14.7583 16.6832 14.3916 16.3165ZM10.3583 9.34984C10.5416 9.53317 10.725 9.62484 11 9.62484C11.275 9.62484 11.4583 9.53317 11.6416 9.34984L14.3916 6.59984C14.7583 6.23317 14.7583 5.68317 14.3916 5.3165C14.025 4.94984 13.475 4.94984 13.1083 5.3165L11 7.42484L8.89165 5.3165C8.52498 4.94984 7.97498 4.94984 7.60831 5.3165C7.24165 5.68317 7.24165 6.23317 7.60831 6.59984L10.3583 9.34984Z" fill="black"/>
+                    </svg>
+                    {{ getLang("_ProductListSortingOptionsTitle_") }}
+                </div>
+            {% endif %}
+            {% if theme.settings.display_showcase_sorting_options %}
+                <div class="mobile-filter-order-button">
+                    <span data-selector="single-sorting">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 6L8.90909 6L6.72727 6L4 6" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 10L8.90909 10L6.72727 10L4 10" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 14L8.90909 14L6.72727 14L4 14" stroke="black" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                    </span>
+                    <span class="active" data-selector="dual-sorting">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 4V11.0909V13.2727V16" stroke="black" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                    </span>
+                </div>
+            {% endif %}
+        </div>
+        <div class="filter-wrapper-content">
+            {% include 'html/snippets/_system/showcase/sorting-options.twig' %}
+        </div>
+    </div>
+{% endif %}

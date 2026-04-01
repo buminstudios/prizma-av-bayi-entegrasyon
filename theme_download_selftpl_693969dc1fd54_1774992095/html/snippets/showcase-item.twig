@@ -1,0 +1,61 @@
+<div class="showcase showcase-default {% if item.product.realAmount == 0 %}showcase-soldout{% endif %}">
+	<div class="showcase-image-container">		
+        <div class="showcase-image">
+            <a href="{{ item.product.url }}" title="{{ item.product.fullName }}">
+                <img loading="lazy" decoding="async" src="{{ item.product.primaryImage.thumbUrl | default(getNopicImageUrl()) }}"{% if item.product.primaryImage is null %} class="no-picture"{% endif%} alt="{{ item.product.primaryImage.alt | default(item.product.fullName) }}">
+            </a>
+        </div>
+		{% if item.product.realAmount == 0 %}
+			<div class="sold-out-label"><span>{{ theme.settings.label_soldout }}</span></div>
+		{% else %}
+			{% if item.product.isNew %}
+				<div class="new-label">{{ theme.settings.label_new }}</div>
+			{% endif %}
+			{% if ((item.product.discountedPriceWithTax(preferences.default_currency) | number_format | replace({',':''})) > (theme.settings.free_cargo_label)) and (theme.settings.free_cargo_label | length > 0) %}
+				<div class="showcase-free-cargo">
+					<span>{{ theme.settings.free_cargo_label_title }}</span>
+				</div>
+			{% endif %}
+		{% endif %}
+	</div>
+	<div class="showcase-content">
+		<div class="showcase-brand">
+			{% if item.product.brand %}
+				<a href="{{ item.product.brand.url }}">{{ item.product.brand.name }}</a>
+			{% endif %}
+		</div>
+		<div class="showcase-title">
+			<a href="{{ item.product.url }}" title="{{ item.product.fullName }}">{{ item.product.fullName }}</a>
+		</div>
+		{% if preferences.sales_allowed %}
+			<div class="showcase-price{% if item.product.isDiscounted %} has-discount{% endif %}">
+				{% if item.product.isDiscounted and preferences.sales_allowed %}
+					<div class="discount-label">%{{ item.product.discountPercent }}</div>
+				{% endif %}				
+				<div class="showcase-price-new">
+					{{ item.product.discountedPriceWithTax(preferences.default_currency) | money ~ ' ' ~ preferences.default_currency }}
+				</div>
+				{% if item.product.isDiscounted %}
+					<div class="showcase-price-old">
+						{{ item.product.priceWithTax(preferences.default_currency) | money ~ ' ' ~ preferences.default_currency }}
+					</div>
+				{% endif %}
+			</div>
+		{% endif %}
+		{% if preferences.sales_allowed %}
+			<div class="showcase-buttons">
+				{% if item.product.stockAmount > 0 %}
+					{% if item.product.realAmount > 0 %}
+						<a href="javascript:void(0);" class="add-to-cart-button" data-selector="add-to-cart" data-context="showcase" data-product-id="{{ item.product.id }}">
+							<span>{{ theme.settings.showcase_addtocart_button }}</span>
+						</a>
+					{% else %}
+						<a href="javascript:void(0);" class="no-stock-button">{{ theme.settings.showcase_in_your_cart_button }}</a>
+					{% endif %}
+				{% else %}
+					<a href="javascript:void(0);" class="no-stock-button">{{ theme.settings.showcase_nostock_button }}</a>
+				{% endif %}
+			</div>
+		{% endif %}
+	</div>
+</div>

@@ -1,0 +1,315 @@
+/* @Active Variants */
+/* Lütfen aşağıdaki değişkenlerin sadece değerlerini düzenleyiniz. Ekstra bir değişken tanımlaması yapmayınız */
+
+/* Fonts İmport */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Font Family */
+$font-family: 'Poppins', sans-serif;
+//$font-family-sub: ;
+//$font-family-sub-alt: ;
+
+/* Color Template */
+$color-primary: #F36F24;
+$color-secondary: #E45402;
+$color-accent: #FEF6F5;
+$color-neutral: #090100;
+
+/* Color Semantic */
+$color-info: #2d75f9;
+$color-success: #6e9040;
+$color-danger: #ef3030;
+$color-warning: #efbc30;
+
+/* Color Text */
+$color-text: #000000;
+$color-sub-text: #747474;
+
+/* Color Base */
+$color-border: #EDEDED;
+$color-background: #F7F7F7;
+
+/* Color Social */
+$color-whatsapp: #25D366;
+$color-facebook: #485A96;
+$color-google: #4285F4;
+$color-instagram: #C13584;
+$color-youtube: #FF0000;
+$color-twitter: #1DA1F2;
+$color-pinterest: #E60023;
+$color-linkedin: #0077B5;
+$color-discord: #7289DA;
+
+/* Global Variables */
+$aspect-ratio: 1;
+$percentage-ratio: 10%;
+$border-radius: var(--spacer-1);
+$gutter: var(--spacer-4);
+
+/* Text Type */
+@mixin text-type-1 {
+	@include line-rule(18);
+	font-weight: 400;
+}
+
+@mixin text-type-2 {
+	@include line-rule(16);
+	font-weight: 600;
+}
+
+@mixin text-type-3 {
+	@include line-rule(16);
+	font-weight: 400;
+}
+
+@mixin text-type-4 {
+	@include line-rule(14);
+	font-weight: 600;
+}
+
+@mixin text-type-5 {
+	@include line-rule(14);
+	font-weight: 400;
+}
+
+@mixin text-type-6 {
+	@include line-rule(12);
+	font-weight: 400;
+}
+
+/* Heading Type */
+@mixin heading-type-1 {
+	@include line-rule(52);
+	font-weight: 700;
+}
+
+@mixin heading-type-2 {
+	@include line-rule(32);
+	font-weight: 600;
+}
+
+@mixin heading-type-3 {
+	@include line-rule(24);
+	font-weight: 600;
+}
+
+@mixin heading-type-4 {
+	@include line-rule(22);
+	font-weight: 600;
+}
+
+@mixin heading-type-5 {
+	@include line-rule(20);
+	font-weight: 600;
+}
+
+@mixin heading-type-6 {
+	@include line-rule(18);
+	font-weight: 600;
+}
+
+/* Display Type */
+@mixin display-type-1 {
+	@include line-rule(120);
+	font-weight: 600;
+}
+
+@mixin display-type-2 {
+	@include line-rule(108);
+	font-weight: 400;
+}
+
+@mixin display-type-3 {
+	@include line-rule(96);
+	font-weight: 400;
+}
+
+@mixin display-type-4 {
+	@include line-rule(80);
+	font-weight: 400;
+}
+
+@mixin display-type-5 {
+	@include line-rule(64);
+	font-weight: 400;
+}
+
+@mixin display-type-6 {
+	@include line-rule(48);
+	font-weight: 400;
+}
+
+/* Still Variants */
+/* Lütfen aşağıdaki değişkenlerin hem isimlerini hemde değerlerini değiştirmeyiniz */
+$xxxs : 374;
+$xxs : 424;
+$xs : 575;
+$sm : 767;
+$md : 991;
+$lg : 1199;
+$xlg : 1441;
+$xxlg : 1681;
+$transition: all .2s linear;
+$color-white: #FFFFFF;
+$color-primary-lighten: lighten($color-primary, $percentage-ratio);
+$color-primary-darken: darken($color-primary, $percentage-ratio);
+$color-secondary-lighten: lighten($color-secondary, $percentage-ratio);
+$color-secondary-darken: darken($color-secondary, $percentage-ratio);
+$color-accent-lighten: lighten($color-accent, $percentage-ratio);
+$color-accent-darken: darken($color-accent, $percentage-ratio);
+$color-neutral-lighten: lighten($color-neutral, $percentage-ratio);
+$color-neutral-darken: darken($color-neutral, $percentage-ratio);
+
+/* Line Rule */
+@mixin line-rule($value) {
+    line-height: calc(var(--font-size-#{$value}) + 8px);
+    font-size: var(--font-size-$value);
+}
+
+/* Max Media Query */
+@mixin max($breakpoint) {
+	@media (max-width: $breakpoint + px) {
+		@content;
+	}
+}
+
+/* Min Media Query */
+@mixin min($breakpoint) {
+	@media (min-width: ($breakpoint + 1) + px) {
+		@content;
+	}
+}
+
+/* Border Radius */
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+/* Box Shadow */
+@mixin box-shadow($x, $y, $blur, $deep, $color, $inset: false) {
+    @if $inset {
+        box-shadow: inset $x $y $blur $deep $color;
+        -moz-box-shadow: inset $x $y $blur $deep $color;
+        -webkit-box-shadow: inset $x $y $blur $deep $color;
+    } @else {
+        box-shadow: $x $y $blur $deep $color;
+        -moz-box-shadow: $x $y $blur $deep $color;
+        -webkit-box-shadow: $x $y $blur $deep $color;
+    }
+}
+
+/* İmage Center */
+@mixin imgcenter {
+	img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+/* İmage Fit */
+@mixin fit {
+	img {
+		position:absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+/* Element Center */
+@mixin center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* İnput Placeholder */
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content};
+    &:-moz-placeholder           {@content};
+    &::-moz-placeholder          {@content};
+    &:-ms-input-placeholder      {@content};
+}
+
+/* Svg Solution */
+@mixin svg {
+	svg {
+        transition: $transition;
+        path,
+        rect,
+        line,
+        circle {
+            transition: $transition;
+        }
+    }
+}
+
+/* Svg Solution Hover */
+@mixin svghover($color) {
+	svg {
+        &[stroke] {
+            fill: none;
+            stroke: $color;
+        }
+        &[fill] {
+            fill: $color;
+            stroke: none;
+        }
+        &[stroke][fill] {
+            fill: $color;
+            stroke: $color;
+        }
+        &[stroke="none"][fill="none"] {
+            fill: none;
+            stroke: none;
+        }
+        &[fill="none"] {
+            fill: none;
+        }
+        &[stroke="none"] {
+            stroke: none;
+        }
+        path,
+        rect,
+        line,
+        circle {
+            &[stroke] {
+                fill: none;
+                stroke: $color;
+            }
+            &[fill] {
+                fill: $color;
+                stroke: none;
+            }
+            &[stroke][fill] {
+                fill: $color;
+                stroke: $color;
+            }
+        }
+    }
+}
+
+a {
+    color: $color-text;
+}
+
+a {
+    color: $color-text;
+    &:active,
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+/* Lütfen bu açıklama satırından sonra kod eklemeyiniz. */

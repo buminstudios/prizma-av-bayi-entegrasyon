@@ -1,0 +1,232 @@
+{% import 'html/snippets/icon-set.twig' as iconset %}
+<header id="header">
+    {% if client.isDesktop == true %}
+        <div class="header-top d-none d-xl-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    {% if site.menu_items.row1 | length > 0 or site.menu_items.row2 | length > 0 %}
+                        <div class="col">
+                            <ul class="header-menu-items">
+                                {% for firstLevelMenuItem in site.menu_items.row1 %}
+                                    <li {% if firstLevelMenuItem.subMenus | length > 0 %}class="has-sub-category"{% endif %} data-selector="first-level-navigation">
+                                        <a href="{{ firstLevelMenuItem.link }}" target="{{ firstLevelMenuItem.target }}" rel="noopener">
+                                            <span>{{ firstLevelMenuItem.label }}</span>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                                {% for firstLevelMenuItem in site.menu_items.row2 %}
+                                    <li {% if firstLevelMenuItem.subMenus | length > 0 %}class="has-sub-category"{% endif %} data-selector="first-level-navigation">
+                                        <a href="{{ firstLevelMenuItem.link }}" target="{{ firstLevelMenuItem.target }}" rel="noopener">
+                                            <span>{{ firstLevelMenuItem.label }}</span>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                    {% if theme.settings.header_menu_status %}
+                        <div class="col-auto">
+                            <div class="custom-header-menu">
+                                <ul>
+                                    {% for i in 1..2 %}
+                                        {% set headerMenuStatus = theme.settings["header_menu_status_" ~ i] %}
+                                        {% set headerMenuLink = theme.settings["header_menu_link_" ~ i] %}
+                                        {% set headerMenuTarget = theme.settings["header_menu_target_" ~ i] %}
+                                        {% set headerMenuTitle = theme.settings["header_menu_title_" ~ i] %}
+                                        {% set headerMenuSvgIcon = theme.settings["header_menu_svg_icon_" ~ i] %}
+                                        {% if headerMenuStatus %}
+                                            <li>
+                                                <a href="{{ headerMenuLink }}"{% if headerMenuTarget %} target="_blank"{% endif %}>
+                                                    {{ headerMenuSvgIcon }}
+                                                    <span>{{ headerMenuTitle }}</span>
+                                                </a>
+                                            </li>
+                                    {% endif %} 
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div class="header-middle">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col col-xl-3 order-1">
+                    <div class="logo">
+                        <a href="{{ path('entry') }}" aria-label="Logo">
+                            <img loading="lazy" decoding="async" src="{{ themeAsset(theme.settings.logo) }}" alt="{{ site.title }}">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-6 order-3 order-xl-2">
+                    <div class="search">
+                        <form action="{{ path('search') }}" data-selector="search-form">
+                            <input type="text" name="q" placeholder="{{ theme.settings.search_placeholder }}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{{ theme.settings.search_placeholder }}'" aria-label="Search" {% if theme.settings.use_search_auto_complete %}class="auto-complete"{% endif %}>
+                            <button>
+                                {{ iconset.iconSearch() }}
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-auto col-xl-3 order-2 order-xl-3">
+                    <div class="header-middle-right">
+                        <div class="header-favorite">
+                            <a href="{{ path('member_favourite_list') }}">
+                                {{ iconset.iconFavoriHeader() }}
+                            </a>
+                        </div>
+                        <div class="user-menu">
+                            {% if not visitor.isMember %}
+                                <a href="javascript:void(0);" class="openbox" aria-label="Member Login" data-target="user-menu-content" data-mode="custom" data-overlay="inside">
+                                    {{ iconset.iconUserMenu() }}
+                                    <span>{{ theme.settings.user_login }}</span>
+                                </a>
+                                <div class="user-menu-content openbox-content">
+                                    <form action="{{ path('member_login') }}" method="POST" data-selector="login-panel">
+                                        <div class="user-menu-content-top">
+                                            <div class="user-menu-title">{{ theme.settings.user_menu_title }}</div>
+                                            <div class="user-menu-subtitle">{{ theme.settings.user_menu_subtitle }}</div>
+                                            <div class="user-menu-input">
+                                                <input class="form-control" type="text" name="email" id="user-login-email" placeholder="{{ theme.settings.user_login_email }}" value="{{ cookie_member_email }}" autocomplete="email">
+                                            </div>
+                                            <div class="user-menu-input">
+                                                <input class="form-control" type="password" name="pass" id="user-login-pass" placeholder="{{ theme.settings.user_login_pass }}" autocomplete="current-password">
+                                            </div>
+                                            <div class="row align-items-center">
+                                                <div class="col-6">
+                                                    <div class="checkbox-custom user-menu-remember">
+                                                        <input type="checkbox" name="remember" id="custom-remember-me" value="1" {{ (cookie_member_email ? 'checked': '') }}>
+                                                        <label for="custom-remember-me">{{ getLang("_RememberMe_") }}</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <a href="{{ path('member_forgotpass') }}" class="user-menu-forgot-pass">{{ getLang("_ForgotPass_") }}</a>
+                                                </div>
+                                            </div>
+                                            <div class="user-menu-button mb-0">
+                                                <button type="submit" class="btn btn-primary btn-block" data-selector="login-panel-button"><span>{{ theme.settings.user_login_button }}</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="user-menu-content-bottom">
+                                            {% if preferences.member_signup %}
+                                                <div class="user-menu-title">{{ theme.settings.user_menu_bottom_title }}</div>
+                                                <div class="user-menu-subtitle">{{ theme.settings.user_menu_bottom_subtitle }}</div>
+                                                <div class="user-menu-button">
+                                                    <a href="{{ path('member_signup') }}" class="btn btn-secondary btn-block"><span>{{ theme.settings.user_signup_button }}</span></a>
+                                                </div>
+                                            {% endif %}
+                                            {% if theme.settings.use_facebook_login %}
+                                                <div class="user-menu-button">
+                                                    <button type="button" data-selector="facebook-login" class="btn btn-facebook btn-block"><span>{{ theme.settings.user_signup_facebook_button }}</span></button>
+                                                </div>
+                                            {% endif %}
+                                            {% if theme.settings.use_google_login %}
+                                                <div class="user-menu-button">
+                                                    <button type="button" data-selector="google-login" class="btn btn-google btn-block"><span>{{ theme.settings.user_signup_google_button }}</span></button>
+                                                </div>
+                                            {% endif %}
+                                            {% if theme.settings.use_apple_login %}
+                                                <div class="user-menu-button mb-0">
+                                                    <button type="button" data-selector="apple-login" class="btn btn-apple btn-block"><span>{{ theme.settings.user_signup_apple_button }}</span></button>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </form>
+                                </div>
+                            {% else %}
+                                <a href="javascript:void(0);" class="openbox" aria-label="Member Profile" data-target="user-menu-welcome" data-mode="custom" data-overlay="inside">
+                                    {{ iconset.iconUserMenu() }}
+                                    <span>{{ theme.settings.user_signup }}</span>
+                                    <div class="icon-check">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M7.60931 11.8043L5.18197 9.1899C5.06481 9.05935 5 8.89009 5 8.71464C5 8.53919 5.06481 8.36993 5.18197 8.23938C5.23818 8.17828 5.30644 8.12951 5.38244 8.09616C5.45844 8.0628 5.54054 8.04557 5.62353 8.04557C5.70653 8.04557 5.78863 8.0628 5.86463 8.09616C5.94063 8.12951 6.00889 8.17828 6.06509 8.23938L8.05137 10.3785L11.9359 6.19326C11.9921 6.13233 12.0603 6.0837 12.1362 6.05043C12.2121 6.01717 12.2941 6 12.377 6C12.4598 6 12.5418 6.01717 12.6177 6.05043C12.6936 6.0837 12.7618 6.13233 12.818 6.19326C12.9352 6.32382 13 6.49308 13 6.66852C13 6.84397 12.9352 7.01323 12.818 7.14378L8.49143 11.8043C8.43564 11.8659 8.36758 11.9152 8.29161 11.9489C8.21565 11.9826 8.13347 12 8.05037 12C7.96727 12 7.88509 11.9826 7.80913 11.9489C7.73316 11.9152 7.66509 11.8659 7.60931 11.8043V11.8043Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <div class="user-menu-welcome openbox-content">
+                                    <div class="user-menu-profile">
+                                        <div class="user-menu-title">{{ theme.settings.user_menu_title }}</div>
+                                        <div class="user-menu-subtitle">{{ theme.settings.user_dear }} {{ visitor.member.firstname ~ ' ' ~ visitor.member.surname }}</div>
+                                        <div class="user-menu-profile-list">
+                                            <a href="{{ path('member_index') }}">{{ theme.settings.user_member_index }}</a>
+                                            <a href="{{ path('member_order_list') }}">{{ theme.settings.user_member_order_list }}</a>
+                                            <a href="{{ path('member_address_list') }}">{{ theme.settings.user_member_address_list }}</a>
+                                            {% if preferences.use_banktransfer_system %}
+                                                <a href="{{ path('member_bank_transfer') }}">{{ theme.settings.user_member_bank_transfer }}</a>
+                                            {% endif %}
+                                                <a href="{{ path('member_profile') }}">{{ theme.settings.user_member_profile }}</a>
+                                            {% if preferences.use_point_system %}
+                                                <a href="{{ path('member_point_list') }}">{{ theme.settings.user_member_point_list }}</a>
+                                            {% endif %}
+                                            {% if theme.settings.display_favori_buttons and theme.settings.display_user_buttons %}
+                                                <a href="{{ path('member_favourite_list') }}">{{ theme.settings.user_member_favourite_list }}</a>
+                                            {% endif %}
+                                        </div>
+                                        <div class="user-menu-button mb-0">
+                                            <a href="{{ path('member_logout') }}" class="btn btn-primary btn-block"><span>{{ theme.settings.user_logout }}</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="cart-menu">
+                            <a {% if site.route.group == "cart" and site.route.name == "index" %}href="{{ path('cart_index') }}{% else %}href="javascript:void(0);" aria-label="Cart" class="openbox" data-target="cart-content" data-mode="custom" data-overlay="inside"{% endif %}">
+                                {{ iconset.iconCartMenu() }}
+                                <span>{{ theme.settings.cart_title }}</span>
+                                <div class="cart-amount" data-selector="cart-item-count"></div>
+                            </a>
+                            {% if site.route.group != "cart" or site.route.name != "index" %}
+                                <div class="cart-content openbox-content" data-selector="cart-content"></div>
+                            {% endif %}
+                        </div>
+                        {% if client.isDesktop == false or client.isIos == true %}
+                            <div class="mobile-menu">
+                                <a href="javascript:void(0);" class="openbox" data-target="mobile-menu-content" data-mode="custom" data-overlay="inside">
+                                    {{ iconset.iconMenu() }}
+                                </a>
+                                <div class="mobile-menu-content openbox-content">
+                                    {% set mobileMenu = getDropdownMenu() %}
+                                    {% include 'html/snippets/mobile-menu.twig' %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if client.isDesktop == true %}
+        <div class="header-bottom d-none d-xl-block">
+            <div class="container">
+                {{ macro_global('navigationMenu') }}
+            </div>
+        </div>
+    {% endif %}
+    {% if theme.settings.header_marquee_content_status %}
+        <div class="header-marquee">
+            <div class="container-fluid p-0">
+                <div class="header-marquee-content js-marquee">
+                    {% for i in 1..10 %}
+                        {% set marqueeStatus = theme.settings["marquee_status_" ~ i] %}
+                        {% set marqueeText = theme.settings["marquee_text_" ~ i] %}
+                        {% if marqueeStatus %}
+                            <div class="marquee-text">
+                                {{ marqueeText }}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</header>
+{% if client.isDesktop == true %}
+    <div class="header-sticky">
+        <div class="container">
+            {{ macro_global('navigationMenu') }}
+        </div>
+    </div>
+{% endif %}

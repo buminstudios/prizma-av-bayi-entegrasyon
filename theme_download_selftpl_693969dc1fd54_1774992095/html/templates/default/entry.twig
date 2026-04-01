@@ -1,0 +1,578 @@
+{% extends 'html/layouts/content-fluid.twig' %}
+{% import 'html/snippets/icon-set.twig' as iconset %}
+{% block content %}
+    {% if theme.settings.entry_slider_status %}
+        <div id="entry-slider">
+            <div>
+                {% for i in 1..10 %}
+                    {% set entrySliderStatus = theme.settings["entry_slider_status_" ~ i] %}
+                    {% set entrySliderLink = theme.settings["entry_slider_link_" ~ i] %}
+                    {% set entrySliderTarget = theme.settings["entry_slider_target_" ~ i] %}
+                    {% set entrySliderTitle = theme.settings["entry_slider_title_" ~ i] %}
+                    {% set entrySliderSubTitle = theme.settings["entry_slider_sub_title_" ~ i] %}
+                    {% set entrySliderButtonTitle = theme.settings["entry_slider_button_title_" ~ i] %}
+                    {% set entrySliderImage = '' %}
+                    {% if client.isDesktop == true %}
+                        {% set entrySliderImage = theme.settings["entry_slider_image_" ~ i] %}
+                    {% else %}
+                        {% set entrySliderImage = theme.settings["entry_slider_mobile_image_" ~ i] %}
+                    {% endif %}
+                    {% if entrySliderStatus %}
+                        <div class="entry-slider entry-slider-{{i}}">
+                            <a href="{{entrySliderLink}}"{% if entrySliderTarget %} target="_blank"{% endif %}>
+                                <div class="entry-slider-image">
+                                    {% set loadingDefault = '' %}
+                                    {% if loop.first %}
+                                        {% set loadingDefault %}
+                                            loading="eager" decoding="auto"
+                                        {% endset %}
+                                    {% else %}
+                                        {% set loadingDefault %}
+                                            loading="lazy" decoding="async"
+                                        {% endset %}
+                                    {% endif %}
+                                    <img {{ loadingDefault }} src="{{ themeAsset(entrySliderImage) }}" alt="">
+                                </div>
+                                {% if entrySliderTitle or entrySliderSubTitle or entrySliderButtonTitle %}
+                                    <div class="entry-slider-container">
+                                        <div class="container h-100">
+                                            <div class="row align-items-center h-100">
+                                                <div class="col-lg-6 col-xl-5">
+                                                    <div class="entry-slider-content">
+                                                        {% if entrySliderTitle %}
+                                                            <div class="entry-slider-title">
+                                                                <h2 class="section-title">{{ entrySliderTitle }}</h2>
+                                                            </div>
+                                                        {% endif %}
+                                                        {% if entrySliderSubTitle %}
+                                                            <div class="entry-slider-sub-title">
+                                                                <p class="section-paragraph">{{ entrySliderSubTitle }}</p>
+                                                            </div>
+                                                        {% endif %}
+                                                        {% if entrySliderButtonTitle %}
+                                                            <div class="entry-slider-button">
+                                                                <span>{{ entrySliderButtonTitle }}</span>
+                                                            </div>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            </a>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+    <div class="container">
+        {% if theme.settings.category_banner_status %}
+            <div class="category-banners">
+                <div class="row">
+                    {% for i in 1..10 %}
+                        {% set categoryBannerStatus = theme.settings["category_banner_status_" ~ i] %}
+                        {% set categoryBannerTarget = theme.settings["category_banner_target_" ~ i] %}
+                        {% set categoryBannerLink = theme.settings["category_banner_link_" ~ i] %}
+                        {% set categoryBannerTitle = theme.settings["category_banner_title_" ~ i] %}
+                        {% set categoryBannerSubTitle = theme.settings["category_banner_sub_title_" ~ i] %}
+                        {% set categoryBannerButton = theme.settings["category_banner_button_" ~ i] %}
+                        {% set categoryBannerImage = theme.settings["category_banner_image_" ~ i] %}
+                        {% if categoryBannerStatus %}
+                            <div class="col-auto">
+                                {% if categoryBannerLink %}
+                                <a href="{{ categoryBannerLink }}" class="category-banner"{% if categoryBannerTarget %} target="_blank"{% endif %}>
+                                {% else %}
+                                <div class="category-banner">
+                                {% endif %}
+                                    <div class="category-banner-image-content">
+                                        <div class="category-banner-image">
+                                            <img src="{{ themeAsset(categoryBannerImage) }}" alt="">
+                                        </div>
+                                    </div>
+                                    {% if categoryBannerTitle %}
+                                        <div class="category-banner-title">
+                                            <h2 class="section-title">{{ categoryBannerTitle }}</h2>
+                                        </div>
+                                    {% endif %}
+                                {% if categoryBannerLink %}
+                                </a>
+                                {% else %}
+                                </div>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    <div class="entry-row-first">
+        <div class="container">
+            {% set productList = getProducts('discounted', {'limit': 20}) %}
+            {% if productList | length > 0 %}
+                <div class="default-products discounted-products">
+                    {% if theme.settings.discounted_products_title %}
+                        <div class="products-header">
+                            <h2 class="section-title">{{ theme.settings.discounted_products_title }}</h2>
+                        </div>
+                    {% endif %}
+                    <div class="row">
+                        {% if theme.settings.theme_banner_status_1 %}
+                            <div class="col-lg-3 order-2 order-lg-1">
+                                <div class="product-theme-banner">
+                                    <a href="{{ theme.settings.theme_banner_link_1 }}"{% if theme.settings.theme_banner_target_1 %} target="_blank"{% endif %}>
+                                        <div class="theme-banner-image">
+                                            <img loading="lazy" decoding="async" src="{{ themeAsset(theme.settings.theme_banner_image_1) }}" alt="{{ theme.settings.theme_banner_title_1 }}" />
+                                        </div>
+                                        <div class="theme-banner-content">
+                                            {% if theme.settings.theme_banner_title_1 %}
+                                                <div class="theme-banner-title">
+                                                    <h2 class="section-title">{{ theme.settings.theme_banner_title_1 }}</h2>
+                                                </div>
+                                            {% endif %}
+                                            {% if theme.settings.theme_banner_sub_title_1 %}
+                                                <div class="theme-banner-sub-title">
+                                                    <p class="section-paragraph">{{ theme.settings.theme_banner_sub_title_1 }}</p>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        {% if theme.settings.theme_banner_button_title_1 %}
+                                            <div class="theme-banner-button">
+                                                <div class="theme-banner-button-inside">
+                                                    <span>{{ theme.settings.theme_banner_button_title_1 }}</span>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </a>
+                                </div>
+                            </div>
+                        {% endif %}
+                        <div class="col-lg-9 order-1 order-lg-2">
+                            <div class="products-content row">                        
+                                {% for item in productList %}
+                                    <div class="col-auto">
+                                        {% include 'html/snippets/showcase-item.twig' %}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>                                        
+                </div>
+            {% endif %}
+            {% if theme.settings.product_banner_status %}
+                <div class="product-banners">
+                    {% for i in 1..6 %}
+                        {% set productBannerStatus = theme.settings["product_banner_status_" ~ i] %}
+                        {% set productBannerTarget = theme.settings["product_banner_target_" ~ i] %}
+                        {% set productBannerLink = theme.settings["product_banner_link_" ~ i] %}
+                        {% set productBannerTitle = theme.settings["product_banner_title_" ~ i] %}
+                        {% set productBannerSubTitle = theme.settings["product_banner_sub_title_" ~ i] %}
+                        {% set productBannerButton = theme.settings["product_banner_button_" ~ i] %}
+                        {% set productBannerImage = theme.settings["product_banner_image_" ~ i] %}
+                        {% if productBannerStatus %}
+                            <div class="product-banner-inside">
+                                <a href="{{ productBannerLink }}" class="product-banner"{% if productBannerTarget %} target="_blank"{% endif %}>
+                                    <div class="product-banner-image">
+                                        <img src="{{ themeAsset(productBannerImage) }}" alt="">
+                                    </div>
+                                    <div class="product-banner-content">
+                                        {% if productBannerTitle %}
+                                            <div class="product-banner-title">
+                                                <h2 class="section-title">{{ productBannerTitle }}</h2>
+                                            </div>
+                                        {% endif %}
+                                        {% if productBannerSubTitle %}
+                                            <div class="product-banner-sub-title">
+                                                <p class="section-paragraph">{{ productBannerSubTitle }}</p>
+                                            </div>
+                                        {% endif %}
+                                        {% if productBannerButton %}
+                                            <div class="product-banner-button">
+                                                <span>{{ productBannerButton }}</span>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </a>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% set productList = getProducts('popular', {'limit': 20}) %}
+            {% if productList | length > 0 %}
+                <div class="default-products popular-products">
+                    {% if theme.settings.popular_products_title %}
+                        <div class="products-header">
+                            <h2 class="section-title">{{ theme.settings.popular_products_title }}</h2>
+                        </div>
+                    {% endif %}
+                    <div class="products-content row">
+                        {% for item in productList %}
+                            <div class="col-auto">
+                                {% include 'html/snippets/showcase-item.twig' %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if theme.settings.campaign_banner_status %}
+                <div class="campaign-banners">
+                    <div class="row">
+                        {% for i in 1..6 %}
+                            {% set campaignBannerStatus = theme.settings["campaign_banner_status_" ~ i] %}
+                            {% set campaignBannerTarget = theme.settings["campaign_banner_target_" ~ i] %}
+                            {% set campaignBannerLink = theme.settings["campaign_banner_link_" ~ i] %}
+                            {% set campaignBannerTitle = theme.settings["campaign_banner_title_" ~ i] %}
+                            {% set campaignBannerSubTitle = theme.settings["campaign_banner_sub_title_" ~ i] %}
+                            {% set campaignBannerButton = theme.settings["campaign_banner_button_" ~ i] %}
+                            {% set campaignBannerImage = theme.settings["campaign_banner_image_" ~ i] %}
+                            {% if campaignBannerStatus %}
+                                <div class="col-md-6 col-lg-4">
+                                    <a href="{{ campaignBannerLink }}" class="campaign-banner"{% if campaignBannerTarget %} target="_blank"{% endif %}>
+                                        <div class="campaign-banner-image">
+                                            <img src="{{ themeAsset(campaignBannerImage) }}" alt="">
+                                        </div>
+                                        <div class="campaign-banner-content">
+                                            {% if campaignBannerTitle %}
+                                                <div class="campaign-banner-title">
+                                                    <h2 class="section-title">{{ campaignBannerTitle }}</h2>
+                                                </div>
+                                            {% endif %}
+                                            {% if campaignBannerSubTitle %}
+                                                <div class="campaign-banner-sub-title">
+                                                    <p class="section-paragraph">{{ campaignBannerSubTitle }}</p>
+                                                </div>
+                                            {% endif %}
+                                            {% if campaignBannerButton %}
+                                                <div class="campaign-banner-button">
+                                                    <span>{{ campaignBannerButton }}</span>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </a>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}            
+        </div>
+    </div>
+    <div class="container">
+        {% set tabHasElement = false %}
+        {% for i in 1..6 %}
+            {% if theme.settings['category_list_tab_status_' ~ i] %}
+                {% set tabHasElement = true %}
+            {% endif %}
+        {% endfor %}
+        {% if tabHasElement %}
+            <div class="list-tab category-carousel-list-tab">
+                {% if theme.settings.list_tab_header %}
+                    <div class="list-tab-header">
+                        <span>{{ theme.settings.list_tab_header }}</span>
+                    </div>
+                {% endif %}
+                <div class="list-tab-title">
+                    {% set index = 0 %}
+                    {% for i in 1..6 %}
+                        {% if theme.settings['category_list_tab_status_' ~ i] > 0 %}
+                            {% set index = index + 1 %}
+                            <div class="{% if index == 1 %}active{% endif %}" data-tab-index="{{ loop.index }}">
+                                <a href="javascript:void(0);">
+                                    <span>{{ theme.settings['category_list_tab_title_' ~ i] }}</span>
+                                </a>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="list-tab-content">
+                    {% set index = 0 %}
+                    {% for i in 1..6 %}
+                        {% if theme.settings['category_list_tab_status_' ~ i] > 0 %}
+                            {% set index = index + 1 %}
+                            {% set productList = getProducts('category', {'limit': 20, 'id': theme.settings['category_list_tab_id_' ~ i]}) %}
+                            <div class="list-tab-products{% if index == 1 %} active{% endif %}" data-tab-content="{{ loop.index }}" data-tab-title="{{ theme.settings['category_title_' ~ i] }}">
+                                {% if productList | length > 0 %}
+                                    <div class="products-content row">
+                                        {% for item in productList %}
+                                            <div class="col-auto">
+                                                {% include 'html/snippets/showcase-item.twig' %}
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    <div class="products-content-empty">
+                                        {{ getLang('_ProductNotFound_') }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    <div class="entry-row-second">
+        <div class="container">            
+            {% if theme.settings.product_popover_status %}
+            {% set productList = getProducts('discounted', {'limit': 5}) %}
+                <div class="products-popover-wrapper">
+                    <div class="products-item-main">
+                        <div class="products-popover-item-box">
+                            <div class="products-popover-box-inside">
+                                {% if theme.settings.product_banner_points_1_status %}
+                                    <div class="products-popover-item products-popover-item-1">
+                                        {% set random = random() %}
+                                        <a href="javascript:void(0);" class="openbox" data-mode="custom" data-target="products-popover-content-{{ random }}">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="16" height="16" rx="8" fill="white"/>
+                                            </svg>                                            
+                                        </a>
+                                        <div class="products-popover-content products-popover-content-{{ random }} openbox-content">
+                                            {% if productList | length > 0 %}
+                                                {% for item in productList | slice(0,1) %}
+                                                    {% include 'html/snippets/showcase-item.twig' %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                {% if theme.settings.product_banner_points_2_status %}
+                                    <div class="products-popover-item products-popover-item-2">
+                                        {% set random = random() %}
+                                        <a href="javascript:void(0);" class="openbox" data-mode="custom" data-target="products-popover-content-{{ random }}">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="16" height="16" rx="8" fill="white"/>
+                                            </svg>
+                                        </a>
+                                        <div class="products-popover-content products-popover-content-{{ random }} openbox-content">
+                                            {% if productList | length > 0 %}
+                                                {% for item in productList | slice(1,1) %}
+                                                    {% include 'html/snippets/showcase-item.twig' %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                {% if theme.settings.product_banner_points_3_status %}
+                                    <div class="products-popover-item products-popover-item-3">
+                                        {% set random = random() %}
+                                        <a href="javascript:void(0);" class="openbox" data-mode="custom" data-target="products-popover-content-{{ random }}">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="16" height="16" rx="8" fill="white"/>
+                                            </svg>
+                                        </a>
+                                        <div class="products-popover-content products-popover-content-{{ random }} openbox-content">
+                                            {% if productList | length > 0 %}
+                                                {% for item in productList | slice(2,1) %}
+                                                    {% include 'html/snippets/showcase-item.twig' %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                {% if theme.settings.product_banner_points_4_status %}
+                                    <div class="products-popover-item products-popover-item-4">
+                                        {% set random = random() %}
+                                        <a href="javascript:void(0);" class="openbox" data-mode="custom" data-target="products-popover-content-{{ random }}">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="16" height="16" rx="8" fill="white"/>
+                                            </svg>
+                                        </a>
+                                        <div class="products-popover-content products-popover-content-{{ random }} openbox-content">
+                                            {% if productList | length > 0 %}
+                                                {% for item in productList | slice(3,1) %}
+                                                    {% include 'html/snippets/showcase-item.twig' %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                {% if theme.settings.product_banner_points_5_status %}
+                                    <div class="products-popover-item products-popover-item-5">
+                                        {% set random = random() %}
+                                        <a href="javascript:void(0);" class="openbox" data-mode="custom" data-target="products-popover-content-{{ random }}">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="16" height="16" rx="8" fill="white"/>
+                                            </svg>
+                                        </a>
+                                        <div class="products-popover-content products-popover-content-{{ random }} openbox-content">
+                                            {% if productList | length > 0 %}
+                                                {% for item in productList | slice(4,1) %}
+                                                    {% include 'html/snippets/showcase-item.twig' %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="products-popover-banner">
+                            <img src="{{ themeAsset(theme.settings.popover_banner_image) }}" alt="{{ theme.settings.product_banner_title }}" />
+                        </div>
+                    </div>
+                </div>                
+            {% endif %}
+            {% set productList = getProducts('home', {'limit': 20}) %}
+            {% if productList | length > 0 %}
+                <div class="home-products">
+                    {% if theme.settings.home_products_title %}
+                        <div class="products-header">
+                            <h2 class="section-title">{{ theme.settings.home_products_title }}</h2>
+                        </div>
+                    {% endif %}
+                    <div class="row">
+                        {% for item in productList %}
+                            <div class="col-6 col-md-4 col-xl-3">
+                                {% include 'html/snippets/showcase-item.twig' %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if theme.settings.theme_banner_status_2 %}
+                <div class="entry-theme-banner">
+                    {% if theme.settings.theme_banner_link_2 %}
+                        <a href="{{ theme.settings.theme_banner_link_2 }}"{% if theme.settings.theme_banner_target_2 %} target="_blank"{% endif %}>
+                            <img loading="lazy" decoding="async" src="{{ themeAsset(theme.settings.theme_banner_image_2) }}" alt="{{ theme.settings.theme_banner_tag_title_2 }}" />
+                        </a>
+                    {% else %}
+                        <img loading="lazy" decoding="async" src="{{ themeAsset(theme.settings.theme_banner_image_2) }}" alt="{{ theme.settings.theme_banner_tag_title_2 }}" />
+                    {% endif %}
+                </div>
+            {% endif %}
+            {% set productList = getProducts('featured', {'limit': 20}) %}
+            {% if productList | length > 0 %}
+                <div class="featured-products">
+                    {% if theme.settings.featured_products_title %}
+                        <div class="products-header">
+                            <h2 class="section-title">{{ theme.settings.featured_products_title }}</h2>
+                        </div>
+                    {% endif %}
+                    <div class="products-content row">
+                        {% for item in productList %}
+                            <div class="col-auto">
+                                {% include 'html/snippets/showcase-item-second.twig' %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            <div class="entry-brands-list row"></div>
+        </div>
+    </div>
+    <div class="container">
+        {% if theme.settings.newsletter_content_status %}
+            <div class="newsletter-container">
+                <div class="row align-items-center">
+                    {% if theme.settings.newsletter_image %}
+                        <div class="col-xl-6 order-2 order-xl-1">
+                            <div class="newsletter-image">
+                                <img loading="lazy" decoding="async" src="{{ themeAsset(theme.settings.newsletter_image) }}" alt="">
+                            </div>
+                        </div>
+                    {% endif %}
+                    <div class="col-xl-6 order-1 order-xl-2">
+                        <div class="newsletter">
+                            {% if theme.settings.newsletter_title %}
+                                <div class="newsletter-title">
+                                    <h2 class="section-title">{{ theme.settings.newsletter_title }}</h2>
+                                </div>
+                            {% endif %}
+                            <div class="newsletter-content">
+                                <form data-selector="newsletter-form">
+                                    <input type="email" id="newsletter-email" name="email" placeholder="{{ theme.settings.newsletter_placeholder }}" onfocus="this.placeholder = ''" onblur="this.placeholder = '{{ theme.settings.newsletter_placeholder }}'" aria-label="Newsletter Email" autocomplete="off" >
+                                    <button type="submit" aria-label="Submit">{{ theme.settings.newsletter_button }}</button>
+                                </form>
+                            </div>
+                            <div class="row">
+                                {% if theme.settings.mail %}
+                                    <div class="col-sm-6">
+                                        <div class="entry-mail">
+                                            <a href="mailto:{{ theme.settings.mail }}">
+                                                <div class="entry-mail-icon">
+                                                    {{ iconset.iconMail() }}
+                                                </div>
+                                                <div class="entry-mail-content">
+                                                    <h2 class="section-title">{{ theme.settings.entry_mail_title }}</h2>
+                                                    <p class="section-paragraph">{{ theme.settings.mail_text }}</p>
+                                                    <span>{{ theme.settings.mail }}</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                {% if theme.settings.phone %}
+                                    <div class="col-sm-6">
+                                        <div class="entry-phone">
+                                            <a href="tel:{{ theme.settings.phone | replace({' ': '','(': '',')': ''}) }}">
+                                                <div class="entry-phone-icon">
+                                                    {{ iconset.iconPhone() }}
+                                                </div>
+                                                <div class="entry-phone-content">
+                                                    <h2 class="section-title">{{ theme.settings.entry_phone_title }}</h2>
+                                                    <p class="section-paragraph">{{ theme.settings.phone_text }}</p>
+                                                    <span>{{ theme.settings.phone }}</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        {% if theme.settings.blog_status %}
+            {% set blogList = getBlogs() %}
+            {% if blogList | length > 0 %}
+                <div class="entry-blog-container">
+                    {% if theme.settings.blog_title %}
+                        <div class="entry-blog-title">
+                            <h2 class="section-title">{{ theme.settings.blog_title }}</h2>
+                        </div>
+                    {% endif %}
+                    <div class="entry-blog-content">
+                        <div class="row">
+                            {% for blog in blogList | slice(0,4) %}
+                                <div class="col-auto col-lg-3">
+                                    <div class="entry-blog-item-container">
+                                        <div class="entry-blog-item-image">
+                                            <a href="{{ blog.url }}" title="{{ blog.title }}">
+                                                {% if blog.imagePath %}
+                                                    <img loading="lazy" decoding="async" src="{{ blog.imagePath }}" alt="{{ blog.title }}">
+                                                    {% else %}
+                                                    <div class="entry-blog-item-nopic">
+                                                        <i class="far fa-image"></i>
+                                                    </div>
+                                                {% endif %}
+                                            </a>
+                                        </div>
+                                        <div class="entry-blog-item-content">
+                                            <div class="entry-blog-item-title">
+                                                <a href="{{ blog.url }}" title="{{ blog.title }}">
+                                                    {{ blog.title }}
+                                                </a>
+                                            </div>
+                                            <div class="entry-blog-item-text">
+                                                <p>{{ blog.excerpt }}</p>
+                                            </div>
+                                            <div class="entry-blog-item-bottom">
+                                                <a href="{{ blog.url }}">
+                                                    {{ theme.settings.blog_read_more }}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,75 @@
+{% if navigationMenu.categories | length > 0 %}
+	<nav id="navigation">
+		<div class="category-level-1">
+			<ul>
+                {% set nopicImageUrl = getNopicImageUrl() %}
+                {% set nopicFilename = nopicImageUrl | split('?') | first | split('/') | last %}
+				{% for firstLevelCategory in navigationMenu.categories %}
+                    {% set hasNoFirstPicture = firstLevelCategory.imageUrl and nopicFilename in firstLevelCategory.imageUrl %}
+					<li {% if firstLevelCategory.subCategories | length > 0 %}class="has-sub-category"{% endif %} data-selector="first-level-navigation">
+						<a href="{{ firstLevelCategory.url }}" title="{{ firstLevelCategory.name }}">
+                            {% if navigationMenu.settings.useCategoryImage %}
+                                <div {% if hasNoFirstPicture %}class="no-picture"{% endif %}>
+                                    <img src="{% if hasNoFirstPicture %}{{ nopicImageUrl }}{% else %}{{ firstLevelCategory.imageUrl }}{% endif %}" alt="{{ firstLevelCategory.name }}"/>
+                                </div>
+                            {% endif %}
+                            <span>{{ firstLevelCategory.name }}</span>
+						</a>
+						{% if firstLevelCategory.subCategories | length > 0 %}
+                            <div class="sub-category category-level-2">
+                                <div class="container">
+                                    <div class="first-category-name">
+                                        <span>{{ firstLevelCategory.name }}</span>
+                                    </div>
+                                    <ul class="second-level-inside">
+                                        {% for secondLevelCategory in firstLevelCategory.subCategories %}
+                                            {% set hasNoSecondPicture = secondLevelCategory.imageUrl and nopicFilename in secondLevelCategory.imageUrl %}
+                                            <li class="{% if navigationMenu.settings.useCategoryImage %}navigation-category-image{% endif %}{% if secondLevelCategory.subCategories | length > 0 %} has-sub-category{% endif %}">
+                                                <a href="{{ secondLevelCategory.url }}" title="{{ secondLevelCategory.name }}">
+                                                    {% if navigationMenu.settings.useCategoryImage %}
+                                                        <div {% if hasNoSecondPicture %}class="no-picture"{% endif %}>
+                                                            <img loading="lazy" decoding="async" src="{% if hasNoSecondPicture %}{{ nopicImageUrl }}{% else %}{{ secondLevelCategory.imageUrl }}{% endif %}" alt="{{ secondLevelCategory.name }}"/>
+                                                        </div>
+                                                    {% endif %}
+                                                    <span>{{ secondLevelCategory.name }}</span>
+                                                </a>
+                                                {% if not navigationMenu.settings.useCategoryImage %}
+                                                    {% if secondLevelCategory.subCategories | length > 0 %}
+                                                        {% if navigationMenu.settings.thirdLevelCategoryCount > 0 %}
+                                                            {% set thirdLevelCategoryLimit = navigationMenu.settings.thirdLevelCategoryCount %}
+                                                        {% else %}
+                                                            {% set thirdLevelCategoryLimit = secondLevelCategory.subCategories | length %}
+                                                        {% endif %}
+                                                        <div class="sub-category category-level-3">
+                                                            <ul>
+                                                                {% for thirdLevelCategory in secondLevelCategory.subCategories | slice(0,thirdLevelCategoryLimit) %}
+                                                                    <li>
+                                                                        <a href="{{ thirdLevelCategory.url }}" title="{{ thirdLevelCategory.name }}">
+                                                                            <span>{{ thirdLevelCategory.name }}</span>
+                                                                        </a>
+                                                                    </li>
+                                                                {% endfor %}
+                                                                {% if navigationMenu.settings.thirdLevelCategoryCount > 0 and secondLevelCategory.subCategories | length > navigationMenu.settings.thirdLevelCategoryCount %}
+                                                                    <li class="navigation-show-all">
+                                                                        <a href="{{ secondLevelCategory.url }}">{{ theme.settings.navigation_showall }}</a>
+                                                                    </li>
+                                                                {% endif %}
+                                                            </ul>
+                                                        </div>
+                                                    {% endif %}
+                                                {% endif %}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</nav>
+	<script>
+		var navigationMenu = {{ navigationMenu | json_encode }};
+	</script>
+{% endif %}

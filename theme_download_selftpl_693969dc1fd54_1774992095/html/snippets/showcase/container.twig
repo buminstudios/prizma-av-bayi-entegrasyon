@@ -1,0 +1,38 @@
+{% set showcaseRepeatColumns = theme.settings.showcase_repeat_columns %}
+{% set class = '' %}
+{% if showcaseRepeatColumns == 2 %}
+    {% set class = 'dual-sorting' %}
+{% elseif showcaseRepeatColumns == 3 %}
+    {% set class = 'triple-sorting' %}
+{% elseif showcaseRepeatColumns == 4 %}
+    {% set class = 'quadruple-sorting' %}
+{% elseif showcaseRepeatColumns == 5 %}
+    {% set class = 'quintuple-sorting' %}
+{% endif %}
+{% if showcase.isXmlHttpRequest == 0 %}
+    {% set showcasePreviousPageStatus = showcase.currentPage > 1 ? 1 : 0 %}
+    {% if showcase.infiniteScrollStatus and showcasePreviousPageStatus %}
+        <div id="showcase-previous-page">
+            <button class="btn btn-primary">{{ getLang("_ShowPreviousProducts_") }}</button>
+        </div>
+    {% endif %}
+    <div class="showcase-container {{ class }}" id="showcase-container"
+        {% if showcase.infiniteScrollStatus %}
+            data-infinite-scroll-status="{{ showcase.infiniteScrollStatus }}"
+            data-more-action-url="{{ showcase.moreActionUrl }}"
+            data-previous-page-status="{{ showcasePreviousPageStatus }}"
+            data-is-page-finish="{{ showcase.isPageFinish ? 'true' : 'false' }}"
+            data-showcase-item-per-row="{{ showcaseItemPerRow }}"
+        {% endif %}>
+    {% endif %}
+    {% for item in showcase.items %}
+        <div class="{% if showcase.infiniteScrollStatus %}showcase-page-product{% endif %}" {% if showcase.infiniteScrollStatus %} data-pid="{{ item.getProduct.id }}" data-page="{{ showcase.currentPage }}" {% endif %}>
+            {% include([showcaseItemSnippetName|default(''), defaultShowcaseItemSnippetName]) %}
+        </div>
+    {% endfor %}
+    </div>
+{% if showcase.infiniteScrollStatus and showcase.isXmlHttpRequest == 0 %}
+    <div id="showcase-load-spinner" style="display: none;">
+        <span class="showcase-container-loader"></span>
+    </div>
+{% endif %}
