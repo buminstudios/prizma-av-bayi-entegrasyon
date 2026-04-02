@@ -1,7 +1,12 @@
 import os
 from glob import glob
 
-html_files = sorted(glob('seo_optimize/html/*.html'))
+def get_md_mtime(fp):
+    md_file = fp.replace('html/', 'md/').replace('.html', '.md')
+    return os.path.getmtime(md_file) if os.path.exists(md_file) else os.path.getmtime(fp)
+
+html_files = glob('seo_optimize/html/*.html')
+html_files.sort(key=get_md_mtime)
 
 index_content = """<!DOCTYPE html>
 <html lang="tr">
@@ -26,10 +31,22 @@ index_content = """<!DOCTYPE html>
 
 index_content = index_content.replace("{count}", str(len(html_files)))
 
-for fp in html_files:
+import time
+has_added_new_header = False
+
+for i, fp in enumerate(html_files, 1):
     basename = os.path.basename(fp)
     title = basename.replace('.html', '').replace('_', ' ').replace('-', ' ').title()
-    index_content += f'        <li><a href="{fp}" target="_blank">📄 {title}</a><div class="meta">Dosya: {basename}</div></li>\n'
+    md_file = fp.replace('html/', 'md/').replace('.html', '.md')
+    mtime = os.path.getmtime(md_file) if os.path.exists(md_file) else os.path.getmtime(fp)
+    is_new = (time.time() - mtime) < 3600
+    
+    if is_new and not has_added_new_header:
+        index_content += '    </ul><h2 style="margin-top:40px; border-bottom: 2px solid #d73a49; padding-bottom: 10px; color: #d73a49;">🔥 Son Oturumda Eklenen Yeni Bloglar (98 - 189)</h2><ul>\n'
+        has_added_new_header = True
+
+    badge = ' <span style="background:red;color:white;padding:2px 5px;border-radius:3px;font-size:12px;">🔥 YENİ</span>' if is_new else ''
+    index_content += f'        <li><a href="{fp}" target="_blank">📄 {i}. {title}{badge}</a><div class="meta">Dosya: {basename}</div></li>\n'
 
 index_content += """    </ul>
 </body>

@@ -62,7 +62,34 @@ Bu konularda hiçbir rakibin içeriği yok, Google'da ciddi trafik çekme potans
 
 ---
 
+## 02 Nisan 2026 - Gece Vardiyası (Faz 3 - Bumin Yeni Konular)
+
+Bumin tarafından iletilen özel konular üzerinden ilerleniyor. `AV TÜFEĞİ` içerisindeki RAW dosyaları kullanılarak spesifik Mega Rehberler yaratılmaya başlandı.
+
+### Yeni Oluşturulan Özel Yazılar (Mikro İnceleme Formatı)
+- [x] **Dağlıoğlu Tekil Modelleri (9 Adet):** FD 63 Lux, FD 63 Standart, FD 63 Tactical, FD 63 Gen 2, FD 20 Lux, FD 20 Standart, FD 20 Gold, FD 47, FD 47 Dragunov (`.md` Özel Dosyaları)
+- [x] **Typhoon F12 Tekil Modelleri (5 Adet):** F12 Standart, Siyah Renk, Toprak (FDE) Renk, Gri Renk, Kırmızı-Siyah Renk (`.md` Özel Dosyaları)
+- [x] **Aksa Arms Tekil Modelleri (6 Adet):** T14, T12, Pulman, Crossfire WI, Crossfire WI S4, Crossfire S4 Pro (`.md` Özel Dosyaları)
+- [x] **Axor Arms Tekil Modelleri (4 Adet):** Axor FS Pro, Axor FS Elite, Axor FP Pompalı, Axor FS (`.md` Özel Dosyaları)
+- [x] **Sarsılmaz Tekil Modelleri (12 Adet):** SAX 700, SAW 700, SAW 700 L, SAW 700 Deluxe, 100. Yıl, Magic, Magic Combo, Vertu, Franchi, Firstclass, M212, M204 STD (`.md` Özel Dosyaları)
+- [x] **Ata Arms Tekil Modelleri (3 Adet):** Neo 12, Venza, Neo X (`.md` Özel Dosyaları)
+- [x] **Retay Arms Tekil Modelleri (3 Adet):** Gordion, Masai Mara, Antalya SS (`.md` Özel Dosyaları)
+- [x] **Derya Arms Tekil Modelleri (5 Adet):** MK 12 101S, MK 12 Ultimate, Bullpup N-100, Lion, Carina Pompalı (`.md` Özel Dosyaları)
+- [x] **Huğlu Kooperatif Tekil Modelleri (9 Adet):** Renova, Renova Selçuk, Veyron, SGR 9, 103 CE, 103 FE, 103 DE, Ventus, XR8 (`.md` Özel Dosyaları)
+- [x] **Husan Arms Tekil Modelleri (3 Adet):** M71, 20 Metal Force, 12 Metal Force (`.md` Özel Dosyaları)
+- [x] **Hatsan Havalı/PCP Tekil Modelleri (3 Adet):** Blitz, Sniper Long, Hercules 666 (`.md` Özel Dosyaları)
+- [x] **Premium İthal & Taktik (5 Adet):** Benelli M4 Pro, Beretta A400, Beretta Süperpoze, Benelli Raffaello, Kel-Tec KSG (`.md` Özel Dosyaları)
+- [x] **Faz 1 Dev Liste (5 Adet):** Vortex Optik, Vormeks Optik, Hunt Group G3, Recovery Tactical Roni Kit, Capra K12 Pro (`.md` Özel Dosyaları)
+- [x] **SEO Rehber Blogları (1 Adet):** Çifte ile Süperpoze Farkları (`.md` Özel Dosya)
+- [x] **Faz 2 Genel Marka Rehberleri (5 Adet):** Sarsılmaz, Dağlıoğlu, Aksa, Serengeri, Axor Genel Marka Kategori Blogları (`.md` Özel Dosyaları)
+- [x] **Faz 3 Genel Marka Rehberleri (5 Adet):** Huğlu, Typhoon, Derya, Ata Arms, Armsan Genel Marka Kategori Blogları (`.md` Özel Dosyaları)
+- [x] **Faz 4 Genel Marka Rehberleri (5 Adet):** Aselkon, Maestro, Husan, Caretta, Retay Genel Marka Kategori Blogları (`.md` Özel Dosyaları)
+- [x] **Faz 5 Kapanış (Ateşli & Klâsikler) (3 Adet):** Hatsan Ateşli Serileri, Avsan, Çifsan Genel Marka Kategori Blogları (`.md` Özel Dosyaları)
+
 ## 🏆 PROJE FİNAL DURUMU
-* **İşlenen Toplam Döküman (Faz 2 Airsoft):** Yeni 24 Belge.
-* **Üretilen Altın Değerinde SEO Makalesi:** 4 Adet Devasa "Mega Rehber" (.md) İçeriği.
+* **Strateji Değişikliği:** "Mega Rehber" stratejisinden "Modele Özel Mikro-Blog / Ürün İnceleme" hedefine geçildi.
+* **İşlenen Toplam Döküman (Faz 2 Airsoft):** Yeni 91 Belge.
+* **Faz 3, 4 ve 5 Üretimleri:** Toplam 91 Adet Modele Özel İnceleme (Yerli, İthal, Rehber ve Optik) eklendi.
+* **Arayüz (Index) Düzenlemesi:** Yeni eklenen efsanevi 91 dosya, `INDEX.html` de eski dosyalardan ayırt edilebilmesi için kırmızı ayırıcı bir başlıkla dizayn edildi (`Son Oturumda Eklenen Yeni Bloglar (98 - 189)`).
+* **Git Entegrasyonu ve Kurallar:** Tüm kurallar (Anayasa) her içerikte harfiyen uygulandı. Github repoya yedeklendi.
 * **PDF Süreci:** İlgili Python scripti / beceri entegrasyonu ile batch halinde eklenecektir. MD versiyonları hazırdır.
